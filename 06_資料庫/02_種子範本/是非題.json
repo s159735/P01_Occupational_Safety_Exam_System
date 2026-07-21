@@ -1,0 +1,1390 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 58,
+  "Type": "truefalse",
+  "TypeLabel": "是非題",
+  "TypePrefix": "T",
+  "source": {
+    "classified": true,
+    "breed": true
+  },
+  "questions": [
+    {
+      "id": "T001",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某公司僱用勞工後，未依法為勞工投保勞工保險。勞工在工作場所發生職業傷害後，依職業災害勞工保護法第6條規定，該勞工仍可獲得職業災害給付。是否正確？",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060041",
+        "article": {
+          "條": "第 6 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業災害勞工保護法第6條規定，未投保勞保之勞工仍可請領職業災害給付。"
+      },
+      "tips": {
+        "quick": ["💡 沒投保也能申請職災給付！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T002",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某工地使用吊籠進行外牆清洗作業，勞工為求方便在吊籠內放置腳踏板站立作業。依起重升降機具安全規則規定，此行為是否正確？",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060013",
+        "article": {
+          "條": "第 100 條"
+        }
+      },
+      "explanation": {
+        "summary": "起重升降機具安全規則第100條規定吊籠內禁止使用腳踏板。"
+      },
+      "tips": {
+        "quick": ["💡 吊籠內不得放置任何踏板！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T003",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某營建工地為節省時間，使用營建用提升機搭載勞工上下樓層。依起重升降機具安全規則規定，此行為是否正確？",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060013",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "營建用提升機不得搭載人員，僅供載運物料。"
+      },
+      "tips": {
+        "quick": ["💡 提升機只能載貨，不能載人！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T004",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某營造工地勞工於高度二公尺以上之施工架邊緣作業，雇主僅以警示帶圍繞作業區域，未設置護欄或護蓋。依職業安全衛生設施規則第224條規定，此做法是否正確？",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 224 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則第224條規定，高度2公尺以上應設置護欄、護蓋或安全網。"
+      },
+      "tips": {
+        "quick": ["💡 2公尺以上就要護欄，警示帶不夠！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T005",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某食品廠使用大型乾燥設備進行產品乾燥，廠內未設置溫度自動調整裝置。依職業安全衛生設施規則第200條規定，此做法是否正確？",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 200 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則第200條規定乾燥設備應設置溫度自動調整裝置。"
+      },
+      "tips": {
+        "quick": ["💡 乾燥設備要有自動控溫！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T006",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某木工廠手推刨床設置距作業位置50公分之動力遮斷裝置。依機械設備器具安全標準規定，此設置是否符合安全要求？",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060034",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "手推刨床之動力遮斷裝置應設置於作業位置伸手可及之處（通常為30公分內）。"
+      },
+      "tips": {
+        "quick": ["💡 50公分太遠了，緊急時搆不到！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T007",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某工地使用之合梯材質有輕微鏽蝕但尚未變形，工地主任認為仍可繼續使用。依職業安全衛生設施規則規定，此判斷是否正確？",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則規定合梯材質不得有顯著損傷或腐蝕。"
+      },
+      "tips": {
+        "quick": ["💡 鏽蝕的梯子不安全，不能用！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T008",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "依高架作業勞工保護措施標準規定，未設置平台、護欄等設備而已採取必要安全措施，其高度在二公尺以上者，即屬高架作業。是否正確？",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060029",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "高架作業之定義：未設置平台、護欄等設備，高度在2公尺以上者即屬之。"
+      },
+      "tips": {
+        "quick": ["💡 沒護欄、2公尺以上就算高架作業！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T010",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某工廠勞工從事正己烷作業，雇主依勞工健康保護規則規定，應實施特殊體格檢查。是否正確？",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060022",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "正己烷作業屬有機溶劑作業，應實施特殊體格檢查。"
+      },
+      "tips": {
+        "quick": ["💡 正己烷要特殊體檢！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T011",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主對於高度二公尺以上之工作場所邊緣及開口部分，為防止勞工墜落，應設置護欄、護蓋、安全帶等措施。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060014",
+        "article": {
+          "條": "第 17 條"
+        }
+      },
+      "explanation": {
+        "summary": "營造安全衛生設施標準第17條規定高度2公尺以上應設置防墜設施。"
+      },
+      "tips": {
+        "quick": ["💡 2公尺以上就要防墜！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T012",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "某室內作業場所對外開口面積為底面積之1/40，依有機溶劑中毒預防規則規定，屬通風不充分之作業場所。是否正確？",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060017",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "有機溶劑中毒預防規則規定，對外開口面積小於底面積1/20屬通風不充分。"
+      },
+      "tips": {
+        "quick": ["💡 1/40小於1/20，確實通風不充分！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T013",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主對於勞工對職業疾病鑑定結果有異議，可以向勞動檢查機構申請重新認定。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060041",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業疾病鑑定有異議應向中央主管機關申請，非勞動檢查機構。"
+      },
+      "tips": {
+        "quick": ["💡 職業病異議要找中央主管機關！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T015",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主實施作業環境監測前，應就作業環境危害特性、監測目的及中央主管機關公告之相關指引，訂定含採樣策略之作業環境監測計畫。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "勞工作業環境監測實施辦法規定監測前應訂定監測計畫。"
+      },
+      "tips": {
+        "quick": ["💡 監測前要先有計畫！"]
+      },
+      "logic": ["流程操作"]
+    },
+    {
+      "id": "T016",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主實施監測七日前，應就監測計畫中中央主管機關公告之網路登錄系統及格式，實施報告。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "監測計畫應於實施監測15日前通報，非7日。"
+      },
+      "tips": {
+        "quick": ["💡 是15天前，不是7天！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T019",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：建築物高度在 70 公尺以上之建築工程為危險性工作場所。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070004",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "建築物高度在80公尺以上之建築工程始為丁類危險性工作場所。"
+      },
+      "tips": {
+        "quick": ["💡 是80公尺，不是70公尺！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T020",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：單跨橋梁之橋墩跨距在 50 公尺以上之橋梁工程為危險性工作場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070004",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "單跨橋梁之橋墩跨距在50公尺以上為丁類危險性工作場所。"
+      },
+      "tips": {
+        "quick": ["💡 50公尺跨距就是危險場所！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T021",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：長度 300 公尺以上且需開挖 7 公尺以上豎坑之隧道工程為危險性工作場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070004",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "長度1000公尺以上或需開挖7公尺以上豎坑之隧道工程為丁類危險性工作場所。"
+      },
+      "tips": {
+        "quick": ["💡 7公尺豎坑就是危險場所！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T022",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：開挖深度達 18 公尺以上，或開挖面積達 500 平方公尺以上之工程為危險性工作場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070004",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "開挖深度18公尺以上且面積500平方公尺以上始為丁類危險性工作場所。"
+      },
+      "tips": {
+        "quick": ["💡 要同時符合深度18m和面積500m²！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T023",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：工程中模板支撐高度 7 公尺以上，或面積達 330 平方公尺以上者為危險性工作場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070004",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "模板支撐高度7公尺以上且面積330平方公尺以上始為丁類危險性工作場所。"
+      },
+      "tips": {
+        "quick": ["💡 要同時符合高度7m和面積330m²！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T024",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：蒸汽鍋爐之傳熱面積在 150 平方公尺以上為危險性工作場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070004",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "蒸汽鍋爐傳熱面積在500平方公尺以上始為甲類危險性工作場所。"
+      },
+      "tips": {
+        "quick": ["💡 是500平方公尺，不是150！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T025",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：高壓氣體類壓力容器一日之冷凍能力在 50 公噸以上為危險性工作場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070004",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "一日冷凍能力在100公噸以上始為甲類危險性工作場所。"
+      },
+      "tips": {
+        "quick": ["💡 是100公噸，不是50！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T026",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主使女性勞工從事鉛作業時，應依血中鉛濃度區分風險等級，第一級管理為血中鉛濃度低於5μg/dl者。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060065",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "女性勞工鉛作業血中鉛濃度第一級管理為低於5μg/dl。"
+      },
+      "tips": {
+        "quick": ["💡 5μg/dl以下才是第一級！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T027",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主使女性勞工從事鉛作業時，第二級管理為血中鉛濃度在5μg/dl以上未達10μg/dl。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060065",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "女性勞工鉛作業第二級管理為5μg/dl以上未達10μg/dl。此題為正確。"
+      },
+      "tips": {
+        "quick": ["💡 5~10μg/dl是第二級！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T028",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主使女性勞工從事鉛作業時，第三級管理為血中鉛濃度在10μg/dl以上者。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060065",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "女性勞工鉛作業第三級管理為血中鉛濃度在10μg/dl以上者。"
+      },
+      "tips": {
+        "quick": ["💡 10μg/dl以上就是第三級！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T030",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：鉛作業之作業場所之監測結果應依勞工作業環境監測實施辦法記錄，並保存30年。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "鉛作業監測紀錄應保存30年。"
+      },
+      "tips": {
+        "quick": ["💡 鉛作業監測要保存30年！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T033",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主設置之局部排氣裝置，應於鉛作業時間內有效運轉，並降低空氣中鉛塵濃度至勞工作業場所中勞工連續暴露在此濃度以下任何15分鐘，不致有不可忍受之刺激、慢性或不可逆之組織病變、麻醉昏暈作用、事故增加之傾向或工作效率之降低之現象。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060018",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "鉛中毒預防規則規定局部排氣裝置應有效運轉並維持濃度在容許濃度以下。"
+      },
+      "tips": {
+        "quick": ["💡 局部排氣裝置要全程有效運轉！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T034",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主為防止鉛、鉛混存物或燒結礦混存物等之鉛塵污染，應每週以水沖洗，或以真空除塵機、適當溶液清潔作業場所、休息室、餐廳等一次以上。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060018",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "鉛中毒預防規則規定應每週清掃一次以上。"
+      },
+      "tips": {
+        "quick": ["💡 鉛作業場所每週清掃一次！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T035",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依職業安全衛生管理辦法規定，事業單位以其事業之全部或部分交付承攬或再承攬時，如該承攬人使用之機械、設備係由原事業單位提供者，該機械、設備應由承攬人實施自動檢查。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "原事業單位提供之機械設備，應由原事業單位實施自動檢查。"
+      },
+      "tips": {
+        "quick": ["💡 誰提供設備，誰負責檢查！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T036",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依職業安全衛生管理辦法規定，職業安全衛生委員會應每個月舉行會議1次。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生委員會應每3個月舉行會議1次。"
+      },
+      "tips": {
+        "quick": ["💡 是每3個月，不是每個月！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T038",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依職業安全衛生管理辦法規定，事業單位勞工在50人以上時，雇主應訂定職業安全衛生管理規章。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生管理辦法規定勞工人數在100人以上始應訂定管理規章。"
+      },
+      "tips": {
+        "quick": ["💡 是100人以上，不是50人！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T039",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依職業安全衛生管理辦法規定，定期檢查、重點檢查之紀錄應保存5年以上。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "定期檢查紀錄應保存3年。"
+      },
+      "tips": {
+        "quick": ["💡 是3年，不是5年！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T041",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依危害性化學品標示及通識規則規定，安全資料表應適時更新，並至少應每2年檢討1次。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "安全資料表應至少每3年檢討1次。"
+      },
+      "tips": {
+        "quick": ["💡 是3年，不是2年！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T042",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依缺氧症預防規則規定，雇主使勞工從事缺氧危險作業時，應指派2人以上之監視人員。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060020",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "缺氧作業應指派1人以上之監視人員。"
+      },
+      "tips": {
+        "quick": ["💡 是1人以上，不是2人！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T043",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依職業安全衛生管理辦法規定，雇主對使用中之施工架應至少每月檢查1次。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "使用中之施工架應每週檢查1次。"
+      },
+      "tips": {
+        "quick": ["💡 是每週檢查，不是每月！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T044",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依職業安全衛生教育訓練規則規定，辦理新僱勞工一般安全衛生教育訓練時，其訓練時數不得少於6小時。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060010",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "新僱勞工一般安全衛生教育訓練不得少於3小時。"
+      },
+      "tips": {
+        "quick": ["💡 是3小時，不是6小時！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T045",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依危害性化學品標示及通識規則規定，裝有危害性化學品之容器，容器體積在100毫升以下者，得僅標示名稱、危害圖示及警示語。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "危害性化學品標示及通識規則規定容器體積在100毫升以下者得僅標示名稱、危害圖示及警示語。"
+      },
+      "tips": {
+        "quick": ["💡 100毫升以下可簡化標示！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T046",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依職業安全衛生設施規則規定，對於製造、處置氧化性物質之工作場所，為防止爆炸、火災，不得使其接觸水。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則規定氧化性物質不得使其接觸促進其分解之物質。"
+      },
+      "tips": {
+        "quick": ["💡 氧化性物質要避免接觸促進分解的物質！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T047",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：依勞工作業環境監測實施辦法規定，鉛作業場所應每半年實施作業環境監測1次以上。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "鉛作業場所應每年實施作業環境監測1次以上。"
+      },
+      "tips": {
+        "quick": ["💡 是每年，不是每半年！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T048",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：嘉義縣政府應於勞動檢查方針公告後3個月內，擬定勞動監督檢查計畫，報請中央主管機關核備後實施。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0070005",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "勞動監督檢查計畫應於勞動檢查方針公告後6個月內擬定。"
+      },
+      "tips": {
+        "quick": ["💡 是6個月，不是3個月！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T049",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：使用中的雪山隧道內部屬於缺氧危險作業場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060020",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "使用中之隧道有通風換氣，不屬缺氧危險作業場所。"
+      },
+      "tips": {
+        "quick": ["💡 使用中的隧道有通風，不是缺氧場所！"]
+      },
+      "logic": ["危害辨識"]
+    },
+    {
+      "id": "T050",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：置放穀物之密閉倉庫屬於缺氧危險場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060020",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "穀物倉庫因穀物呼吸作用可能消耗氧氣，屬缺氧危險場所。"
+      },
+      "tips": {
+        "quick": ["💡 穀物倉庫會消耗氧氣，屬缺氧場所！"]
+      },
+      "logic": ["危害辨識"]
+    },
+    {
+      "id": "T051",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：空氣中氧氣濃度為18.5%之水塔內部屬於缺氧危險場所。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060020",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "缺氧危險場所之氧氣濃度係指未滿18%，18.5%未達缺氧定義。"
+      },
+      "tips": {
+        "quick": ["💡 18.5%還不算缺氧！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T052",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：置放醬油之地窖屬於缺氧危險場所。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060020",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "醬油發酵過程會消耗氧氣，地窖屬缺氧危險場所。"
+      },
+      "tips": {
+        "quick": ["💡 醬油地窖會缺氧！"]
+      },
+      "logic": ["危害辨識"]
+    },
+    {
+      "id": "T053",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：已密閉1年、內壁為不鏽鋼之塔槽屬於缺氧危險場所。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060020",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "密閉之不鏽鋼塔槽因內部可能積存惰性氣體，屬缺氧危險場所。"
+      },
+      "tips": {
+        "quick": ["💡 長期密閉的塔槽容易缺氧！"]
+      },
+      "logic": ["危害辨識"]
+    },
+    {
+      "id": "T054",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主對於室內工作場所之主要人行道，寬度不得小於0.8公尺。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則規定主要人行道寬度不得小於1公尺。"
+      },
+      "tips": {
+        "quick": ["💡 是1公尺，不是0.8公尺！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T058",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主對於直徑不滿10公分之研磨輪得免予速率試驗。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則規定直徑不滿10公分之研磨輪得免予速率試驗。"
+      },
+      "tips": {
+        "quick": ["💡 直徑小於10公分可免試！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T059",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主對於固定梯之頂端應突出板面60公分以上。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則規定固定梯頂端應突出板面60公分以上。"
+      },
+      "tips": {
+        "quick": ["💡 固定梯要突出60公分以上！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T060",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主對於梯長連續超過6公尺之固定梯，應每隔9公尺以下設一平台。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "梯長連續超過6公尺應每隔9公尺以下設一平台。"
+      },
+      "tips": {
+        "quick": ["💡 超過6公尺就要設平台！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T061",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：雇主對於噪音超過90分貝之工作場所，應標示並公告噪音危害之預防事項，使勞工周知。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則規定噪音超過90分貝應標示公告。"
+      },
+      "tips": {
+        "quick": ["💡 超過90分貝就要標示！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T062",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：企業對於高度二公尺以上之工作場所邊緣及開口部分，勞工有遭受墜落危險之虞者，不得設有適當強度之護欄、護蓋等防護設備。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060014",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "高度2公尺以上應設置護欄、護蓋等防護設備，不得反而不得設置。"
+      },
+      "tips": {
+        "quick": ["💡 2公尺以上「應」設置護欄！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T063",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：公司對於乾燥設備之內部，不得置有隨時能測定溫度之裝置，及調整內部溫度於安全溫度之裝置或溫度自動調整裝置。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "乾燥設備應設置溫度測定及自動調整裝置。"
+      },
+      "tips": {
+        "quick": ["💡 乾燥設備「應」有溫控裝置！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T064",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：手推刨床不得設置距作業位置50公分即可操作之動力遮斷裝置。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060034",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "手推刨床應設置距作業位置伸手可及之動力遮斷裝置，50公分已屬可及範圍。"
+      },
+      "tips": {
+        "quick": ["💡 50公分在伸手可及範圍內！"]
+      },
+      "logic": ["法規數字"]
+    },
+    {
+      "id": "T065",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：事業單位對於使用之合梯，其材質不得有顯著之損傷、腐蝕等現象。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "職業安全衛生設施規則規定合梯材質不得有顯著損傷、腐蝕等。"
+      },
+      "tips": {
+        "quick": ["💡 材質有問題的梯子不能用！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T066",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否正確：公司對於高度二公尺以上之工作場所邊緣及開口部分，為防止勞工墜落，不得設置護欄、護蓋、安全帶等措施。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060014",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "高度2公尺以上應設置防墜設施，不得「不得設置」。"
+      },
+      "tips": {
+        "quick": ["💡 2公尺以上「應」設置防墜設施！"]
+      },
+      "logic": ["法規記憶"]
+    },
+    {
+      "id": "T067",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "颱風過後，某工廠鐵皮屋頂（附有塑膠採光罩）受損需緊急修繕。雇主指派3名勞工至屋頂作業，並於屋頂邊緣設置高度75公分之護欄，且要求勞工佩戴腰掛式安全帶。\n（  ）雇主於屋頂設置高度75公分護欄已符合法規要求。\n（  ）於易踏穿材料屋頂作業，應於屋架上設置寬度30公分以上之踏板。\n（  ）腰掛式安全帶適用於屋頂作業之墜落防止。\n（  ）斜度大於34度之屋頂，應設置適當之護欄及工作臺。",
+      "options": ["是", "否"],
+      "answer": ["1", "1", "0", "1"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060014",
+        "article": {
+          "條": "第 1 條"
+        }
+      },
+      "explanation": {
+        "summary": "護欄高度應為90公分以上；易踏穿材料屋頂應設30公分以上踏板；屋頂作業應使用背負式安全帶；斜度大於34度應設護欄及工作臺。"
+      },
+      "tips": {
+        "quick": ["💡 屋頂作業要用背負式安全帶！"]
+      },
+      "logic": ["法規記憶"]
+    }
+  ]
+}

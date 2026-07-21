@@ -1,0 +1,99 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 3,
+  "Type": "fill",
+  "TypeLabel": "填空題",
+  "TypePrefix": "F",
+  "source": { "classified": true, "breed": true },
+  "questions": [
+    {
+      "id": "F_PDF_001",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "text": "AED設置場所之管理員應接受並完成心肺復甦術及AED相關訓練，並每【___】年接受複訓一次。",
+      "options": [],
+      "answer": ["2"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "blanks": ["A"],
+      "explanation": {
+        "summary": "AED管理員應每2年接受複訓一次。"
+      },
+      "law": {
+        "pcode": "N0000001",
+        "name": "應置有自動體外心臟電擊去顫器之公共場所",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "AED管理員應每2年接受複訓一次。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：AED管理員2年複訓一次！"],
+        "mnemonic": "🧠 AED管理員→接受CPR+AED訓練→每2年複訓一次",
+        "commonMistake": ["🚨 陷阱：複訓間隔是2年，不是1年或3年！"]
+      },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對AED管理員複訓年限的記憶。" }]
+    },
+    {
+      "id": "F_PDF_002",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "text": "鈉的密度為【___】比水小，會浮於水面和空氣中之氧氣起作用，所以一般會將鈉存在【___】中。",
+      "options": [],
+      "answer": ["0.97", "石油"],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "blanks": ["A", "B"],
+      "explanation": {
+        "summary": "鈉的密度0.97比水小，會浮於水面與空氣中氧氣起作用；鈉會與水劇烈反應，所以保存在石油中。",
+        "detail": "2Na+2H₂O→2NaOH+H₂"
+      },
+      "law": {
+        "pcode": "N0000007",
+        "name": "化學品安全管理",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "鈉的密度0.97，保存在石油中。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：鈉0.97，石油保平安！"],
+        "mnemonic": "🧠 鈉密度0.97（比水小）→浮在水面與氧氣反應→保存在石油中",
+        "commonMistake": ["🚨 陷阱：鈉是保存在「石油」中，不是「水」中！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對鈉的性質與保存方式的記憶。" }]
+    },
+    {
+      "id": "F_PDF_003",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "text": "職場不法侵害的態樣可分為：【___】、【___】、【___】、【___】四種類型。",
+      "options": [],
+      "answer": ["職場暴力", "職場霸凌", "就業歧視", "性騷擾"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "blanks": ["A", "B", "C", "D"],
+      "explanation": {
+        "summary": "職場不法侵害態樣包括：職場暴力、職場霸凌、就業歧視、性騷擾。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": { "full": "第 6 條", "條": "第 6 條" },
+        "summary": "雇主應預防職場不法侵害之發生。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：暴、霸、歧、騷＝四大不法侵害！"],
+        "mnemonic": "🧠 職場不法侵害＝①職場暴力②職場霸凌③就業歧視④性騷擾",
+        "commonMistake": ["🚨 陷阱：四個空格都要填，不要漏掉！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對職場不法侵害態樣的分類能力。" }]
+    }
+  ]
+}

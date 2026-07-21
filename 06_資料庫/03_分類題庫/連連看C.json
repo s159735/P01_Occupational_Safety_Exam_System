@@ -1,0 +1,195 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 4,
+  "Type": "link",
+  "TypeLabel": "連連看",
+  "TypePrefix": "L",
+  "source": { "classified": true, "breed": true },
+  "questions": [
+    {
+      "id": "L_PDF_001",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側 GHS 危害圖式與右側其對應之危害分類進行配對。",
+      "pairs": [
+        { "left": "爆炸性物質", "right": "爆炸物" },
+        { "left": "加壓氣體", "right": "加壓氣體" },
+        { "left": "易燃物質", "right": "易燃液體" },
+        { "left": "健康危害性物質", "right": "致癌物質" },
+        { "left": "腐蝕性物質", "right": "金屬腐蝕物" },
+        { "left": "氧化性物質", "right": "氧化性液體" },
+        { "left": "急毒性物質", "right": "急毒性物質" },
+        { "left": "水環境危害", "right": "水環境危害" }
+      ],
+      "answer": [
+        "爆炸物",
+        "加壓氣體",
+        "易燃液體",
+        "致癌物質",
+        "金屬腐蝕物",
+        "氧化性液體",
+        "急毒性物質",
+        "水環境危害"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.25%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "GHS共有9種危害圖式，本題為8種配對。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "GHS危害圖式共9種。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：GHS九大圖式要全部記住！"],
+        "mnemonic": "🧠 GHS 9大圖式＝爆炸、加壓氣體、易燃、健康危害、腐蝕、警告、氧化、急毒性、水環境",
+        "commonMistake": ["🚨 陷阱：警告（！）是干擾選項，不要配對！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對GHS危害圖式的配對能力。" }]
+    },
+    {
+      "id": "L_PDF_002",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側 MPOWER 政策英文縮寫與右側其中文意義進行配對。",
+      "pairs": [
+        { "left": "M - Monitor", "right": "監測菸品使用和預防政策" },
+        { "left": "P - Protect", "right": "保護人們免受菸煙危害" },
+        { "left": "O - Offer", "right": "提供戒菸協助" },
+        { "left": "W - Warn", "right": "警示菸品危害" },
+        { "left": "E - Enforce bans", "right": "禁止菸品廣告、促銷和贊助" },
+        { "left": "R - Raise taxes", "right": "提高菸稅" }
+      ],
+      "answer": [
+        "監測菸品使用和預防政策",
+        "保護人們免受菸煙危害",
+        "提供戒菸協助",
+        "警示菸品危害",
+        "禁止菸品廣告、促銷和贊助",
+        "提高菸稅"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.67%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "MPOWER為WHO控菸政策：Monitor（監測）、Protect（保護）、Offer（提供戒菸協助）、Warn（警示）、Enforce bans（禁止廣告）、Raise taxes（提高菸稅）。"
+      },
+      "law": {
+        "pcode": "N0000004",
+        "name": "菸害防制法",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "WHO控菸政策MPOWER。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：MPOWER＝監護助警禁稅！"],
+        "mnemonic": "🧠 M＝Monitor（監測）P＝Protect（保護）O＝Offer（提供戒菸協助）W＝Warn（警示）E＝Enforce bans（禁止廣告）R＝Raise taxes（提高菸稅）",
+        "commonMistake": ["🚨 陷阱：M是Monitor，不是Manage！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對MPOWER各字母意義的配對能力。" }]
+    },
+    {
+      "id": "L_PDF_003",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側機械安全防護原則與右側其對應內容進行配對。",
+      "pairs": [
+        { "left": "消除危險", "right": "本質安全、自動進退料" },
+        { "left": "隔離危險", "right": "護圍、護蓋" },
+        { "left": "危險預警", "right": "光電感應式、近接感應式" },
+        { "left": "避開危險", "right": "拉開式、掃除式" },
+        { "left": "避離危險", "right": "使用夾具、治具或手工具" },
+        { "left": "失效安全", "right": "正向設計、壓縮彈簧" },
+        { "left": "避免擴大", "right": "緊急遮斷（制動）裝置" },
+        { "left": "避免受傷", "right": "防護器具" },
+        { "left": "降低受傷程度", "right": "急救、緊急應變措施" }
+      ],
+      "answer": [
+        "本質安全、自動進退料",
+        "護圍、護蓋",
+        "光電感應式、近接感應式",
+        "拉開式、掃除式",
+        "使用夾具、治具或手工具",
+        "正向設計、壓縮彈簧",
+        "緊急遮斷（制動）裝置",
+        "防護器具",
+        "急救、緊急應變措施"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.11%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "機械安全防護9大原則。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "機械安全防護原則。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：消除隔離預警避，避離失效避免大！"],
+        "mnemonic": "🧠 機械防護＝消除危險（本質安全）→隔離危險（護圍護蓋）→危險預警（光電感應）→避開危險（拉開掃除）→避離危險（使用工具）→失效安全（正向設計）→避免擴大（緊急遮斷）→避免受傷（防護器具）→降低受傷程度（急救應變）",
+        "commonMistake": ["🚨 陷阱：避免擴大是緊急遮斷，不是防護器具！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對機械安全防護原則的配對能力。" }]
+    },
+    {
+      "id": "L_PDF_004",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側燃燒/爆炸相關名詞與右側其定義進行配對。",
+      "pairs": [
+        { "left": "昇華", "right": "固態物質直接轉化為氣態的過程" },
+        { "left": "起火點", "right": "室內燃燒產生火引之位置" },
+        { "left": "爆炸界限", "right": "可燃性氣體或粉塵在空氣中的燃燒濃度範圍" },
+        { "left": "爆炸下限", "right": "可燃性氣體或蒸氣之最低濃度界限" },
+        { "left": "爆炸上限", "right": "可燃性氣體或蒸氣之最高濃度界限" },
+        { "left": "燃燒四要素", "right": "可燃物、助燃物、熱能、連續反應" },
+        { "left": "閃燃", "right": "室內起火後一舉引火形成巨大火苗" },
+        { "left": "復燃", "right": "缺氧狀態下持續燃燒，瞬間空氣進入產生爆炸" },
+        { "left": "BLEVE", "right": "沸騰液體膨脹蒸氣雲爆炸" }
+      ],
+      "answer": [
+        "固態物質直接轉化為氣態的過程",
+        "室內燃燒產生火引之位置",
+        "可燃性氣體或粉塵在空氣中的燃燒濃度範圍",
+        "可燃性氣體或蒸氣之最低濃度界限",
+        "可燃性氣體或蒸氣之最高濃度界限",
+        "可燃物、助燃物、熱能、連續反應",
+        "室內起火後一舉引火形成巨大火苗",
+        "缺氧狀態下持續燃燒，瞬間空氣進入產生爆炸",
+        "沸騰液體膨脹蒸氣雲爆炸"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.11%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "燃燒與爆炸相關名詞定義彙整。"
+      },
+      "law": {
+        "pcode": "N0000007",
+        "name": "化學品安全管理",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "燃燒與爆炸名詞定義。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：燃燒四要素＝可燃助燃熱能連！"],
+        "mnemonic": "🧠 燃燒四要素＝可燃物＋助燃物＋熱能＋連續反應；閃燃＝一舉引火；復燃＝缺氧後瞬間燃燒；BLEVE＝物理爆炸＋化學爆炸",
+        "commonMistake": ["🚨 陷阱：BLEVE是物理爆炸+化學爆炸，不是單純火災！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對燃燒/爆炸名詞定義的配對能力。" }]
+    }
+  ]
+}

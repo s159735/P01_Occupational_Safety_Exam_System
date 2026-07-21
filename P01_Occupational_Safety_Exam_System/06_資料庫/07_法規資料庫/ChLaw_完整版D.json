@@ -1,0 +1,802 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalLaws": 25,
+  "PendingLaws": 0,
+  "Laws": [
+    {
+      "PCode": "N0060013",
+      "LawName": "起重升降機具安全規則",
+      "LawDisplayName": "起重升降機具安全規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060013",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布全文。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 100 條",
+          "ArticleContent": "吊籠內不得使用腳踏板或放置踏板。",
+          "StructuredContent": [
+            { "項": 1, "content": "吊籠內不得使用腳踏板或放置踏板。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0030025",
+      "LawName": "勞動基準法",
+      "LawDisplayName": "勞動基準法（勞動部）",
+      "LawLevel": "法律",
+      "LawCategory": "行政＞勞動部＞勞動條件及就業平等目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0030025",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本法依憲法第一百五十三條及第一百五十四條規定制定之。",
+      "LawHistories": "113年7月1日修正第36條。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 36 條",
+          "ArticleContent": "勞工每七日中應有二日之休息，其中一日為例假，一日為休息日。",
+          "StructuredContent": [
+            { "項": 1, "content": "勞工每七日中應有二日之休息，其中一日為例假，一日為休息日。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 44 條",
+          "ArticleContent": "雇主不得使未滿十八歲之勞工從事危險性或有害性之工作。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主不得使未滿十八歲之勞工從事危險性或有害性之工作。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 45 條",
+          "ArticleContent": "雇主使未滿十八歲之勞工從事非危險性或有害性之工作，應經法定代理人同意。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主使未滿十八歲之勞工從事非危險性或有害性之工作，應經法定代理人同意。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 59 條",
+          "ArticleContent": "勞工因遭遇職業災害而致死亡、失能、傷害或疾病時，雇主應依規定予以補償。",
+          "StructuredContent": [
+            { "項": 1, "content": "勞工因遭遇職業災害而致死亡、失能、傷害或疾病時，雇主應依規定予以補償。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060020",
+      "LawName": "缺氧症預防規則",
+      "LawDisplayName": "缺氧症預防規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060020",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 2 條",
+          "ArticleContent": "本規則所稱缺氧危險場所，係指空氣中氧氣濃度未滿百分之十八之場所。",
+          "StructuredContent": [
+            { "項": 1, "content": "本規則所稱缺氧危險場所，係指空氣中氧氣濃度未滿百分之十八之場所。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060014",
+      "LawName": "營造安全衛生設施標準",
+      "LawDisplayName": "營造安全衛生設施標準（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060014",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本標準依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 17 條",
+          "ArticleContent": "雇主對於高度二公尺以上之工作場所，應設置護欄、護蓋或安全網等防護設備。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於高度二公尺以上之工作場所，應設置護欄、護蓋或安全網等防護設備。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 64 條",
+          "ArticleContent": "以人工開挖方式從事露天開挖作業，其開挖面之傾斜度不得大於規定值。",
+          "StructuredContent": [
+            { "項": 1, "content": "以人工開挖方式從事露天開挖作業，其開挖面之傾斜度不得大於規定值。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060027",
+      "LawName": "職業安全衛生管理辦法",
+      "LawDisplayName": "職業安全衛生管理辦法（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060027",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本辦法依職業安全衛生法第二十三條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 12-2 條",
+          "ArticleContent": "事業單位應依其規模及性質，設置職業安全衛生管理系統。",
+          "StructuredContent": [
+            { "項": 1, "content": "事業單位應依其規模及性質，設置職業安全衛生管理系統。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060022",
+      "LawName": "勞工健康保護規則",
+      "LawDisplayName": "勞工健康保護規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060022",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第二十條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 9 條",
+          "ArticleContent": "事業單位勞工人數在五十人以上者，應設置急救人員。",
+          "StructuredContent": [
+            { "項": 1, "content": "事業單位勞工人數在五十人以上者，應設置急救人員。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 15 條",
+          "ArticleContent": "急救人員每一輪班次應至少置一人；其每一輪班次勞工總人數超過五十人者，每增加五十人應再置一人。",
+          "StructuredContent": [
+            { "項": 1, "content": "急救人員每一輪班次應至少置一人；其每一輪班次勞工總人數超過五十人者，每增加五十人應再置一人。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 17 條",
+          "ArticleContent": "急救人員不得有失聰、兩眼裸視或矯正視力後均在零點六以下、失能及健康不良等足以妨礙急救之情形。",
+          "StructuredContent": [
+            { "項": 1, "content": "急救人員不得有失聰、兩眼裸視或矯正視力後均在零點六以下、失能及健康不良等足以妨礙急救之情形。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060009",
+      "LawName": "職業安全衛生設施規則",
+      "LawDisplayName": "職業安全衛生設施規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060009",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 31 條",
+          "ArticleContent": "室內工作場所之主要人行道寬度不得小於一公尺。",
+          "StructuredContent": [
+            { "項": 1, "content": "室內工作場所之主要人行道寬度不得小於一公尺。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 177 條",
+          "ArticleContent": "雇主對於危險物製造、處置之工作場所，應依危險物之特性設置必要之安全設施。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於危險物製造、處置之工作場所，應依危險物之特性設置必要之安全設施。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 184 條",
+          "ArticleContent": "雇主對於危險物應依其特性妥善儲存，並採取防止火災、爆炸之必要措施。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於危險物應依其特性妥善儲存，並採取防止火災、爆炸之必要措施。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 224 條",
+          "ArticleContent": "雇主對於高度二公尺以上之工作場所邊緣及開口部分，應設置護欄、護蓋或安全網。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於高度二公尺以上之工作場所邊緣及開口部分，應設置護欄、護蓋或安全網。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 230 條",
+          "ArticleContent": "合梯之梯腳與地面之角度應在七十五度以內，且兩梯腳間有繫材扣牢。",
+          "StructuredContent": [
+            { "項": 1, "content": "合梯之梯腳與地面之角度應在七十五度以內，且兩梯腳間有繫材扣牢。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 257 條",
+          "ArticleContent": "雇主對於電氣設備之檢修，應執行斷電、上鎖、標示及驗電等安全措施。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於電氣設備之檢修，應執行斷電、上鎖、標示及驗電等安全措施。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 300 條",
+          "ArticleContent": "雇主對於勞工工作場所之噪音超過九十分貝者，應採取工程控制、行政管制及聽力防護等措施。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於勞工工作場所之噪音超過九十分貝者，應採取工程控制、行政管制及聽力防護等措施。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 312 條",
+          "ArticleContent": "雇主對於室內工作場所之換氣量，應依勞工人數及作業特性提供充分之新鮮空氣。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於室內工作場所之換氣量，應依勞工人數及作業特性提供充分之新鮮空氣。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060034",
+      "LawName": "機械設備器具安全標準",
+      "LawDisplayName": "機械設備器具安全標準（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060034",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本標準依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 86 條",
+          "ArticleContent": "研磨輪應實施速率試驗，其試驗速度應為最高使用周速度之一點五倍。",
+          "StructuredContent": [
+            { "項": 1, "content": "研磨輪應實施速率試驗，其試驗速度應為最高使用周速度之一點五倍。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060017",
+      "LawName": "有機溶劑中毒預防規則",
+      "LawDisplayName": "有機溶劑中毒預防規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060017",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 14 條",
+          "ArticleContent": "雇主對於有機溶劑作業，應依規定設置整體換氣裝置或局部排氣裝置。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於有機溶劑作業，應依規定設置整體換氣裝置或局部排氣裝置。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "附表二",
+          "ArticleContent": "有機溶劑容許消費量計算基準：第一種=1/15×氣積；第二種=2/5×氣積；第三種=3/2×氣積。",
+          "StructuredContent": [
+            { "項": 1, "content": "第一種有機溶劑容許消費量=1/15×作業場所之氣積。", "款": null },
+            { "項": 2, "content": "第二種有機溶劑容許消費量=2/5×作業場所之氣積。", "款": null },
+            { "項": 3, "content": "第三種有機溶劑容許消費量=3/2×作業場所之氣積。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "附表四",
+          "ArticleContent": "有機溶劑換氣量計算基準：第一種=消費量×0.3；第二種=消費量×0.04；第三種=消費量×0.01。",
+          "StructuredContent": [
+            { "項": 1, "content": "第一種有機溶劑換氣量=消費量(g/hr)×0.3 m³/min。", "款": null },
+            { "項": 2, "content": "第二種有機溶劑換氣量=消費量(g/hr)×0.04 m³/min。", "款": null },
+            { "項": 3, "content": "第三種有機溶劑換氣量=消費量(g/hr)×0.01 m³/min。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060041",
+      "LawName": "職業災害勞工保護法",
+      "LawDisplayName": "職業災害勞工保護法（勞動部）",
+      "LawLevel": "法律",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060041",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本法依職業安全衛生法第三十八條規定制定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 6 條",
+          "ArticleContent": "勞工未依法投保勞工保險而發生職業災害者，仍可依本法規定申請職業災害給付。",
+          "StructuredContent": [
+            { "項": 1, "content": "勞工未依法投保勞工保險而發生職業災害者，仍可依本法規定申請職業災害給付。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 7 條",
+          "ArticleContent": "職業災害統計應依中央主管機關規定辦理。",
+          "StructuredContent": [
+            { "項": 1, "content": "職業災害統計應依中央主管機關規定辦理。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060015",
+      "LawName": "特定化學物質危害預防標準",
+      "LawDisplayName": "特定化學物質危害預防標準（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060015",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本標準依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 2 條",
+          "ArticleContent": "本標準所稱特定化學物質，指中央主管機關公告之化學物質。",
+          "StructuredContent": [
+            { "項": 1, "content": "本標準所稱特定化學物質，指中央主管機關公告之化學物質。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 17 條",
+          "ArticleContent": "雇主對於特定化學物質之作業，應設置必要之排氣裝置。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主對於特定化學物質之作業，應設置必要之排氣裝置。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060018",
+      "LawName": "鉛中毒預防規則",
+      "LawDisplayName": "鉛中毒預防規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060018",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 32 條",
+          "ArticleContent": "鉛作業場所整體換氣裝置之換氣量，應為每一從事鉛作業勞工平均每分鐘一點六七立方公尺以上。",
+          "StructuredContent": [
+            { "項": 1, "content": "鉛作業場所整體換氣裝置之換氣量，應為每一從事鉛作業勞工平均每分鐘一點六七立方公尺以上。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060030",
+      "LawName": "高壓氣體勞工安全規則",
+      "LawDisplayName": "高壓氣體勞工安全規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060030",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 2 條",
+          "ArticleContent": "本規則所稱高壓氣體，指壓縮氣體、液化氣體及溶解氣體等。",
+          "StructuredContent": [
+            { "項": 1, "content": "本規則所稱高壓氣體，指壓縮氣體、液化氣體及溶解氣體等。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060033",
+      "LawName": "勞工作業環境監測實施辦法",
+      "LawDisplayName": "勞工作業環境監測實施辦法（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060033",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本辦法依職業安全衛生法第十二條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 9 條",
+          "ArticleContent": "雇主應依規定實施作業環境監測，並保存紀錄。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主應依規定實施作業環境監測，並保存紀錄。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060029",
+      "LawName": "高架作業勞工保護措施標準",
+      "LawDisplayName": "高架作業勞工保護措施標準（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060029",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本標準依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 7 條",
+          "ArticleContent": "高架作業勞工連續作業二小時，雇主應給予規定之休息時間。",
+          "StructuredContent": [
+            { "項": 1, "content": "高架作業勞工連續作業二小時，雇主應給予規定之休息時間。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060039",
+      "LawName": "危險性工作場所審查及檢查辦法",
+      "LawDisplayName": "危險性工作場所審查及檢查辦法（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060039",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本辦法依職業安全衛生法第二十六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 2 條",
+          "ArticleContent": "本辦法所稱危險性工作場所，指從事特定危險性作業之場所。",
+          "StructuredContent": [
+            { "項": 1, "content": "本辦法所稱危險性工作場所，指從事特定危險性作業之場所。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060010",
+      "LawName": "職業安全衛生教育訓練規則",
+      "LawDisplayName": "職業安全衛生教育訓練規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060010",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第三十二條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 16 條",
+          "ArticleContent": "雇主應依規定對勞工實施安全衛生教育訓練。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主應依規定對勞工實施安全衛生教育訓練。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060007",
+      "LawName": "高溫作業勞工作息時間標準",
+      "LawDisplayName": "高溫作業勞工作息時間標準（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060007",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本標準依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 1 條",
+          "ArticleContent": "本標準所稱高溫作業，指綜合溫度熱指數達規定值之作業。",
+          "StructuredContent": [
+            { "項": 1, "content": "本標準所稱高溫作業，指綜合溫度熱指數達規定值之作業。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0010029",
+      "LawName": "職業安全衛生法",
+      "LawDisplayName": "職業安全衛生法（勞動部）",
+      "LawLevel": "法律",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0010029",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本法為防止職業災害，保障工作者安全及健康，特制定之。",
+      "LawHistories": "113年7月1日修正公布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 2 條",
+          "ArticleContent": "本法所稱職業災害，指因勞動場所之建築物、機械、設備、原料、材料、化學品、氣體、蒸氣、粉塵等或作業活動及其他職業上原因引起之工作者疾病、傷害、失能或死亡。",
+          "StructuredContent": [
+            { "項": 1, "content": "本法所稱職業災害，指因勞動場所之建築物、機械、設備、原料、材料、化學品、氣體、蒸氣、粉塵等或作業活動及其他職業上原因引起之工作者疾病、傷害、失能或死亡。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 5 條",
+          "ArticleContent": "雇主應依規定實施風險評估，並採取必要之預防措施。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主應依規定實施風險評估，並採取必要之預防措施。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 37 條",
+          "ArticleContent": "事業單位工作場所發生職業災害，雇主應即採取必要措施，並於八小時內報告勞動檢查機構。",
+          "StructuredContent": [
+            { "項": 1, "content": "事業單位工作場所發生職業災害，雇主應即採取必要措施，並於八小時內報告勞動檢查機構。", "款": null }
+          ]
+        },
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 38 條",
+          "ArticleContent": "中央主管機關應建立職業災害統計及通報機制，雇主應依規定辦理職業災害統計。",
+          "StructuredContent": [
+            { "項": 1, "content": "中央主管機關應建立職業災害統計及通報機制，雇主應依規定辦理職業災害統計。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "D0120036",
+      "LawName": "消防法",
+      "LawDisplayName": "消防法（內政部）",
+      "LawLevel": "法律",
+      "LawCategory": "行政＞內政部＞消防目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0120036",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本法為預防火災、搶救災害及緊急救護，以維護公共安全，確保人民生命財產，特制定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 1 條",
+          "ArticleContent": "為預防火災、搶救災害及緊急救護，以維護公共安全，確保人民生命財產，特制定本法。",
+          "StructuredContent": [
+            { "項": 1, "content": "為預防火災、搶救災害及緊急救護，以維護公共安全，確保人民生命財產，特制定本法。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060054",
+      "LawName": "危害性化學品標示及通識規則",
+      "LawDisplayName": "危害性化學品標示及通識規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060054",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第十條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 8 條",
+          "ArticleContent": "危害性化學品應依聯合國全球調和制度（GHS）規定標示危害圖式、警示語及危害警告訊息。",
+          "StructuredContent": [
+            { "項": 1, "content": "危害性化學品應依聯合國全球調和制度（GHS）規定標示危害圖式、警示語及危害警告訊息。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060011",
+      "LawName": "鍋爐及壓力容器安全規則",
+      "LawDisplayName": "鍋爐及壓力容器安全規則（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060011",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本規則依職業安全衛生法第六條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 1 條",
+          "ArticleContent": "本規則所稱鍋爐，指以火焰、燃氣或其他熱源加熱，使水產生蒸汽之密閉容器。",
+          "StructuredContent": [
+            { "項": 1, "content": "本規則所稱鍋爐，指以火焰、燃氣或其他熱源加熱，使水產生蒸汽之密閉容器。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060065",
+      "LawName": "女性勞工母性健康保護實施辦法",
+      "LawDisplayName": "女性勞工母性健康保護實施辦法（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060065",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本辦法依職業安全衛生法第三十一條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 1 條",
+          "ArticleContent": "雇主使女性勞工從事鉛及其化合物散布場所之工作，應依血中鉛濃度區分風險等級實施管理。",
+          "StructuredContent": [
+            { "項": 1, "content": "雇主使女性勞工從事鉛及其化合物散布場所之工作，應依血中鉛濃度區分風險等級實施管理。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060004",
+      "LawName": "勞工作業場所容許暴露標準",
+      "LawDisplayName": "勞工作業場所容許暴露標準（勞動部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞勞動部＞職業安全衛生目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060004",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本標準依職業安全衛生法第十二條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 3 條",
+          "ArticleContent": "短時間時量平均容許濃度之變量係數，依容許濃度範圍分別為3、2、1.5、1.25、1。",
+          "StructuredContent": [
+            { "項": 1, "content": "容許濃度未滿1者，變量係數為3。", "款": null },
+            { "項": 2, "content": "容許濃度1以上未滿10者，變量係數為2。", "款": null },
+            { "項": 3, "content": "容許濃度10以上未滿100者，變量係數為1.5。", "款": null },
+            { "項": 4, "content": "容許濃度100以上未滿1000者，變量係數為1.25。", "款": null },
+            { "項": 5, "content": "容許濃度1000以上者，變量係數為1。", "款": null }
+          ]
+        }
+      ]
+    },
+    {
+      "PCode": "N0060069",
+      "LawName": "新化學物質登記管理辦法",
+      "LawDisplayName": "新化學物質登記管理辦法（環境部）",
+      "LawLevel": "法規命令",
+      "LawCategory": "行政＞環境部＞化學物質管理目",
+      "LawURL": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0060069",
+      "LawModifiedDate": "1130613",
+      "LawEffectiveStatus": "現行有效",
+      "LawEffectiveNote": "",
+      "LawEffectiveDate": "2024-07-01",
+      "LawAbandonNote": "",
+      "LawForeword": "本辦法依毒性及關注化學物質管理法第三條規定訂定之。",
+      "LawHistories": "111年8月12日修正發布。",
+      "LawArticles": [
+        {
+          "ArticleType": "A",
+          "ArticleNo": "第 1 條",
+          "ArticleContent": "本辦法所稱低關注聚合物，指符合特定分子量及寡聚合物含量標準之聚合物。",
+          "StructuredContent": [
+            { "項": 1, "content": "聚合物之數目平均分子量介於1000至10000道爾頓之間者，其分子量小於五百道爾頓之寡聚合物含量少於百分之十，分子量小於一千道爾頓之寡聚合物含量少於百分之二十五。", "款": null },
+            { "項": 2, "content": "聚合物之數目平均分子量大於10000道爾頓者，其分子量小於五百道爾頓之寡聚合物含量少於百分之二，且分子量小於一千道爾頓之寡聚合物含量少於百分之五。", "款": null }
+          ]
+        }
+      ]
+    }
+  ]
+}

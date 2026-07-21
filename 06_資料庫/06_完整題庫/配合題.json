@@ -1,0 +1,1120 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 52,
+  "Type": "match",
+  "TypeLabel": "配合題",
+  "TypePrefix": "P",
+  "questions": [
+    {
+      "id": "P0",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "請將下列工地常見墜落地點與其對應之風險進行配對。",
+      "answer": [
+        "墜落高度2公尺以上",
+        "重心不穩易傾倒",
+        "無護欄防護",
+        "斜屋頂易滑落",
+        "踏空風險高"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060014"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P1",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某食品工廠發生勞工職業災害，需判定災害發生地點屬於勞動場所、工作場所或作業場所。請比較三者涵蓋範圍由大至小排列：",
+      "answer": [
+        "廠區全部",
+        "廠房內部",
+        "操作區"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P2",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某化學工廠儲存多種危險物，需依危害特性進行分區管理。請將下列物質與其危害特性進行配對：",
+      "answer": [
+        "氧化性物質",
+        "易燃液體",
+        "可燃性氣體",
+        "著火性物質",
+        "爆炸性物質"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P3",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司依GHS制度進行化學品標示，需將危害圖示與危害分類正確配對。請完成以下配對：",
+      "answer": [
+        "氧化性氣體",
+        "有機過氧化物(A型)",
+        "金屬腐蝕物",
+        "致癌物質",
+        "急毒性1級"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P4",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某工廠發生多件職業傷害，勞工保險人員需判定失能傷害分類。請將傷害類型與失能傷害分類進行配對：",
+      "answer": [
+        "永久全失能",
+        "永久部分失能",
+        "永久部分失能",
+        "永久部分失能",
+        "暫時全失能",
+        "輕傷害"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.6%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060041"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P5",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某檢測公司接受委託進行作業環境監測，需選用正確採樣介質。請將化學品與其對應之採樣介質進行配對：",
+      "answer": [
+        "矽膠管",
+        "吸收液",
+        "活性碳吸附管",
+        "PVC濾紙",
+        "纖維素酯濾紙"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P6",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某醫院感控部門需評估醫護人員生物性危害風險。請將作業型態與可能導致之生物性危害疾病進行配對：",
+      "answer": [
+        "退伍軍人症",
+        "漢他病毒症候群",
+        "病毒性肝炎",
+        "登革熱",
+        "後天免疫缺乏症候群"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P7",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某工廠空氣污染防制專責人員需辨識不同粒狀污染物。請將粒狀污染物與其定義進行配對：",
+      "answer": [
+        "固體微粒（機械方法產生）",
+        "金屬蒸氣冷凝產生之固體微粒",
+        "燃燒產生之固體微粒",
+        "液體微粒（懸浮於空氣中）",
+        "長徑比大於3：1之微粒"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P8",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司健康管理師需協助勞工進行職業疾病預防。請將職業疾病與其對應之危害因子進行配對：",
+      "answer": [
+        "錳",
+        "氯乙烯",
+        "正己烷",
+        "苯",
+        "鉻酸"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P9",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某石化廠風險管理部門需選擇適當方法進行風險評估。請將風險評估方法與其特性進行配對：",
+      "answer": [
+        "由初始事件推導後果",
+        "由事故結果推導原因",
+        "系統性檢查項目"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0010029"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P10",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某營造工地發生多起起重吊掛事故，安全人員需進行危害辨識與改善。請將吊掛作業危害行為與其對應之災害名稱進行配對：",
+      "answer": [
+        "物體飛落",
+        "墜落",
+        "感電",
+        "倒塌",
+        "被夾"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060013"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P11",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某高溫作業場所發生勞工熱危害，急救人員需正確辨識症狀。請將熱危害症狀與其對應之熱疾病進行配對：",
+      "answer": [
+        "中暑",
+        "熱衰竭"
+      ],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060007"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P12",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司進行噪音改善工程，需依危害控制層級選擇適當方法。請將危害控制層級與其對應之方法進行配對：",
+      "answer": [
+        "以低噪音設備取代高噪音設備",
+        "使用不同製程",
+        "設置隔音罩",
+        "縮短作業時間",
+        "佩戴耳塞"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P13",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司導入工作安全分析制度，需明確各角色權責。請將工作安全分析角色與其對應之職責進行配對：",
+      "answer": [
+        "現場觀察與記錄",
+        "確認分析完整性",
+        "核定安全作業標準"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P14",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司發生職業災害，需依職業安全衛生法相關罰則進行裁罰判斷。請將職業安全衛生法罰則與其對應之罰款金額進行配對：",
+      "answer": [
+        "3年以下有期徒刑或併科30萬元以下罰金",
+        "1年以下有期徒刑或併科18萬元以下罰金",
+        "3萬元以上30萬元以下罰鍰"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0010029"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P15",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某工廠安全衛生人員需針對不同危害類型規劃防護措施。請將危害類型與其對應之防護措施進行配對：",
+      "answer": [
+        "整體換氣裝置",
+        "局部排氣裝置",
+        "空氣呼吸器",
+        "化學防護衣"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P16",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某化學品供應商需依GHS制度製作安全標示。請將GHS危害符號與其對應之危害分類進行配對：",
+      "answer": [
+        "易燃液體",
+        "急毒性物質",
+        "腐蝕性物質",
+        "刺激性物質"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P17",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某職業醫學門診醫師需診斷勞工職業疾病。請將有害物質與其可能導致之疾病進行配對：",
+      "answer": [
+        "鉛中毒",
+        "水俁病",
+        "痛痛病",
+        "巴金森氏症",
+        "鼻中隔穿孔"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P18",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某工廠急救人員需針對不同燒燙傷類型採取正確處置。請將急救處置與其對應之步驟進行配對：",
+      "answer": [
+        "沖脫泡蓋送",
+        "停止倒下滾動",
+        "大量清水沖洗",
+        "斷電後急救"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060010"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P19",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某工廠將進行地下水池清洗作業，需依局限空間作業程序執行。請將局限空間作業步驟與其對應之順序進行配對：",
+      "answer": [
+        "氣體測定",
+        "通風換氣",
+        "進入許可申請",
+        "監視人員監視",
+        "人員進入作業"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P20",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某營造工地發生墜落事故，需檢討墜落防止措施之優先順序。請將墜落防止設施與其對應之優先順序進行配對：",
+      "answer": [
+        "地面作業",
+        "護欄護蓋",
+        "安全網",
+        "安全帶",
+        "警示線系統"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060014"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P21",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某工廠發生火災，消防人員需選用正確滅火設備。請將消防設備與其對應之適用火災類型進行配對：",
+      "answer": [
+        "A類（普通火災）",
+        "B類（油類火災）",
+        "C類（電氣火災）",
+        "D類（金屬火災）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "D0120036"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P22",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司依職業安全衛生設施規則進行安全標示規劃。請將安全標示顏色與其對應之意義進行配對：",
+      "answer": [
+        "禁止、危險",
+        "警告、注意",
+        "安全、急救",
+        "強制、指示"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P23",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某化學品儲存場所需依不同暴露途徑規劃防護措施。請將有害物暴露途徑與其對應之防護措施進行配對：",
+      "answer": [
+        "呼吸防護具",
+        "化學防護衣",
+        "禁止飲食標示",
+        "洗眼設備"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P24",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某高溫作業場所需依不同環境條件計算WBGT值。請將WBGT計算公式與其對應之適用情境進行配對：",
+      "answer": [
+        "WBGT = 0.7Tw + 0.2Tg + 0.1Td",
+        "WBGT = 0.7Tw + 0.3Tg",
+        "WBGT = 0.7Tw + 0.3Tg"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060007"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P25",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司新進勞工教育訓練規劃，需依職業安全衛生教育訓練規則安排時數。請將教育訓練時數與其對應之人員類別進行配對：",
+      "answer": [
+        "3小時",
+        "6小時/2年",
+        "3小時/2年",
+        "3小時/年"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060010"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P26",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司進行消防教育訓練，需講解不同滅火原理之應用。請將滅火原理與其對應之方法進行配對：",
+      "answer": [
+        "用水降低溫度",
+        "覆蓋滅火毯",
+        "移除可燃物",
+        "使用乾粉滅火器"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "D0120036"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P27",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司職業安全衛生人員需計算職業災害統計指標。請將職災統計指標與其對應之公式進行配對：",
+      "answer": [
+        "(失能傷害人次數 × 10⁶) ÷ 總經歷工時",
+        "(總損失日數 × 10⁶) ÷ 總經歷工時",
+        "√(FR × SR ÷ 1000)"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060041"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P28",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某電氣設備採購人員需辨識防爆構造代號。請將電氣設備防爆構造與其對應之代號進行配對：",
+      "answer": [
+        "d",
+        "o",
+        "p",
+        "e",
+        "i"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P29",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某通風工程師需依不同氣罩類型計算排氣量。請將氣罩類型與其排氣量公式進行配對：",
+      "answer": [
+        "Q = V × A",
+        "Q = V(10X² + A)",
+        "Q = 0.75V(10X² + A)",
+        "Q = 1.4P V X",
+        "Q = 3.7L V X"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060015"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P30",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某電氣工程師需依不同電壓等級選用正確接地方式。請將接地種類與其對應之適用場所進行配對：",
+      "answer": [
+        "接地電阻10Ω以下（變電所）",
+        "接地電阻25Ω以下（高壓設備）",
+        "接地電阻50Ω以下（低壓設備）",
+        "接地電阻100Ω以下（一般設備）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P31",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某工地安全衛生人員需依不同作業選用正確防護具。請將防護具與其對應之使用時機進行配對：",
+      "answer": [
+        "頭部防護",
+        "墜落防止",
+        "飛屑防護",
+        "化學品防護"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P32",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某作業場所使用多種有機溶劑，需依有機溶劑中毒預防規則分類管理。請將有機溶劑與其對應之種類進行配對：",
+      "answer": [
+        "第一種",
+        "第二種",
+        "第三種",
+        "第二種"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060017"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P33",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某化學工廠需依特定化學物質危害預防標準進行分類管理。請將特定化學物質與其對應之種類進行配對：",
+      "answer": [
+        "甲類物質",
+        "丙類第1種物質",
+        "丙類第1種物質",
+        "丁類物質"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060015"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P34",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某環境監測機構需依不同化學品選用正確採樣介質。請將採樣介質與其對應之採樣物質進行配對：",
+      "answer": [
+        "有機溶劑蒸氣",
+        "極性化合物",
+        "酸性氣體",
+        "重金屬粉塵"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P35",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某職業衛生專家需判定勞工職業病與暴露危害因子之關聯。請將職業病與其對應之危害因子進行配對：",
+      "answer": [
+        "游離二氧化矽",
+        "多氯聯苯",
+        "錳",
+        "鉻酸"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P36",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某公司需依勞工健康保護規則安排特別危害健康作業之健康檢查。請將特別危害健康作業與其對應之健康檢查週期進行配對：",
+      "answer": [
+        "每年1次",
+        "每年1次",
+        "每年1次",
+        "每2年1次"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060022"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P37",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某營造工地需依高架作業勞工保護措施標準安排休息時間。請將高架作業高度與其對應之休息時間進行配對：",
+      "answer": [
+        "每連續作業2小時休息20分鐘",
+        "每連續作業2小時休息25分鐘",
+        "每連續作業2小時休息35分鐘"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060029"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P38",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "某事業單位（原事業單位）將廠房鋼構修繕工程交付A公司承攬，並與A公司分別僱用勞工共同作業。請將以下原事業單位應採取之措施，與對應之法律義務進行配對：",
+      "answer": [
+        "職業安全衛生法第23條（協議組織）",
+        "職業安全衛生法第26條（告知義務）",
+        "職業安全衛生法第28條（教育訓練協助）",
+        "職業安全衛生法第27條（共同作業管制）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0010029"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P39",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列法規名稱與其對應之主管機關進行配對。",
+      "answer": [
+        "內政部",
+        "勞動部",
+        "勞動部",
+        "環境部",
+        "經濟部"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0010029"
+      }
+    },
+    {
+      "id": "P40",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列職業安全衛生設施規則之通道規範與其對應之數值進行配對。",
+      "answer": [
+        "1公尺",
+        "80公分",
+        "最大車寬+1公尺",
+        "最大車寬×2+1公尺"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      }
+    },
+    {
+      "id": "P41",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列事業單位分類與其對應之風險等級進行配對。",
+      "answer": [
+        "第一類(具顯著風險)",
+        "第一類(具顯著風險)",
+        "第三類(具低度風險)",
+        "第二類(具中度風險)"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027"
+      }
+    },
+    {
+      "id": "P42",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列危險物與其正確之分類進行配對。",
+      "answer": [
+        "可燃性氣體",
+        "易燃液體",
+        "氧化性物質",
+        "爆炸性物質",
+        "著火性物質"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      }
+    },
+    {
+      "id": "P43",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列職業安全衛生管理系統標準與其正確名稱進行配對。",
+      "answer": [
+        "CNS 45001",
+        "ISO 45001",
+        "TOSHMS"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "P44",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列職業災害類型與其對應之定義進行配對。",
+      "answer": [
+        "人體因重力落下撞擊地面或物體",
+        "人體接觸電流引起之傷害",
+        "建築物或構造物失去支撐而倒下",
+        "空氣中氧氣濃度未滿18%"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      }
+    },
+    {
+      "id": "P45",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列特別危害健康作業與其對應之主要健康危害進行配對。",
+      "answer": [
+        "塵肺症",
+        "有機溶劑中毒",
+        "聽力損失",
+        "鉛中毒"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060022"
+      }
+    },
+    {
+      "id": "P46",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "請將下列 GHS 危害圖式與其代表意義進行配對。",
+      "answer": [
+        "健康危害性物質",
+        "加壓氣體",
+        "急毒性物質",
+        "易燃物質",
+        "氧化性物質",
+        "水環境危害",
+        "爆炸性物質",
+        "腐蝕性物質"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.25%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P47",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "請將下列安全理論與其核心概念進行配對。",
+      "answer": [
+        "不良現象不改善會逐漸擴大",
+        "事故是巧合穿過所有防護漏洞",
+        "事故隱藏的損失比表面看到的更大",
+        "劣勢中找到亮點，影響整個環境",
+        "團隊表現由能力最低的人決定",
+        "所有可能會出錯的事情都會出錯"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.67%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0000005"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P48",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "請將下列危害類型與其對應之預防設施進行配對。",
+      "answer": [
+        "接地/漏電斷路器",
+        "擋土支撐",
+        "護欄/安全網",
+        "通風系統",
+        "防爆電氣設備",
+        "雙手操作式安全裝置"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.67%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060014"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P49",
+      "type": "match",
+      "typeLabel": "配合題",
+      "text": "請將下列移動式起重機災害類型與其災害原因進行配對。",
+      "answer": [
+        "人員擅自進入作業區域",
+        "人員誤入上部旋轉體作業區",
+        "伸臂碰觸高壓電路線",
+        "吊具或鋼索強度不足、吊掛不當",
+        "吊升超過額定荷重、地面不平",
+        "高處作業未佩帶安全帶"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.67%",
+      "group": 6,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060013"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "P50",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列GHS危害圖式與其代表意義進行配對。",
+      "answer": [
+        "人體胸廓圖式",
+        "火焰圖式",
+        "爆炸圖式",
+        "腐蝕圖式",
+        "鋼瓶圖式"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      }
+    },
+    {
+      "id": "P51",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列職業安全衛生理論與其核心概念進行配對。",
+      "answer": [
+        "事故損失僅為冰山一角，隱藏損失更大",
+        "團隊表現取決於最弱的一環",
+        "在劣勢中找到突破口，改變整體",
+        "小問題不處理會擴大惡化",
+        "意外是多重防護漏洞同時穿過"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027"
+      }
+    }
+  ]
+}

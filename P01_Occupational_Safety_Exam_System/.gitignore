@@ -1,0 +1,369 @@
+# ============================================================
+# 🚫 .gitignore - 乙級職安衛模擬測驗系統
+# 版本：10.3.0
+# 更新日期：2026-07-20
+# 說明：排除不應上傳 GitHub 的檔案與資料夾
+# ============================================================
+
+# ============================================================
+# 1. Python 相關
+# ============================================================
+
+# 虛擬環境
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python 編譯檔案
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+
+# 分布 / 打包
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# 測試
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+*.cover
+*.log
+*.tmp
+*.cache
+
+# 我的最愛 / 設定
+.python-version
+
+# ============================================================
+# 2. VS Code 相關（個人設定不應上傳）
+# ============================================================
+
+# VS Code 個人設定
+.vscode/*.db
+.vscode/tmstate.json
+.vscode/vscode_state_report.txt
+.vscode/chrome/
+.vscode/.ropeproject
+.vscode/settings.json.user
+.vscode/workspaceStorage/
+.vscode/globalStorage/
+
+# VS Code 暫存
+*.code-workspace
+.vscode-test/
+.vscode/extensions.json.old
+
+# ============================================================
+# 3. IDE 其他
+# ============================================================
+
+# JetBrains (PyCharm)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# ============================================================
+# 4. 作業系統暫存
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+AppleDouble
+LSReset
+.fseventsd
+
+# Linux
+*~
+.directory
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================================
+# 5. 環境變數與金鑰（⚠️ 安全性）
+# ============================================================
+
+# 環境變數
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+.env.staging
+
+# 金鑰 / 憑證
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
+*.secret.json
+*.secret
+service-account.json
+credentials.json
+client_secret.json
+*.private.json
+
+# 連線設定
+config.local.json
+config.dev.json
+database.json
+connection.json
+
+# ============================================================
+# 6. 日誌與暫存
+# ============================================================
+
+# 日誌檔案
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 暫存檔案
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+cache/
+tmp/
+temp/
+*.swp
+
+# ============================================================
+# 7. 前端相關
+# ============================================================
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm/
+.yarn/
+.yarn-integrity
+.eslintcache
+.stylelintcache
+
+# 前端打包
+dist/
+build/
+out/
+*.min.js
+*.min.css
+*.bundle.js
+*.chunk.js
+
+# ============================================================
+# 8. 資料庫相關
+# ============================================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# 資料庫遷移備份
+*.sql.bak
+*.sql.tmp
+*.dump
+
+# ============================================================
+# 9. 專案特定（乙級職安衛模擬測驗系統）
+# ============================================================
+
+# 備份與歸檔（不應上傳，太大）
+11_備份歸檔/
+11_備份記錄/
+12_日誌記錄/
+13_報告輸出/
+14_暫存快取/
+*.backup
+
+# 報告輸出（太大）
+13_報告輸出/*.html
+13_報告輸出/*.pdf
+13_報告輸出/*.xlsx
+
+# 個人測試檔案
+test_*.py
+*_test.py.tmp
+debug_*.js
+sandbox_*.html
+
+# ============================================================
+# 10. Docker / 容器
+# ============================================================
+
+docker-compose.override.yml
+docker-compose.dev.yml
+Dockerfile.dev
+.dockerignore
+docker/
+*.dockerignore
+
+# ============================================================
+# 11. 部署相關（但保留 render.yaml）
+# ============================================================
+
+# 保留 render.yaml（部署需要）
+# 不忽略 render.yaml
+
+# 其他部署檔案
+.deploy/
+.elasticbeanstalk/
+.serverless/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# ============================================================
+# 12. 其他
+# ============================================================
+
+# 壓縮檔案（太大不應上傳）
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tgz
+*.bz2
+
+# 媒體檔案（太大）
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# 圖片（太大的不應上傳）
+# 小型圖片建議保留，大型圖片應上傳到雲端儲存
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+# *.ico
+# *.webp
+
+# PDF（太大的不應上傳）
+*.pdf
+
+# 二進制檔案
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# ============================================================
+# 13. 保留範例（強制覆蓋規則）
+# ============================================================
+
+# 但保留以下範例檔案（如果有）
+!.gitkeep
+!.env.example
+!*.sample.json
+!config.sample.json
+
+# ============================================================
+# 14. 特別注意：這些檔案一定要上傳
+# ============================================================
+
+# ✅ 一定要上傳的檔案（不要忽略）：
+# - render.yaml
+# - README.md
+# - 04_應用層/系統主頁面.html
+# - 03_核心邏輯/*.js
+# - 01_前端資源/02_樣式表/*.css
+# - 06_資料庫/06_完整題庫/*.json（非空）
+# - 09_文件規範/*.txt（非空）
+
+# ============================================================
+# 🏁 結束
+# ============================================================

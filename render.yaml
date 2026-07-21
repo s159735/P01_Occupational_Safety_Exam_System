@@ -1,0 +1,72 @@
+# ============================================================
+# 🚀 Render Blueprint 部署設定 - 乙級職安衛模擬測驗系統
+# 版本：10.2.0
+# 更新日期：2026-07-18
+# ============================================================
+
+services:
+  # ============================================================
+  # 後端 API 服務
+  # ============================================================
+  - type: web
+    name: occupational-safety-backend
+    runtime: python
+    plan: free
+    region: oregon
+    
+    buildCommand: |
+      cd 05_後端伺服器
+      pip install -r requirements.txt
+    
+    startCommand: |
+      cd 05_後端伺服器
+      uvicorn 00_後端入口:app --host 0.0.0.0 --port $PORT
+    
+    envVars:
+      - key: ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DATABASE_URL
+        fromDatabase:
+          name: occupational-safety-db
+          property: connectionString
+      - key: API_BASE_URL
+        value: https://occupational-safety-backend.onrender.com/api
+    
+    healthCheckPath: /api/health
+    autoDeploy: true
+
+  # ============================================================
+  # 前端靜態網站
+  # ============================================================
+  - type: web
+    name: occupational-safety-frontend
+    runtime: static
+    
+    buildCommand: |
+      mkdir -p dist
+      cp -r 04_應用層/* dist/
+      cp -r 02_前端服務 dist/
+      cp -r 03_核心邏輯 dist/
+      cp -r 01_前端資源 dist/
+      cp 04_應用層/index.html dist/
+      cp 04_應用層/系統主頁面.html dist/
+    
+    staticPublishPath: ./dist
+    autoDeploy: true
+    
+    envVars:
+      - key: API_BASE_URL
+        value: https://occupational-safety-backend.onrender.com/api
+
+# ============================================================
+# 資料庫服務
+# ============================================================
+databases:
+  - name: occupational-safety-db
+    plan: free
+    region: oregon
+    databaseName: occupational_safety
+    ipAllowList: []
+    postgresMajorVersion: 15

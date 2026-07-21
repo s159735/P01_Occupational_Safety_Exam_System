@@ -1,0 +1,7 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.36
+python-dotenv==1.0.1
+pydantic==2.10.4
+# 注意：psycopg2-binary 和 pydantic-core 移除，改用替代方案
+psycopg2

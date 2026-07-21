@@ -1,0 +1,3987 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 57,
+  "Type": "sequencing",
+  "TypeLabel": "排序題",
+  "TypePrefix": "Q",
+  "source": {
+    "classified": true,
+    "breed": true,
+    "merged": true,
+    "merge_date": "2026-07-17 19:22:53",
+    "source_stats": {
+      "排序題A.json": 42,
+      "排序題B.json": 7,
+      "排序題C.json": 4,
+      "排序題D.json": 4
+    },
+    "source_files": [
+      "排序題A.json",
+      "排序題B.json",
+      "排序題C.json",
+      "排序題D.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "Q500",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地發生勞工墜落事故，經調查發現施工現場未依營造安全衛生設施標準第17條規定訂定墜落災害防止計畫。請依風險控制之先後順序排列以下措施：",
+      "options": [
+        "儘量使勞工於地面完成作業",
+        "優先施作永久構造物之上下設備或防墜設施",
+        "設置護欄、護蓋",
+        "張掛安全網",
+        "使勞工佩掛安全帶",
+        "設置警示線系統",
+        "限制作業人員進入管制區",
+        "增加其作業危險者應訂定保護計畫"
+      ],
+      "answer": [
+        "使勞工佩掛安全帶",
+        "儘量使勞工於地面完成作業",
+        "優先施作永久構造物之上下設備或防墜設施",
+        "增加其作業危險者應訂定保護計畫",
+        "張掛安全網",
+        "設置警示線系統",
+        "設置護欄、護蓋",
+        "限制作業人員進入管制區"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.25%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "墜落防止計畫優先順序：地面作業→永久構造→護欄→安全網→安全帶→警示線→管制→保護計畫。",
+        "detail": "營造安全衛生設施標準第17條規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "墜落災害防止計畫。"
+      },
+      "tips": {
+        "quick": [
+          "💡 地面→構造→護欄→網→帶→警示→管制→保護"
+        ],
+        "mnemonic": "🧠 越前面的措施越有效",
+        "commonMistake": [
+          "🚨 陷阱：安全帶是最後手段，不是第一優先！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對墜落防止計畫順序的理解。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q501",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠將進行地下水池清洗作業，需依職業安全衛生設施規則第29-1條規定執行局限空間作業程序。請排列下列作業順序：",
+      "options": [
+        "實施通風換氣",
+        "測定氧氣及有害物濃度",
+        "確認無危害之虞",
+        "取得進入許可",
+        "作業人員進入",
+        "監視人員全程監視"
+      ],
+      "answer": [
+        "作業人員進入",
+        "取得進入許可",
+        "實施通風換氣",
+        "測定氧氣及有害物濃度",
+        "監視人員全程監視",
+        "確認無危害之虞"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.6%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間作業程序：測定→通風→確認→許可→進入→監視。",
+        "detail": "職業安全衛生設施規則第29-1條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 29-1 條",
+          "條": "第 29-1 條"
+        },
+        "summary": "局限空間作業程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 測通確許進監"
+        ],
+        "mnemonic": "🧠 測定→通風→確認→許可→進入→監視",
+        "commonMistake": [
+          "🚨 陷阱：要先測定再通風！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對局限空間作業程序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q502",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某石化廠為新建反應槽進行風險評估，需依職業安全衛生法第5條規定執行完整評估流程。請排列風險評估作業順序：",
+      "options": [
+        "辨識出所有的作業或工程",
+        "辨識危害及後果",
+        "確認現有防護設施",
+        "評估危害的風險",
+        "決定降低風險的控制措施",
+        "確認採取控制措施後的殘餘風險"
+      ],
+      "answer": [
+        "決定降低風險的控制措施",
+        "確認採取控制措施後的殘餘風險",
+        "確認現有防護設施",
+        "評估危害的風險",
+        "辨識出所有的作業或工程",
+        "辨識危害及後果"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.6%",
+      "group": 26,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "風險評估流程：辨識作業→辨識危害→確認防護→評估風險→決定控制→確認殘餘風險。",
+        "detail": "職業安全衛生法第5條。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 5 條",
+          "條": "第 5 條"
+        },
+        "summary": "風險評估程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 辨識危害確認評估決定確認"
+        ],
+        "mnemonic": "🧠 先辨識→再確認→再評估→再決定→再確認",
+        "commonMistake": [
+          "🚨 陷阱：先辨識危害才能評估風險！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對風險評估流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q503",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地為確保每日施工安全，需依營造安全衛生設施標準規定執行每日安全施工循環。請排列下列流程順序：",
+      "options": [
+        "安全早會（全員參加）",
+        "工作場所安全會談",
+        "作業前檢點",
+        "現場巡視",
+        "作業中的指導、監督",
+        "工程安全檢討",
+        "每日作業終了前之收拾",
+        "每日作業終了之報告"
+      ],
+      "answer": [
+        "作業中的指導、監督",
+        "作業前檢點",
+        "安全早會（全員參加）",
+        "工作場所安全會談",
+        "工程安全檢討",
+        "每日作業終了之報告",
+        "每日作業終了前之收拾",
+        "現場巡視"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.25%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "每日安全施工循環順序。",
+        "detail": "營造安全衛生設施標準。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "每日安全施工循環。"
+      },
+      "tips": {
+        "quick": [
+          "💡 早會→會談→檢點→巡視→監督→檢討→收拾→報告"
+        ],
+        "mnemonic": "🧠 從早上到下班，按時間順序排列",
+        "commonMistake": [
+          "🚨 陷阱：安全早會是所有作業的開始！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對每日安全施工循環的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q504",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠廚房發生勞工遭熱湯燙傷事故，急救人員需依正確急救步驟處理。請排列熱液燙傷處理方式：",
+      "options": [
+        "沖",
+        "脫",
+        "泡",
+        "蓋",
+        "送"
+      ],
+      "answer": [
+        "沖",
+        "泡",
+        "脫",
+        "蓋",
+        "送"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 29,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "熱液燙傷處理：沖→脫→泡→蓋→送。",
+        "detail": "燒燙傷急救處理步驟。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 15 條",
+          "條": "第 15 條"
+        },
+        "summary": "急救處理步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 沖脫泡蓋送"
+        ],
+        "mnemonic": "🧠 沖水→脫衣→泡水→蓋布→送醫",
+        "commonMistake": [
+          "🚨 陷阱：順序不能顛倒！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對熱液燙傷處理步驟的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q505",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠發生勞工衣物著火事故，需依正確火焰燒傷急救步驟處理。請排列下列處理方式：",
+      "options": [
+        "停止",
+        "倒下",
+        "滾動"
+      ],
+      "answer": [
+        "倒下",
+        "停止",
+        "滾動"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 29,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "火焰燒傷處理：停止→倒下→滾動。",
+        "detail": "燒燙傷急救處理步驟。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 15 條",
+          "條": "第 15 條"
+        },
+        "summary": "急救處理步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 停倒滾"
+        ],
+        "mnemonic": "🧠 先停止跑動→倒在地上→滾動滅火",
+        "commonMistake": [
+          "🚨 陷阱：千萬不能奔跑，會助長火勢！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對火焰燒傷處理步驟的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q506",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某事業單位作業現場，請排列洗手正確步驟：",
+      "options": [
+        "內",
+        "外",
+        "夾",
+        "弓",
+        "大",
+        "立",
+        "腕"
+      ],
+      "answer": [
+        "內",
+        "外",
+        "大",
+        "夾",
+        "弓",
+        "立",
+        "腕"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.4%",
+      "group": 29,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "洗手步驟：內→外→夾→弓→大→立→腕。",
+        "detail": "標準洗手步驟。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "洗手步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 內外夾弓大立腕"
+        ],
+        "mnemonic": "🧠 內（掌心）→外（手背）→夾（指縫）→弓（指背）→大（拇指）→立（指尖）→腕（手腕）",
+        "commonMistake": [
+          "🚨 陷阱：順序不能顛倒！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對洗手步驟的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q507",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工地發生勞工突然昏倒事件，急救人員需依民眾版CPR指引執行正確步驟。請排列CPR實施步驟：",
+      "options": [
+        "叫（確認現場安全、呼叫及拍肩確認患者意識）",
+        "叫（大聲呼救、打119、設法取得AED）",
+        "胸部按壓",
+        "打開呼吸道",
+        "人工呼吸"
+      ],
+      "answer": [
+        "人工呼吸",
+        "叫（大聲呼救、打119、設法取得AED）",
+        "叫（確認現場安全、呼叫及拍肩確認患者意識）",
+        "打開呼吸道",
+        "胸部按壓"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 29,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "CPR步驟：叫→叫→C→A→B。",
+        "detail": "民眾版CPR指引。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 15 條",
+          "條": "第 15 條"
+        },
+        "summary": "CPR實施步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 叫叫CAB"
+        ],
+        "mnemonic": "🧠 叫（檢查意識）→叫（求救）→C（按壓）→A（打開呼吸道）→B（人工呼吸）",
+        "commonMistake": [
+          "🚨 陷阱：先叫再叫，確認意識後再求救！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對CPR步驟的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q508",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司事故調查小組以Heinrich骨牌理論分析職業災害發生原因。請依因果關係排列骨牌順序：",
+      "options": [
+        "環境（社會環境）",
+        "個人缺陷（先天/後天）",
+        "不安全的行為與環境",
+        "意外事故",
+        "傷害"
+      ],
+      "answer": [
+        "不安全的行為與環境",
+        "個人缺陷（先天/後天）",
+        "傷害",
+        "意外事故",
+        "環境（社會環境）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "Heinrich骨牌理論：環境→個人缺陷→不安全行為→意外→傷害。",
+        "detail": "Heinrich骨牌理論。"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "Heinrich骨牌理論。"
+      },
+      "tips": {
+        "quick": [
+          "💡 環境→缺陷→行為→意外→傷害"
+        ],
+        "mnemonic": "🧠 環境影響個人，個人導致行為，行為造成意外，意外造成傷害",
+        "commonMistake": [
+          "🚨 陷阱：不能跳過任何一個骨牌！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對Heinrich骨牌理論的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q509",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司以Bird骨牌理論進行事故因果分析，探討管理層面與事故發生之關聯。請排列Bird骨牌順序：",
+      "options": [
+        "管理（缺乏控制）",
+        "基本原因（根本原因）",
+        "直接原因（不安全行為/環境）",
+        "事故",
+        "損害"
+      ],
+      "answer": [
+        "事故",
+        "基本原因（根本原因）",
+        "損害",
+        "直接原因（不安全行為/環境）",
+        "管理（缺乏控制）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "Bird骨牌理論：管理→基本原因→直接原因→事故→損害。",
+        "detail": "Bird骨牌理論。"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "Bird骨牌理論。"
+      },
+      "tips": {
+        "quick": [
+          "💡 管理→基本→直接→事故→損害"
+        ],
+        "mnemonic": "🧠 管理失當是根本原因",
+        "commonMistake": [
+          "🚨 陷阱：Bird理論比Heinrich多了管理層面！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對Bird骨牌理論的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q510",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司進行噪音改善工程，需依危害控制層級選擇最有效之控制措施。請由高至低排列控制層級順序：",
+      "options": [
+        "消除",
+        "取代",
+        "工程控制",
+        "行政管理",
+        "個人防護具"
+      ],
+      "answer": [
+        "個人防護具",
+        "取代",
+        "工程控制",
+        "消除",
+        "行政管理"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 15,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "危害控制層級由高至低：消除→取代→工程控制→行政管理→個人防護具。",
+        "detail": "危害控制層級。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "危害控制層級。"
+      },
+      "tips": {
+        "quick": [
+          "💡 消取工行個"
+        ],
+        "mnemonic": "🧠 消除最有效，個人防護具最沒效",
+        "commonMistake": [
+          "🚨 陷阱：個人防護具是最後手段，不是第一優先！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對危害控制層級的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q511",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司推動廠場整潔5S運動，需依正確順序逐步實施。請排列5S之順序：",
+      "options": [
+        "整理",
+        "整頓",
+        "清掃",
+        "清潔",
+        "素養"
+      ],
+      "answer": [
+        "整理",
+        "整頓",
+        "清掃",
+        "清潔",
+        "素養"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "5S順序：整理→整頓→清掃→清潔→素養。",
+        "detail": "5S運動實施步驟。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "5S運動步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 整整清清素"
+        ],
+        "mnemonic": "🧠 整理（分類）→整頓（定位）→清掃（打掃）→清潔（維持）→素養（習慣）",
+        "commonMistake": [
+          "🚨 陷阱：整理和整頓的順序不能顛倒！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對5S順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q512",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司導入職業安全衛生管理系統，需依PDCA管理循環持續改善。請排列PDCA循環順序：",
+      "options": [
+        "規劃（Plan）",
+        "實施（Do）",
+        "查核（Check）",
+        "改善（Action）"
+      ],
+      "answer": [
+        "實施（Do）",
+        "改善（Action）",
+        "查核（Check）",
+        "規劃（Plan）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "PDCA循環：規劃→實施→查核→改善。",
+        "detail": "PDCA管理循環。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "PDCA管理循環。"
+      },
+      "tips": {
+        "quick": [
+          "💡 規實查改"
+        ],
+        "mnemonic": "🧠 規劃→實施→查核→改善（持續循環）",
+        "commonMistake": [
+          "🚨 陷阱：PDCA是循環，不是一次性流程！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對PDCA循環的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q513",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司導入CNS 45001職業安全衛生管理系統，需依標準章節順序推動。請排列章節順序：",
+      "options": [
+        "決定職安衛管理系統之範圍",
+        "領導及承諾",
+        "規劃",
+        "績效評估",
+        "改善"
+      ],
+      "answer": [
+        "改善",
+        "決定職安衛管理系統之範圍",
+        "績效評估",
+        "規劃",
+        "領導及承諾"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "CNS45001章節：範圍→領導→規劃→績效評估→改善。",
+        "detail": "CNS45001:2018架構。"
+      },
+      "law": {
+        "pcode": "A0000018",
+        "name": "CNS 45001:2018",
+        "article": {
+          "full": "章節架構",
+          "條": "章節架構"
+        },
+        "summary": "CNS45001章節架構。"
+      },
+      "tips": {
+        "quick": [
+          "💡 範領規評改"
+        ],
+        "mnemonic": "🧠 範圍→領導→規劃→績效評估→改善",
+        "commonMistake": [
+          "🚨 陷阱：要先決定範圍才能開始規劃！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對CNS45001章節架構的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q514",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某勞工因職業災害死亡，其遺屬需依勞動基準法第59條規定請領死亡補償。請排列遺屬請領順序：",
+      "options": [
+        "配偶及子女",
+        "父母",
+        "兄弟、姊妹",
+        "祖父母",
+        "孫子女"
+      ],
+      "answer": [
+        "兄弟、姊妹",
+        "孫子女",
+        "父母",
+        "祖父母",
+        "配偶及子女"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 30,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "遺屬請領順序：配偶子女→父母→兄弟姊妹→祖父母→孫子女。",
+        "detail": "勞動基準法第59條。"
+      },
+      "law": {
+        "pcode": "N0030025",
+        "name": "勞動基準法",
+        "article": {
+          "full": "第 59 條",
+          "條": "第 59 條"
+        },
+        "summary": "死亡補償遺屬順序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 配子→父母→兄弟→祖父母→孫"
+        ],
+        "mnemonic": "🧠 第一順位配偶子女，第二順位父母",
+        "commonMistake": [
+          "🚨 陷阱：兄弟姊妹在祖父母之前！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對遺屬請領順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q515",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠需進入廢水處理槽進行檢修作業，依職業安全衛生設施規則第29-1條執行局限空間作業。請排列正確順序：",
+      "options": [
+        "實施通風換氣",
+        "測定氧氣及有害物濃度",
+        "確認無危害之虞",
+        "取得進入許可",
+        "作業人員進入",
+        "監視人員全程監視"
+      ],
+      "answer": [
+        "作業人員進入",
+        "取得進入許可",
+        "實施通風換氣",
+        "測定氧氣及有害物濃度",
+        "監視人員全程監視",
+        "確認無危害之虞"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.6%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間作業程序：測定→通風→確認→許可→進入→監視。",
+        "detail": "職業安全衛生設施規則第29-1條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 29-1 條",
+          "條": "第 29-1 條"
+        },
+        "summary": "局限空間作業程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 測通確許進監"
+        ],
+        "mnemonic": "🧠 測定→通風→確認→許可→進入→監視",
+        "commonMistake": [
+          "🚨 陷阱：要先測定再通風！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對局限空間作業程序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q516",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司為新建廠房進行風險評估，需依風險評估技術指引執行完整流程。請排列正確順序：",
+      "options": [
+        "辨識出所有的作業或工程",
+        "辨識危害及後果",
+        "確認現有防護設施",
+        "評估危害的風險",
+        "決定降低風險的控制措施",
+        "確認採取控制措施後的殘餘風險"
+      ],
+      "answer": [
+        "決定降低風險的控制措施",
+        "確認採取控制措施後的殘餘風險",
+        "確認現有防護設施",
+        "評估危害的風險",
+        "辨識出所有的作業或工程",
+        "辨識危害及後果"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.6%",
+      "group": 26,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "風險評估流程：辨識作業→辨識危害→確認防護→評估風險→決定控制→確認殘餘風險。",
+        "detail": "風險評估技術指引。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 5 條",
+          "條": "第 5 條"
+        },
+        "summary": "風險評估程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 辨識危害確認評估決定確認"
+        ],
+        "mnemonic": "🧠 先辨識→再確認→再評估→再決定→再確認",
+        "commonMistake": [
+          "🚨 陷阱：先辨識危害才能評估風險！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對風險評估流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q517",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠欲更換製程設備，需依變更管理技術指引執行完整流程。請排列正確順序：",
+      "options": [
+        "界定變更管制範圍",
+        "諮詢",
+        "變更之危害辨識及風險評估",
+        "人員之告知或訓練",
+        "啟用前之安全檢查"
+      ],
+      "answer": [
+        "人員之告知或訓練",
+        "啟用前之安全檢查",
+        "界定變更管制範圍",
+        "諮詢",
+        "變更之危害辨識及風險評估"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 16,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "變更管理流程：界定範圍→諮詢→危害辨識→訓練→啟用前檢查。",
+        "detail": "變更管理技術指引。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 12 條",
+          "條": "第 12 條"
+        },
+        "summary": "變更管理流程。"
+      },
+      "tips": {
+        "quick": [
+          "💡 界諮辨告檢"
+        ],
+        "mnemonic": "🧠 界定→諮詢→辨識→告知訓練→啟用前檢查",
+        "commonMistake": [
+          "🚨 陷阱：要先界定變更範圍才能開始諮詢！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對變更管理流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q518",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地需依每日安全施工循環執行安全管理工作。請排列正確順序：",
+      "options": [
+        "安全早會（全員參加）",
+        "工作場所安全會談",
+        "作業前檢點",
+        "現場巡視",
+        "作業中的指導、監督",
+        "工程安全檢討",
+        "每日作業終了前之收拾",
+        "每日作業終了之報告"
+      ],
+      "answer": [
+        "作業中的指導、監督",
+        "作業前檢點",
+        "安全早會（全員參加）",
+        "工作場所安全會談",
+        "工程安全檢討",
+        "每日作業終了之報告",
+        "每日作業終了前之收拾",
+        "現場巡視"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.25%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "每日安全施工循環順序。",
+        "detail": "營造安全衛生設施標準。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "每日安全施工循環。"
+      },
+      "tips": {
+        "quick": [
+          "💡 早會→會談→檢點→巡視→監督→檢討→收拾→報告"
+        ],
+        "mnemonic": "🧠 從早上到下班，按時間順序排列",
+        "commonMistake": [
+          "🚨 陷阱：安全早會是所有作業的開始！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對每日安全施工循環的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q519",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某化學工廠儲存易燃液體，需依職業安全衛生設施規則第11條規定執行火災爆炸預防措施。請排列正確順序：",
+      "options": [
+        "辨識火災爆炸危害源",
+        "評估危害等級與風險",
+        "實施工程控制措施",
+        "建立管理與應變程序",
+        "定期檢討與改善"
+      ],
+      "answer": [
+        "定期檢討與改善",
+        "實施工程控制措施",
+        "建立管理與應變程序",
+        "評估危害等級與風險",
+        "辨識火災爆炸危害源"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "火災爆炸預防流程：辨識→評估→控制→建立程序→檢討改善。",
+        "detail": "職業安全衛生設施規則。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 11 條",
+          "條": "第 11 條"
+        },
+        "summary": "火災爆炸預防措施。"
+      },
+      "tips": {
+        "quick": [
+          "💡 辨評控建檢"
+        ],
+        "mnemonic": "🧠 辨識→評估→控制→建立→檢討",
+        "commonMistake": [
+          "🚨 陷阱：要先辨識危害源才能評估風險！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對火災爆炸預防流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q520",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地架設施工架，需依營造安全衛生設施標準第20條規定執行安全檢查。請排列正確順序：",
+      "options": [
+        "基礎地盤檢查與夯實",
+        "施工架組立與固定",
+        "安全裝置安裝測試",
+        "作業前安全檢查",
+        "定期巡檢與紀錄"
+      ],
+      "answer": [
+        "作業前安全檢查",
+        "基礎地盤檢查與夯實",
+        "安全裝置安裝測試",
+        "定期巡檢與紀錄",
+        "施工架組立與固定"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "施工架安全檢查流程：基礎→組立→安全裝置→作業前檢查→定期巡檢。",
+        "detail": "營造安全衛生設施標準第20條。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 20 條",
+          "條": "第 20 條"
+        },
+        "summary": "施工架安全檢查。"
+      },
+      "tips": {
+        "quick": [
+          "💡 基組安檢巡"
+        ],
+        "mnemonic": "🧠 基礎→組立→安全裝置→檢查→巡檢",
+        "commonMistake": [
+          "🚨 陷阱：要先檢查基礎才能組立施工架！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對施工架安全檢查流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q521",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠發生職業災害，需依職業安全衛生法第37條規定執行完整調查程序。請排列正確順序：",
+      "options": [
+        "現場蒐證與證據保全",
+        "災害原因分析與判斷",
+        "改善對策擬定與執行",
+        "調查報告撰寫與呈報",
+        "改善成效追蹤與評估"
+      ],
+      "answer": [
+        "改善對策擬定與執行",
+        "改善成效追蹤與評估",
+        "災害原因分析與判斷",
+        "現場蒐證與證據保全",
+        "調查報告撰寫與呈報"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職災調查流程：蒐證→分析→改善→報告→追蹤。",
+        "detail": "職業安全衛生法第37條。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 37 條",
+          "條": "第 37 條"
+        },
+        "summary": "職災調查處理程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 蒐分改報追"
+        ],
+        "mnemonic": "🧠 蒐證→分析→改善→報告→追蹤",
+        "commonMistake": [
+          "🚨 陷阱：要先蒐證才能分析原因！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對職災調查流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q522",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工地發生勞工墜落事故，急救人員需依正確急救步驟執行。請排列正確順序：",
+      "options": [
+        "評估現場安全與自身安全",
+        "檢查傷患意識與呼吸",
+        "實施心肺復甦術(CPR)",
+        "止血與包紮處理",
+        "送醫與後送"
+      ],
+      "answer": [
+        "實施心肺復甦術(CPR)",
+        "檢查傷患意識與呼吸",
+        "止血與包紮處理",
+        "評估現場安全與自身安全",
+        "送醫與後送"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 29,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "急救流程：安全評估→檢查意識→CPR→止血包紮→送醫。",
+        "detail": "急救處理步驟。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 15 條",
+          "條": "第 15 條"
+        },
+        "summary": "急救處理步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 評檢C止送"
+        ],
+        "mnemonic": "🧠 評估安全→檢查意識→CPR→止血包紮→送醫",
+        "commonMistake": [
+          "🚨 陷阱：要先評估現場安全才能接近傷患！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對急救流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q523",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某化學工廠發生氯氣洩漏事件，需依危害性化學品標示及通識規則執行緊急應變程序。請排列正確順序：",
+      "options": [
+        "啟動緊急應變計畫",
+        "疏散人員與建立警戒區",
+        "穿戴個人防護裝備",
+        "進行洩漏源控制",
+        "清除與廢棄物處理"
+      ],
+      "answer": [
+        "啟動緊急應變計畫",
+        "清除與廢棄物處理",
+        "疏散人員與建立警戒區",
+        "穿戴個人防護裝備",
+        "進行洩漏源控制"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "化學品洩漏緊急應變流程：啟動計畫→疏散→穿戴防護→控制洩漏→清除處理。",
+        "detail": "危害性化學品標示及通識規則。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "化學品洩漏緊急應變。"
+      },
+      "tips": {
+        "quick": [
+          "💡 啟疏穿控清"
+        ],
+        "mnemonic": "🧠 啟動→疏散→穿戴→控制→清除",
+        "commonMistake": [
+          "🚨 陷阱：要先疏散人員才能控制洩漏！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對化學品洩漏應變流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q524",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠需依勞工作業環境監測實施辦法第9條規定執行作業環境監測。請排列正確順序：",
+      "options": [
+        "危害辨識與評估",
+        "擬定監測計畫",
+        "實施採樣與分析",
+        "數據分析與評估",
+        "報告撰寫與改善建議"
+      ],
+      "answer": [
+        "危害辨識與評估",
+        "報告撰寫與改善建議",
+        "實施採樣與分析",
+        "擬定監測計畫",
+        "數據分析與評估"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "作業環境監測流程：危害辨識→擬定計畫→採樣分析→數據評估→報告改善。",
+        "detail": "作業環境監測實施辦法第9條。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": {
+          "full": "第 9 條",
+          "條": "第 9 條"
+        },
+        "summary": "作業環境監測流程。"
+      },
+      "tips": {
+        "quick": [
+          "💡 辨計採評報"
+        ],
+        "mnemonic": "🧠 辨識→計畫→採樣→評估→報告",
+        "commonMistake": [
+          "🚨 陷阱：要先辨識危害才能擬定監測計畫！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對作業環境監測流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q525",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠噪音超過90分貝，需依職業安全衛生設施規則第300條規定執行防護措施。請排列優先執行順序：",
+      "options": [
+        "工程改善(隔音罩/消音器)",
+        "噪音區域標示與管制",
+        "提供聽力防護具",
+        "實施聽力檢查",
+        "教育訓練與宣導"
+      ],
+      "answer": [
+        "噪音區域標示與管制",
+        "實施聽力檢查",
+        "工程改善(隔音罩/消音器)",
+        "提供聽力防護具",
+        "教育訓練與宣導"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 15,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "噪音防護優先順序：工程改善→標示管制→防護具→聽力檢查→教育訓練。",
+        "detail": "職業安全衛生設施規則第300條。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 300 條",
+          "條": "第 300 條"
+        },
+        "summary": "噪音防護措施。"
+      },
+      "tips": {
+        "quick": [
+          "💡 工標提聽教"
+        ],
+        "mnemonic": "🧠 工程改善→標示管制→提供防護具→聽力檢查→教育訓練",
+        "commonMistake": [
+          "🚨 陷阱：工程改善是第一優先！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對噪音防護優先順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q526",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠電氣設備需進行檢修，依職業安全衛生設施規則第257條規定執行安全作業步驟。請排列正確順序：",
+      "options": [
+        "執行斷電與上鎖/標示",
+        "驗電確認無殘留電壓",
+        "實施接地與短路保護",
+        "開始進行檢修作業",
+        "復電與功能測試"
+      ],
+      "answer": [
+        "執行斷電與上鎖/標示",
+        "實施接地與短路保護",
+        "復電與功能測試",
+        "開始進行檢修作業",
+        "驗電確認無殘留電壓"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 24,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "電氣檢修安全步驟：斷電上鎖→驗電→接地→檢修→復電測試。",
+        "detail": "職業安全衛生設施規則第257條。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 257 條",
+          "條": "第 257 條"
+        },
+        "summary": "電氣檢修安全步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 斷驗接檢復"
+        ],
+        "mnemonic": "🧠 斷電上鎖→驗電→接地→檢修→復電",
+        "commonMistake": [
+          "🚨 陷阱：要先斷電才能驗電！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對電氣檢修安全步驟的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q527",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某公司導入職業安全衛生管理系統，需依PDCA管理循環執行持續改善。請排列正確順序：",
+      "options": [
+        "Plan - 規劃與目標設定",
+        "Do - 實施與運作",
+        "Check - 檢查與評估",
+        "Act - 改善與調整"
+      ],
+      "answer": [
+        "Act - 改善與調整",
+        "Check - 檢查與評估",
+        "Do - 實施與運作",
+        "Plan - 規劃與目標設定"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "PDCA循環：Plan→Do→Check→Act。",
+        "detail": "PDCA管理循環。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "PDCA管理循環。"
+      },
+      "tips": {
+        "quick": [
+          "💡 PDCA"
+        ],
+        "mnemonic": "🧠 Plan→Do→Check→Act",
+        "commonMistake": [
+          "🚨 陷阱：PDCA是循環，不是一次性流程！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對PDCA循環的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q528",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠需進入密閉儲槽進行清潔作業，依缺氧症預防規則規定執行安全流程。請排列正確順序：",
+      "options": [
+        "作業許可申請與審核",
+        "通風換氣與氣體監測",
+        "作業人員安全教育",
+        "監視人員配置與聯絡",
+        "作業執行與緊急應變"
+      ],
+      "answer": [
+        "作業人員安全教育",
+        "作業執行與緊急應變",
+        "作業許可申請與審核",
+        "監視人員配置與聯絡",
+        "通風換氣與氣體監測"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "缺氧作業安全流程：許可→通風監測→教育→監視→作業應變。",
+        "detail": "缺氧症預防規則。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "缺氧作業安全流程。"
+      },
+      "tips": {
+        "quick": [
+          "💡 許通教監執"
+        ],
+        "mnemonic": "🧠 許可→通風監測→教育→監視→作業",
+        "commonMistake": [
+          "🚨 陷阱：要先申請許可才能開始作業！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對缺氧作業安全流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q529",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地進行鋼構吊掛作業，需依起重升降機具安全規則規定執行安全流程。請排列正確順序：",
+      "options": [
+        "吊掛前檢查與評估",
+        "吊具選用與安裝",
+        "試吊與平衡確認",
+        "正式吊掛作業",
+        "吊掛後檢查與歸位"
+      ],
+      "answer": [
+        "吊具選用與安裝",
+        "吊掛前檢查與評估",
+        "吊掛後檢查與歸位",
+        "正式吊掛作業",
+        "試吊與平衡確認"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "吊掛作業流程：檢查評估→選用安裝→試吊確認→正式吊掛→後檢查歸位。",
+        "detail": "起重升降機具安全規則。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "吊掛作業流程。"
+      },
+      "tips": {
+        "quick": [
+          "💡 檢選試正後"
+        ],
+        "mnemonic": "🧠 檢查→選用→試吊→正式→後檢查",
+        "commonMistake": [
+          "🚨 陷阱：要先試吊確認平衡才能正式吊掛！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對吊掛作業流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q530",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠化學品作業場所需依危害控制層級執行職業衛生改善措施。請排列優先執行順序：",
+      "options": [
+        "工程控制(取代/隔離/通風)",
+        "行政管理(作業時間調整)",
+        "個人防護具使用",
+        "健康檢查與監測",
+        "教育訓練與宣導"
+      ],
+      "answer": [
+        "個人防護具使用",
+        "健康檢查與監測",
+        "工程控制(取代/隔離/通風)",
+        "教育訓練與宣導",
+        "行政管理(作業時間調整)"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 26,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職業衛生改善優先順序：工程控制→行政管理→個人防護具→健康檢查→教育訓練。",
+        "detail": "危害控制層級。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "危害控制層級。"
+      },
+      "tips": {
+        "quick": [
+          "💡 工行個健教"
+        ],
+        "mnemonic": "🧠 工程控制→行政管理→個人防護具→健康檢查→教育訓練",
+        "commonMistake": [
+          "🚨 陷阱：工程控制是第一優先！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對職業衛生改善優先順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q531",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某化學品倉庫需依危害性化學品標示及通識規則執行儲存管理。請排列正確順序：",
+      "options": [
+        "化學品分類與標示",
+        "儲存區域規劃與設置",
+        "不相容物質分開儲存",
+        "定期檢查與維護",
+        "緊急應變措施準備"
+      ],
+      "answer": [
+        "不相容物質分開儲存",
+        "儲存區域規劃與設置",
+        "化學品分類與標示",
+        "定期檢查與維護",
+        "緊急應變措施準備"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "化學品儲存管理流程：分類標示→區域規劃→分開儲存→定期檢查→應變準備。",
+        "detail": "危害性化學品標示及通識規則。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "化學品儲存管理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 分規分檢應"
+        ],
+        "mnemonic": "🧠 分類→規劃→分開儲存→檢查→應變",
+        "commonMistake": [
+          "🚨 陷阱：要先分類才能規劃儲存區域！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對化學品儲存管理流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q532",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠鍋爐操作人員需依鍋爐及壓力容器安全規則規定執行正確操作程序。請排列正確順序：",
+      "options": [
+        "點火前通風換氣",
+        "點火升溫",
+        "監視壓力水位",
+        "正常運轉",
+        "停爐操作"
+      ],
+      "answer": [
+        "停爐操作",
+        "正常運轉",
+        "監視壓力水位",
+        "點火前通風換氣",
+        "點火升溫"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 13,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "鍋爐操作流程：通風→點火→監視→運轉→停爐。",
+        "detail": "鍋爐及壓力容器安全規則。"
+      },
+      "law": {
+        "pcode": "N0060011",
+        "name": "鍋爐及壓力容器安全規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鍋爐操作程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 通點監運停"
+        ],
+        "mnemonic": "🧠 通風→點火→監視→運轉→停爐",
+        "commonMistake": [
+          "🚨 陷阱：點火前要先通風換氣！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對鍋爐操作程序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q533",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地進行高架作業，需依營造安全衛生設施標準第17條規定執行安全措施。請排列優先順序：",
+      "options": [
+        "儘量地面作業",
+        "優先施作永久構造物",
+        "設置護欄護蓋",
+        "張掛安全網",
+        "使勞工佩掛安全帶"
+      ],
+      "answer": [
+        "使勞工佩掛安全帶",
+        "儘量地面作業",
+        "優先施作永久構造物",
+        "張掛安全網",
+        "設置護欄護蓋"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "墜落防止優先順序：地面作業→永久構造→護欄→安全網→安全帶。",
+        "detail": "營造安全衛生設施標準第17條。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "墜落防止措施優先順序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 地永護網帶"
+        ],
+        "mnemonic": "🧠 地面→永久構造→護欄→安全網→安全帶",
+        "commonMistake": [
+          "🚨 陷阱：安全帶是最後手段！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對墜落防止優先順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q534",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某工廠發生死亡職業災害，需依職業安全衛生法第37條規定執行通報與處理程序。請排列正確順序：",
+      "options": [
+        "實施急救搶救",
+        "非經許可不得移動現場",
+        "通報勞動檢查機構",
+        "會同勞工代表調查",
+        "作成紀錄"
+      ],
+      "answer": [
+        "作成紀錄",
+        "實施急救搶救",
+        "會同勞工代表調查",
+        "通報勞動檢查機構",
+        "非經許可不得移動現場"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職災通報處理流程：急救→保全現場→通報→調查→紀錄。",
+        "detail": "職業安全衛生法第37條。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 37 條",
+          "條": "第 37 條"
+        },
+        "summary": "職災通報處理程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 急保通調記"
+        ],
+        "mnemonic": "🧠 急救→保全現場→通報→調查→紀錄",
+        "commonMistake": [
+          "🚨 陷阱：要先急救才能保全現場！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對職災通報處理流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q535",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某作業場所使用有機溶劑，需依有機溶劑中毒預防規則附表四計算換氣量。請排列公式計算順序：",
+      "options": [
+        "理論換氣量(中毒預防)",
+        "理論換氣量(爆炸預防)",
+        "有機溶劑規則換氣量",
+        "取最大值"
+      ],
+      "answer": [
+        "取最大值",
+        "有機溶劑規則換氣量",
+        "理論換氣量(中毒預防)",
+        "理論換氣量(爆炸預防)"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "有機溶劑換氣量計算順序：中毒預防→爆炸預防→有機溶劑規則→取最大值。",
+        "detail": "有機溶劑中毒預防規則附表四。"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "附表四",
+          "條": "附表四"
+        },
+        "summary": "有機溶劑換氣量計算。"
+      },
+      "tips": {
+        "quick": [
+          "💡 中爆規大"
+        ],
+        "mnemonic": "🧠 中毒預防→爆炸預防→有機溶劑規則→取最大值",
+        "commonMistake": [
+          "🚨 陷阱：最終要取最大值，不是相加！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對有機溶劑換氣量計算順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q536",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地施工架組配作業，主管需依營造安全衛生設施標準第20條規定執行現場管理。請排列正確順序：",
+      "options": [
+        "決定作業方法，指揮作業",
+        "實施檢點，檢查材料",
+        "監督使用個人防護具",
+        "確認安全設備有效狀況",
+        "其他維持安全衛生措施"
+      ],
+      "answer": [
+        "其他維持安全衛生措施",
+        "實施檢點，檢查材料",
+        "決定作業方法，指揮作業",
+        "監督使用個人防護具",
+        "確認安全設備有效狀況"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "施工架作業主管管理順序：決定方法→檢點材料→監督防護具→確認設備→其他措施。",
+        "detail": "營造安全衛生設施標準第20條。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 20 條",
+          "條": "第 20 條"
+        },
+        "summary": "施工架作業主管職責。"
+      },
+      "tips": {
+        "quick": [
+          "💡 決檢監確其"
+        ],
+        "mnemonic": "🧠 決定→檢點→監督→確認→其他",
+        "commonMistake": [
+          "🚨 陷阱：要先決定作業方法才能開始檢點！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對施工架作業主管管理順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q537",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列危險性工作場所審查申請之正確順序：",
+      "options": [
+        "檢附申請書及相關文件",
+        "向勞動檢查機構提出申請",
+        "勞動檢查機構書面審查",
+        "實施現場檢查",
+        "核發審查合格文件"
+      ],
+      "answer": [
+        "勞動檢查機構書面審查",
+        "向勞動檢查機構提出申請",
+        "實施現場檢查",
+        "核發審查合格文件",
+        "檢附申請書及相關文件"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "危險性工作場所審查流程：檢附文件→提出申請→書面審查→現場檢查→核發合格文件。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "危險性工作場所審查流程。"
+      },
+      "tips": {
+        "quick": [
+          "💡 檢提書現核"
+        ],
+        "mnemonic": "🧠 檢附文件→提出申請→書面審查→現場檢查→核發合格文件",
+        "commonMistake": [
+          "🚨 陷阱：要先書面審查才能現場檢查！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對危險性工作場所審查流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q538",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列新化學物質登記之申請流程：",
+      "options": [
+        "繳交化學物質安全評估報告",
+        "向中央主管機關申請核准登記",
+        "中央主管機關審查",
+        "核發核准登記文件",
+        "始得製造或輸入"
+      ],
+      "answer": [
+        "中央主管機關審查",
+        "向中央主管機關申請核准登記",
+        "始得製造或輸入",
+        "核發核准登記文件",
+        "繳交化學物質安全評估報告"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "新化學物質登記流程：繳交評估報告→申請→審查→核發文件→始得製造輸入。",
+        "detail": "新化學物質登記管理辦法。"
+      },
+      "law": {
+        "pcode": "N0060069",
+        "name": "新化學物質登記管理辦法",
+        "article": {
+          "full": "第 5 條",
+          "條": "第 5 條"
+        },
+        "summary": "新化學物質登記流程。"
+      },
+      "tips": {
+        "quick": [
+          "💡 繳申審核始"
+        ],
+        "mnemonic": "🧠 繳交報告→申請→審查→核發→始得製造",
+        "commonMistake": [
+          "🚨 陷阱：未核准登記前不得製造或輸入！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對新化學物質登記流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q539",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列職業安全衛生管理計畫之執行步驟：",
+      "options": [
+        "擬定計畫內容",
+        "計畫審核與核准",
+        "計畫實施與執行",
+        "執行過程監督與查核",
+        "成效評估與改善"
+      ],
+      "answer": [
+        "執行過程監督與查核",
+        "成效評估與改善",
+        "擬定計畫內容",
+        "計畫實施與執行",
+        "計畫審核與核准"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職安衛管理計畫執行步驟：擬定→審核→實施→監督→評估改善。",
+        "detail": "職業安全衛生管理計畫。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 12 條",
+          "條": "第 12 條"
+        },
+        "summary": "職安衛管理計畫執行步驟。"
+      },
+      "tips": {
+        "quick": [
+          "💡 擬審實監評"
+        ],
+        "mnemonic": "🧠 擬定→審核→實施→監督→評估",
+        "commonMistake": [
+          "🚨 陷阱：要先審核核准才能實施！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對職安衛管理計畫執行步驟的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q540",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列採購管理之參考作業流程：",
+      "options": [
+        "請購需求確認",
+        "供應商評選",
+        "採購契約簽訂",
+        "交貨驗收",
+        "使用後安全績效評估"
+      ],
+      "answer": [
+        "交貨驗收",
+        "使用後安全績效評估",
+        "供應商評選",
+        "採購契約簽訂",
+        "請購需求確認"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 16,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "採購管理流程：請購→評選→簽約→驗收→績效評估。",
+        "detail": "採購管理技術指引。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 12 條",
+          "條": "第 12 條"
+        },
+        "summary": "採購管理流程。"
+      },
+      "tips": {
+        "quick": [
+          "💡 請評簽驗績"
+        ],
+        "mnemonic": "🧠 請購→評選→簽約→驗收→績效評估",
+        "commonMistake": [
+          "🚨 陷阱：請購需求確認是所有採購的開始！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對採購管理流程的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q541",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "某營造工地發生勞工從2.5公尺高施工架墜落受傷。經調查發現：未設置護欄、未張掛安全網、勞工未佩戴安全帶。雇主應依營造安全衛生設施標準第17條訂定墜落災害防止計畫。請依「風險控制優先順序」排列以下措施：",
+      "options": [
+        "使勞工於地面完成作業",
+        "優先施作永久構造物之上下設備",
+        "設置護欄、護蓋",
+        "張掛安全網",
+        "使勞工佩掛安全帶"
+      ],
+      "answer": [
+        "使勞工佩掛安全帶",
+        "使勞工於地面完成作業",
+        "優先施作永久構造物之上下設備",
+        "張掛安全網",
+        "設置護欄、護蓋"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "墜落防止優先順序：地面作業→永久構造→護欄→安全網→安全帶。",
+        "detail": "營造安全衛生設施標準第17條。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "墜落防止措施優先順序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 地永護網帶"
+        ],
+        "mnemonic": "🧠 地面→永久構造→護欄→安全網→安全帶",
+        "commonMistake": [
+          "🚨 陷阱：安全帶是最後手段！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對墜落防止優先順序的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 0,
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列順序"
+        ]
+      }
+    },
+    {
+      "id": "Q542",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列安全衛生工作守則之制定及實施正確順序。",
+      "options": [
+        "會同勞工代表制定",
+        "公告後實施",
+        "報勞動檢查機構備查",
+        "印發給勞工每人1份"
+      ],
+      "answer": [
+        "公告後實施",
+        "印發給勞工每人1份",
+        "報勞動檢查機構備查",
+        "會同勞工代表制定"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "正確流程為：制定→報備→公告→發放。",
+        "detail": "先會同勞工代表制定，再報檢查機構備查，公告後實施，最後印發給勞工。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法施行細則",
+        "article": {
+          "full": "第 42 條",
+          "條": "第 42 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：制定→報備→公告→發放"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：守則不能直接發，要先和勞工代表討論，再報主管機關。"
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對工作守則制定流程之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q543",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列局限空間作業之正確進入程序。",
+      "options": [
+        "測定氧氣及有害氣體濃度",
+        "取得進入許可",
+        "實施通風換氣",
+        "人員進入作業"
+      ],
+      "answer": [
+        "人員進入作業",
+        "取得進入許可",
+        "實施通風換氣",
+        "測定氧氣及有害氣體濃度"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間作業程序：先測定濃度→通風→取得許可→進入。",
+        "detail": "測定確認安全後再通風，通風後仍須確認濃度，取得許可後才能進入。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 29-6 條",
+          "條": "第 29-6 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：測定→通風→許可→進入"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：進人孔先測氣體，濃度正常後通風，最後簽許可證才能進。"
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對局限空間作業程序之理解。"
+        }
+      ]
+    },
+    {
+      "id": "Q544",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列職業災害發生後之通報及處理程序。",
+      "options": [
+        "實施急救及搶救",
+        "向勞動檢查機構通報(8小時內)",
+        "實施職業災害調查",
+        "保持現場完整(除急救外)"
+      ],
+      "answer": [
+        "保持現場完整(除急救外)",
+        "向勞動檢查機構通報(8小時內)",
+        "實施急救及搶救",
+        "實施職業災害調查"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職災處理程序：先急救搶救→保持現場→8小時內通報→實施調查。",
+        "detail": "除必要急救外，不得移動或破壞現場。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 37 條",
+          "條": "第 37 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：急救→保全現場→通報→調查"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：發生職災先救人，再保護現場，然後8小時內通報勞動檢查機構。"
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對職災處理程序之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q545",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列職業安全衛生管理系統PDCA循環之正確順序。",
+      "options": [
+        "Do(實施)",
+        "Check(檢查)",
+        "Plan(規劃)",
+        "Act(改進)"
+      ],
+      "answer": [
+        "Act(改進)",
+        "Check(檢查)",
+        "Do(實施)",
+        "Plan(規劃)"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "PDCA循環順序為：Plan→Do→Check→Act。",
+        "detail": "規劃→實施→檢查→改進，持續循環提升安全衛生管理水準。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1-1 條",
+          "條": "第 1-1 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：規劃、實施、檢查、改進"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：PDCA是管理循環，先計畫要做什麼，然後執行，再檢查成效，最後改進缺失。"
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對PDCA管理循環之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q546",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列高架作業墜落防止措施之優先順序（由最優先至最後）。",
+      "options": [
+        "設置護欄護蓋",
+        "儘量使勞工於地面完成作業",
+        "使勞工佩掛安全帶",
+        "張掛安全網"
+      ],
+      "answer": [
+        "使勞工佩掛安全帶",
+        "儘量使勞工於地面完成作業",
+        "張掛安全網",
+        "設置護欄護蓋"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "墜落防止措施優先順序：地面作業→護欄護蓋→安全網→安全帶。",
+        "detail": "越前面的措施越能「主動」預防墜落，越後面則是「被動」防護。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：地面→護欄→安全網→安全帶"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：優先讓勞工在地面作業，不得已才用護欄，再來是安全網，最後才是安全帶。"
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對墜落防止措施優先順序之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q547",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列丙類危險性工作場所(高壓氣體)之申請審查及檢查流程。",
+      "options": [
+        "檢附安全衛生管理基本資料",
+        "檢附製程安全評估報告書",
+        "向勞動檢查機構申請審查及檢查",
+        "檢查機構實施審查及檢查"
+      ],
+      "answer": [
+        "向勞動檢查機構申請審查及檢查",
+        "檢查機構實施審查及檢查",
+        "檢附安全衛生管理基本資料",
+        "檢附製程安全評估報告書"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "丙類工作場所申請流程：準備資料→申請→檢查機構審查檢查。",
+        "detail": "依據危險性工作場所審查及檢查辦法第13條規定。"
+      },
+      "law": {
+        "pcode": "N0060024",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 13 條",
+          "條": "第 13 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：準備資料→申請→審查檢查"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對危險性工作場所申請流程之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q548",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請排列有機溶劑作業之整體換氣裝置計算順序。",
+      "options": [
+        "理論換氣量(中毒預防)",
+        "理論換氣量(爆炸預防)",
+        "有機溶劑規則換氣量",
+        "取最大值"
+      ],
+      "answer": [
+        "取最大值",
+        "有機溶劑規則換氣量",
+        "理論換氣量(中毒預防)",
+        "理論換氣量(爆炸預防)"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "換氣量計算順序：先算中毒預防、再算爆炸預防、再算規則換氣量，最後取最大值。",
+        "detail": "依據有機溶劑中毒預防規則附表四規定。"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "附表四",
+          "條": "附表四"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：中毒→爆炸→規則→取最大"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：三種換氣量都要算，最後取最大的那個值。"
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對有機溶劑換氣量計算流程之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q549",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "text": "請排出火焰燒傷緊急處理措施之正確順序。",
+      "options": [
+        "沖",
+        "脫",
+        "泡",
+        "蓋",
+        "送"
+      ],
+      "answer": [
+        "沖",
+        "泡",
+        "脫",
+        "蓋",
+        "送"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "火焰燒傷處理口訣：沖→脫→泡→蓋→送。",
+        "detail": "若疑似遭化學品腐蝕性物質灼傷，只要脫、沖、蓋、送，不宜再浸泡。"
+      },
+      "law": {
+        "pcode": "N0000006",
+        "name": "急救概論",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "燒傷處理步驟：沖脫泡蓋送。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：沖脫泡蓋送！"
+        ],
+        "mnemonic": "🧠 燒傷急救＝①沖（大量冷水）②脫（去除衣物）③泡（泡冷水）④蓋（覆蓋傷口）⑤送（送醫）",
+        "commonMistake": [
+          "🚨 陷阱：化學灼傷「不宜再浸泡」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對燒傷處理步驟順序的掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q550",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "text": "請排出著火自救（身體著火）之正確處理順序。",
+      "options": [
+        "停",
+        "躺",
+        "滾"
+      ],
+      "answer": [
+        "停",
+        "滾",
+        "躺"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "著火自救口訣：停→躺→滾。",
+        "detail": "身體著火時應立即停止、躺下、滾動以熄滅火焰。"
+      },
+      "law": {
+        "pcode": "N0000006",
+        "name": "急救概論",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "身體著火時應停、躺、滾。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：停躺滾！"
+        ],
+        "mnemonic": "🧠 著火自救＝①停（停止動作）②躺（躺在地上）③滾（滾動滅火）",
+        "commonMistake": [
+          "🚨 陷阱：順序是停→躺→滾，不是跑→拍→跳！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對著火自救步驟順序的掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q551",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "text": "請排出局限空間安全作業程序之正確順序。",
+      "options": [
+        "置備氣體偵測器",
+        "進行危害確認",
+        "實施通風換氣",
+        "設置救援三腳架",
+        "作業中隨時測定"
+      ],
+      "answer": [
+        "作業中隨時測定",
+        "實施通風換氣",
+        "置備氣體偵測器",
+        "設置救援三腳架",
+        "進行危害確認"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間作業程序：置備氣體偵測器→進行危害確認→實施通風換氣→設置救援三腳架→作業中隨時測定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "局限空間作業程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：測→認→通→架→測！"
+        ],
+        "mnemonic": "🧠 局限空間作業＝①置備氣體偵測器②進行危害確認③實施通風換氣④設置救援三腳架⑤作業中隨時測定",
+        "commonMistake": [
+          "🚨 陷阱：通風換氣「必須在」設置三腳架「之前」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對局限空間作業程序順序的掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q552",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "text": "請排出高處作業安全管理之正確順序。",
+      "options": [
+        "挑選適合高處作業之勞工",
+        "限制身體精神狀況不佳者從事",
+        "培養從事高處作業之安全態度",
+        "指派作業主管指揮監督",
+        "施以安全衛生教育訓練"
+      ],
+      "answer": [
+        "培養從事高處作業之安全態度",
+        "指派作業主管指揮監督",
+        "挑選適合高處作業之勞工",
+        "施以安全衛生教育訓練",
+        "限制身體精神狀況不佳者從事"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 6,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高處作業安全管理順序：挑選→限制→培養→教育訓練→指派主管。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "高處作業安全管理程序。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：挑選→限制→培養→訓練→指派！"
+        ],
+        "mnemonic": "🧠 高處作業安全管理＝①挑選適合勞工②限制體況不佳者③培養安全態度④教育訓練⑤指派主管",
+        "commonMistake": [
+          "🚨 陷阱：教育訓練在指派主管「之前」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對高處作業安全管理程序的掌握。"
+        }
+      ]
+    },
+    {
+      "id": "Q553",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請依正確順序排列「AED（自動體外心臟電擊去顫器）」之使用步驟。",
+      "options": [
+        "開（打開電源）",
+        "貼（貼上電極貼片）",
+        "插（將線頭插入電擊插孔）",
+        "電（執行電擊）"
+      ],
+      "answer": [
+        "插（將線頭插入電擊插孔）",
+        "貼（貼上電極貼片）",
+        "開（打開電源）",
+        "電（執行電擊）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "AED使用步驟為：開→貼→插→電。",
+        "detail": "口訣：開、貼、插、電。執行電擊前須大喊「大家離開！」確認無人碰觸患者後才可按下電擊鈕。"
+      },
+      "law": {
+        "pcode": "L0000001",
+        "name": "公共場所必要緊急救護設備管理辦法",
+        "article": {
+          "full": "第 4 條",
+          "條": "第 4 條"
+        },
+        "summary": "應置有自動體外心臟電擊去顫器之公共場所。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：開、貼、插、電！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：AED四步驟：1.開（打開電源）→ 2.貼（貼上電擊貼片，口訣：右上、左下）→ 3.插（插入電擊插孔，同時持續CPR）→ 4.電（大喊大家離開，確認無人碰觸後按下電擊鈕）。",
+        "commonMistake": [
+          "🚨 陷阱：貼片位置是「右上、左下」，不要貼反！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對AED使用流程之順序掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "上層：題幹區 → 中層：作答區 1. 2. 3. 4. ______ (2.5%) → 下層：選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": "無干擾選項",
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列"
+        ]
+      }
+    },
+    {
+      "id": "Q554",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請依正確順序排列「火焰燒傷」之急救處理步驟。",
+      "options": [
+        "沖（大量清水沖洗）",
+        "脫（脫去衣物）",
+        "泡（浸泡冷水中）",
+        "蓋（覆蓋乾淨紗布）",
+        "送（送醫治療）"
+      ],
+      "answer": [
+        "沖（大量清水沖洗）",
+        "泡（浸泡冷水中）",
+        "脫（脫去衣物）",
+        "蓋（覆蓋乾淨紗布）",
+        "送（送醫治療）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "火焰燒傷急救步驟：沖→脫→泡→蓋→送。",
+        "detail": "沖：大量清水沖洗降溫；脫：脫去衣物避免熱能持續；泡：浸泡冷水降溫；蓋：覆蓋乾淨紗布防止感染；送：送醫治療。若為化學品灼傷，則不宜浸泡。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 15 條",
+          "條": "第 15 條"
+        },
+        "summary": "雇主應依規定設置急救人員及急救設備。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：沖、脫、泡、蓋、送！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：火焰燒傷急救五字訣：沖（沖水降溫）→ 脫（脫掉衣服）→ 泡（泡冷水）→ 蓋（蓋紗布）→ 送（送醫院）。",
+        "commonMistake": [
+          "🚨 陷阱：化學品灼傷「不宜浸泡」，避免危害物擴大傷害面積！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對燒傷急救流程之順序掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "上層：題幹區 → 中層：作答區 1. 2. 3. 4. 5. ______ (2%) → 下層：選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": "無干擾選項",
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列"
+        ]
+      }
+    },
+    {
+      "id": "Q555",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請依正確順序排列「局限空間安全作業程序」。",
+      "options": [
+        "置備氣體偵測器",
+        "進行危害確認",
+        "實施通風換氣",
+        "設置救援三腳架",
+        "作業中隨時測定"
+      ],
+      "answer": [
+        "作業中隨時測定",
+        "實施通風換氣",
+        "置備氣體偵測器",
+        "設置救援三腳架",
+        "進行危害確認"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間作業程序：偵測→確認→通風→救援→測定。",
+        "detail": "此順序為職業安全衛生設施規則第29條之1至第29條之7所規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 29 條之1",
+          "條": "第 29 條之1"
+        },
+        "summary": "局限空間作業應依規定程序辦理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：偵測→確認→通風→救援→測定"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：先準備偵測器→確認有無危害→通風換氣→設置救援設備→作業中持續監測。",
+        "commonMistake": [
+          "🚨 陷阱：通風要在確認危害「之後」才做，不是一開始就通風！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對局限空間作業流程之順序掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "上層：題幹區 → 中層：作答區 1. 2. 3. 4. 5. ______ (2%) → 下層：選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": "無干擾選項",
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列"
+        ]
+      }
+    },
+    {
+      "id": "Q556",
+      "type": "sequencing",
+      "typeLabel": "排序題",
+      "typePrefix": "Q",
+      "text": "請依正確順序排列「身體著火（火焰燒傷）」之自救步驟。",
+      "options": [
+        "停（停止動作）",
+        "躺（立即躺下）",
+        "滾（來回滾動壓熄火焰）"
+      ],
+      "answer": [
+        "停（停止動作）",
+        "滾（來回滾動壓熄火焰）",
+        "躺（立即躺下）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "身體著火自救三步驟：停、躺、滾。",
+        "detail": "停：立即停止動作，避免助長火勢；躺：立即躺下，讓火焰朝上；滾：來回滾動壓熄火焰。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 15 條",
+          "條": "第 15 條"
+        },
+        "summary": "雇主應依規定設置急救人員及急救設備。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：停→躺→滾！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：身體著火不要跑！1.停（停止動作）→ 2.躺（立即躺下）→ 3.滾（來回滾動滅火）。",
+        "commonMistake": [
+          "🚨 陷阱：不要跑！跑會讓火燒得更旺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對火焰燒傷自救流程之順序掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "上層：題幹區 → 中層：作答區 1. 2. 3. ______ (3.3%) → 下層：選項區",
+        "structure": [
+          "題幹區",
+          "作答區",
+          "選項區"
+        ],
+        "optionUI": "卡片形式",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "全對才給分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": "無干擾選項",
+        "steps": [
+          "閱讀題幹",
+          "瀏覽選項卡片",
+          "拖曳至作答區排列"
+        ]
+      }
+    }
+  ]
+}

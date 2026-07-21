@@ -1,0 +1,36 @@
+# Python 快取檔案
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js
+node_modules/
+package-lock.json
+
+# 應用層內的 package-lock.json
+04_應用層/package-lock.json
+
+# 日誌檔案
+*.log
+logs/
+
+# 環境變數
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 作業系統
+.DS_Store
+Thumbs.db
+
+# 備份與暫存
+*.bak
+*.tmp
+temp/
+
+.venv/

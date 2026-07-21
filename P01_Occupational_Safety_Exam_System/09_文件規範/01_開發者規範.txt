@@ -1,0 +1,108 @@
+============================================================
+👨‍💻 開發者規範 - 乙級職安衛模擬測驗系統
+版本：10.2.0
+更新日期：2026-07-18
+============================================================
+
+📌 程式碼規範
+-----------
+1. JavaScript
+   - 使用 IIFE 封裝，避免全域汙染
+     範例：(function() { 'use strict'; ... })();
+   
+   - 使用 var 宣告變數（確保瀏覽器相容性）
+   - 使用 function() 而非箭頭函數（確保 this 正確）
+   - 使用 const 僅限於不變的常數值
+
+2. Python
+   - 遵循 PEP 8 規範
+   - 使用 SQLAlchemy 2.0 ORM
+   - 使用 async/await 非同步模式（FastAPI）
+   - 使用 type hints（型別提示）
+
+📌 檔案命名規範
+-----------
+- 前綴編號：00~99（確保載入順序）
+- 分類標示：系統_、渲染_、解析_、API_
+- 範例：00_題型格式規範.js、20_系統_全域變數.js
+
+📌 模組載入順序
+-----------
+系統主頁面.html 載入順序：
+第0優先：API 統一設定（00_API統一設定.js）
+第1優先：前端服務（01~05）
+第2優先：A 區塊 基礎架構（00~09）
+第3優先：B 區塊 解析引擎（10~14）
+第4優先：C 區塊 系統控制（20~26）
+第5優先：D 區塊 題型渲染（30~36）
+第6優先：環境設定（考試參數設定.js）
+
+📌 API 開發規範
+-----------
+1. 所有 API 請求使用 window.apiRequest()
+2. API 網址統一從 00_API統一設定.js 讀取
+3. 錯誤處理使用 try-catch
+4. 回應格式統一為 { success: boolean, data: any, error: string }
+
+📌 環境變數
+-----------
+後端 (Render Environment)：
+- DATABASE_URL：Supabase 連線字串
+- FRONTEND_URL：前端網址（CORS 設定）
+- ENV：production
+- PYTHON_VERSION：3.11.0
+
+前端 (自動偵測)：
+- localhost → 本地 API
+- onrender.com → 雲端 API
+- 其他 → 備用 API
+
+📌 資料庫規範
+-----------
+1. 使用 Supabase PostgreSQL
+2. 題庫表格：questions
+   - id, question_id, type, type_label, text, options, answer, group_num, stem, mode, explanation, law_ref, tips, logic_tags
+3. 法規表格：laws
+   - id, pcode, name, display_name, level, category, url, law_data
+4. 考試紀錄表格：exam_sessions
+   - id, session_id, mode, user_id, answers, score, is_completed, started_at, completed_at
+
+📌 部署規範
+-----------
+1. 本地開發：使用 localhost:8001
+   - 後端啟動：cd 05_後端伺服器 && python 00_後端入口.py
+   - 前端開啟：04_應用層/系統主頁面.html（Live Server）
+
+2. 雲端部署：Render (自動偵測環境)
+   - Blueprint 部署：render.yaml
+   - 自動部署：GitHub push 觸發
+
+3. 環境變數：Render Environment 設定
+4. 資料庫遷移：透過 Supabase SQL Editor 或上傳腳本
+
+📌 Git 提交規範
+-----------
+提交訊息格式：
+[類型]：簡短描述
+
+類型：
+- 新增：新增功能或檔案
+- 修正：修復 Bug
+- 更新：更新現有功能
+- 清理：刪除不必要的檔案
+- 文件：更新文件
+
+範例：
+- "新增：法規 API 完整整合"
+- "修正：CORS 設定問題"
+- "更新：版本號同步至 10.2.0"
+- "清理：移除備份檔案"
+
+📌 版本更新流程
+-----------
+1. 更新版本號（前後端一致）
+2. 更新文件規範
+3. 測試所有功能
+4. 提交 GitHub
+5. Render 自動部署
+6. 驗證部署結果

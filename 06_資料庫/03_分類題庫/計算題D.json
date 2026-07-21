@@ -1,0 +1,183 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 4,
+  "Type": "calc",
+  "TypeLabel": "計算題",
+  "TypePrefix": "C",
+  "source": {
+    "classified": true,
+    "breed": true
+  },
+  "questions": [
+    {
+      "id": "C101",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位進行職場健康促進活動，其中某勞工身高165公分，體重57公斤。此勞工之身體質量指數（BMI）為何？（請四捨五入至小數點第1位）",
+      "options": [],
+      "answer": "20.9",
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "BMI",
+      "formulaParams": { "體重": 57, "身高": 1.65 },
+      "explanation": {
+        "summary": "BMI = 體重(kg) ÷ 身高(m)² = 57 ÷ 1.65² = 20.94 → 20.9",
+        "detail": "計算步驟：\n① 身高165公分 = 1.65公尺\n② 1.65² = 2.7225\n③ 57 ÷ 2.7225 = 20.94\n④ 四捨五入至小數點第1位 = 20.9"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": { "full": "第 12 條", "條": "第 12 條" },
+        "summary": "雇主應依規定辦理勞工健康檢查及健康管理。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：體重(kg) ÷ 身高(m)的平方"],
+        "mnemonic": "🧠 完整記憶劇本：BMI = 體重（公斤） ÷ 身高（公尺）²。身高要換成公尺！",
+        "commonMistake": ["🚨 陷阱：身高要換成「公尺」！165公分 = 1.65公尺，不要直接代入165！"]
+      },
+      "logic": [{ "label": "計算應用", "reason": "測驗考生對BMI計算公式之掌握。" }],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": ["題幹區", "計算機區", "答案欄位"],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": ["閱讀題幹", "使用計算機運算", "輸入最終答案"]
+      }
+    },
+    {
+      "id": "C102",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某有機溶劑作業場所每小時四氯化碳消費量為5公斤。依有機溶劑中毒預防規則規定，其需要之換氣能力應為每分鐘多少立方公尺換氣量？（請以四捨五入取至整數）",
+      "options": [],
+      "answer": "1500",
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "VENT_1",
+      "formulaParams": { "W": 5000 },
+      "explanation": {
+        "summary": "Q = 0.3 × W = 0.3 × 5000 = 1500 m³/min",
+        "detail": "計算步驟：\n① 四氯化碳屬第一種有機溶劑\n② W = 5kg × 1000g/kg = 5000 g/hr\n③ Q = 0.3 × 5000 = 1500 m³/min"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": { "full": "第 14 條", "條": "第 14 條" },
+        "summary": "第一種有機溶劑作業場所應設置整體換氣裝置。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：第一種有機溶劑換氣量 = 0.3 × 消費量(g/hr)"],
+        "mnemonic": "🧠 完整記憶劇本：四氯化碳是第一種有機溶劑，換氣量公式：Q = 0.3 × W（每小時消費量）。",
+        "commonMistake": ["🚨 陷阱：四氯化碳是「第一種」有機溶劑，不要搞錯種類！"]
+      },
+      "logic": [{ "label": "計算應用", "reason": "測驗考生對有機溶劑換氣量公式之計算。" }],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": ["題幹區", "計算機區", "答案欄位"],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": ["閱讀題幹", "使用計算機運算", "輸入最終答案"]
+      }
+    },
+    {
+      "id": "C103",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某研磨機之研磨輪直徑為250公厘，每分鐘轉速為3600轉。計算該研磨輪之周速度（公尺/分）。（π = 3.14，請以四捨五入取至整數）",
+      "options": [],
+      "answer": "2827",
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "GRINDING",
+      "formulaParams": { "D": 0.25, "N": 3600 },
+      "explanation": {
+        "summary": "V = π × D × N = 3.14 × 0.25 × 3600 = 2827 公尺/分",
+        "detail": "計算步驟：\n① 直徑250公厘 = 0.25公尺\n② V = 3.14 × 0.25 × 3600\n③ V = 2827 公尺/分"
+      },
+      "law": {
+        "pcode": "N0060034",
+        "name": "機械設備器具安全標準",
+        "article": { "full": "第 86 條", "條": "第 86 條" },
+        "summary": "研磨輪應實施速率試驗，其試驗速度應為最高使用周速度之1.5倍。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：V = π × D × N，直徑要換成公尺！"],
+        "mnemonic": "🧠 完整記憶劇本：研磨輪周速度 = 圓周率 × 直徑（公尺） × 轉速（rpm）。直徑單位要換成公尺！",
+        "commonMistake": ["🚨 陷阱：直徑250公厘 = 0.25公尺，不要直接代入250！"]
+      },
+      "logic": [{ "label": "計算應用", "reason": "測驗考生對研磨輪周速度公式之計算。" }],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": ["題幹區", "計算機區", "答案欄位"],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": ["閱讀題幹", "使用計算機運算", "輸入最終答案"]
+      }
+    },
+    {
+      "id": "C104",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位總經歷工時為280,000小時，共發生4件失能傷害事故，總損失日數為12,400日。計算失能傷害頻率(FR)及失能傷害嚴重率(SR)。（計算至小數點以下第二位）",
+      "options": [],
+      "answer": ["14.29", "44285.71"],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": null,
+      "formulaParams": null,
+      "explanation": {
+        "summary": "FR = (4 × 10⁶) ÷ 280,000 = 14.29；SR = (12,400 × 10⁶) ÷ 280,000 = 44,285.71",
+        "detail": "計算步驟：\n① FR = (失能傷害人次數 × 10⁶) ÷ 總經歷工時\n② SR = (總損失日數 × 10⁶) ÷ 總經歷工時"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": { "full": "第 7 條", "條": "第 7 條" },
+        "summary": "職業災害統計應依規定辦理。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：FR = 人次×10⁶÷工時；SR = 損失日數×10⁶÷工時"],
+        "mnemonic": "🧠 完整記憶劇本：失能傷害頻率(FR)看「次數」，失能傷害嚴重率(SR)看「日數」，兩個公式都要×10⁶除以總工時。",
+        "commonMistake": ["🚨 陷阱：死亡損失日數是6,000日，不要忘記列入計算！"]
+      },
+      "logic": [{ "label": "計算應用", "reason": "測驗考生對職業災害統計指標之計算能力。" }],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": ["題幹區", "計算機區", "答案欄位"],
+        "optionUI": "______ (5%) ______ (5%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "各欄位獨立計分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": ["閱讀題幹", "使用計算機運算", "輸入各項答案"]
+      }
+    }
+  ]
+}

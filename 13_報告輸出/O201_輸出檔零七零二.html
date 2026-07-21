@@ -1,0 +1,3147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國家考試規格 - 模擬測驗系統</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+            font-size: 24px;
+            background-color: #f0f2f5;
+            color: #000;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        #id_header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ===== 第1行：標題 + 倒數計時器 ===== */
+        .nav-top {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 0px 16px;
+            color: #000;
+            font-weight: bold;
+            font-size: 22px;
+            letter-spacing: 0px;
+            border-bottom: 0px solid #d5c8a8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-top .title {
+            font-weight: bold;
+            font-size: 17px;
+            letter-spacing: 0px;
+            flex: 0 1 auto;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 20px;
+            min-width: 0;
+        }
+
+        .nav-top .countdown-timer-top {
+            font-size: 16px;
+            font-weight: 700;
+            color: #d32f2f;
+            background: #fff;
+            padding: 1px 0px;
+            border: 3px solid #d32f2f;
+            border-radius: 5px;
+            flex-shrink: 0;
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ===== 第2行 + 第3行 ===== */
+        #toppanel,
+        #toppanel2 {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 2px 0px;
+            font-size: 10px;
+            font-weight: bold;
+            color: #000;
+            display: flex;
+            align-items: center;
+            border-bottom: 0px solid #d5c8a8;
+        }
+
+        #toppanel2 {
+            border-bottom: none;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+
+        .toppanel-left {
+            width: 300px;
+            text-align: left;
+            flex-shrink: 0;
+        }
+        .toppanel-center {
+            width: 400px;
+            text-align: left;
+            flex-shrink: 0;
+        }
+        .toppanel-right {
+            flex: 1;
+            text-align: left;
+        }
+
+        #toppanel .label,
+        #toppanel2 .label {
+            display: inline-block;
+            width: 70px;
+            text-align: right;
+            margin-right: 0px;
+            font-weight: normal;
+            color: #333;
+        }
+
+        #toppanel .value,
+        #toppanel2 .value {
+            font-weight: bold;
+            color: #000;
+        }
+
+        #id_seat {
+            color: #000;
+            padding: 0px 0px;
+            border-radius: 4px;
+            font-weight: 900;
+            font-size: 10px;
+            display: inline-block;
+        }
+
+        /* ===== 工具列1 ===== */
+        .toolbar-row-1 {
+            background-color: #eaeaea;
+            padding: 3px 15px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 308px;
+            border-bottom: 0px solid #ccc;
+            font-size: 15px;
+            min-height: 36px;
+        }
+
+        /* ===== 工具列2 ===== */
+        .toolbar-row-2 {
+            background-color: #eaeaea;
+            padding: 3px 15px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 15px;
+            border-bottom: 0px solid #ccc;
+            font-size: 15px;
+            min-height: 30px;
+        }
+
+        /* ===== 工具列3（隱藏/展開 - 置中） ===== */
+        .toolbar-row-3 {
+            background-color: #eaeaea;
+            padding: 2px 16px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 6px 10px;
+            border-bottom: 0px solid #ccc;
+            font-size: 14px;
+            min-height: 14px;
+        }
+
+        .toolbar-left-group {
+            display: flex;
+            align-items: center;
+            gap: 6px 23px;
+            flex-wrap: wrap;
+        }
+        .toolbar-left-group-2 {
+            display: flex;
+            align-items: center;
+            gap: 6px 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-align-right-1 {
+            margin-left: 32px;
+        }
+        .btn-align-right-2 {
+            margin-left: 220px;
+        }
+
+        .btn-official {
+            padding: 2px 15px;
+            background: #337ab7;
+            border: 1px solid #1a3f6a;
+            border-radius: 2px;
+            font-size: 14px;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+            cursor: pointer;
+            transition: all .2s;
+            color: #ffffff;
+            border-color: #1a3f6a;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .btn-official:hover {
+            background: #f0f0f0;
+            border-color: #888;
+        }
+
+        .btn-official.mode-btn {
+            background: #e8e8e8;
+            border-color: #bbb;
+            color: #333;
+        }
+        .btn-official.mode-btn:hover {
+            background: #d5d5d5;
+        }
+        .btn-official.mode-btn.active {
+            background: #067ae0;
+            color: #fff;
+            border-color: #7a4522;
+        }
+        .btn-official.mode-btn.active:hover {
+            background: #7a4522;
+        }
+
+        .btn-official.nav-btn {
+            background: #337ab7;
+            color: #ffffff;
+            border-color: #1a3f6a;
+        }
+        .btn-official.nav-btn:hover {
+            background: #1a3f6a;
+            border-color: #0f2d4a;
+        }
+
+        .btn-official.danger {
+            background: #e05046;
+            color: #fff;
+            border-color: #c04036;
+        }
+        .btn-official.danger:hover {
+            background: #c04036;
+        }
+
+        .btn-official.primary {
+            background: #337ab7;
+            color: #fff;
+            border-color: #1a3f6a;
+        }
+        .btn-official.primary:hover {
+            background: #1a3f6a;
+        }
+
+        .btn-official.btn-next {
+            background: #337ab7;
+            color: #fff;
+            border-color: #1a3f6a;
+        }
+        .btn-official.btn-next:hover {
+            background: #1a3f6a;
+            border-color: #0f2d4a;
+        }
+
+        .btn-official.success {
+            background: #5cb85c;
+            color: #fff;
+            border-color: #4cae4c;
+        }
+        .btn-official.success:hover {
+            background: #449d44;
+            border-color: #398439;
+        }
+
+        .btn-official.toggle-btn {
+            background: #f0f0f0;
+            border-color: #ccc;
+            color: #333;
+            font-size: 12px;
+            padding: 0px 10px;
+            height: 18px;
+            line-height: 1;
+            border-radius: 3px;
+            min-height: unset;
+        }
+        .btn-official.toggle-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .jump-select {
+            padding: 2px 6px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            font-size: 14px;
+            background: #fff;
+            cursor: pointer;
+            width: 50px;
+            height: 30px;
+            flex-shrink: 0;
+        }
+
+        .answered-display {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1a237e;
+            background: #fff;
+            padding: 2px 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            flex-shrink: 0;
+        }
+
+        .timer {
+            font-size: 14px;
+            font-weight: 600;
+            color: #d32f2f;
+            margin-left: 4px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .toolbar-divider {
+            width: 1px;
+            height: 28px;
+            background: #ccc;
+            flex-shrink: 0;
+        }
+
+        /* ===== 題目區 ===== */
+        #id_middle {
+            position: fixed;
+            top: 160px;
+            bottom: 0;
+            left: 0;
+            right: 100px;
+            background: #FFEFA1;
+            overflow-y: auto;
+            padding: 20px 30px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .question-container {
+            max-width: 100%;
+            background: #FFEFA1;
+        }
+        .question-card {
+            background: #FFEFA1;
+            padding: 2px 2px;
+        }
+
+        .row-1 {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            padding-bottom: 6px;
+            border-bottom: 0px solid #d5c8a8;
+            margin-bottom: 10px;
+            background: transparent;
+        }
+        .row-1 .group-badge {
+            background: #777;
+            color: #fff;
+            padding: 2px 12px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .row-1 .question-text-label {
+            font-size: 20px;
+            font-weight: 400;
+            color: #000;
+        }
+        .row-1 .question-count {
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+            margin-left: auto;
+        }
+
+        .row-2 {
+            margin-bottom: 8px;
+        }
+        .question-type-badge {
+            padding: 2px 12px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+        .question-type-badge.single {
+            background: #337ab7;
+        }
+        .question-type-badge.multiple {
+            background: #f0ad4e;
+        }
+        .question-type-badge.truefalse {
+            background: #6b46c1;
+        }
+        .question-type-badge.calc {
+            background: #d9534f;
+        }
+        .question-type-badge.fill {
+            background: #5cb85c;
+        }
+        .question-type-badge.sort {
+            background: #f7c948;
+            color: #fff;
+        }
+        .question-type-badge.match {
+            background: #8e44ad;
+        }
+        .question-type-badge.link {
+            background: #5bc0de;
+        }
+
+        .row-3 {
+            background: #e05046;
+            color: #fff;
+            padding: 2px 12px;
+            display: inline-block;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 0px;
+        }
+        .row-4 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #000;
+            margin-bottom: 6px;
+        }
+
+        .row-5 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .row-5 .points {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .row-5 .mark-btn {
+            display: inline-block;
+            padding: 0px 11px;
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.5;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            color: gray;
+            box-shadow: rgba(51, 51, 102, 0.5) 4px 4px;
+            transition: all .2s;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+        }
+
+        .row-5 .mark-btn:hover {
+            background-color: #f5f5f5;
+            border-color: #aaa;
+        }
+
+        .row-5 .mark-btn.active {
+            background: #eaeaea;
+            border-color: #ccc;
+            color: #f57f17;
+            box-shadow: rgba(51, 51, 102, 0.5) 4px 4px;
+        }
+
+        .row-6 {
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 2px;
+            padding: 1px -1px;
+        }
+        .row-6 .number-badge {
+            background: #777;
+            color: #fff;
+            padding: 0 10px;
+            border-radius: 3px;
+            font-size: 18px;
+            font-weight: 600;
+            min-width: 32px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .row-6 .question-content {
+            flex: 1;
+        }
+        .row-6 .question-content .q-text {
+            font-weight: 500;
+        }
+        .row-6 .question-content .q-points {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .fill-slot-inline {
+            display: inline-block;
+            min-width: 120px;
+            padding: 1 4px;
+            background: #e8f5e9;
+            border-bottom: 2px solid #2e7d32;
+            margin: 0 1px;
+            font-weight: 700;
+            color: #2e7d32;
+            text-align: center;
+            border-radius: 4px 4px 0 0;
+            font-size: 18px;
+        }
+
+        .row-7 {
+            padding: 4px 0 8px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .row-reserved-1,
+        .row-reserved-2,
+        .row-reserved-3,
+        .row-reserved-4,
+        .row-reserved-5 {
+            min-height: 30px;
+        }
+
+        .row-19 {
+            margin-top: 6px;
+        }
+
+        .row-20 {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 0px solid #d5c8a8;
+            display: flex;
+            justify-content: flex-start;
+            gap: 12px;
+        }
+
+        .match-options-area {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 18px;
+            padding: 12px 16px;
+            background: rgba(255, 239, 161, 0.5);
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            min-height: 52px;
+        }
+
+        .match-option-card {
+            padding: 4px 16px;
+            background: rgba(255, 239, 161, 0.3);
+            border: 1px solid #000;
+            border-radius: 1px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+            cursor: grab;
+            user-select: none;
+            transition: all .2s;
+        }
+        .match-option-card:hover {
+            background: rgba(255, 239, 161, 0.8);
+        }
+        .match-option-card:active {
+            cursor: grabbing;
+        }
+        .match-option-card.used {
+            display: none;
+        }
+
+        .match-drop-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 36px;
+            padding: 4px 0;
+            max-width: 620px;
+        }
+
+        .match-drop-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+            padding: 4px 0;
+        }
+        .match-drop-item .label {
+            min-width: 36px;
+            font-weight: 700;
+            color: #000;
+        }
+        .match-drop-zone {
+            flex: 1;
+            min-width: 300px;
+            padding: 6px 8px;
+            background: rgba(255, 239, 161, 0.2);
+            border: 1px solid #000;
+            border-radius: 1px;
+            font-size: 18px;
+            color: #bbb;
+            text-align: center;
+            min-height: 40px;
+            transition: all .2s;
+            font-weight: 500;
+            position: relative;
+        }
+        .match-drop-zone.filled {
+            color: #000;
+            font-weight: 600;
+            background: rgba(255, 239, 161, 0.4);
+        }
+        .match-drop-zone.dragover {
+            border-color: #067ae0;
+            background: rgba(255, 239, 161, 0.7);
+        }
+        .match-drop-zone .underline {
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #bbb;
+            font-size: 18px;
+            letter-spacing: 2px;
+            pointer-events: none;
+        }
+        .match-drop-item .points {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            min-width: 42px;
+            text-align: right;
+        }
+        .match-drop-item .clear-btn {
+            background: none;
+            border: none;
+            color: #e05046;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 0 4px;
+            opacity: 0.2;
+            transition: all .2s;
+            font-weight: 700;
+        }
+        .match-drop-item .clear-btn:hover {
+            opacity: 1;
+        }
+
+        .sort-section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+            margin: 6px 0 4px 0;
+        }
+
+        .sort-answer-area {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 12px 0;
+            background: transparent;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .sort-answer-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 20px;
+            padding: 8px 8px;
+            background: #ffffff;
+            border: 1px solid #d5c8a8;
+            border-radius: 1px;
+            min-height: 46px;
+            width: 100%;
+            max-width: 500px;
+            cursor: grab;
+            transition: all .2s;
+        }
+        .sort-answer-row:hover {
+            background: #f5f5f5;
+        }
+        .sort-answer-row:active {
+            cursor: grabbing;
+        }
+        .sort-answer-row .num {
+            font-weight: 700;
+            color: #1a1a2e;
+            min-width: 36px;
+        }
+        .sort-answer-row .content {
+            color: #bbb;
+            font-weight: 400;
+            flex: 1;
+        }
+        .sort-answer-row .content.filled {
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+        .sort-answer-row .remove-btn {
+            background: none;
+            border: none;
+            color: #e05046;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 0 6px;
+            opacity: 0.4;
+            transition: all .2s;
+        }
+        .sort-answer-row .remove-btn:hover {
+            opacity: 1;
+        }
+
+        .sort-options-area {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 16px 10px;
+            background: #FFEFA1;
+            border: 0px solid #b5a88a;
+            border-radius: 6px;
+            margin-top: 10px;
+            min-height: 60px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .sort-option-card {
+            padding: 6px 40px;
+            background: #FFEFA1;
+            border: 1px solid #888;
+            border-radius: 1px;
+            font-size: 20px;
+            cursor: grab;
+            user-select: none;
+            transition: all .2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+        .sort-option-card:hover {
+            background: #f0f0f0;
+            border-color: #555;
+        }
+        .sort-option-card:active {
+            cursor: grabbing;
+        }
+        .sort-option-card.hidden {
+            display: none;
+        }
+
+        .fill-input-area {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 40px 0;
+            width: 100%;
+        }
+        .fill-input-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 22px;
+        }
+        .fill-input-row .label {
+            font-weight: 700;
+            color: #1a1a2e;
+            min-width: 40px;
+        }
+        .fill-input-row input {
+            display: inline-block;
+            min-width: 120px;
+            max-width: 360px;
+            padding: 1px 12px;
+            background: #ffffff;
+            border: none;
+            border-bottom: 1px solid #2e7d32;
+            font-size: 22px;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+            text-align: center;
+            color: #1a1a2e;
+            transition: all .2s;
+            border-radius: 4px 4px 0 0;
+            outline: none;
+        }
+        .fill-input-row input:focus {
+            border-bottom-color: #067ae0;
+            background: #f5f5f5;
+        }
+        .fill-input-row input::placeholder {
+            color: #bbb;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .options-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 4px 0;
+            background: transparent;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .option-label {
+            display: flex;
+            align-items: center;
+            padding: 4px 8px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            gap: 12px;
+            font-size: 20px;
+            width: 100%;
+            max-width: 700px;
+            text-align: left;
+            transition: all .2s;
+        }
+        .option-label:hover {
+            background: rgba(0, 0, 0, 0.04);
+            border-radius: 6px;
+        }
+        .option-label input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 17px;
+            height: 17px;
+            border: 2px solid #888;
+            border-radius: 50%;
+            background: #ffffff;
+            cursor: pointer;
+            flex-shrink: 0;
+            position: relative;
+            transition: all .2s;
+        }
+        .option-label input[type="radio"]:checked {
+            border-color: #067ae0;
+        }
+        .option-label input[type="radio"]:checked::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 9px;
+            height: 9px;
+            background: #067ae0;
+            border-radius: 50%;
+        }
+        .option-label input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #888;
+            border-radius: 2px;
+            background: #ffffff;
+            cursor: pointer;
+            flex-shrink: 0;
+            position: relative;
+            transition: all .2s;
+        }
+        .option-label input[type="checkbox"]:checked {
+            border-color: #067ae0;
+            background: #067ae0;
+        }
+        .option-label input[type="checkbox"]:checked::after {
+            content: "✓";
+            position: absolute;
+            top: -4px;
+            left: 0px;
+            font-size: 15px;
+            color: #fff;
+        }
+        .option-marker {
+            font-size: 18px;
+            font-weight: 600;
+            color: #555;
+            min-width: 32px;
+            text-align: left;
+        }
+        .option-text {
+            font-size: 18px;
+            color: #333;
+            flex: 1;
+            text-align: left;
+        }
+
+        .truefalse-options {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4px 0;
+            background: transparent;
+        }
+        .truefalse-options .tf-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a1a2e;
+            cursor: pointer;
+            background: transparent;
+            padding: 4px 8px;
+            transition: all .2s;
+        }
+        .truefalse-options .tf-label:hover {
+            background: rgba(0, 0, 0, 0.04);
+            border-radius: 6px;
+        }
+        .truefalse-options .tf-label input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 17px;
+            height: 17px;
+            border: 2px solid #888;
+            border-radius: 50%;
+            background: #ffffff;
+            cursor: pointer;
+            flex-shrink: 0;
+            position: relative;
+            transition: all .2s;
+        }
+        .truefalse-options .tf-label input[type="radio"]:checked {
+            border-color: #067ae0;
+        }
+        .truefalse-options .tf-label input[type="radio"]:checked::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 9px;
+            height: 9px;
+            background: #067ae0;
+            border-radius: 50%;
+        }
+
+        .calc-answer-area {
+            padding: 12px 0;
+            background: transparent;
+        }
+        .calc-input {
+            display: block;
+            width: 100%;
+            max-width: 540px;
+            padding: 6px 12px;
+            background: #ffffff;
+            border: 1px solid #b5a88a;
+            border-radius: 1px;
+            font-size: 18px;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+            color: #1a1a2e;
+            transition: all .3s;
+            min-height: 36px;
+        }
+        .calc-input:focus {
+            outline: none;
+            border-color: #067ae0;
+            box-shadow: 0 0 0 3px rgba(157, 90, 44, 0.15);
+        }
+
+        .link-container {
+            display: flex;
+            gap: 120px;
+            padding: 12px 0;
+            flex-wrap: wrap;
+            background: transparent;
+            align-items: flex-start;
+        }
+        .link-left,
+        .link-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .link-left .title,
+        .link-right .title {
+            font-weight: 700;
+            font-size: 18px;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+        .link-item {
+            padding: 30px 30px;
+            min-width: 230px;
+            background: #ffffff;
+            border: 1px solid #b5a88a;
+            border-radius: 1px;
+            font-size: 22px;
+            cursor: pointer;
+            transition: all .2s;
+            text-align: center;
+        }
+        .link-item:hover {
+            background: #f5edd6;
+            border-color: #067ae0;
+        }
+        .link-item.selected {
+            background: #d4c8a8;
+            border-color: #067ae0;
+        }
+        .link-item.matched {
+            background: #e8f5e9;
+            border-color: #2e7d32;
+            cursor: default;
+            opacity: 0.8;
+        }
+
+        .link-image-upload {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .link-image-upload label {
+            padding: 4px 14px;
+            background: #067ae0;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+        }
+        .link-image-upload label:hover {
+            background: #7a4522;
+        }
+        .link-image-upload input[type="file"] {
+            display: none;
+        }
+        .link-image-upload img {
+            max-height: 60px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .explanation-container {
+            display: none;
+            padding: 10px 16px;
+            background: #f5edd6;
+            border-radius: 6px;
+            border-left: 4px solid #6b46c1;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .explanation-container.active {
+            display: block;
+        }
+        .explanation-container .label {
+            font-weight: 600;
+            color: #6b46c1;
+        }
+
+        .virtual-keyboard {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(145deg, #f5f3ef, #e8e4dc);
+            border: 2px solid #c8bda8;
+            border-radius: 8px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+            padding: 6px 10px;
+            z-index: 9999;
+            display: none;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+        }
+        .virtual-keyboard.active {
+            display: block;
+            animation: slideUp .2s ease;
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+        .keyboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2px 4px 2px;
+            border-bottom: 0px solid #d5cdbc;
+            margin-bottom: 4px;
+        }
+        .keyboard-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1a3a5c;
+        }
+        .keyboard-close {
+            background: #8a8a8a;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 0 8px;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        .keyboard-close:hover {
+            background: #6a6a6a;
+        }
+        .keyboard-row {
+            display: flex;
+            gap: 3px;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .key-btn {
+            padding: 4px 6px;
+            min-width: 28px;
+            height: 28px;
+            background: #fff;
+            border: 1px solid #c8bda8;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: #222;
+            transition: all .15s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+        }
+        .key-btn:hover {
+            background: #e8f0fe;
+            border-color: #067ae0;
+            transform: translateY(-1px);
+        }
+        .key-btn:active {
+            transform: translateY(0);
+            background: #d0d8e8;
+        }
+        .key-btn.num {
+            background: #fff;
+            font-size: 14px;
+            min-width: 30px;
+        }
+        .key-btn.control {
+            background: #e8e4dc;
+            font-size: 12px;
+            min-width: 40px;
+            color: #333;
+            font-weight: 600;
+        }
+        .key-btn.clear-key {
+            background: #f5e8e8;
+            color: #e05046;
+            font-weight: 700;
+            min-width: 40px;
+        }
+        .key-btn.enter-key {
+            background: #067ae0;
+            color: #fff;
+            border-color: #7a4522;
+            min-width: 46px;
+            font-size: 13px;
+        }
+
+        .float-btn-group {
+            position: fixed;
+            right: 16px;
+            bottom: 120px;
+            z-index: 9997;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .float-btn-group button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            min-width: 70px;
+            transition: all .3s;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+            text-align: center;
+        }
+        .float-btn-group button:hover {
+            transform: scale(1.05);
+        }
+        .btn-calc-float {
+            background: #1a237e;
+            color: #fff;
+        }
+        .btn-calc-float.active {
+            background: #ff6f00;
+            box-shadow: 0 0 0 3px #ffd54f;
+        }
+        .btn-wb-float {
+            background: #37474f;
+            color: #fff;
+        }
+        .btn-wb-float.active {
+            background: #ff6f00;
+            box-shadow: 0 0 0 3px #ffd54f;
+        }
+
+        #calculatorContainer {
+            position: fixed;
+            right: 120px;
+            bottom: 180px;
+            width: 340px;
+            background: #1d1d1d;
+            border-radius: 10px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            border: 2px solid #555;
+            z-index: 9998;
+            display: none;
+            font-family: "Segoe UI", "微軟正黑體", Arial, sans-serif;
+        }
+        #calculatorContainer.visible {
+            display: block;
+        }
+        .calc-header {
+            background: #1a1a1a;
+            padding: 4px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0px solid #333;
+            cursor: move;
+            user-select: none;
+        }
+        .calc-header .drag-handle {
+            cursor: grab;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 12px;
+            padding: 4px 6px;
+        }
+        .calc-header .title {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .calc-header .close-btn {
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 0 6px;
+        }
+        .calc-header .close-btn:hover {
+            color: #fff;
+        }
+        .calc-display {
+            background: #1d1d1d;
+            padding: 8px 14px 4px 14px;
+            text-align: right;
+            min-height: 48px;
+        }
+        .calc-display .result {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            font-family: "Courier New", monospace;
+        }
+        .calc-buttons {
+            background: #fff;
+            padding: 5px 6px 6px 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .calc-row {
+            display: flex;
+            gap: 3px;
+        }
+        .calc-btn {
+            flex: 1;
+            padding: 8px 0;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            border-radius: 4px;
+            background: #f0f0f0;
+            color: #222;
+            cursor: pointer;
+            transition: all .08s;
+            font-family: "Segoe UI", Arial, sans-serif;
+            min-height: 34px;
+            text-align: center;
+        }
+        .calc-btn:hover {
+            background: #e0e0e0;
+        }
+        .calc-btn:active {
+            background: #ccc;
+            transform: scale(0.92);
+        }
+        .calc-btn.num {
+            background: #fff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .calc-btn.operator {
+            background: #e8f5f0;
+            color: #18b893;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .calc-btn.func {
+            background: #fff;
+            font-weight: 500;
+            font-size: 12px;
+            color: #1a3a5c;
+        }
+        .calc-btn.equals {
+            background: #46e0bc;
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            flex: 2.14;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(70, 224, 188, 0.3);
+        }
+        .calc-btn.clear {
+            background: #f5e8e8;
+            font-size: 16px;
+            color: #e05046;
+            font-weight: 600;
+        }
+        .calc-btn.backspace {
+            background: #f5e8e8;
+            font-size: 16px;
+            color: #e05046;
+            font-weight: 600;
+        }
+
+        #whiteboardContainer {
+            position: fixed;
+            right: 120px;
+            bottom: 180px;
+            width: 400px;
+            height: 420px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            border: 2px solid #e0e0e0;
+            z-index: 9997;
+            display: none;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+        }
+        #whiteboardContainer.visible {
+            display: block;
+        }
+        .wb-header {
+            background: #f8f9fa;
+            padding: 4px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0px solid #e0e0e0;
+            cursor: move;
+            user-select: none;
+        }
+        .wb-header .drag-handle {
+            cursor: grab;
+            color: rgba(0, 0, 0, 0.2);
+            font-size: 12px;
+            padding: 4px 6px;
+        }
+        .wb-header .title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+        }
+        .wb-header .close-btn {
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 0 6px;
+        }
+        .wb-header .close-btn:hover {
+            color: #333;
+        }
+        .wb-toolbar {
+            padding: 4px 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px 5px;
+            align-items: center;
+            background: #f8f9fa;
+            border-bottom: 0px solid #e0e0e0;
+        }
+        .wb-toolbar button {
+            padding: 2px 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 11px;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+        }
+        .wb-toolbar button.active {
+            background: #1a237e;
+            color: #fff;
+            border-color: #1a237e;
+        }
+        .wb-toolbar .color-picker {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #ddd;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 1px;
+        }
+        .wb-toolbar .size-select {
+            padding: 1px 4px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 11px;
+            background: #fff;
+            cursor: pointer;
+        }
+        .wb-toolbar .status {
+            font-size: 10px;
+            color: #999;
+            margin-left: auto;
+        }
+        .wb-canvas-wrapper {
+            flex: 1;
+            padding: 5px;
+            background: #fff;
+            height: calc(100% - 88px);
+        }
+        #whiteboardCanvas {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            cursor: crosshair;
+            background: #fff;
+            touch-action: none;
+            display: block;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 99999;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay.active {
+            display: flex;
+        }
+        .overlay-content {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 40px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        .overlay-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+            border-bottom: 0px solid #e8e4dc;
+            padding-bottom: 12px;
+        }
+        .overlay-content .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .overlay-content .grid .item {
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s;
+            background: #f5f5f5;
+            border: 2px solid #e8e4dc;
+        }
+        .overlay-content .grid .item.answered {
+            background: #48bb78;
+            border-color: #38a169;
+            color: #fff;
+        }
+        .overlay-content .grid .item.current {
+            border-color: #067ae0;
+            box-shadow: 0 0 0 3px rgba(157, 90, 44, 0.3);
+        }
+        .overlay-content .grid .item.marked {
+            background: #ffd54f;
+            border-color: #f57f17;
+            color: #333;
+        }
+        .overlay-close-btn {
+            padding: 10px 30px;
+            background: #067ae0;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+        }
+
+        @media (max-width: 1024px) {
+            #id_middle {
+                right: 80px;
+                padding: 0px 0px;
+            }
+            #calculatorContainer {
+                width: 300px;
+                right: 90px;
+                bottom: 160px;
+            }
+            #whiteboardContainer {
+                width: 320px;
+                height: 360px;
+                right: 90px;
+                bottom: 160px;
+            }
+            .float-btn-group {
+                right: 10px;
+                bottom: 70px;
+            }
+            .float-btn-group button {
+                min-width: 60px;
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+        }
+        @media (max-width: 768px) {
+            #id_header {
+                position: relative;
+            }
+            #id_middle {
+                position: relative;
+                top: 0;
+                padding: 12px 16px;
+                font-size: 18px;
+                right: 60px;
+                bottom: 0;
+                height: auto;
+                min-height: calc(100vh - 380px);
+            }
+            .nav-top {
+                font-size: 18px;
+                padding: 10px;
+                flex-direction: column;
+                gap: 4px;
+            }
+            .nav-top .title {
+                font-size: 18px;
+            }
+            .nav-top .countdown-timer-top {
+                font-size: 14px;
+                padding: 2px 8px;
+            }
+            #toppanel {
+                font-size: 14px;
+                flex-direction: column;
+                gap: 4px;
+                padding: 6px 12px;
+            }
+            #toppanel2 {
+                font-size: 14px;
+                flex-direction: column;
+                gap: 4px;
+                padding: 6px 12px;
+            }
+            .toolbar-row-1 {
+                font-size: 13px;
+                padding: 4px 10px;
+                gap: 4px 8px;
+            }
+            .toolbar-row-2 {
+                font-size: 13px;
+                padding: 4px 10px;
+                gap: 4px 8px;
+            }
+            .toolbar-row-3 {
+                font-size: 13px;
+                padding: 4px 10px;
+                gap: 4px 8px;
+            }
+            .btn-official {
+                font-size: 13px;
+                padding: 3px 10px;
+                height: 30px;
+            }
+            .row-1 .question-text-label {
+                font-size: 16px;
+            }
+            .row-4 {
+                font-size: 18px;
+            }
+            .row-6 {
+                font-size: 18px;
+            }
+            .option-label {
+                font-size: 16px;
+                padding: 4px 8px;
+            }
+            .calc-input {
+                max-width: 100%;
+                font-size: 18px;
+            }
+            #calculatorContainer {
+                width: 260px;
+                right: 70px;
+                bottom: 60px;
+            }
+            #whiteboardContainer {
+                width: 280px;
+                height: 300px;
+                right: 70px;
+                bottom: 60px;
+            }
+            .float-btn-group {
+                right: 5px;
+                bottom: 60px;
+            }
+            .float-btn-group button {
+                min-width: 50px;
+                font-size: 11px;
+                padding: 5px 8px;
+            }
+            .link-container {
+                gap: 70px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="id_header">
+        <div class="nav-top" id="topRow1">
+            <span class="title" id="examTitle">
+                用於考生適應電腦考試系統而開發</span>
+            </span>
+            <span class="countdown-timer-top">
+                （考試日期：<span id="examDateDisplay">計算中...</span>）⏳ 距離考試倒數：<span id="examCountdownTop">計算中...</span>
+            </span>
+        </div>
+
+        <div id="toppanel">
+            <div class="toppanel-left">
+                <span class="label">崗位號</span><span class="value">：海景第一排</span>
+            </div>
+            <div class="toppanel-center">
+                <span class="label">職類級別</span><span class="value">：(乙級)職業安全衛生管理員</span>
+            </div>
+            <div class="toppanel-right">
+                <span class="label">身分證統一編號</span><span class="value">：A123456789</span>
+            </div>
+        </div>
+
+        <div id="toppanel2">
+            <div class="toppanel-left">
+                <span class="label">姓　名</span><span class="value">：一次就上岸</span>
+            </div>
+            <div class="toppanel-center">
+                <span class="label">座 位 號</span><span class="value">：<span id="id_seat">拜託文昌帝君給我容易點的題幹</span></span>
+            </div>
+            <div class="toppanel-right">
+                <span class="label">術科測試編號</span><span class="value">：<span id="examNumber">計算中...</span></span>
+            </div>
+        </div>
+
+        <div class="toolbar-row-1">
+            <div class="toolbar-left-group">
+                <button class="btn-official mode-btn active" onclick="switchMode('academic')" id="btnAcademic">學 科</button>
+                <button class="btn-official mode-btn" onclick="switchMode('technical')" id="btnTechnical">術 科</button>
+                <button class="btn-official mode-btn" onclick="switchMode('calc')" id="btnCalcMode">計 算</button>
+                <span class="toolbar-divider"></span>
+            </div>
+            <button class="btn-official primary btn-align-right-1" onclick="confirmEndExam()">提前結束測試</button>
+        </div>
+
+        <div class="toolbar-row-2">
+            <div class="toolbar-left-group-2">
+                <button class="btn-official nav-btn" onclick="prevQuestion()">上一題</button>
+                <button class="btn-official nav-btn" onclick="nextQuestion()">下一題</button>
+                <button class="btn-official danger" onclick="clearAnswer()">清除本題組作答</button>
+            </div>
+
+            <span style="font-size:14px;font-weight:600;margin-left:12px;">答題數：</span>
+            <span class="answered-display" id="answeredDisplay">0 / 8</span>
+
+            <span style="font-size:14px;font-weight:600;margin-left:6px;">⏱️</span>
+            <span class="timer" id="countdownDisplay">1:59:59</span>
+
+            <button class="btn-official primary btn-align-right-2" onclick="openOverview()" style="margin-left:20px;">作答總覽</button>
+
+            <span class="toolbar-divider"></span>
+
+            <span style="font-size:14px;font-weight:500;">到第</span>
+            <select class="jump-select" id="jumpSelect" onchange="jumpToQuestion(this.value)"></select>
+            <span style="font-size:14px;font-weight:500;">題</span>
+        </div>
+
+        <div class="toolbar-row-3">
+            <button class="btn-official toggle-btn" onclick="toggleTopRows()">🔽 隱藏 / 展開</button>
+        </div>
+    </div>
+
+    <div id="id_middle">
+        <div class="question-container">
+            <div class="question-card" id="questionCard">
+
+                <div class="row-1">
+                    <span class="group-badge" id="questionGroup">題組 1</span>
+                    <span class="question-text-label">試回答下列問題：</span>
+                    <span class="question-count" id="questionNumber">第 1 題/共 8 題</span>
+                </div>
+
+                <div class="row-2">
+                    <span class="question-type-badge single" id="questionTypeBadge">選擇題</span>
+                </div>
+
+                <div class="row-3">題幹</div>
+                <div class="row-4">試回答下列問題：</div>
+
+                <div class="row-5">
+                    <span class="points" id="questionPoints">(10%)</span>
+                    <button class="mark-btn" id="markButton" onclick="toggleMark()">標記☆</button>
+                </div>
+
+                <div class="row-6">
+                    <span class="number-badge" id="questionNumberBadge">1</span>
+                    <span class="question-content">
+                        <span class="q-text" id="questionText">未滿18歲可以從事下列那一項工作？</span>
+                        <span class="q-points" id="questionTextPoints">(10%)</span>
+                    </span>
+                </div>
+
+                <div class="row-7" id="answerContainer"></div>
+
+                <div class="row-reserved-1"></div>
+                <div class="row-reserved-2"></div>
+                <div class="row-reserved-3"></div>
+                <div class="row-reserved-4"></div>
+                <div class="row-reserved-5"></div>
+
+                <div class="row-19">
+                    <div class="explanation-container" id="explanationContainer">
+                        <span class="label">📖 解析：</span>
+                        <span id="explanationText"></span>
+                    </div>
+                </div>
+
+                <div class="row-20">
+                    <button class="btn-official btn-next" onclick="nextQuestion()">下一題</button>
+                    <button class="btn-official success" onclick="submitExam()">送出</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="virtual-keyboard" id="virtualKeyboard">
+        <div class="keyboard-header">
+            <span class="keyboard-title">⌨️ 螢幕小鍵盤</span>
+            <button class="keyboard-close" onclick="closeKeyboard()">✕</button>
+        </div>
+        <div class="keyboard-body">
+            <div class="keyboard-row">
+                <button class="key-btn num" onclick="keyboardInput('0')">0</button>
+                <button class="key-btn num" onclick="keyboardInput('1')">1</button>
+                <button class="key-btn num" onclick="keyboardInput('2')">2</button>
+                <button class="key-btn num" onclick="keyboardInput('3')">3</button>
+                <button class="key-btn num" onclick="keyboardInput('4')">4</button>
+                <button class="key-btn num" onclick="keyboardInput('5')">5</button>
+                <button class="key-btn num" onclick="keyboardInput('6')">6</button>
+                <button class="key-btn num" onclick="keyboardInput('7')">7</button>
+                <button class="key-btn num" onclick="keyboardInput('8')">8</button>
+                <button class="key-btn num" onclick="keyboardInput('9')">9</button>
+                <button class="key-btn num" onclick="keyboardInput('.')">.</button>
+                <button class="key-btn num" onclick="keyboardInput('-')">−</button>
+            </div>
+            <div class="keyboard-row" style="margin-top:3px;">
+                <button class="key-btn control" onclick="keyboardInput('backspace')">← 退格</button>
+                <button class="key-btn clear-key" onclick="keyboardInput('clear')">清除</button>
+                <button class="key-btn enter-key" onclick="keyboardInput('enter')">確定</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="float-btn-group">
+        <button class="btn-calc-float" id="btnCalcFloat" onclick="toggleCalculator()">🧮 計算機</button>
+        <button class="btn-wb-float" id="btnWbFloat" onclick="toggleWhiteboard()">🎨 小畫家</button>
+    </div>
+
+    <div id="calculatorContainer">
+        <div class="calc-header" id="calcDragHandle">
+            <span class="drag-handle">⠿ 拖曳</span><span class="title">計算機</span>
+            <button class="close-btn" onclick="closeCalculator()">✕</button>
+        </div>
+        <div class="calc-display"><div class="result" id="calcResult">0</div></div>
+        <div class="calc-buttons">
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('√(')">√</button>
+                <button class="calc-btn func" onclick="calcInput('²')">x²</button>
+                <button class="calc-btn func" onclick="calcInput('^(')">x³</button>
+                <button class="calc-btn num" onclick="calcInput('7')">7</button>
+                <button class="calc-btn num" onclick="calcInput('8')">8</button>
+                <button class="calc-btn num" onclick="calcInput('9')">9</button>
+                <button class="calc-btn operator" onclick="calcInput('+')">+</button>
+                <button class="calc-btn backspace" onclick="calcBackspace()">⌫</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('exp(')">exp</button>
+                <button class="calc-btn func" onclick="calcInput('ln(')">ln</button>
+                <button class="calc-btn func" onclick="calcInput('log(')">log</button>
+                <button class="calc-btn num" onclick="calcInput('4')">4</button>
+                <button class="calc-btn num" onclick="calcInput('5')">5</button>
+                <button class="calc-btn num" onclick="calcInput('6')">6</button>
+                <button class="calc-btn operator" onclick="calcInput('-')">−</button>
+                <button class="calc-btn clear" onclick="calcClear()">C</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('e')">e</button>
+                <button class="calc-btn func" onclick="calcInput('π')">π</button>
+                <button class="calc-btn func" onclick="calcInput('!')">x!</button>
+                <button class="calc-btn num" onclick="calcInput('1')">1</button>
+                <button class="calc-btn num" onclick="calcInput('2')">2</button>
+                <button class="calc-btn num" onclick="calcInput('3')">3</button>
+                <button class="calc-btn operator" onclick="calcInput('*')">×</button>
+                <button class="calc-btn func" onclick="calcInput('(')">(</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('ANS')">ANS</button>
+                <button class="calc-btn func" onclick="calcInput('%')">%</button>
+                <button class="calc-btn num" onclick="calcInput('.')">.</button>
+                <button class="calc-btn num" onclick="calcInput('0')">0</button>
+                <button class="calc-btn equals" onclick="calcCalculate()">=</button>
+                <button class="calc-btn operator" onclick="calcInput('/')">÷</button>
+                <button class="calc-btn func" onclick="calcInput(')')">)</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="whiteboardContainer">
+        <div class="wb-header" id="wbDragHandle">
+            <span class="drag-handle">⠿ 拖曳</span><span class="title">📝 白板</span>
+            <button class="close-btn" onclick="closeWhiteboard()">✕</button>
+        </div>
+        <div class="wb-toolbar">
+            <button id="wbPencil" class="active" onclick="setWbMode('pencil')">✏️ 鉛筆</button>
+            <button id="wbEraser" onclick="setWbMode('eraser')">🧹 橡皮擦</button>
+            <button onclick="clearWhiteboard()">🗑️ 清除</button>
+            <span style="font-size:11px;color:#666;">顏色：</span>
+            <input type="color" id="wbColor" value="#000000" class="color-picker" onchange="setWbColor(this.value)">
+            <span style="font-size:11px;color:#666;">粗細：</span>
+            <select id="wbSize" class="size-select" onchange="setWbSize(this.value)">
+                <option value="2">細</option><option value="4" selected>中</option>
+                <option value="8">粗</option><option value="12">特粗</option>
+            </select>
+            <span class="status" id="wbStatus">✏️ 鉛筆模式</span>
+        </div>
+        <div class="wb-canvas-wrapper">
+            <canvas id="whiteboardCanvas"></canvas>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <h2>作答總覽</h2>
+            <div class="grid" id="overviewGrid"></div>
+            <div style="display:flex;gap:12px;justify-content:flex-end;">
+                <button class="overlay-close-btn" onclick="closeOverview()">關閉</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questionData = [{
+            id: 1,
+            type: 'single',
+            text: '未滿18歲可以從事下列那一項工作？',
+            options: ['220伏特以下電力線之銜接', '起重機運轉工作', '坑內工作', '鍋爐操作'],
+            answer: 0,
+            explanation: '未滿18歲不得從事危險性工作，但220伏特以下電力線銜接屬非危險性工作。'
+        }, {
+            id: 2,
+            type: 'multiple',
+            text: '下列那些為職業安全衛生設施規則規定之車輛機械？',
+            options: ['挖土機', '捲揚機', '吊籠', '踏車', '堆高機'],
+            answer: [0, 4],
+            explanation: '車輛機械包括挖土機、堆高機等。'
+        }, {
+            id: 3,
+            type: 'truefalse',
+            text: '職業安全衛生管理都是職業安全衛生人員的責任。',
+            options: ['是', '否'],
+            answer: 1,
+            explanation: '職業安全衛生管理是雇主、管理人員及勞工共同的責任。'
+        }, {
+            id: 4,
+            type: 'fill',
+            text: '依勞動基準法第36條第1項規定，勞工每7日中應有 ___ 日之休息，其中 ___ 日為例假，___ 日為休息日。',
+            options: ['2', '1', '1'],
+            answer: ['2', '1', '1'],
+            explanation: '勞基法第36條規定，每7日應有2日休息，其中1日例假，1日休息日。'
+        }, {
+            id: 5,
+            type: 'calc',
+            text: '某勞工身高165公分，體重57公斤。其BMI為何？(四捨五入至小數點第一位)',
+            options: [],
+            answer: '20.9',
+            explanation: 'BMI = 57 / (1.65)² = 20.94 → 20.9'
+        }, {
+            id: 6,
+            type: 'match',
+            text: '工地常發生墜落之地點：A、B、C、D、E。',
+            options: ['合梯上', '施工架上', '平面道路', '屋頂', '開口邊緣', '鋼構上'],
+            answer: ['合梯上', '施工架上', '屋頂', '開口邊緣', '鋼構上'],
+            explanation: '工地常發生墜落之地點包括施工架上、鋼構上、合梯上、開口邊緣、屋頂。'
+        }, {
+            id: 7,
+            type: 'sort',
+            text: '請依序排列我國法令位階之高低順序（由高至低）。',
+            options: ['憲法', '法律', '法規命令', '行政規則'],
+            answer: ['憲法', '法律', '法規命令', '行政規則'],
+            explanation: '我國法令位階：憲法 → 法律 → 法規命令 → 行政規則。'
+        }, {
+            id: 8,
+            type: 'link',
+            text: '請將左側法規名稱與右側其對應之主管機關進行配對。',
+            options: [{ left: '職業安全衛生法', right: '勞動部' }, { left: '工廠管理輔導法', right: '經濟部' },
+                { left: '空氣污染防制法', right: '環境部' }, { left: '消防法', right: '內政部' }
+            ],
+            answer: ['勞動部', '經濟部', '環境部', '內政部'],
+            explanation: '各法規對應之主管機關如上。'
+        }];
+
+        let currentQuestionIndex = 0;
+        let userAnswers = {};
+        let markedQuestions = {};
+        let totalQuestions = questionData.length;
+        let countdownSeconds = 7200;
+        let topRowsHidden = false;
+
+        const examDate = new Date(2026, 7, 7, 7, 30, 0);
+
+        function formatExamDate() {
+            const year = examDate.getFullYear();
+            const month = String(examDate.getMonth() + 1).padStart(2, '0');
+            const day = String(examDate.getDate()).padStart(2, '0');
+            const hours = String(examDate.getHours()).padStart(2, '0');
+            const minutes = String(examDate.getMinutes()).padStart(2, '0');
+            return `${year}/${month}/${day} ${hours}:${minutes}`;
+        }
+
+        function generateExamNumber() {
+            const now = new Date();
+            const taiwanYear = String(now.getFullYear() - 1911).padStart(3, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const dateStr = month + day;
+            return taiwanYear + 'N' + dateStr + '060';
+        }
+
+        function updateExamCountdown() {
+            const now = new Date();
+            const diff = examDate - now;
+            if (diff <= 0) {
+                document.getElementById('examCountdownTop').textContent = '⏰ 考試已開始！';
+                return;
+            }
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            document.getElementById('examCountdownTop').textContent =
+                `${days}天 ${String(hours).padStart(2, '0')}時 ${String(minutes).padStart(2, '0')}分 ${String(seconds).padStart(2, '0')}秒`;
+        }
+
+        function toggleTopRows() {
+            const btn = document.querySelector('.toggle-btn');
+            const row1 = document.getElementById('topRow1');
+            const row2 = document.getElementById('toppanel');
+            const row3 = document.getElementById('toppanel2');
+            topRowsHidden = !topRowsHidden;
+            if (topRowsHidden) {
+                row1.style.display = 'none';
+                row2.style.display = 'none';
+                row3.style.display = 'none';
+                btn.textContent = '🔼 展開';
+                document.getElementById('id_middle').style.top = '120px';
+            } else {
+                row1.style.display = 'flex';
+                row2.style.display = 'flex';
+                row3.style.display = 'flex';
+                btn.textContent = '🔽 隱藏 / 展開';
+                document.getElementById('id_middle').style.top = '173px';
+            }
+        }
+
+        function renderQuestion(index) {
+            const q = questionData[index];
+            if (!q) return;
+
+            document.getElementById('questionGroup').textContent = `題組 ${Math.floor(index / 2) + 1}`;
+            document.getElementById('questionNumber').textContent = `第 ${index + 1} 題/共 ${totalQuestions} 題`;
+
+            const badge = document.getElementById('questionTypeBadge');
+            const typeMap = { 'single': '選擇題', 'multiple': '複選題', 'truefalse': '是非題', 'calc': '計算題', 'fill': '填充題',
+                'sort': '排序題', 'match': '配合題', 'link': '連連看'
+            };
+            const colorMap = { 'single': '#337ab7', 'multiple': '#f0ad4e', 'truefalse': '#6b46c1', 'calc': '#d9534f',
+                'fill': '#5cb85c', 'sort': '#f7c948', 'match': '#8e44ad', 'link': '#5bc0de'
+            };
+            const badgeText = typeMap[q.type] || '選擇題';
+            badge.textContent = badgeText;
+            badge.className = 'question-type-badge ' + (q.type || 'single');
+            badge.style.background = colorMap[q.type] || '#337ab7';
+            if (q.type === 'sort') badge.style.color = '#fff';
+
+            document.getElementById('questionPoints').textContent = '(10%)';
+            const markBtn = document.getElementById('markButton');
+
+            if (markedQuestions[index]) {
+                markBtn.classList.add('active');
+                markBtn.textContent = '標記★';
+            } else {
+                markBtn.classList.remove('active');
+                markBtn.textContent = '標記☆';
+            }
+
+            document.getElementById('questionNumberBadge').textContent = index + 1;
+            const textEl = document.getElementById('questionText');
+
+            if (q.type === 'match') {
+                let html = q.text;
+                html = html.replace(/([A-E])/g, function(match) {
+                    return `<span class="fill-slot-inline">${match}</span>`;
+                });
+                textEl.innerHTML = html;
+            } else if (q.type === 'fill') {
+                const parts = q.text.split('___');
+                let html = '';
+                const labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+                for (let i = 0; i < parts.length; i++) {
+                    html += parts[i];
+                    if (i < parts.length - 1) {
+                        html += `<span class="fill-slot-inline">${labels[i] || i+1}</span>`;
+                    }
+                }
+                textEl.innerHTML = html;
+            } else {
+                textEl.textContent = q.text;
+            }
+            document.getElementById('questionTextPoints').textContent = '(10%)';
+
+            const expContainer = document.getElementById('explanationContainer');
+            const expText = document.getElementById('explanationText');
+            if (q.explanation) {
+                expContainer.classList.add('active');
+                expText.textContent = q.explanation;
+            } else {
+                expContainer.classList.remove('active');
+            }
+
+            renderAnswerArea(q, index);
+            updateAnsweredCount();
+            document.getElementById('jumpSelect').value = index + 1;
+        }
+
+        function renderAnswerArea(q, index) {
+            const container = document.getElementById('answerContainer');
+            container.innerHTML = '';
+
+            switch (q.type) {
+                case 'single':
+                case 'multiple':
+                    renderChoice(q, index, container);
+                    break;
+                case 'truefalse':
+                    renderTrueFalse(q, index, container);
+                    break;
+                case 'fill':
+                    renderFill(q, index, container);
+                    break;
+                case 'calc':
+                    renderCalc(q, index, container);
+                    break;
+                case 'match':
+                    renderMatch(q, index, container);
+                    break;
+                case 'sort':
+                    renderSort(q, index, container);
+                    break;
+                case 'link':
+                    renderLink(q, index, container);
+                    break;
+                default:
+                    container.innerHTML = '<div>未知題型</div>';
+            }
+        }
+
+        function renderChoice(q, index, container) {
+            const saved = userAnswers[index];
+            const isMultiple = q.type === 'multiple';
+            const labels = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'options-group';
+
+            q.options.forEach((opt, i) => {
+                const label = document.createElement('label');
+                label.className = 'option-label';
+                const isChecked = isMultiple ? (saved || []).includes(i) : (saved === i);
+                const inputType = isMultiple ? 'checkbox' : 'radio';
+                const changeHandler = isMultiple ?
+                    `onchange="toggleMultipleAnswer(${index}, ${i})"` :
+                    `onchange="saveAnswer(${index}, ${i})"`;
+                label.innerHTML = `
+                        <input type="${inputType}" name="q${index}" value="${i}" ${isChecked ? 'checked' : ''} ${changeHandler}>
+                        <span class="option-marker">${labels[i] || i+1}.</span>
+                        <span class="option-text">${opt}</span>
+                    `;
+                wrapper.appendChild(label);
+            });
+
+            container.appendChild(wrapper);
+        }
+
+        function renderTrueFalse(q, index, container) {
+            const saved = userAnswers[index];
+            const wrapper = document.createElement('div');
+            wrapper.className = 'truefalse-options';
+
+            ['是', '否'].forEach((opt, i) => {
+                const label = document.createElement('label');
+                label.className = 'tf-label';
+                const isChecked = (saved === i);
+                label.innerHTML = `
+                        <input type="radio" name="tf${index}" value="${i}" ${isChecked ? 'checked' : ''} onchange="saveAnswer(${index}, ${i})">
+                        <span>${opt}</span>
+                    `;
+                wrapper.appendChild(label);
+            });
+            container.appendChild(wrapper);
+        }
+
+        function renderFill(q, index, container) {
+            const saved = userAnswers[index] ? userAnswers[index].split(',') : [];
+            const labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+            const numSlots = q.options ? q.options.length : 3;
+
+            const area = document.createElement('div');
+            area.className = 'fill-input-area';
+
+            for (let i = 0; i < numSlots; i++) {
+                const val = saved[i] || '';
+                const row = document.createElement('div');
+                row.className = 'fill-input-row';
+                row.innerHTML = `
+                        <span class="label">(${labels[i] || i+1})</span>
+                        <input type="text" class="fill-input-field" data-index="${i}" placeholder="請輸入" value="${val}" onfocus="openKeyboardForFillInput(this)" oninput="saveFillAnswer(${index}, this.value, ${i})">
+                    `;
+                area.appendChild(row);
+            }
+
+            container.appendChild(area);
+            const helper = document.createElement('div');
+            helper.主樣式表.cssText =
+                'margin-top:6px;padding:8px 14px;background:#f5edd6;border-radius:6px;border-left:4px solid #067ae0;font-size:16px;color:#666;text-align:left;';
+            helper.textContent = '💡 點擊輸入框使用螢幕小鍵盤';
+            container.appendChild(helper);
+        }
+
+        function saveFillAnswer(index, value, pos) {
+            const current = userAnswers[index] ? userAnswers[index].split(',') : [];
+            current[pos] = value;
+            userAnswers[index] = current.join(',');
+            updateAnsweredCount();
+        }
+
+        function renderCalc(q, index, container) {
+            const saved = userAnswers[index] || '';
+            const area = document.createElement('div');
+            area.className = 'calc-answer-area';
+
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.className = 'calc-input';
+            input.placeholder = '請輸入計算結果';
+            input.value = saved;
+            input.onfocus = function() { showKeyboardForInput(this); };
+            input.oninput = function() { saveCalcAnswer(index, this.value); };
+
+            area.appendChild(input);
+            const helper = document.createElement('div');
+            helper.主樣式表.cssText =
+                'margin-top:10px;padding:8px 16px;background:#f5edd6;border-radius:6px;border-left:4px solid #067ae0;font-size:16px;color:#666;text-align:left;';
+            helper.textContent = '💡 可使用螢幕小鍵盤輔助輸入';
+            area.appendChild(helper);
+            container.appendChild(area);
+        }
+
+        function saveCalcAnswer(index, value) {
+            userAnswers[index] = value;
+            updateAnsweredCount();
+        }
+
+        function renderMatch(q, index, container) {
+            const saved = userAnswers[index] ? userAnswers[index].split(',') : [];
+            const options = q.options || [];
+            const labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+
+            const optArea = document.createElement('div');
+            optArea.className = 'match-options-area';
+
+            const shuffled = [...options];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+
+            shuffled.forEach((opt) => {
+                const card = document.createElement('div');
+                card.className = 'match-option-card';
+                card.textContent = opt;
+                card.draggable = true;
+                card.dataset.value = opt;
+                if (saved.includes(opt)) {
+                    card.classList.add('used');
+                }
+                card.addEventListener('dragstart', function(e) {
+                    e.dataTransfer.setData('text/plain', 'match-opt-' + this.dataset.value);
+                    this.style.borderColor = '#067ae0';
+                });
+                card.addEventListener('dragend', function(e) {
+                    this.style.borderColor = '#000';
+                });
+                optArea.appendChild(card);
+            });
+            container.appendChild(optArea);
+
+            const dropArea = document.createElement('div');
+            dropArea.className = 'match-drop-area';
+
+            const numSlots = 5;
+            for (let i = 0; i < numSlots; i++) {
+                const val = saved[i] || '';
+                const item = document.createElement('div');
+                item.className = 'match-drop-item';
+
+                const label = document.createElement('span');
+                label.className = 'label';
+                label.textContent = `(${labels[i]})`;
+                item.appendChild(label);
+
+                const zone = document.createElement('span');
+                zone.className = `match-drop-zone ${val ? 'filled' : ''}`;
+                zone.dataset.slot = i;
+                zone.dataset.expected = options[i] || '';
+                if (val) {
+                    zone.textContent = val;
+                } else {
+                    const underline = document.createElement('span');
+                    underline.className = 'underline';
+                    underline.textContent = '______';
+                    zone.appendChild(underline);
+                }
+
+                zone.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.classList.add('dragover');
+                });
+                zone.addEventListener('dragleave', function(e) {
+                    this.classList.remove('dragover');
+                });
+                zone.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    this.classList.remove('dragover');
+                    const data = e.dataTransfer.getData('text/plain');
+                    if (!data || !data.startsWith('match-opt-')) return;
+                    const value = data.replace('match-opt-', '');
+                    const slot = parseInt(this.dataset.slot);
+
+                    const current = userAnswers[index] ? userAnswers[index].split(',') : [];
+                    const existingIdx = current.indexOf(value);
+                    if (existingIdx !== -1) {
+                        current.splice(existingIdx, 1);
+                    }
+                    current[slot] = value;
+                    userAnswers[index] = current.join(',');
+                    updateAnsweredCount();
+                    renderQuestion(currentQuestionIndex);
+                });
+
+                item.appendChild(zone);
+
+                const points = document.createElement('span');
+                points.className = 'points';
+                points.textContent = '(2%)';
+                item.appendChild(points);
+
+                const clearBtn = document.createElement('button');
+                clearBtn.className = 'clear-btn';
+                clearBtn.textContent = '✕';
+                clearBtn.onclick = function() {
+                    const current = userAnswers[index] ? userAnswers[index].split(',') : [];
+                    if (current[i]) {
+                        delete current[i];
+                        userAnswers[index] = current.join(',');
+                        updateAnsweredCount();
+                        renderQuestion(currentQuestionIndex);
+                    }
+                };
+                item.appendChild(clearBtn);
+
+                dropArea.appendChild(item);
+            }
+            container.appendChild(dropArea);
+
+            const helper = document.createElement('div');
+            helper.主樣式表.cssText =
+                'margin-top:10px;padding:8px 16px;background:#f5edd6;border-radius:4px;border-left:4px solid #067ae0;font-size:16px;color:#666;text-align:left;';
+            helper.textContent = '💡 將上方選項拖曳至下方對應空格（共5格，請選出5個正確答案）';
+            container.appendChild(helper);
+        }
+
+        function renderSort(q, index, container) {
+            const saved = userAnswers[index] ? userAnswers[index].split(',') : [];
+            const options = q.options || [];
+
+            const title1 = document.createElement('div');
+            title1.className = 'sort-section-title';
+            title1.textContent = '📌 作答區（請由高至低排列）';
+            container.appendChild(title1);
+
+            const answerArea = document.createElement('div');
+            answerArea.className = 'sort-answer-area';
+            answerArea.id = `sort-answer-${index}`;
+
+            for (let i = 0; i < options.length; i++) {
+                const row = document.createElement('div');
+                row.className = 'sort-answer-row';
+                row.draggable = true;
+                const val = saved[i] || '';
+                row.innerHTML = `
+                        <span class="num">${i+1}.</span>
+                        <span class="content ${val ? 'filled' : ''}">${val || ''}</span>
+                        ${val ? '<button class="remove-btn" onclick="removeSortItem('+index+', '+i+')" title="移回選項區">✕</button>' : ''}
+                    `;
+                row.dataset.index = i;
+                row.dataset.value = val;
+
+                row.addEventListener('dragstart', function(e) {
+                    e.dataTransfer.setData('text/plain', 'row-' + this.dataset.index);
+                    this.style.opacity = '0.5';
+                });
+                row.addEventListener('dragend', function(e) {
+                    this.style.opacity = '1';
+                });
+                row.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#067ae0';
+                });
+                row.addEventListener('dragleave', function(e) {
+                    this.style.borderColor = '#d5c8a8';
+                });
+                row.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    this.style.borderColor = '#d5c8a8';
+                    const data = e.dataTransfer.getData('text/plain');
+                    if (data && data.startsWith('row-')) {
+                        const fromIdx = parseInt(data.replace('row-', ''));
+                        const toIdx = parseInt(this.dataset.index);
+                        if (fromIdx !== toIdx) {
+                            moveSortItem(index, fromIdx, toIdx);
+                        }
+                    } else if (data && data.startsWith('sort-opt-')) {
+                        const value = data.replace('sort-opt-', '');
+                        const current = userAnswers[index] ? userAnswers[index].split(',') : [];
+                        if (current.includes(value)) return;
+                        const emptyIdx = current.indexOf('');
+                        if (emptyIdx !== -1) {
+                            current[emptyIdx] = value;
+                        } else if (current.length < options.length) {
+                            current.push(value);
+                        } else {
+                            return;
+                        }
+                        userAnswers[index] = current.join(',');
+                        updateAnsweredCount();
+                        renderQuestion(currentQuestionIndex);
+                    }
+                });
+
+                answerArea.appendChild(row);
+            }
+            container.appendChild(answerArea);
+
+            const title2 = document.createElement('div');
+            title2.className = 'sort-section-title';
+            title2.textContent = '📌 選項區（請拖曳至上方作答區）';
+            container.appendChild(title2);
+
+            const optArea = document.createElement('div');
+            optArea.className = 'sort-options-area';
+            optArea.id = `sort-options-${index}`;
+
+            const unused = options.filter(opt => !saved.includes(opt));
+            if (unused.length === 0 && saved.length > 0) {
+                const msg = document.createElement('div');
+                msg.主樣式表.cssText = 'color:#666;font-size:16px;padding:8px;';
+                msg.textContent = '✅ 所有選項已排列完成，可拖曳上方項目調整順序';
+                optArea.appendChild(msg);
+            } else {
+                unused.forEach(opt => {
+                    const card = document.createElement('div');
+                    card.className = 'sort-option-card';
+                    card.textContent = opt;
+                    card.draggable = true;
+                    card.dataset.value = opt;
+                    card.addEventListener('dragstart', function(e) {
+                        e.dataTransfer.setData('text/plain', 'sort-opt-' + this.dataset.value);
+                        this.style.borderColor = '#067ae0';
+                    });
+                    card.addEventListener('dragend', function(e) {
+                        this.style.borderColor = '#888';
+                    });
+                    optArea.appendChild(card);
+                });
+            }
+
+            optArea.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                this.style.borderColor = '#067ae0';
+            });
+            optArea.addEventListener('dragleave', function(e) {
+                this.style.borderColor = '#b5a88a';
+            });
+            optArea.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.style.borderColor = '#b5a88a';
+                const data = e.dataTransfer.getData('text/plain');
+                if (data && data.startsWith('row-')) {
+                    const fromIdx = parseInt(data.replace('row-', ''));
+                    removeSortItem(index, fromIdx);
+                }
+            });
+
+            container.appendChild(optArea);
+
+            const helper = document.createElement('div');
+            helper.主樣式表.cssText =
+                'margin-top:10px;padding:8px 16px;background:#f5edd6;border-radius:6px;border-left:4px solid #067ae0;font-size:16px;color:#666;text-align:left;';
+            helper.textContent = '💡 將下方選項拖曳至上方作答區，可拖曳調整順序';
+            container.appendChild(helper);
+        }
+
+        function moveSortItem(qIndex, fromIdx, toIdx) {
+            const current = userAnswers[qIndex] ? userAnswers[qIndex].split(',') : [];
+            const item = current[fromIdx];
+            if (!item) return;
+            current.splice(fromIdx, 1);
+            current.splice(toIdx, 0, item);
+            userAnswers[qIndex] = current.join(',');
+            updateAnsweredCount();
+            renderQuestion(currentQuestionIndex);
+        }
+
+        function removeSortItem(qIndex, idx) {
+            const current = userAnswers[qIndex] ? userAnswers[qIndex].split(',') : [];
+            if (idx < current.length) {
+                current.splice(idx, 1);
+                userAnswers[qIndex] = current.join(',');
+                updateAnsweredCount();
+                renderQuestion(currentQuestionIndex);
+            }
+        }
+
+        // ===== 連連看題型 (已移除重複題目) =====
+        function renderLink(q, index, container) {
+            const pairs = q.options || [];
+            const saved = userAnswers[index] ? userAnswers[index].split(',') : [];
+            const labels = ['A', 'B', 'C', 'D', 'E'];
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'link-container';
+
+            const leftCol = document.createElement('div');
+            leftCol.className = 'link-left';
+            leftCol.innerHTML = `<div class="title">📌 左欄</div>`;
+            pairs.forEach((pair, i) => {
+                const item = document.createElement('div');
+                item.className = 'link-item';
+                item.textContent = `${labels[i] || i+1}. ${pair.left}`;
+                item.dataset.index = i;
+                item.dataset.value = pair.left;
+                item.onclick = function() { selectLinkItem(index, i, 'left'); };
+                if (saved[i]) item.classList.add('matched');
+                leftCol.appendChild(item);
+            });
+            const uploadLeft = document.createElement('div');
+            uploadLeft.className = 'link-image-upload';
+            uploadLeft.innerHTML =
+                `<label>📤 上傳左欄圖片 <input type="file" accept="image/*" onchange="uploadLinkImage(this, 'left-${index}')"></label><div id="link-image-left-${index}"></div>`;
+            leftCol.appendChild(uploadLeft);
+            wrapper.appendChild(leftCol);
+
+            const rightCol = document.createElement('div');
+            rightCol.className = 'link-right';
+            rightCol.innerHTML = `<div class="title">📌 右欄</div>`;
+            const shuffled = [...pairs];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            shuffled.forEach((pair, i) => {
+                const item = document.createElement('div');
+                item.className = 'link-item';
+                item.textContent = pair.right;
+                item.dataset.value = pair.right;
+                item.dataset.pairIndex = pairs.indexOf(pair);
+                item.onclick = function() { selectLinkItem(index, pairs.indexOf(pair),
+                    'right'); };
+                if (saved[pairs.indexOf(pair)]) item.classList.add('matched');
+                rightCol.appendChild(item);
+            });
+            const uploadRight = document.createElement('div');
+            uploadRight.className = 'link-image-upload';
+            uploadRight.innerHTML =
+                `<label>📤 上傳右欄圖片 <input type="file" accept="image/*" onchange="uploadLinkImage(this, 'right-${index}')"></label><div id="link-image-right-${index}"></div>`;
+            rightCol.appendChild(uploadRight);
+            wrapper.appendChild(rightCol);
+
+            container.appendChild(wrapper);
+
+            const status = document.createElement('div');
+            status.id = `link-status-${index}`;
+            status.主樣式表.cssText =
+                'margin-top:10px;padding:8px 16px;background:#f5edd6;border-radius:6px;font-size:16px;color:#666;text-align:left;';
+            status.textContent = '💡 點選左欄項目，再點選右欄進行配對';
+            container.appendChild(status);
+
+            const helper = document.createElement('div');
+            helper.主樣式表.cssText =
+                'margin-top:10px;padding:8px 16px;background:#f5edd6;border-radius:6px;border-left:4px solid #067ae0;font-size:16px;color:#666;text-align:left;';
+            helper.textContent = '💡 可上傳圖片作為題幹輔助說明';
+            container.appendChild(helper);
+
+            if (!window.linkSelections) window.linkSelections = {};
+            window.linkSelections[index] = { left: null, right: null };
+        }
+
+        function selectLinkItem(qIndex, pairIndex, side) {
+            const q = questionData[qIndex];
+            if (!q || q.type !== 'link') return;
+            if (!window.linkSelections) window.linkSelections = {};
+            if (!window.linkSelections[qIndex]) window.linkSelections[qIndex] = { left: null, right: null };
+            const state = window.linkSelections[qIndex];
+            const saved = userAnswers[qIndex] ? userAnswers[qIndex].split(',') : [];
+            if (saved[pairIndex]) return;
+            if (side === 'left') {
+                state.left = pairIndex;
+                document.querySelectorAll(`#answerContainer .link-left .link-item`).forEach(el => el.classList.remove(
+                    'selected'));
+                const items = document.querySelectorAll(`#answerContainer .link-left .link-item`);
+                if (items[pairIndex]) items[pairIndex].classList.add('selected');
+            } else {
+                if (state.left === null) { alert('請先點選左欄項目'); return; }
+                const leftIdx = state.left;
+                if (saved[leftIdx]) { alert('此項目已被配對'); return; }
+                const current = userAnswers[qIndex] ? userAnswers[qIndex].split(',') : [];
+                current[leftIdx] = q.options[leftIdx].left;
+                userAnswers[qIndex] = current.join(',');
+                updateAnsweredCount();
+                state.left = null;
+                document.querySelectorAll(`#answerContainer .link-left .link-item`).forEach(el => el.classList.remove(
+                    'selected'));
+                renderQuestion(qIndex);
+            }
+        }
+
+        function uploadLinkImage(input, targetId) {
+            const file = input.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const container = document.getElementById(`link-image-${targetId}`);
+                if (container) { container.innerHTML = `<img src="${e.target.result}" alt="上傳圖片">`; }
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function saveAnswer(index, value) {
+            userAnswers[index] = value;
+            updateAnsweredCount();
+            renderQuestion(currentQuestionIndex);
+        }
+
+        function toggleMultipleAnswer(index, value) {
+            const current = userAnswers[index] || [];
+            const idx = current.indexOf(value);
+            if (idx === -1) current.push(value);
+            else current.splice(idx, 1);
+            userAnswers[index] = current;
+            updateAnsweredCount();
+            renderQuestion(currentQuestionIndex);
+        }
+
+        function updateAnsweredCount() {
+            let answered = 0;
+            for (let i = 0; i < totalQuestions; i++) {
+                const val = userAnswers[i];
+                if (val !== undefined && val !== '' && val !== null) {
+                    if (typeof val === 'string' && val.includes(',')) {
+                        const parts = val.split(',').filter(v => v.trim() !== '');
+                        if (parts.length > 0) answered++;
+                    } else if (Array.isArray(val) && val.length > 0) {
+                        answered++;
+                    } else {
+                        answered++;
+                    }
+                }
+            }
+            document.getElementById('answeredDisplay').textContent = `${answered} / ${totalQuestions}`;
+        }
+
+        let activeInput = null;
+
+        function openKeyboardForFillInput(input) {
+            activeInput = input;
+            const keyboard = document.getElementById('virtualKeyboard');
+            keyboard.classList.add('active');
+
+            const rect = input.getBoundingClientRect();
+            const keyboardHeight = keyboard.offsetHeight || 120;
+            const viewportHeight = window.innerHeight;
+            let top = rect.bottom + 4;
+            if (top + keyboardHeight > viewportHeight - 10) top = rect.top - keyboardHeight - 4;
+            if (top < 10) top = 10;
+            keyboard.style.top = top + 'px';
+            keyboard.style.bottom = 'auto';
+
+            const left = rect.left + (rect.width - keyboard.offsetWidth) / 2;
+            keyboard.style.left = Math.max(10, left) + 'px';
+            keyboard.style.transform = 'none';
+
+            input.focus();
+            input.style.borderBottomColor = '#067ae0';
+            input.style.background = '#f5f5f5';
+        }
+
+        function showKeyboardForInput(input) {
+            activeInput = input;
+            const keyboard = document.getElementById('virtualKeyboard');
+            keyboard.classList.add('active');
+
+            const rect = input.getBoundingClientRect();
+            const keyboardHeight = keyboard.offsetHeight || 120;
+            const viewportHeight = window.innerHeight;
+            let top = rect.bottom + 4;
+            if (top + keyboardHeight > viewportHeight - 10) top = rect.top - keyboardHeight - 4;
+            if (top < 10) top = 10;
+            keyboard.style.top = top + 'px';
+            keyboard.style.bottom = 'auto';
+
+            const left = rect.left + (rect.width - keyboard.offsetWidth) / 2;
+            keyboard.style.left = Math.max(10, left) + 'px';
+            keyboard.style.transform = 'none';
+
+            input.focus();
+            input.style.borderColor = '#067ae0';
+            input.style.boxShadow = '0 0 0 3px rgba(157, 90, 44, 0.2)';
+        }
+
+        function closeKeyboard() {
+            document.getElementById('virtualKeyboard').classList.remove('active');
+            if (activeInput) {
+                activeInput.style.borderBottomColor = '';
+                activeInput.style.borderColor = '';
+                activeInput.style.boxShadow = '';
+                activeInput.style.background = '';
+                activeInput = null;
+            }
+        }
+
+        function keyboardInput(value) {
+            if (!activeInput) {
+                const firstInput = document.querySelector('.fill-input-field, .calc-input');
+                if (firstInput) { activeInput = firstInput;
+                    openKeyboardForFillInput(firstInput); } else return;
+            }
+
+            const input = activeInput;
+            const start = input.selectionStart || 0;
+            const end = input.selectionEnd || 0;
+            const currentValue = input.value;
+
+            switch (value) {
+                case 'backspace':
+                    if (start === end && start > 0) {
+                        input.value = currentValue.substring(0, start - 1) + currentValue.substring(end);
+                        input.selectionStart = input.selectionEnd = start - 1;
+                    } else if (start < end) {
+                        input.value = currentValue.substring(0, start) + currentValue.substring(end);
+                        input.selectionStart = input.selectionEnd = start;
+                    }
+                    break;
+                case 'clear':
+                    input.value = '';
+                    input.selectionStart = input.selectionEnd = 0;
+                    break;
+                case 'enter':
+                    if (input.classList.contains('calc-input')) {
+                        saveCalcAnswer(currentQuestionIndex, input.value);
+                    } else if (input.classList.contains('fill-input-field')) {
+                        const idx = parseInt(input.dataset.index);
+                        saveFillAnswer(currentQuestionIndex, input.value, idx);
+                    }
+                    closeKeyboard();
+                    return;
+                default:
+                    input.value = currentValue.substring(0, start) + value + currentValue.substring(end);
+                    input.selectionStart = input.selectionEnd = start + value.length;
+                    if (input.classList.contains('calc-input')) {
+                        saveCalcAnswer(currentQuestionIndex, input.value);
+                    } else if (input.classList.contains('fill-input-field')) {
+                        const idx = parseInt(input.dataset.index);
+                        saveFillAnswer(currentQuestionIndex, input.value, idx);
+                    }
+                    break;
+            }
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+            input.focus();
+        }
+
+        let calcExpression = '';
+        let calcAns = 0;
+
+        function calcInput(value) {
+            if (value === 'ANS') value = String(calcAns);
+            if (value === '²') value = '^2';
+            if (value === '!') value = '!';
+            calcExpression += value;
+            document.getElementById('calcResult').textContent = calcExpression || '0';
+        }
+
+        function calcClear() { calcExpression = '';
+            document.getElementById('calcResult').textContent = '0'; }
+
+        function calcBackspace() { calcExpression = calcExpression.slice(0, -1);
+            document.getElementById('calcResult').textContent = calcExpression || '0'; }
+
+        function calcCalculate() {
+            try {
+                let expr = calcExpression.replace(/√\(/g, 'Math.sqrt(').replace(/\^/g, '**').replace(/×/g, '*').replace(
+                    /÷/g, '/').replace(/π/g, 'Math.PI').replace(/e(?![xp])/g, 'Math.E').replace(/exp\(/g, 'Math.exp(')
+                    .replace(/ln\(/g, 'Math.log(').replace(/log\(/g, 'Math.log10(');
+                expr = expr.replace(/(\d+)!/g, function(_, n) { return 'factorial(' + n + ')'; });
+                const factorial = function(n) { if (n < 0) return NaN; if (n === 0 || n === 1) return 1; let r = 1;
+                    for (let i = 2; i <= n; i++) r *= i; return r; };
+                const result = Function('factorial', 'return ' + expr)(factorial);
+                if (isNaN(result) || !isFinite(result)) { document.getElementById('calcResult').textContent = '錯誤'; } else { const display = Number(result.toFixed(12));
+                    document.getElementById('calcResult').textContent = String(display);
+                    calcAns = display; }
+            } catch (e) { document.getElementById('calcResult').textContent = '錯誤'; }
+        }
+
+        // ===== ✅ 計算機拖曳功能 =====
+        function initCalculatorDrag() {
+            const container = document.getElementById('calculatorContainer');
+            const handle = document.getElementById('calcDragHandle');
+
+            if (!container || !handle) return;
+
+            handle.removeEventListener('mousedown', handle._dragStart);
+
+            let isDragging = false;
+            let offsetX = 0,
+                offsetY = 0;
+
+            function onMouseDown(e) {
+                if (e.target.classList.contains('close-btn')) return;
+                isDragging = true;
+                const rect = container.getBoundingClientRect();
+                offsetX = e.clientX - rect.left;
+                offsetY = e.clientY - rect.top;
+                container.style.cursor = 'grabbing';
+                e.preventDefault();
+            }
+
+            function onMouseMove(e) {
+                if (!isDragging) return;
+                container.style.left = (e.clientX - offsetX) + 'px';
+                container.style.top = (e.clientY - offsetY) + 'px';
+                container.style.right = 'auto';
+                container.style.bottom = 'auto';
+            }
+
+            function onMouseUp() {
+                if (isDragging) {
+                    isDragging = false;
+                    container.style.cursor = '';
+                }
+            }
+
+            handle._dragStart = onMouseDown;
+            handle.addEventListener('mousedown', onMouseDown);
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        }
+
+        function toggleCalculator() {
+            const container = document.getElementById('calculatorContainer');
+            const btn = document.getElementById('btnCalcFloat');
+            container.classList.toggle('visible');
+            btn.classList.toggle('active');
+            btn.textContent = container.classList.contains('visible') ? '🧮 關閉計算機' : '🧮 計算機';
+
+            if (container.classList.contains('visible')) {
+                setTimeout(initCalculatorDrag, 50);
+            }
+        }
+
+        function closeCalculator() {
+            document.getElementById('calculatorContainer').classList.remove('visible');
+            document.getElementById('btnCalcFloat').classList.remove('active');
+            document.getElementById('btnCalcFloat').textContent = '🧮 計算機';
+        }
+
+        // ===== ✅ 白板拖曳功能 =====
+        function initWhiteboardDrag() {
+            const container = document.getElementById('whiteboardContainer');
+            const handle = document.getElementById('wbDragHandle');
+
+            if (!container || !handle) return;
+
+            handle.removeEventListener('mousedown', handle._dragStart);
+
+            let isDragging = false;
+            let offsetX = 0,
+                offsetY = 0;
+
+            function onMouseDown(e) {
+                if (e.target.classList.contains('close-btn')) return;
+                isDragging = true;
+                const rect = container.getBoundingClientRect();
+                offsetX = e.clientX - rect.left;
+                offsetY = e.clientY - rect.top;
+                container.style.cursor = 'grabbing';
+                e.preventDefault();
+            }
+
+            function onMouseMove(e) {
+                if (!isDragging) return;
+                container.style.left = (e.clientX - offsetX) + 'px';
+                container.style.top = (e.clientY - offsetY) + 'px';
+                container.style.right = 'auto';
+                container.style.bottom = 'auto';
+            }
+
+            function onMouseUp() {
+                if (isDragging) {
+                    isDragging = false;
+                    container.style.cursor = '';
+                }
+            }
+
+            handle._dragStart = onMouseDown;
+            handle.addEventListener('mousedown', onMouseDown);
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        }
+
+        let wbMode = 'pencil',
+            wbColor = '#000000',
+            wbSize = 4,
+            isDrawing = false,
+            lastX = 0,
+            lastY = 0,
+            wbCanvas, wbCtx;
+
+        function initWhiteboard() {
+            wbCanvas = document.getElementById('whiteboardCanvas');
+            if (!wbCanvas) return;
+            const wrapper = wbCanvas.parentElement;
+            wbCanvas.width = wrapper.clientWidth - 10;
+            wbCanvas.height = wrapper.clientHeight - 10;
+            wbCtx = wbCanvas.getContext('2d');
+            wbCtx.fillStyle = '#ffffff';
+            wbCtx.fillRect(0, 0, wbCanvas.width, wbCanvas.height);
+            const canvas = wbCanvas,
+                ctx = wbCtx;
+
+            function getPos(e) {
+                const rect = canvas.getBoundingClientRect();
+                const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+                const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+                return { x: (clientX - rect.left) * (canvas.width / rect.width), y: (clientY - rect.top) * (canvas
+                        .height / rect.height) };
+            }
+
+            function startDraw(e) { e.preventDefault();
+                isDrawing = true;
+                const pos = getPos(e);
+                lastX = pos.x;
+                lastY = pos.y; }
+
+            function draw(e) {
+                e.preventDefault();
+                if (!isDrawing) return;
+                const pos = getPos(e);
+                ctx.beginPath();
+                ctx.moveTo(lastX, lastY);
+                ctx.lineTo(pos.x, pos.y);
+                if (wbMode === 'eraser') { ctx.strokeStyle = '#ffffff';
+                    ctx.lineWidth = wbSize * 3; } else { ctx.strokeStyle = wbColor;
+                    ctx.lineWidth = wbSize; }
+                ctx.lineCap = 'round';
+                ctx.lineJoin = 'round';
+                ctx.stroke();
+                lastX = pos.x;
+                lastY = pos.y;
+            }
+
+            function endDraw(e) { isDrawing = false; }
+            canvas.addEventListener('mousedown', startDraw);
+            canvas.addEventListener('mousemove', draw);
+            canvas.addEventListener('mouseup', endDraw);
+            canvas.addEventListener('mouseleave', endDraw);
+            canvas.addEventListener('touchstart', startDraw, { passive: false });
+            canvas.addEventListener('touchmove', draw, { passive: false });
+            canvas.addEventListener('touchend', endDraw, { passive: false });
+            window.addEventListener('resize', function() {
+                const oldData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                canvas.width = wrapper.clientWidth - 10;
+                canvas.height = wrapper.clientHeight - 10;
+                ctx.putImageData(oldData, 0, 0);
+            });
+        }
+
+        function toggleWhiteboard() {
+            const container = document.getElementById('whiteboardContainer');
+            const btn = document.getElementById('btnWbFloat');
+            container.classList.toggle('visible');
+            btn.classList.toggle('active');
+            btn.textContent = container.classList.contains('visible') ? '🎨 關閉小畫家' : '🎨 小畫家';
+
+            if (container.classList.contains('visible')) {
+                setTimeout(initWhiteboard, 100);
+                setTimeout(initWhiteboardDrag, 150);
+            }
+        }
+
+        function closeWhiteboard() {
+            document.getElementById('whiteboardContainer').classList.remove('visible');
+            document.getElementById('btnWbFloat').classList.remove('active');
+            document.getElementById('btnWbFloat').textContent = '🎨 小畫家';
+        }
+
+        function setWbMode(mode) {
+            wbMode = mode;
+            document.getElementById('wbPencil').classList.toggle('active', mode === 'pencil');
+            document.getElementById('wbEraser').classList.toggle('active', mode === 'eraser');
+            document.getElementById('wbStatus').textContent = mode === 'pencil' ? '✏️ 鉛筆模式' : '🧹 橡皮擦模式';
+            if (wbCanvas) wbCanvas.style.cursor = mode === 'eraser' ? 'cell' : 'crosshair';
+        }
+
+        function setWbColor(color) { wbColor = color; }
+
+        function setWbSize(size) { wbSize = parseInt(size); }
+
+        function clearWhiteboard() { if (!wbCanvas || !wbCtx) return;
+            wbCtx.fillStyle = '#ffffff';
+            wbCtx.fillRect(0, 0, wbCanvas.width, wbCanvas.height); }
+
+        function updateCountdown() {
+            if (countdownSeconds <= 0) { document.getElementById('countdownDisplay').textContent = '⏰ 時間到！'; return; }
+            countdownSeconds--;
+            const h = Math.floor(countdownSeconds / 3600),
+                m = Math.floor((countdownSeconds % 3600) / 60),
+                s = countdownSeconds % 60;
+            document.getElementById('countdownDisplay').textContent =
+                `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+        }
+
+        function nextQuestion() { if (currentQuestionIndex < totalQuestions - 1) { currentQuestionIndex++;
+                renderQuestion(currentQuestionIndex); } }
+
+        function prevQuestion() { if (currentQuestionIndex > 0) { currentQuestionIndex--;
+                renderQuestion(currentQuestionIndex); } }
+
+        function jumpToQuestion(value) { const idx = parseInt(value) - 1; if (idx >= 0 && idx < totalQuestions) {
+                currentQuestionIndex = idx;
+                renderQuestion(currentQuestionIndex); } }
+
+        function clearAnswer() { delete userAnswers[currentQuestionIndex];
+            renderQuestion(currentQuestionIndex); }
+
+        function toggleMark() {
+            if (markedQuestions[currentQuestionIndex]) delete markedQuestions[currentQuestionIndex];
+            else markedQuestions[currentQuestionIndex] = true;
+            renderQuestion(currentQuestionIndex);
+        }
+
+        function openOverview() {
+            const grid = document.getElementById('overviewGrid');
+            grid.innerHTML = '';
+            for (let i = 0; i < totalQuestions; i++) {
+                const div = document.createElement('div');
+                div.className = 'item';
+                const val = userAnswers[i];
+                if (val !== undefined && val !== '' && val !== null) {
+                    if (typeof val === 'string' && val.includes(',')) { const parts = val.split(',').filter(v => v
+                            .trim() !== '');
+                        if (parts.length > 0) div.classList.add('answered'); } else if (Array.isArray(val) && val
+                        .length > 0) div.classList.add('answered');
+                    else div.classList.add('answered');
+                }
+                if (i === currentQuestionIndex) div.classList.add('current');
+                if (markedQuestions[i]) div.classList.add('marked');
+                div.textContent = i + 1;
+                div.onclick = function() { currentQuestionIndex = i;
+                    renderQuestion(currentQuestionIndex);
+                    closeOverview(); };
+                grid.appendChild(div);
+            }
+            document.getElementById('overlay').classList.add('active');
+        }
+
+        function closeOverview() { document.getElementById('overlay').classList.remove('active'); }
+
+        function submitExam() {
+            let answered = 0;
+            for (let i = 0; i < totalQuestions; i++) {
+                const val = userAnswers[i];
+                if (val !== undefined && val !== '' && val !== null) {
+                    if (typeof val === 'string' && val.includes(',')) { const parts = val.split(',').filter(v => v
+                            .trim() !== '');
+                        if (parts.length > 0) answered++; } else if (Array.isArray(val) && val.length > 0) answered++;
+                    else answered++;
+                }
+            }
+            if (answered < totalQuestions) { if (!confirm(`您還有 ${totalQuestions - answered} 題未作答，確定要送出嗎？`)) return; }
+            alert('✅ 測驗已送出！');
+        }
+
+        function confirmEndExam() { if (confirm('確定要提前結束測驗嗎？')) { alert('⏹ 測驗已結束！'); } }
+
+        function switchMode(mode) {
+            const btns = document.querySelectorAll('.mode-btn');
+            btns.forEach(btn => btn.classList.remove('active'));
+            const map = { 'academic': 0, 'technical': 1, 'calc': 2 };
+            const idx = map[mode];
+            if (idx !== undefined && btns[idx]) btns[idx].classList.add('active');
+        }
+
+        function init() {
+            document.getElementById('examDateDisplay').textContent = formatExamDate();
+            document.getElementById('examNumber').textContent = generateExamNumber();
+
+            const jumpSelect = document.getElementById('jumpSelect');
+            for (let i = 1; i <= totalQuestions; i++) {
+                const opt = document.createElement('option');
+                opt.value = i;
+                opt.textContent = i;
+                jumpSelect.appendChild(opt);
+            }
+
+            renderQuestion(0);
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+            updateExamCountdown();
+            setInterval(updateExamCountdown, 1000);
+
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.virtual-keyboard') && !e.target.closest('.calc-input') &&
+                    !e.target.closest('.fill-input-field') && !e.target.closest('.match-option-card') &&
+                    !e.target.closest('.match-drop-zone') && !e.target.closest('.sort-answer-row') &&
+                    !e.target.closest('.sort-option-card') && !e.target.closest('.link-item')) {
+                    closeKeyboard();
+                }
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') { closeKeyboard();
+                    closeOverview(); }
+            });
+
+            console.log('✅ 系統初始化完成');
+            console.log('✅ 倒數計時器已固定');
+            console.log('✅ 連連看題型已移除重複題目');
+            console.log('✅ 計算機拖曳功能已修復');
+            console.log('✅ 白板拖曳功能已修復');
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

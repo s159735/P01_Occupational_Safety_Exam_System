@@ -1,0 +1,802 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 37,
+  "Type": "link",
+  "TypeLabel": "連連看",
+  "TypePrefix": "L",
+  "questions": [
+    {
+      "id": "L0",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某公司發生職業災害，需確認各法規之主管機關以進行通報。請將左側法規名稱與右側其對應之主管機關進行配對：",
+      "answer": [
+        "勞動部",
+        "經濟部",
+        "環境部",
+        "內政部"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0010029"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L1",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某公司推動職業安全衛生管理，需應用不同管理理論。請將左側理論名稱與右側其對應之說明進行配對：",
+      "answer": [
+        "當環境中的某種不良現象發生後，如果沒有馬上進行改善或修復，這種不良現象便可能會逐漸被接受，且逐漸擴大變嚴重。",
+        "先堅持某一部分的改善，時間一久整個情況便可能改善。",
+        "導致嚴重事故發生的從來都不是因為某個單獨的原因，而是多個問題恰好同時出現。",
+        "決定團隊戰鬥力強弱的不是那個能力最強、表現最好的，而是那個能力最弱、表現最差的落後者。"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L2",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某化學工廠需依職業安全衛生設施規則進行危害分類管理。請將左側物質與右側其對應之危害分類進行配對：",
+      "answer": [
+        "易燃液體",
+        "易燃液體",
+        "單純窒息性氣體",
+        "化學窒息性氣體",
+        "化學窒息性氣體"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L3",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某職業醫學門診需診斷勞工職業疾病與危害因子之關聯。請將左側危害因子與右側其對應之疾病進行配對：",
+      "answer": [
+        "多發性神經病變",
+        "肝血管肉瘤",
+        "巴金森氏症",
+        "白血病",
+        "鼻中隔穿孔"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L4",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某環境監測機構需依勞工作業環境監測實施辦法選用正確採樣介質。請將左側化學品與其對應的採樣介質進行配對：",
+      "answer": [
+        "矽膠管",
+        "吸收液",
+        "活性碳吸附管",
+        "PVC濾紙",
+        "纖維素酯濾紙"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L5",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某公司職業安全衛生人員需依職業安全衛生法第38條計算職災統計指標。請將左側指標與其計算公式進行配對：",
+      "answer": [
+        "(失能傷害次數×10⁶)/總工時",
+        "(損失日數×10⁶)/總工時",
+        "√(FR×SR/1000)"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0010029"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L6",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某公司安全衛生人員需依職業安全衛生法第2條定義進行職災判定。請將左側用語與其定義進行配對：",
+      "answer": [
+        "因勞動場所之建築物、機械、設備等引起之疾病、傷害",
+        "勞工、自營作業者及其他受工作場所負責人指揮之人",
+        "事業主或事業之經營負責人"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0010029"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L7",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某化學品倉庫需依閃火點高低進行儲存管理。請將下列化學物質依閃火點由低至高進行排序（1最低，4最高）：",
+      "answer": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L8",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某工廠高壓氣體儲存區需依職業安全衛生設施規則第108條進行管理。請將左側儲存條件與其對應之要求進行配對：",
+      "answer": [
+        "保持在40°C以下",
+        "禁止煙火接近",
+        "安穩置放並加固定",
+        "與盛裝容器分區放置",
+        "不得任意放置其他物品"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L9",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某作業場所需依有機溶劑中毒預防規則進行分類管理。請將左側有機溶劑與其對應之種類進行配對：",
+      "answer": [
+        "第一種有機溶劑",
+        "第二種有機溶劑",
+        "第二種有機溶劑",
+        "第三種有機溶劑",
+        "第二種有機溶劑"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060017"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L10",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某化學品供應商需依GHS制度進行危害分類標示。請將左側GHS圖示與其對應之危害分類進行配對：",
+      "answer": [
+        "有機過氧化物(A型)",
+        "易燃氣體",
+        "金屬腐蝕物",
+        "致癌物質",
+        "急毒性物質"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L11",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某勞工發生職業災害，需依勞動基準法第59條請領補償。請將左側補償項目與其對應之期間進行配對：",
+      "answer": [
+        "事由發生前6個月",
+        "繼續工作滿6個月",
+        "30日前",
+        "8小時內"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0030025"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L12",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "某公司需依職業安全衛生法施行細則第28條辨識特別危害健康作業。請將左側作業與右側對應之主要職業疾病進行配對：",
+      "answer": [
+        "聽力損失",
+        "鉛中毒",
+        "有機溶劑中毒",
+        "塵肺症"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L13",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側防爆電氣構造代號與右側其對應之名稱進行配對：",
+      "answer": [
+        "增加安全防爆構造",
+        "本質安全防爆構造",
+        "正壓防爆構造",
+        "油浸防爆構造",
+        "耐壓防爆構造"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      }
+    },
+    {
+      "id": "L14",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側火災分類與右側其對應之滅火方法進行配對：",
+      "answer": [
+        "乾砂（隔離法）",
+        "二氧化碳（窒息法）",
+        "水（冷卻法）",
+        "泡沫（窒息法）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "D0120036"
+      }
+    },
+    {
+      "id": "L15",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側呼吸防護具類型與右側其對應之代號進行配對：",
+      "answer": [
+        "Full Face",
+        "Half Mask",
+        "N95",
+        "PAPR",
+        "SCBA"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 10,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      }
+    },
+    {
+      "id": "L16",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側職業疾病與右側其對應之危害因子進行配對：",
+      "answer": [
+        "多氯聯苯",
+        "氯乙烯",
+        "游離二氧化矽",
+        "鉻酸",
+        "錳"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 28,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      }
+    },
+    {
+      "id": "L17",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側噪音工程控制方法與右側其對應之具體措施進行配對：",
+      "answer": [
+        "以密度較大材料包覆外部",
+        "使用消音器或減音器",
+        "個別機械基礎或獨立地板",
+        "將噪音機械與一般場所分開",
+        "覆蓋天花板、牆壁、地板"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 15,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      }
+    },
+    {
+      "id": "L18",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側機械防護原理與右側其對應之說明進行配對：",
+      "answer": [
+        "不使勞動量超過生理正常負荷",
+        "危險區域應予閉鎖防止進入",
+        "安全裝置與起動裝置強制結合",
+        "應用機械化或自動化減少災害",
+        "效能維持長久高倍額度"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 23,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      }
+    },
+    {
+      "id": "L19",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側作業環境監測項目與右側其對應之監測頻率進行配對：",
+      "answer": [
+        "每3個月",
+        "每6個月",
+        "每6個月",
+        "每6個月",
+        "每年（12個月）"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060033"
+      }
+    },
+    {
+      "id": "L20",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側局部排氣裝置組件與右側其對應之功能進行配對：",
+      "answer": [
+        "捕捉有害物發生源",
+        "排出淨化後之空氣",
+        "提供動力吸引空氣",
+        "輸送含有害物之空氣",
+        "過濾或淨化有害物"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060015"
+      }
+    },
+    {
+      "id": "L21",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側危害性化學品標示內容與其對應之說明進行配對：",
+      "answer": [
+        "「危險」或「警告」",
+        "化學品中具有危害性之成分",
+        "化學品之名稱",
+        "危害類別及級別之說明",
+        "預防及處置建議"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      }
+    },
+    {
+      "id": "L22",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側緊急應變步驟與其對應之順序進行配對（1最早，5最晚）：",
+      "answer": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 16,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060027"
+      }
+    },
+    {
+      "id": "L23",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側法規名稱與右側其對應之主管機關進行配對。",
+      "answer": [
+        "內政部",
+        "勞動部",
+        "環境部",
+        "經濟部"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L24",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側職業安全衛生設施規則之通道規範與右側正確數值進行配對。",
+      "answer": [
+        "1公尺",
+        "80公分",
+        "最大車寬+1公尺"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L25",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側危險物與右側正確之分類進行配對。",
+      "answer": [
+        "可燃性氣體",
+        "氧化性物質",
+        "著火性物質"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L26",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側職業安全衛生人員與其應具備之資格進行配對。",
+      "answer": [
+        "乙級技術士",
+        "甲級技術士",
+        "甲級技術士"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L27",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側特別危害健康作業與右側對應之健康危害進行配對。",
+      "answer": [
+        "塵肺症",
+        "有機溶劑中毒",
+        "聽力損失",
+        "鉛中毒"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L28",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側職業災害統計指標與右側其計算公式進行配對。",
+      "answer": [
+        "√(FR × SR / 1000)",
+        "失能傷害次數×10^6 / 總經歷工時",
+        "總損失日數×10^6 / 總經歷工時"
+      ],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L29",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側有害物與右側其對應之主要健康危害進行配對。",
+      "answer": [
+        "多發性神經病變",
+        "巴金森氏症",
+        "白血病",
+        "肝血管肉瘤",
+        "鼻中隔穿孔"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L30",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側職安法罰則與右側對應之刑責/罰鍰進行配對。",
+      "answer": [
+        "3年以下有期徒刑",
+        "3年以下有期徒刑",
+        "3萬元以上75萬元以下罰鍰",
+        "5年以下有期徒刑"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": null
+    },
+    {
+      "id": "L31",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側 GHS 危害圖式與右側其對應之危害分類進行配對。",
+      "answer": [
+        "加壓氣體",
+        "急毒性物質",
+        "易燃液體",
+        "氧化性液體",
+        "水環境危害",
+        "爆炸物",
+        "致癌物質",
+        "金屬腐蝕物"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.25%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L32",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側 MPOWER 政策英文縮寫與右側其中文意義進行配對。",
+      "answer": [
+        "保護人們免受菸煙危害",
+        "提供戒菸協助",
+        "提高菸稅",
+        "監測菸品使用和預防政策",
+        "禁止菸品廣告、促銷和贊助",
+        "警示菸品危害"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.67%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0000004"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L33",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側機械安全防護原則與右側其對應內容進行配對。",
+      "answer": [
+        "使用夾具、治具或手工具",
+        "光電感應式、近接感應式",
+        "急救、緊急應變措施",
+        "拉開式、掃除式",
+        "本質安全、自動進退料",
+        "正向設計、壓縮彈簧",
+        "緊急遮斷（制動）裝置",
+        "護圍、護蓋",
+        "防護器具"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.11%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060009"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L34",
+      "type": "link",
+      "typeLabel": "連連看",
+      "text": "請將左側燃燒/爆炸相關名詞與右側其定義進行配對。",
+      "answer": [
+        "可燃性氣體或粉塵在空氣中的燃燒濃度範圍",
+        "可燃性氣體或蒸氣之最低濃度界限",
+        "可燃性氣體或蒸氣之最高濃度界限",
+        "可燃物、助燃物、熱能、連續反應",
+        "固態物質直接轉化為氣態的過程",
+        "室內燃燒產生火引之位置",
+        "室內起火後一舉引火形成巨大火苗",
+        "沸騰液體膨脹蒸氣雲爆炸",
+        "缺氧狀態下持續燃燒，瞬間空氣進入產生爆炸"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.11%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0000007"
+      },
+      "typePrefix": ""
+    },
+    {
+      "id": "L35",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側GHS危害圖式名稱與右側其對應之圖式說明進行配對。",
+      "answer": [
+        "人體胸廓圖式",
+        "圓圈火焰圖式",
+        "手部腐蝕圖式",
+        "火焰圖式",
+        "炸彈爆炸圖式",
+        "鋼瓶圖式",
+        "骷髏頭圖式",
+        "魚和樹圖式"
+      ],
+      "points": "10%",
+      "pointsPerItem": "1.25%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060054"
+      }
+    },
+    {
+      "id": "L36",
+      "type": "link",
+      "typeLabel": "連連看",
+      "typePrefix": "L",
+      "text": "請將左側危害因子與右側其對應之職業疾病進行配對。",
+      "answer": [
+        "多發性神經病變",
+        "巴金森氏症",
+        "白血病",
+        "肝血管肉瘤",
+        "鼻中隔穿孔"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "law": {
+        "pcode": "N0060002"
+      }
+    }
+  ]
+}

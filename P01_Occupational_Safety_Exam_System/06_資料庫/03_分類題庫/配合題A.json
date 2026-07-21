@@ -1,0 +1,1559 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 36,
+  "Type": "match",
+  "TypeLabel": "配合題",
+  "TypePrefix": "P",
+  "source": { "classified": true, "breed": true },
+  "questions": [
+    {
+      "id": "P001",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "請將下列工地常見墜落地點與其對應之風險進行配對。",
+      "leftItems": ["施工架上", "合梯上", "開口邊緣", "屋頂", "鋼構上"],
+      "rightItems": ["墜落高度2公尺以上", "重心不穩易傾倒", "無護欄防護", "斜屋頂易滑落", "踏空風險高", "樓梯間", "電梯口"],
+      "answer": ["墜落高度2公尺以上", "重心不穩易傾倒", "無護欄防護", "斜屋頂易滑落", "踏空風險高"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "工地常見墜落地點與風險對應。",
+        "detail": "營造安全衛生設施標準第17條。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": { "full": "第 17 條", "條": "第 17 條" },
+        "summary": "墜落風險辨識。"
+      },
+      "tips": {
+        "quick": ["💡 鋼構合梯施工架，開口屋頂都危險"],
+        "mnemonic": "🧠 鋼構→踏空、合梯→重心不穩、施工架→高度、開口→無護欄、屋頂→滑落",
+        "commonMistake": ["🚨 陷阱：樓梯間、電梯口是干擾選項！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對墜落風險的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P002",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某食品工廠發生勞工職業災害，需判定災害發生地點屬於勞動場所、工作場所或作業場所。請比較三者涵蓋範圍由大至小排列：",
+      "leftItems": ["勞動場所", "工作場所", "作業場所"],
+      "rightItems": ["廠區全部", "廠房內部", "操作區", "辦公室", "倉庫"],
+      "answer": ["廠區全部", "廠房內部", "操作區"],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "勞動場所＞工作場所＞作業場所。",
+        "detail": "職業安全衛生法施行細則第2條規定。"
+      },
+      "law": {
+        "pcode": "N0060002",
+        "name": "職業安全衛生法施行細則",
+        "article": { "full": "第 2 條", "條": "第 2 條" },
+        "summary": "場所定義與範圍。"
+      },
+      "tips": {
+        "quick": ["💡 勞動＞工作＞作業"],
+        "mnemonic": "🧠 勞動場所最大，作業場所最小",
+        "commonMistake": ["🚨 陷阱：工作場所不等於作業場所！"]
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對場所定義的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P003",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某化學工廠儲存多種危險物，需依危害特性進行分區管理。請將下列物質與其危害特性進行配對：",
+      "leftItems": ["硝酸銨", "汽油", "氫氣", "金屬鋰", "硝化乙二醇"],
+      "rightItems": ["氧化性物質", "易燃液體", "可燃性氣體", "著火性物質", "爆炸性物質", "毒性物質", "腐蝕性物質"],
+      "answer": ["氧化性物質", "易燃液體", "可燃性氣體", "著火性物質", "爆炸性物質"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 24,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "硝酸銨→氧化性；汽油→易燃液體；氫氣→可燃性氣體；金屬鋰→著火性；硝化乙二醇→爆炸性。",
+        "detail": "職業安全衛生設施規則第177條。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 177 條", "條": "第 177 條" },
+        "summary": "危害物質分類。"
+      },
+      "tips": {
+        "quick": ["💡 硝酸氧化、汽油易燃、氫氣可燃、鋰著火、硝化爆炸"],
+        "mnemonic": "🧠 氧化、易燃、可燃、著火、爆炸",
+        "commonMistake": ["🚨 陷阱：硝酸銨是氧化性，不是爆炸性！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對危害物質特性的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P004",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司依GHS制度進行化學品標示，需將危害圖示與危害分類正確配對。請完成以下配對：",
+      "leftItems": ["火焰圈", "火焰", "腐蝕", "健康危害", "骷髏頭"],
+      "rightItems": ["氧化性氣體", "有機過氧化物(A型)", "金屬腐蝕物", "致癌物質", "急毒性1級", "刺激性物質", "環境危害"],
+      "answer": ["氧化性氣體", "有機過氧化物(A型)", "金屬腐蝕物", "致癌物質", "急毒性1級"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "GHS危害圖示與分類對應。",
+        "detail": "危害性化學品標示及通識規則。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "GHS危害分類。"
+      },
+      "tips": {
+        "quick": ["💡 圈氧化、火過氧、腐金屬、健致癌、骷髏急毒"],
+        "mnemonic": "🧠 火焰圈→氧化性，火焰→有機過氧化物，腐蝕→金屬腐蝕物，健康危害→致癌，骷髏頭→急毒性",
+        "commonMistake": ["🚨 陷阱：驚嘆號是刺激性，不是急毒性！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對GHS危害圖示的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P005",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某工廠發生多件職業傷害，勞工保險人員需判定失能傷害分類。請將傷害類型與失能傷害分類進行配對：",
+      "leftItems": ["雙眼失明", "失去一隻手", "右手、右腿失能", "門牙受傷", "燙傷在家休養", "受傷就醫隔天正常上班"],
+      "rightItems": ["永久全失能", "永久部分失能", "暫時全失能", "輕傷害", "職業病", "死亡"],
+      "answer": ["永久全失能", "永久部分失能", "永久部分失能", "永久部分失能", "暫時全失能", "輕傷害"],
+      "points": "10%",
+      "pointsPerItem": "1.6%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "失能傷害分類對應。",
+        "detail": "職業災害統計定義。"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "失能傷害分類。"
+      },
+      "tips": {
+        "quick": ["💡 雙眼永久全、失去一手永久部分、休養暫時全、隔天上班輕傷害"],
+        "mnemonic": "🧠 永久全＞永久部分＞暫時全＞輕傷害",
+        "commonMistake": ["🚨 陷阱：門牙受傷屬永久部分失能！"]
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對失能傷害分類的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P006",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某檢測公司接受委託進行作業環境監測，需選用正確採樣介質。請將化學品與其對應之採樣介質進行配對：",
+      "leftItems": ["苯胺", "硫化氫", "正己烷", "可呼吸性粉塵", "重金屬粉塵"],
+      "rightItems": ["矽膠管", "吸收液", "活性碳吸附管", "PVC濾紙", "纖維素酯濾紙", "不鏽鋼採樣管", "玻璃纖維濾紙"],
+      "answer": ["矽膠管", "吸收液", "活性碳吸附管", "PVC濾紙", "纖維素酯濾紙"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "苯胺→矽膠管；硫化氫→吸收液；正己烷→活性碳；粉塵→PVC濾紙；重金屬→纖維素酯濾紙。",
+        "detail": "作業環境監測採樣方法。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "採樣介質選擇。"
+      },
+      "tips": {
+        "quick": ["💡 苯胺矽膠、硫化氫吸收、正己烷活性碳、粉塵PVC、重金屬纖維素酯"],
+        "mnemonic": "🧠 不同化學品用不同採樣介質",
+        "commonMistake": ["🚨 陷阱：正己烷用活性碳，不是矽膠管！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對採樣介質的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P007",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某醫院感控部門需評估醫護人員生物性危害風險。請將作業型態與可能導致之生物性危害疾病進行配對：",
+      "leftItems": ["清洗水塔", "嚙齒動物照護", "護理人員暴露", "蚊蟲環境", "AIDS暴露"],
+      "rightItems": ["退伍軍人症", "漢他病毒症候群", "病毒性肝炎", "登革熱", "後天免疫缺乏症候群", "肺結核", "禽流感"],
+      "answer": ["退伍軍人症", "漢他病毒症候群", "病毒性肝炎", "登革熱", "後天免疫缺乏症候群"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 27,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "作業型態與生物性危害疾病對應。",
+        "detail": "生物性危害預防。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "生物性危害辨識。"
+      },
+      "tips": {
+        "quick": ["💡 水塔退伍軍人、嚙齒漢他、護理肝炎、蚊蟲登革熱"],
+        "mnemonic": "🧠 水塔→退伍軍人症，老鼠→漢他病毒，針扎→肝炎，蚊子→登革熱",
+        "commonMistake": ["🚨 陷阱：AIDS暴露不是後天免疫缺乏症候群？是！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對生物性危害的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P008",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某工廠空氣污染防制專責人員需辨識不同粒狀污染物。請將粒狀污染物與其定義進行配對：",
+      "leftItems": ["粉塵", "燻煙", "煙塵", "霧滴", "纖維"],
+      "rightItems": ["固體微粒（機械方法產生）", "金屬蒸氣冷凝產生之固體微粒", "燃燒產生之固體微粒", "液體微粒（懸浮於空氣中）", "長徑比大於3：1之微粒", "氣體微粒", "有機微粒"],
+      "answer": ["固體微粒（機械方法產生）", "金屬蒸氣冷凝產生之固體微粒", "燃燒產生之固體微粒", "液體微粒（懸浮於空氣中）", "長徑比大於3：1之微粒"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "粒狀污染物定義對應。",
+        "detail": "職業安全衛生設施規則。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "粒狀污染物分類。"
+      },
+      "tips": {
+        "quick": ["💡 粉塵固體、燻煙金屬冷凝、煙塵燃燒、霧滴液體、纖維長徑比>3"],
+        "mnemonic": "🧠 粉塵（固體）、燻煙（金屬蒸氣冷凝）、煙塵（燃燒）、霧滴（液體）、纖維（長徑比>3）",
+        "commonMistake": ["🚨 陷阱：燻煙是金屬蒸氣冷凝，不是燃燒產生！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對粒狀污染物定義的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P009",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司健康管理師需協助勞工進行職業疾病預防。請將職業疾病與其對應之危害因子進行配對：",
+      "leftItems": ["巴金森氏症", "肝血管肉瘤", "多發性神經病變", "白血病", "鼻中隔穿孔"],
+      "rightItems": ["錳", "氯乙烯", "正己烷", "苯", "鉻酸", "鉛", "汞"],
+      "answer": ["錳", "氯乙烯", "正己烷", "苯", "鉻酸"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 28,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "巴金森氏症→錳；肝血管肉瘤→氯乙烯；多發性神經病變→正己烷；白血病→苯；鼻中隔穿孔→鉻酸。",
+        "detail": "職業疾病與危害因子對應。"
+      },
+      "law": {
+        "pcode": "N0060002",
+        "name": "職業安全衛生法施行細則",
+        "article": { "full": "第 28 條", "條": "第 28 條" },
+        "summary": "職業疾病與危害因子對應。"
+      },
+      "tips": {
+        "quick": ["💡 錳巴金森、氯乙烯肝、正己烷神經、苯白血病、鉻酸鼻"],
+        "mnemonic": "🧠 錳→巴金森氏症，氯乙烯→肝血管肉瘤，正己烷→多發性神經病變，苯→白血病，鉻酸→鼻中隔穿孔",
+        "commonMistake": ["🚨 陷阱：鉛中毒不是巴金森氏症，錳才是！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對職業疾病與危害因子對應的記憶。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P010",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某石化廠風險管理部門需選擇適當方法進行風險評估。請將風險評估方法與其特性進行配對：",
+      "leftItems": ["事件樹分析(ETA)", "故障樹分析(FTA)", "檢核表分析"],
+      "rightItems": ["由初始事件推導後果", "由事故結果推導原因", "系統性檢查項目", "量化風險分析", "半定量風險分析"],
+      "answer": ["由初始事件推導後果", "由事故結果推導原因", "系統性檢查項目"],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 26,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "ETA由初始事件推導後果；FTA由事故結果推導原因；檢核表為系統性檢查。",
+        "detail": "風險評估方法。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": { "full": "第 5 條", "條": "第 5 條" },
+        "summary": "風險評估方法。"
+      },
+      "tips": {
+        "quick": ["💡 ETA初始→後果、FTA結果→原因、檢核表系統檢查"],
+        "mnemonic": "🧠 ETA（向前推）、FTA（向後推）、檢核表（逐項檢查）",
+        "commonMistake": ["🚨 陷阱：ETA和FTA方向相反！"]
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對風險評估方法的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P011",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某營造工地發生多起起重吊掛事故，安全人員需進行危害辨識與改善。請將吊掛作業危害行為與其對應之災害名稱進行配對：",
+      "leftItems": ["人員進入吊舉物下方", "違規以起重機載人從事作業", "起重機誤觸高壓架空線路", "外伸撐座未確實伸至定位", "未使用輔助直接推拉吊舉物"],
+      "rightItems": ["物體飛落", "墜落", "感電", "倒塌", "被夾", "火災", "爆炸"],
+      "answer": ["物體飛落", "墜落", "感電", "倒塌", "被夾"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "吊掛作業危害行為與災害對應。",
+        "detail": "起重升降機具安全規則。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "起重機災害類型。"
+      },
+      "tips": {
+        "quick": ["💡 進入下方→飛落、載人→墜落、碰高壓→感電、撐座未伸→倒塌、推拉→被夾"],
+        "mnemonic": "🧠 不同行為導致不同災害",
+        "commonMistake": ["🚨 陷阱：載人造成墜落，不是被夾！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對起重機災害類型的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P012",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某高溫作業場所發生勞工熱危害，急救人員需正確辨識症狀。請將熱危害症狀與其對應之熱疾病進行配對：",
+      "leftItems": ["無法排汗、皮膚潮紅", "大量出汗、臉色蒼白"],
+      "rightItems": ["中暑", "熱衰竭", "熱痙攣", "熱昏厥", "熱水腫"],
+      "answer": ["中暑", "熱衰竭"],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "無法排汗、皮膚潮紅→中暑；大量出汗、臉色蒼白→熱衰竭。",
+        "detail": "熱危害症狀辨識。"
+      },
+      "law": {
+        "pcode": "N0060007",
+        "name": "高溫作業勞工作息時間標準",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "熱危害症狀辨識。"
+      },
+      "tips": {
+        "quick": ["💡 無汗潮紅→中暑、多汗蒼白→熱衰竭"],
+        "mnemonic": "🧠 中暑（無汗、潮紅）、熱衰竭（多汗、蒼白）",
+        "commonMistake": ["🚨 陷阱：中暑和熱衰竭症狀不同！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對熱危害症狀的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 3,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P013",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司進行噪音改善工程，需依危害控制層級選擇適當方法。請將危害控制層級與其對應之方法進行配對：",
+      "leftItems": ["消除", "取代", "工程控制", "行政管理", "個人防護具"],
+      "rightItems": ["以低噪音設備取代高噪音設備", "使用不同製程", "設置隔音罩", "縮短作業時間", "佩戴耳塞", "增加巡檢頻率", "發放防護衣"],
+      "answer": ["以低噪音設備取代高噪音設備", "使用不同製程", "設置隔音罩", "縮短作業時間", "佩戴耳塞"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 15,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "危害控制層級與方法對應。",
+        "detail": "危害控制層級。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "危害控制層級。"
+      },
+      "tips": {
+        "quick": ["💡 消除取代工程行政個人"],
+        "mnemonic": "🧠 消除→取代→工程→行政→個人（由高至低）",
+        "commonMistake": ["🚨 陷阱：佩戴耳塞是個人防護具，不是工程控制！"]
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對危害控制層級的理解。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P014",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司導入工作安全分析制度，需明確各角色權責。請將工作安全分析角色與其對應之職責進行配對：",
+      "leftItems": ["分析者", "審核者", "批准者"],
+      "rightItems": ["現場觀察與記錄", "確認分析完整性", "核定安全作業標準", "執行訓練", "提供資源"],
+      "answer": ["現場觀察與記錄", "確認分析完整性", "核定安全作業標準"],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 12,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "分析者→現場觀察；審核者→確認完整性；批准者→核定標準。",
+        "detail": "工作安全分析角色權責。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": { "full": "第 12 條", "條": "第 12 條" },
+        "summary": "工作安全分析角色。"
+      },
+      "tips": {
+        "quick": ["💡 分析觀察、審核確認、批准核定"],
+        "mnemonic": "🧠 分析者（現場觀察）→審核者（確認完整性）→批准者（核定標準）",
+        "commonMistake": ["🚨 陷阱：批准者是核定標準，不是執行訓練！"]
+      },
+      "logic": [{ "label": "流程操作", "reason": "測驗考生對工作安全分析角色權責的理解。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P015",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司發生職業災害，需依職業安全衛生法相關罰則進行裁罰判斷。請將職業安全衛生法罰則與其對應之罰款金額進行配對：",
+      "leftItems": ["職業安全衛生法第40條", "職業安全衛生法第41條", "職業安全衛生法第43條"],
+      "rightItems": ["3年以下有期徒刑或併科30萬元以下罰金", "1年以下有期徒刑或併科18萬元以下罰金", "3萬元以上30萬元以下罰鍰", "6萬元以上30萬元以下罰鍰", "10萬元以上50萬元以下罰鍰"],
+      "answer": ["3年以下有期徒刑或併科30萬元以下罰金", "1年以下有期徒刑或併科18萬元以下罰金", "3萬元以上30萬元以下罰鍰"],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職安法罰則對應。",
+        "detail": "職業安全衛生法罰則。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": { "full": "第 40-43 條", "條": "第 40-43 條" },
+        "summary": "職業安全衛生法罰則。"
+      },
+      "tips": {
+        "quick": ["💡 40條刑責、41條刑責、43條罰鍰"],
+        "mnemonic": "🧠 第40條（刑責最重）、第41條（刑責次之）、第43條（行政罰）",
+        "commonMistake": ["🚨 陷阱：第40條和第41條都是刑責，但刑度不同！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對職安法罰則的記憶。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P016",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某工廠安全衛生人員需針對不同危害類型規劃防護措施。請將危害類型與其對應之防護措施進行配對：",
+      "leftItems": ["有機溶劑", "粉塵", "缺氧環境", "酸鹼化學品"],
+      "rightItems": ["整體換氣裝置", "局部排氣裝置", "空氣呼吸器", "化學防護衣", "防護面罩", "安全鞋"],
+      "answer": ["整體換氣裝置", "局部排氣裝置", "空氣呼吸器", "化學防護衣"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "有機溶劑→整體換氣；粉塵→局部排氣；缺氧→空氣呼吸器；酸鹼→化學防護衣。",
+        "detail": "危害類型與防護措施對應。"
+      },
+      "law": {
+        "pcode": "N0060002",
+        "name": "職業安全衛生法施行細則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "危害防護措施。"
+      },
+      "tips": {
+        "quick": ["💡 有機換氣、粉塵局部、缺氧呼吸、酸鹼防護衣"],
+        "mnemonic": "🧠 有機溶劑→整體換氣，粉塵→局部排氣，缺氧→空氣呼吸器，酸鹼→化學防護衣",
+        "commonMistake": ["🚨 陷阱：粉塵要用局部排氣，不是整體換氣！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對危害防護措施的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P017",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某化學品供應商需依GHS制度製作安全標示。請將GHS危害符號與其對應之危害分類進行配對：",
+      "leftItems": ["火焰", "骷髏頭", "腐蝕", "驚嘆號"],
+      "rightItems": ["易燃液體", "急毒性物質", "腐蝕性物質", "刺激性物質", "致癌物質", "環境危害"],
+      "answer": ["易燃液體", "急毒性物質", "腐蝕性物質", "刺激性物質"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "火焰→易燃；骷髏頭→急毒性；腐蝕→腐蝕性；驚嘆號→刺激性。",
+        "detail": "GHS危害分類。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "GHS危害分類。"
+      },
+      "tips": {
+        "quick": ["💡 火焰易燃、骷髏急毒、腐蝕腐蝕、驚嘆刺激"],
+        "mnemonic": "🧠 火焰→易燃液體，骷髏頭→急毒性，腐蝕→腐蝕性，驚嘆號→刺激性",
+        "commonMistake": ["🚨 陷阱：驚嘆號是刺激性，不是急毒性！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對GHS危害符號的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P018",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某職業醫學門診醫師需診斷勞工職業疾病。請將有害物質與其可能導致之疾病進行配對：",
+      "leftItems": ["鉛", "汞", "鎘", "錳", "鉻酸"],
+      "rightItems": ["鉛中毒", "水俁病", "痛痛病", "巴金森氏症", "鼻中隔穿孔", "塵肺症", "貧血"],
+      "answer": ["鉛中毒", "水俁病", "痛痛病", "巴金森氏症", "鼻中隔穿孔"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 28,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "鉛→鉛中毒；汞→水俁病；鎘→痛痛病；錳→巴金森氏症；鉻酸→鼻中隔穿孔。",
+        "detail": "職業疾病與危害因子對應。"
+      },
+      "law": {
+        "pcode": "N0060002",
+        "name": "職業安全衛生法施行細則",
+        "article": { "full": "第 28 條", "條": "第 28 條" },
+        "summary": "職業疾病與危害因子對應。"
+      },
+      "tips": {
+        "quick": ["💡 鉛中毒、汞水俁、鎘痛痛、錳巴金森、鉻鼻"],
+        "mnemonic": "🧠 鉛→鉛中毒，汞→水俁病，鎘→痛痛病，錳→巴金森氏症，鉻酸→鼻中隔穿孔",
+        "commonMistake": ["🚨 陷阱：痛痛病是鎘，不是鉛！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對職業疾病與危害因子對應的記憶。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P019",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某工廠急救人員需針對不同燒燙傷類型採取正確處置。請將急救處置與其對應之步驟進行配對：",
+      "leftItems": ["熱液燙傷", "火焰燒傷", "化學燒傷", "電擊傷"],
+      "rightItems": ["沖脫泡蓋送", "停止倒下滾動", "大量清水沖洗", "斷電後急救", "冰敷", "送醫"],
+      "answer": ["沖脫泡蓋送", "停止倒下滾動", "大量清水沖洗", "斷電後急救"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 29,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "熱液→沖脫泡蓋送；火焰→停止倒下滾動；化學→大量清水沖洗；電擊→斷電後急救。",
+        "detail": "燒燙傷急救處置。"
+      },
+      "law": {
+        "pcode": "N0060010",
+        "name": "職業安全衛生教育訓練規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "急救處置方法。"
+      },
+      "tips": {
+        "quick": ["💡 熱液沖脫泡蓋送、火焰停倒滾、化學沖水、電擊斷電"],
+        "mnemonic": "🧠 熱液燙傷→沖脫泡蓋送，火焰燒傷→停止倒下滾動，化學燒傷→大量清水沖洗，電擊傷→斷電後急救",
+        "commonMistake": ["🚨 陷阱：電擊傷要先斷電，不能直接接觸傷患！"]
+      },
+      "logic": [{ "label": "流程操作", "reason": "測驗考生對燒燙傷急救處置的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P020",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某工廠將進行地下水池清洗作業，需依局限空間作業程序執行。請將局限空間作業步驟與其對應之順序進行配對：",
+      "leftItems": ["第一步", "第二步", "第三步", "第四步", "第五步"],
+      "rightItems": ["氣體測定", "通風換氣", "進入許可申請", "監視人員監視", "人員進入作業", "緊急應變", "作業後檢查"],
+      "answer": ["氣體測定", "通風換氣", "進入許可申請", "監視人員監視", "人員進入作業"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間作業步驟順序。",
+        "detail": "職業安全衛生設施規則第29-1條。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 29-1 條", "條": "第 29-1 條" },
+        "summary": "局限空間作業程序。"
+      },
+      "tips": {
+        "quick": ["💡 測通許監進"],
+        "mnemonic": "🧠 測定→通風→許可→監視→進入",
+        "commonMistake": ["🚨 陷阱：要先測定再通風！"]
+      },
+      "logic": [{ "label": "流程操作", "reason": "測驗考生對局限空間作業步驟的理解。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P021",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某營造工地發生墜落事故，需檢討墜落防止措施之優先順序。請將墜落防止設施與其對應之優先順序進行配對：",
+      "leftItems": ["第一優先", "第二優先", "第三優先", "第四優先", "第五優先"],
+      "rightItems": ["地面作業", "護欄護蓋", "安全網", "安全帶", "警示線系統", "教育訓練", "安全標示"],
+      "answer": ["地面作業", "護欄護蓋", "安全網", "安全帶", "警示線系統"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "墜落防止措施優先順序。",
+        "detail": "營造安全衛生設施標準第17條。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": { "full": "第 17 條", "條": "第 17 條" },
+        "summary": "墜落防止措施優先順序。"
+      },
+      "tips": {
+        "quick": ["💡 地面→護欄→安全網→安全帶→警示"],
+        "mnemonic": "🧠 越前面的措施越有效",
+        "commonMistake": ["🚨 陷阱：安全帶是最後手段！"]
+      },
+      "logic": [{ "label": "流程操作", "reason": "測驗考生對墜落防止措施優先順序的理解。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P022",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某工廠發生火災，消防人員需選用正確滅火設備。請將消防設備與其對應之適用火災類型進行配對：",
+      "leftItems": ["水", "泡沫", "二氧化碳", "乾粉"],
+      "rightItems": ["A類（普通火災）", "B類（油類火災）", "C類（電氣火災）", "D類（金屬火災）", "K類（廚房火災）"],
+      "answer": ["A類（普通火災）", "B類（油類火災）", "C類（電氣火災）", "D類（金屬火災）"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "水→A類；泡沫→B類；CO₂→C類；乾粉→D類。",
+        "detail": "各類火災適用滅火方法。"
+      },
+      "law": {
+        "pcode": "D0120036",
+        "name": "消防法",
+        "article": { "full": "消防法施行細則", "條": "消防法施行細則" },
+        "summary": "火災分類與滅火方法。"
+      },
+      "tips": {
+        "quick": ["💡 A水B泡CCO₂D乾粉"],
+        "mnemonic": "🧠 A（水）、B（泡沫）、C（CO₂）、D（乾粉）",
+        "commonMistake": ["🚨 陷阱：C類火災不能用水！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對火災分類與滅火方法的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P023",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司依職業安全衛生設施規則進行安全標示規劃。請將安全標示顏色與其對應之意義進行配對：",
+      "leftItems": ["紅色", "黃色", "綠色", "藍色"],
+      "rightItems": ["禁止、危險", "警告、注意", "安全、急救", "強制、指示", "注意、小心", "提醒、訊息"],
+      "answer": ["禁止、危險", "警告、注意", "安全、急救", "強制、指示"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "紅色→禁止；黃色→警告；綠色→安全；藍色→強制。",
+        "detail": "職業安全衛生設施規則。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "安全標示顏色意義。"
+      },
+      "tips": {
+        "quick": ["💡 紅禁、黃警、綠安、藍強"],
+        "mnemonic": "🧠 紅色（禁止）、黃色（警告）、綠色（安全）、藍色（強制）",
+        "commonMistake": ["🚨 陷阱：藍色是強制，不是注意！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對安全標示顏色的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P024",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某化學品儲存場所需依不同暴露途徑規劃防護措施。請將有害物暴露途徑與其對應之防護措施進行配對：",
+      "leftItems": ["吸入", "皮膚接觸", "食入", "眼睛接觸"],
+      "rightItems": ["呼吸防護具", "化學防護衣", "禁止飲食標示", "洗眼設備", "安全手套", "安全鞋"],
+      "answer": ["呼吸防護具", "化學防護衣", "禁止飲食標示", "洗眼設備"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "吸入→呼吸防護具；皮膚→化學防護衣；食入→禁止飲食標示；眼睛→洗眼設備。",
+        "detail": "暴露途徑與防護措施對應。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "暴露途徑防護措施。"
+      },
+      "tips": {
+        "quick": ["💡 吸呼吸、皮防護衣、食飲食標示、眼洗眼"],
+        "mnemonic": "🧠 吸入→呼吸防護具，皮膚→化學防護衣，食入→禁止飲食標示，眼睛→洗眼設備",
+        "commonMistake": ["🚨 陷阱：皮膚接觸要穿化學防護衣，不是戴手套就好！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對暴露途徑防護措施的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P025",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某高溫作業場所需依不同環境條件計算WBGT值。請將WBGT計算公式與其對應之適用情境進行配對：",
+      "leftItems": ["戶外有日曬", "戶內無日曬", "戶外無日曬"],
+      "rightItems": ["WBGT = 0.7Tw + 0.2Tg + 0.1Td", "WBGT = 0.7Tw + 0.3Tg", "WBGT = 0.5Tw + 0.5Tg", "WBGT = Tg"],
+      "answer": ["WBGT = 0.7Tw + 0.2Tg + 0.1Td", "WBGT = 0.7Tw + 0.3Tg", "WBGT = 0.7Tw + 0.3Tg"],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "戶外有日曬：0.7Tw+0.2Tg+0.1Td；室內/戶外無日曬：0.7Tw+0.3Tg。",
+        "detail": "WBGT計算公式適用情境。"
+      },
+      "law": {
+        "pcode": "N0060007",
+        "name": "高溫作業勞工作息時間標準",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "WBGT計算公式。"
+      },
+      "tips": {
+        "quick": ["💡 日曬加乾球、無日曬不用"],
+        "mnemonic": "🧠 有日曬要加乾球溫度，無日曬不用",
+        "commonMistake": ["🚨 陷阱：戶外無日曬和戶內無日曬公式相同！"]
+      },
+      "logic": [{ "label": "計算應用", "reason": "測驗考生對WBGT適用情境的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P026",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司新進勞工教育訓練規劃，需依職業安全衛生教育訓練規則安排時數。請將教育訓練時數與其對應之人員類別進行配對：",
+      "leftItems": ["新僱勞工一般訓練", "職業安全衛生業務主管在職訓練", "急救人員在職訓練", "一般勞工在職訓練"],
+      "rightItems": ["3小時", "6小時/2年", "3小時/2年", "3小時/年", "1小時/年", "12小時/3年"],
+      "answer": ["3小時", "6小時/2年", "3小時/2年", "3小時/年"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 22,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "新僱→3小時；業務主管→6小時/2年；急救→3小時/2年；一般勞工→3小時/年。",
+        "detail": "職業安全衛生教育訓練規則。"
+      },
+      "law": {
+        "pcode": "N0060010",
+        "name": "職業安全衛生教育訓練規則",
+        "article": { "full": "第 16-18 條", "條": "第 16-18 條" },
+        "summary": "教育訓練時數規定。"
+      },
+      "tips": {
+        "quick": ["💡 新3、業務6/2年、急救3/2年、一般3/年"],
+        "mnemonic": "🧠 新僱3小時，業務主管6小時/2年，急救人員3小時/2年，一般勞工3小時/年",
+        "commonMistake": ["🚨 陷阱：業務主管是6小時/2年，不是3小時/年！"]
+      },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對教育訓練時數的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P027",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司進行消防教育訓練，需講解不同滅火原理之應用。請將滅火原理與其對應之方法進行配對：",
+      "leftItems": ["冷卻法", "窒息法", "隔離法", "抑制法"],
+      "rightItems": ["用水降低溫度", "覆蓋滅火毯", "移除可燃物", "使用乾粉滅火器", "使用泡沫滅火器", "使用二氧化碳滅火器"],
+      "answer": ["用水降低溫度", "覆蓋滅火毯", "移除可燃物", "使用乾粉滅火器"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "冷卻→水；窒息→滅火毯；隔離→移除可燃物；抑制→乾粉。",
+        "detail": "滅火原理與方法。"
+      },
+      "law": {
+        "pcode": "D0120036",
+        "name": "消防法",
+        "article": { "full": "消防法施行細則", "條": "消防法施行細則" },
+        "summary": "滅火原理。"
+      },
+      "tips": {
+        "quick": ["💡 冷水、窒毯、隔離可燃、抑制乾粉"],
+        "mnemonic": "🧠 冷卻→水，窒息→滅火毯，隔離→移除可燃物，抑制→乾粉滅火器",
+        "commonMistake": ["🚨 陷阱：抑制法是破壞連鎖反應，用乾粉滅火器！"]
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對滅火原理的辨識。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P028",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某公司職業安全衛生人員需計算職業災害統計指標。請將職災統計指標與其對應之公式進行配對：",
+      "leftItems": ["失能傷害頻率(FR)", "失能傷害嚴重率(SR)", "綜合傷害指數(FSI)"],
+      "rightItems": ["(失能傷害人次數 × 10⁶) ÷ 總經歷工時", "(總損失日數 × 10⁶) ÷ 總經歷工時", "√(FR × SR ÷ 1000)", "(失能傷害人次數) ÷ 總經歷工時", "(總損失日數) ÷ 總經歷工時"],
+      "answer": ["(失能傷害人次數 × 10⁶) ÷ 總經歷工時", "(總損失日數 × 10⁶) ÷ 總經歷工時", "√(FR × SR ÷ 1000)"],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "FR、SR、FSI公式對應。",
+        "detail": "職業災害統計指標。"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "職災統計指標。"
+      },
+      "tips": {
+        "quick": ["💡 FR次數×10⁶÷工時、SR日數×10⁶÷工時、FSI√(FR×SR÷1000)"],
+        "mnemonic": "🧠 FR看次數、SR看日數、FSI綜合",
+        "commonMistake": ["🚨 陷阱：FR和SR都要乘以10⁶！"]
+      },
+      "logic": [{ "label": "計算應用", "reason": "測驗考生對職災統計指標公式的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P029",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某電氣設備採購人員需辨識防爆構造代號。請將電氣設備防爆構造與其對應之代號進行配對：",
+      "leftItems": ["耐壓防爆", "油中防爆", "內壓防爆", "加強安全防爆", "本質安全防爆"],
+      "rightItems": ["d", "o", "p", "e", "i", "n", "m"],
+      "answer": ["d", "o", "p", "e", "i"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "防爆構造代號對應。",
+        "detail": "職業安全衛生設施規則。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 177 條", "條": "第 177 條" },
+        "summary": "防爆電氣構造。"
+      },
+      "tips": {
+        "quick": ["💡 d耐壓、o油中、p內壓、e加強、i本質"],
+        "mnemonic": "🧠 d（耐壓）、o（油中）、p（內壓）、e（加強安全）、i（本質安全）",
+        "commonMistake": ["🚨 陷阱：本質安全是i，不是n！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對防爆電氣構造代號的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P030",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某通風工程師需依不同氣罩類型計算排氣量。請將氣罩類型與其排氣量公式進行配對：",
+      "leftItems": ["包圍式（崗亭式）", "外裝式（無凸緣）", "外裝式（有凸緣）", "懸吊式", "單一狹縫式"],
+      "rightItems": ["Q = V × A", "Q = V(10X² + A)", "Q = 0.75V(10X² + A)", "Q = 1.4P V X", "Q = 3.7L V X", "Q = V × A × 3600"],
+      "answer": ["Q = V × A", "Q = V(10X² + A)", "Q = 0.75V(10X² + A)", "Q = 1.4P V X", "Q = 3.7L V X"],
+      "points": "10%",
+      "pointsPerItem": "2%",
+      "group": 7,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "氣罩類型與排氣量公式對應。",
+        "detail": "特定化學物質危害預防標準。"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": { "full": "第 17 條", "條": "第 17 條" },
+        "summary": "氣罩排氣量公式。"
+      },
+      "tips": {
+        "quick": ["💡 包圍VA、外裝V(10X²+A)、有凸緣0.75、懸吊1.4PVX、狹縫3.7LVX"],
+        "mnemonic": "🧠 不同氣罩用不同公式",
+        "commonMistake": ["🚨 陷阱：有凸緣要乘0.75，無凸緣不用！"]
+      },
+      "logic": [{ "label": "計算應用", "reason": "測驗考生對氣罩排氣量公式的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P031",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某電氣工程師需依不同電壓等級選用正確接地方式。請將接地種類與其對應之適用場所進行配對：",
+      "leftItems": ["特種接地", "第一種接地", "第二種接地", "第三種接地"],
+      "rightItems": ["接地電阻10Ω以下（變電所）", "接地電阻25Ω以下（高壓設備）", "接地電阻50Ω以下（低壓設備）", "接地電阻100Ω以下（一般設備）", "接地電阻5Ω以下（特殊設備）"],
+      "answer": ["接地電阻10Ω以下（變電所）", "接地電阻25Ω以下（高壓設備）", "接地電阻50Ω以下（低壓設備）", "接地電阻100Ω以下（一般設備）"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 24,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "接地種類與電阻值對應。",
+        "detail": "職業安全衛生設施規則。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "接地種類與電阻值。"
+      },
+      "tips": {
+        "quick": ["💡 特10、一25、二50、三100"],
+        "mnemonic": "🧠 特種接地10Ω、第一種25Ω、第二種50Ω、第三種100Ω",
+        "commonMistake": ["🚨 陷阱：數值由小到大：特種<第一種<第二種<第三種！"]
+      },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對接地種類與電阻值的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P032",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某工地安全衛生人員需依不同作業選用正確防護具。請將防護具與其對應之使用時機進行配對：",
+      "leftItems": ["安全帽", "安全帶", "護目鏡", "防護手套"],
+      "rightItems": ["頭部防護", "墜落防止", "飛屑防護", "化學品防護", "聽力防護", "呼吸防護"],
+      "answer": ["頭部防護", "墜落防止", "飛屑防護", "化學品防護"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 29,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "安全帽→頭部；安全帶→墜落；護目鏡→飛屑；防護手套→化學品。",
+        "detail": "個人防護具使用時機。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "個人防護具使用時機。"
+      },
+      "tips": {
+        "quick": ["💡 帽頭、帶墜、鏡飛屑、手套化學"],
+        "mnemonic": "🧠 安全帽→頭部防護，安全帶→墜落防止，護目鏡→飛屑防護，防護手套→化學品防護",
+        "commonMistake": ["🚨 陷阱：安全帶是墜落防止，不是一般束縛！"]
+      },
+      "logic": [{ "label": "危害辨識", "reason": "測驗考生對個人防護具使用時機的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P033",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某作業場所使用多種有機溶劑，需依有機溶劑中毒預防規則分類管理。請將有機溶劑與其對應之種類進行配對：",
+      "leftItems": ["四氯化碳", "甲苯", "石油精", "正己烷"],
+      "rightItems": ["第一種", "第二種", "第三種", "第四種", "第五種"],
+      "answer": ["第一種", "第二種", "第三種", "第二種"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "四氯化碳→第一種；甲苯、正己烷→第二種；石油精→第三種。",
+        "detail": "有機溶劑中毒預防規則附表一。"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": { "full": "附表一", "條": "附表一" },
+        "summary": "有機溶劑分類。"
+      },
+      "tips": {
+        "quick": ["💡 四氯一、甲苯二、石油三、正己烷二"],
+        "mnemonic": "🧠 四氯化碳（第一種）、甲苯（第二種）、石油精（第三種）、正己烷（第二種）",
+        "commonMistake": ["🚨 陷阱：114年修法新增1-溴丙烷為第二種有機溶劑！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對有機溶劑分類的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P034",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某化學工廠需依特定化學物質危害預防標準進行分類管理。請將特定化學物質與其對應之種類進行配對：",
+      "leftItems": ["多氯聯苯", "氯乙烯", "甲醛", "硫酸"],
+      "rightItems": ["甲類物質", "丙類第1種物質", "丁類物質", "乙類物質", "丙類第2種物質"],
+      "answer": ["甲類物質", "丙類第1種物質", "丙類第1種物質", "丁類物質"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 6,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "多氯聯苯→甲類；氯乙烯→丙類第1種；甲醛→丙類第1種；硫酸→丁類。",
+        "detail": "特定化學物質危害預防標準。"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "特定化學物質分類。"
+      },
+      "tips": {
+        "quick": ["💡 多氯甲、氯乙烯丙1、甲醛丙1、硫酸丁"],
+        "mnemonic": "🧠 多氯聯苯（甲類）、氯乙烯（丙類第1種）、甲醛（丙類第1種）、硫酸（丁類）",
+        "commonMistake": ["🚨 陷阱：甲醛是丙類第1種，不是乙類！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對特定化學物質分類的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P035",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某環境監測機構需依不同化學品選用正確採樣介質。請將採樣介質與其對應之採樣物質進行配對：",
+      "leftItems": ["活性碳吸附管", "矽膠管", "吸收液", "纖維素酯濾紙"],
+      "rightItems": ["有機溶劑蒸氣", "極性化合物", "酸性氣體", "重金屬粉塵", "可呼吸性粉塵", "汞蒸氣"],
+      "answer": ["有機溶劑蒸氣", "極性化合物", "酸性氣體", "重金屬粉塵"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "活性碳→有機溶劑；矽膠管→極性化合物；吸收液→酸性氣體；纖維素酯濾紙→重金屬粉塵。",
+        "detail": "作業環境監測採樣方法。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": { "full": "第 1 條", "條": "第 1 條" },
+        "summary": "採樣介質選擇。"
+      },
+      "tips": {
+        "quick": ["💡 活性碳有機、矽膠極性、吸收液酸、纖維素酯重金屬"],
+        "mnemonic": "🧠 活性碳→有機溶劑蒸氣，矽膠管→極性化合物，吸收液→酸性氣體，纖維素酯濾紙→重金屬粉塵",
+        "commonMistake": ["🚨 陷阱：汞蒸氣要用金汞齊，不是活性碳！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對採樣介質的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 2,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    },
+    {
+      "id": "P036",
+      "type": "match",
+      "typeLabel": "配合題",
+      "typePrefix": "P",
+      "text": "某事業單位（原事業單位）將廠房鋼構修繕工程交付A公司承攬，並與A公司分別僱用勞工共同作業。請將以下原事業單位應採取之措施，與對應之法律義務進行配對：",
+      "leftItems": ["(1) 召集承攬人協議安全衛生事項", "(2) 告知工作環境與危害因素", "(3) 提供必要之安全衛生教育訓練協助", "(4) 管制承攬人使用之機械設備"],
+      "rightItems": ["職業安全衛生法第23條（協議組織）", "職業安全衛生法第26條（告知義務）", "職業安全衛生法第27條（共同作業管制）", "職業安全衛生法第28條（教育訓練協助）", "職業安全衛生法第29條（共同作業管制）"],
+      "answer": ["職業安全衛生法第23條（協議組織）", "職業安全衛生法第26條（告知義務）", "職業安全衛生法第28條（教育訓練協助）", "職業安全衛生法第27條（共同作業管制）"],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "承攬管理相關法條對應。",
+        "detail": "職業安全衛生法第23-28條。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": { "full": "第 23-28 條", "條": "第 23-28 條" },
+        "summary": "承攬管理相關規定。"
+      },
+      "tips": {
+        "quick": ["💡 召集23、告知26、訓練28、管制27"],
+        "mnemonic": "🧠 協議組織（23）、告知義務（26）、教育訓練協助（28）、共同作業管制（27）",
+        "commonMistake": ["🚨 陷阱：管制承攬人機械設備是第27條，不是第29條！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對承攬管理相關法條的配對能力。" }],
+      "spec": {
+        "layout": "題幹區 → 作答區 → 選項區",
+        "structure": ["題幹區", "作答區", "選項區"],
+        "optionUI": "卡片形式（含干擾選項）",
+        "action": "拖曳",
+        "draggable": true,
+        "scoring": "各配對獨立計分",
+        "hasMiddleZone": true,
+        "hasAnswerZone": true,
+        "distractors": 1,
+        "steps": ["閱讀題幹", "瀏覽選項卡片", "拖曳至作答區配對"]
+      }
+    }
+  ]
+}

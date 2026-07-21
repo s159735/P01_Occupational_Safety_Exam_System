@@ -1,0 +1,166 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 4,
+  "Type": "truefalse",
+  "TypeLabel": "是非題",
+  "TypePrefix": "T",
+  "source": {
+    "classified": true,
+    "breed": true
+  },
+  "questions": [
+    {
+      "id": "T101",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "依據衛生福利部公布「應置有自動體外心臟電擊去顫器之公共場所」，國民中學以上之學校屬於應設置AED之場所。是否正確？",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "國民中學以上之學校屬於AED應設置場所之一，敘述正確。",
+        "detail": "衛福部公告之AED設置場所包含：交通要衝、長距離交通工具、觀光旅遊地區、學校（國民中學以上）、大型集會場所等。"
+      },
+      "law": {
+        "pcode": "L0000001",
+        "name": "公共場所必要緊急救護設備管理辦法",
+        "article": { "full": "第 4 條", "條": "第 4 條" },
+        "summary": "應置有自動體外心臟電擊去顫器之公共場所。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：AED設置：交通、學校、大賣場、旅館、運動中心都要有！"],
+        "mnemonic": "🧠 完整記憶劇本：AED設在人多的地方：機場、高鐵、學校（國中以上）、大賣場、旅館（100間以上）、運動中心。",
+        "commonMistake": ["🚨 陷阱：國民中學是「應設置」場所，不要誤以為不是！"]
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對AED應設置場所之記憶。" }],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": ["題幹區", "選項區"],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": ["閱讀題幹敘述", "判斷是否正確", "點選「是」或「否」"]
+      }
+    },
+    {
+      "id": "T102",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "骨折急救時，應先固定骨折處，再進行止血。是否正確？",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "骨折急救應先處理出血、休克等狀況；先止血、包紮，再固定、搬運、送醫治療。",
+        "detail": "急救優先順序：先止血→包紮→固定→搬運。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": { "full": "第 15 條", "條": "第 15 條" },
+        "summary": "雇主應依規定設置急救人員及急救設備。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：先止血，再固定！"],
+        "mnemonic": "🧠 完整記憶劇本：骨折急救順序：止血→包紮→固定→搬運。",
+        "commonMistake": ["🚨 陷阱：很多人以為要先固定，其實是先止血！"]
+      },
+      "logic": [{ "label": "流程操作", "reason": "測驗考生對骨折急救流程之正確順序。" }],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": ["題幹區", "選項區"],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": ["閱讀題幹敘述", "判斷是否正確", "點選「是」或「否」"]
+      }
+    },
+    {
+      "id": "T103",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "一氧化碳（CO）因其對血紅素產生毒害作用，屬於化學性窒息物質，故未被歸類為單純性之窒息性物質。是否正確？",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "一氧化碳與血紅素結合力為氧氣之200-250倍，形成一氧化碳血紅素（COHb），屬化學性窒息。",
+        "detail": "單純性窒息性物質如二氧化碳、甲烷等，本身無毒但因大量存在而降低氧氣濃度。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 292 條", "條": "第 292 條" },
+        "summary": "雇主應採取必要措施預防有害物中毒。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：CO不是單純窒息，是化學窒息！"],
+        "mnemonic": "🧠 完整記憶劇本：一氧化碳會搶走血紅素，結合力是氧氣的200倍，造成化學性窒息，不是單純缺氧。",
+        "commonMistake": ["🚨 陷阱：CO不是單純窒息性物質，不要把它和CO₂搞混！"]
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對窒息性物質分類之理解。" }],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": ["題幹區", "選項區"],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": ["閱讀題幹敘述", "判斷是否正確", "點選「是」或「否」"]
+      }
+    },
+    {
+      "id": "T104",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "依職業安全衛生設施規則規定，合梯之梯腳與地面之角度應在75度以內。是否正確？",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "合梯梯腳與地面之角度應在75度以內，敘述正確。",
+        "detail": "職業安全衛生設施規則第230條規定：合梯之梯腳與地面之角度應在75度以內，且兩梯腳間有繫材扣牢。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 230 條", "條": "第 230 條" },
+        "summary": "合梯之梯腳與地面之角度應在75度以內。"
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：合梯75度！"],
+        "mnemonic": "🧠 完整記憶劇本：合梯角度要75度以內，太陡會倒，太平會滑。",
+        "commonMistake": ["🚨 陷阱：移動梯是30公分寬，不要搞混！"]
+      },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對合梯使用角度之記憶。" }],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": ["題幹區", "選項區"],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": ["閱讀題幹敘述", "判斷是否正確", "點選「是」或「否」"]
+      }
+    }
+  ]
+}

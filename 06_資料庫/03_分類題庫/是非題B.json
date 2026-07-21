@@ -1,0 +1,258 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 9,
+  "Type": "truefalse",
+  "TypeLabel": "是非題",
+  "TypePrefix": "T",
+  "source": {
+    "classified": true,
+    "breed": true,
+    "sourceNote": "v10.1.0 完整版（含 PDF 精選擴充）"
+  },
+  "questions": [
+    {
+      "id": "T101",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於使用之移動梯，其寬度應在30公分以上。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "移動梯寬度應在30公分以上以確保安全。",
+        "detail": "依據職業安全衛生設施規則第229條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 229 條", "條": "第 229 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：移動梯寬度至少30公分"],
+        "mnemonic": "🧠 完整記憶劇本：鋁梯或木梯的踏面寬度須達30公分。"
+      },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對於移動梯規格之記憶。" }]
+    },
+    {
+      "id": "T102",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主使勞工從事戶外作業，熱危害風險等級達第4級以上時，應設置遮陽設施及提供風扇或水霧。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "熱危害風險等級達第4級以上，雇主應採取遮陽、風扇或水霧等降溫措施。",
+        "detail": "依據職業安全衛生設施規則第303-1條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 303-1 條", "條": "第 303-1 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：熱危害四級以上要遮陽、降溫"],
+        "mnemonic": "🧠 完整記憶劇本：夏天戶外工作，若熱指數達危險等級(4級)，雇主須提供遮陽與風扇。"
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對於熱危害預防措施之認知。" }]
+    },
+    {
+      "id": "T103",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "依職業安全衛生法規定，工作者發現事業單位違反安全衛生規定時，得向主管機關申訴，雇主不得予以解僱。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "工作者申訴權受法律保障，雇主不得因申訴而解僱勞工。",
+        "detail": "依據職業安全衛生法第39條規定。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": { "full": "第 39 條", "條": "第 39 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：申訴受保障，雇主不得打壓"],
+        "mnemonic": "🧠 完整記憶劇本：勞工檢舉公司不安全，雇主若因此開除員工，屬於違法行為。"
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對勞工申訴保護規定之認知。" }]
+    },
+    {
+      "id": "T104",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於噪音超過90分貝之工作場所，應標示並公告噪音危害之預防事項。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "噪音超過90分貝之作業場所須標示及公告預防事項。",
+        "detail": "依據職業安全衛生設施規則第300條第3款規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 300 條", "條": "第 300 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：90分貝要標示"],
+        "mnemonic": "🧠 完整記憶劇本：高噪音區域(超過90分貝)要貼警告標示，提醒勞工戴耳塞。"
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對噪音危害標示規定之記憶。" }]
+    },
+    {
+      "id": "T105",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於鍋爐之操作管理，應僱用專任操作人員，於鍋爐運轉中不得使其從事與鍋爐操作無關之工作。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "鍋爐操作人員須專任，運轉中不得從事其他工作。",
+        "detail": "依據鍋爐及壓力容器安全規則第14條規定。"
+      },
+      "law": {
+        "pcode": "N0060011",
+        "name": "鍋爐及壓力容器安全規則",
+        "article": { "full": "第 14 條", "條": "第 14 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：鍋爐專人操作，不能兼職"],
+        "mnemonic": "🧠 完整記憶劇本：鍋爐運轉中操作員要專心監控。"
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對鍋爐操作管理規定之認知。" }]
+    },
+    {
+      "id": "T106",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於移動式起重機之使用，可以乘載或吊升勞工從事作業。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "移動式起重機以吊物為限，原則不得乘載或吊升勞工。",
+        "detail": "依據起重升降機具安全規則第35條規定，原則禁止。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": { "full": "第 35 條", "條": "第 35 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：起重機原則不載人"],
+        "mnemonic": "🧠 完整記憶劇本：吊車主要用來吊東西，原則上不能吊人。"
+      },
+      "logic": [{ "label": "法規記憶", "reason": "測驗考生對起重機載人規定之記憶。" }]
+    },
+    {
+      "id": "T107",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "事業單位以其事業之全部或部分交付承攬時，如該承攬人使用之機械、設備係由原事業單位提供者，應由承攬人實施自動檢查。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "原事業單位提供之機械設備，仍應由原事業單位實施自動檢查。",
+        "detail": "依據職業安全衛生管理辦法第12-3條規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": { "full": "第 12-3 條", "條": "第 12-3 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：提供設備者，檢查責任在提供方"],
+        "mnemonic": "🧠 完整記憶劇本：原事業單位提供的機械設備，安全檢查責任仍在原事業單位。"
+      },
+      "logic": [{ "label": "法規理解", "reason": "測驗考生對承攬管理檢查責任之認知。" }]
+    },
+    {
+      "id": "T108",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於局限空間作業之進入許可，應保存3年。",
+      "options": ["是", "否"],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間進入許可紀錄應保存3年。",
+        "detail": "依據職業安全衛生設施規則第29-6條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 29-6 條", "條": "第 29-6 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：局限空間許可證，保存3年不能省"],
+        "mnemonic": "🧠 完整記憶劇本：進入許可證要保存3年以備勞動檢查。"
+      },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對局限空間許可紀錄保存年限之記憶。" }]
+    },
+    {
+      "id": "T109",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於高架作業，高度在2公尺以上未滿5公尺者，每連續作業2小時應給予至少25分鐘休息。",
+      "options": ["是", "否"],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高度2公尺以上未滿5公尺者，休息時間為20分鐘，非25分鐘。",
+        "detail": "依據高架作業勞工保護措施標準第7條規定：2~5公尺為20分鐘。"
+      },
+      "law": {
+        "pcode": "N0060029",
+        "name": "高架作業勞工保護措施標準",
+        "article": { "full": "第 7 條", "條": "第 7 條" }
+      },
+      "tips": {
+        "quick": ["💡 核心口訣：2~5米休20分，5~20米休25分"],
+        "mnemonic": "🧠 完整記憶劇本：高架作業休息時間隨高度增加：2~5米休20分，5~20米休25分，20米以上休35分。"
+      },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對高架作業休息時間之記憶。" }]
+    }
+  ]
+}

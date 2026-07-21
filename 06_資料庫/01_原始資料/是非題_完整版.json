@@ -1,0 +1,5425 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 94,
+  "Type": "truefalse",
+  "TypeLabel": "是非題",
+  "TypePrefix": "T",
+  "source": {
+    "classified": true,
+    "breed": true,
+    "merged": true,
+    "merge_date": "2026-07-17 19:22:53",
+    "source_stats": {
+      "是非題A.json": 77,
+      "是非題B.json": 9,
+      "是非題C.json": 4,
+      "是非題D.json": 4
+    },
+    "source_files": [
+      "是非題A.json",
+      "是非題B.json",
+      "是非題C.json",
+      "是非題D.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "T500",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某公司僱用勞工後，未依法為勞工投保勞工保險。勞工在工作場所發生職業傷害後，依職業災害勞工保護法第6條規定，該勞工仍可獲得職業災害給付。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職業災害勞工保護法第6條規定，未投保勞保之勞工仍可請領給付。",
+        "detail": "職業災害勞工保護法第6條。"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": {
+          "full": "第 6 條",
+          "條": "第 6 條"
+        },
+        "summary": "未投保勞保之職災給付規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 沒投保也能領"
+        ],
+        "mnemonic": "🧠 職業災害勞工保護法是勞工最後防線",
+        "commonMistake": [
+          "🚨 陷阱：很多人以為沒投保就不能領！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對職業災害勞工保護法的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T501",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某工地使用吊籠進行外牆清洗作業，勞工為求方便在吊籠內放置腳踏板站立作業。依起重升降機具安全規則規定，此行為是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "吊籠內不得放置任何踏板或墊高物。",
+        "detail": "起重升降機具安全規則第100條規定。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": {
+          "full": "第 100 條",
+          "條": "第 100 條"
+        },
+        "summary": "吊籠使用規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 吊籠內不得放踏板"
+        ],
+        "mnemonic": "🧠 吊籠內禁止使用腳踏板",
+        "commonMistake": [
+          "🚨 陷阱：很多人以為可以墊高作業！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對吊籠使用規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T502",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某營建工地為節省時間，使用營建用提升機搭載勞工上下樓層。依起重升降機具安全規則規定，此行為是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "營建用提升機不得搭載勞工。",
+        "detail": "起重升降機具安全規則規定。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "營建用提升機使用規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 提升機不得載人"
+        ],
+        "mnemonic": "🧠 營建用提升機只能載物，不能載人",
+        "commonMistake": [
+          "🚨 陷阱：提升機不是電梯，不能載人！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對營建用提升機使用規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T503",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某營造工地勞工於高度二公尺以上之施工架邊緣作業，雇主僅以警示帶圍繞作業區域，未設置護欄或護蓋。依職業安全衛生設施規則第224條規定，此做法是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高度二公尺以上之開口部分應設置護欄或護蓋，警示帶不足。",
+        "detail": "職業安全衛生設施規則第224條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 224 條",
+          "條": "第 224 條"
+        },
+        "summary": "開口防護規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 警示帶不足以防墜"
+        ],
+        "mnemonic": "🧠 2公尺以上開口要護欄或護蓋",
+        "commonMistake": [
+          "🚨 陷阱：警示帶不是有效的防墜設施！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對開口防護規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T504",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某食品廠使用大型乾燥設備進行產品乾燥，廠內未設置溫度自動調整裝置。依職業安全衛生設施規則第200條規定，此做法是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 23,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "乾燥設備應設置溫度自動調整裝置。",
+        "detail": "職業安全衛生設施規則第200條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 200 條",
+          "條": "第 200 條"
+        },
+        "summary": "乾燥設備安全規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 乾燥設備需溫控"
+        ],
+        "mnemonic": "🧠 乾燥設備要有溫度自動調整裝置",
+        "commonMistake": [
+          "🚨 陷阱：大型乾燥設備必須設溫控！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對乾燥設備安全規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T505",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某木工廠手推刨床設置距作業位置50公分之動力遮斷裝置。依機械設備器具安全標準規定，此設置是否符合安全要求？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 23,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "手推刨床應設置距作業位置50公分即可操作之動力遮斷裝置。",
+        "detail": "機械設備器具安全標準規定。"
+      },
+      "law": {
+        "pcode": "N0060034",
+        "name": "機械設備器具安全標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "手推刨床安全規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 手推刨床遮斷裝置距50公分"
+        ],
+        "mnemonic": "🧠 手推刨床要設動力遮斷裝置",
+        "commonMistake": [
+          "🚨 陷阱：50公分的距離是正確的！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對手推刨床安全規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T506",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某工地使用之合梯材質有輕微鏽蝕但尚未變形，工地主任認為仍可繼續使用。依職業安全衛生設施規則規定，此判斷是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "合梯材質有顯著損傷或腐蝕即不得使用。",
+        "detail": "職業安全衛生設施規則第230條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 230 條",
+          "條": "第 230 條"
+        },
+        "summary": "合梯使用規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 合梯鏽蝕不得使用"
+        ],
+        "mnemonic": "🧠 合梯有鏽蝕就不能用",
+        "commonMistake": [
+          "🚨 陷阱：鏽蝕就是損傷，不能用！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對合梯使用規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T507",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "依高架作業勞工保護措施標準規定，未設置平台、護欄等設備而已採取必要安全措施，其高度在二公尺以上者，即屬高架作業。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "未設置平台、護欄等設備，高度2公尺以上即屬高架作業。",
+        "detail": "高架作業勞工保護措施標準第3條規定。"
+      },
+      "law": {
+        "pcode": "N0060029",
+        "name": "高架作業勞工保護措施標準",
+        "article": {
+          "full": "第 3 條",
+          "條": "第 3 條"
+        },
+        "summary": "高架作業定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 無護欄2公尺即高架"
+        ],
+        "mnemonic": "🧠 沒護欄2公尺就是高架作業",
+        "commonMistake": [
+          "🚨 陷阱：有護欄時是5公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對高架作業定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T508",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某工廠勞工從事正己烷作業，雇主依勞工健康保護規則規定，應實施特殊體格檢查。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 22,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "正己烷作業屬特別危害健康作業，應實施特殊體格檢查。",
+        "detail": "勞工健康保護規則規定。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "特殊體格檢查規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 正己烷→特殊體格檢查"
+        ],
+        "mnemonic": "🧠 正己烷作業需特殊體格檢查",
+        "commonMistake": [
+          "🚨 陷阱：正己烷是特別危害健康作業！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對特殊體格檢查規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T509",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於高度二公尺以上之工作場所邊緣及開口部分，為防止勞工墜落，應設置護欄、護蓋、安全帶等措施。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高度二公尺以上之開口應設置護欄、護蓋等防墜設施。",
+        "detail": "營造安全衛生設施標準第17條規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "墜落防止規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 2公尺以上開口要護欄"
+        ],
+        "mnemonic": "🧠 2公尺以上開口要設護欄護蓋",
+        "commonMistake": [
+          "🚨 陷阱：護欄、護蓋、安全帶都要有！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對墜落防止規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T510",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "某室內作業場所對外開口面積為底面積之1/40，依有機溶劑中毒預防規則規定，屬通風不充分之作業場所。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "對外開口面積未達底面積1/20或全面積3%以上者，屬通風不充分。1/40小於1/20，故屬通風不充分。",
+        "detail": "有機溶劑中毒預防規則第3條規定。"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "第 3 條",
+          "條": "第 3 條"
+        },
+        "summary": "通風不充分定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 1/40＜1/20→通風不充分"
+        ],
+        "mnemonic": "🧠 開口面積小於1/20就是通風不充分",
+        "commonMistake": [
+          "🚨 陷阱：通風不充分是1/20，不是1/40！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對通風不充分定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T511",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於勞工對職業疾病鑑定結果有異議，可以向勞動檢查機構申請重新認定。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職業疾病鑑定結果有異議，可向勞動檢查機構申請重新認定。",
+        "detail": "職業安全衛生法相關規定。"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "職業疾病鑑定異議處理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 職業疾病可重新認定"
+        ],
+        "mnemonic": "🧠 對職業疾病鑑定有異議可以申請重新認定",
+        "commonMistake": [
+          "🚨 陷阱：不是向法院，是向勞動檢查機構！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對職業疾病鑑定異議處理的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T512",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主實施作業環境監測前，應就作業環境危害特性、監測目的及中央主管機關公告之相關指引，訂定含採樣策略之作業環境監測計畫。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "雇主實施作業環境監測前應訂定含採樣策略之監測計畫。",
+        "detail": "作業環境監測實施辦法第10條規定。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": {
+          "full": "第 10 條",
+          "條": "第 10 條"
+        },
+        "summary": "監測計畫訂定規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 監測前要訂計畫"
+        ],
+        "mnemonic": "🧠 實施監測前要訂定監測計畫",
+        "commonMistake": [
+          "🚨 陷阱：不是「實施後」才訂計畫！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對監測計畫訂定規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T513",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主實施監測七日前，應就監測計畫中中央主管機關公告之網路登錄系統及格式，實施報告。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "監測計畫應於實施15日前通報，7日為錯誤時間。",
+        "detail": "作業環境監測實施辦法第10條規定。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": {
+          "full": "第 10 條",
+          "條": "第 10 條"
+        },
+        "summary": "監測計畫通報規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 監測計畫→15日前通報"
+        ],
+        "mnemonic": "🧠 15日前通報，不是7日",
+        "commonMistake": [
+          "🚨 陷阱：是15日前，不是7日前！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對監測計畫通報規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T514",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：建築物高度在70公尺以上之建築工程為危險性工作場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "建築物高度在80公尺以上之建築工程為丁類危險性工作場所。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "危險性工作場所認定標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 危險性工作場所→80公尺"
+        ],
+        "mnemonic": "🧠 建築物80公尺以上才屬危險性工作場所",
+        "commonMistake": [
+          "🚨 陷阱：是80公尺，不是70公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對危險性工作場所認定標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T515",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：單跨橋梁之橋墩跨距在50公尺以上之橋梁工程為危險性工作場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "單跨橋梁之橋墩跨距在50公尺以上之橋梁工程為危險性工作場所。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "危險性工作場所認定標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 橋墩跨距50公尺→危險性工作場所"
+        ],
+        "mnemonic": "🧠 單跨橋梁跨距50公尺以上屬危險性工作場所",
+        "commonMistake": [
+          "🚨 陷阱：是50公尺以上，不是80公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對危險性工作場所認定標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T516",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：長度300公尺以上且需開挖7公尺以上豎坑之隧道工程為危險性工作場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "長度1000公尺以上之隧道工程為危險性工作場所。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "危險性工作場所認定標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 隧道工程→1000公尺"
+        ],
+        "mnemonic": "🧠 長度1000公尺以上隧道才屬危險性工作場所",
+        "commonMistake": [
+          "🚨 陷阱：是1000公尺，不是300公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對危險性工作場所認定標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T517",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：開挖深度達18公尺以上，或開挖面積達500平方公尺以上之工程為危險性工作場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "開挖深度達18公尺以上且開挖面積達500平方公尺以上之工程為危險性工作場所。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "危險性工作場所認定標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 深18公尺且面積500平方公尺"
+        ],
+        "mnemonic": "🧠 必須同時滿足深度和面積條件",
+        "commonMistake": [
+          "🚨 陷阱：是「且」不是「或」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對危險性工作場所認定標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T518",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：工程中模板支撐高度7公尺以上，或面積達330平方公尺以上者為危險性工作場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "模板支撐高度7公尺以上且面積達330平方公尺以上者為危險性工作場所。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "危險性工作場所認定標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 模板高7公尺且面積330平方公尺"
+        ],
+        "mnemonic": "🧠 必須同時滿足高度和面積條件",
+        "commonMistake": [
+          "🚨 陷阱：是「且」不是「或」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對危險性工作場所認定標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T519",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：蒸汽鍋爐之傳熱面積在150平方公尺以上為危險性工作場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "蒸汽鍋爐之傳熱面積在500平方公尺以上為危險性工作場所。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "危險性工作場所認定標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 蒸汽鍋爐→500平方公尺"
+        ],
+        "mnemonic": "🧠 傳熱面積500平方公尺以上才屬危險性工作場所",
+        "commonMistake": [
+          "🚨 陷阱：是500平方公尺，不是150平方公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對危險性工作場所認定標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T520",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：高壓氣體類壓力容器一日之冷凍能力在50公噸以上為危險性工作場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 31,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高壓氣體類壓力容器一日之冷凍能力在20公噸以上為危險性工作場所。",
+        "detail": "危險性工作場所審查及檢查辦法。"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "危險性工作場所認定標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 冷凍能力→20公噸"
+        ],
+        "mnemonic": "🧠 20公噸以上才屬危險性工作場所",
+        "commonMistake": [
+          "🚨 陷阱：是20公噸，不是50公噸！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對危險性工作場所認定標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T521",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主使女性勞工從事鉛作業時，應依血中鉛濃度區分風險等級，第一級管理為血中鉛濃度低於5μg/dl者。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 32,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "女性勞工鉛作業第一級管理為血中鉛濃度低於5μg/dl者。",
+        "detail": "女性勞工母性健康保護實施辦法。"
+      },
+      "law": {
+        "pcode": "N0060065",
+        "name": "女性勞工母性健康保護實施辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鉛作業風險分級管理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 第一級＜5μg/dl"
+        ],
+        "mnemonic": "🧠 血中鉛濃度越低，風險等級越低",
+        "commonMistake": [
+          "🚨 陷阱：5μg/dl是第一級，不是第二級！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對鉛作業風險分級的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T522",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主使女性勞工從事鉛作業時，第二級管理為血中鉛濃度在5μg/dl以上未達10μg/dl。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 32,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "第二級管理為血中鉛濃度在5μg/dl以上未達15μg/dl。",
+        "detail": "女性勞工母性健康保護實施辦法。"
+      },
+      "law": {
+        "pcode": "N0060065",
+        "name": "女性勞工母性健康保護實施辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鉛作業風險分級管理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 第二級5~15μg/dl"
+        ],
+        "mnemonic": "🧠 5到15是第二級",
+        "commonMistake": [
+          "🚨 陷阱：是15μg/dl，不是10μg/dl！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對鉛作業風險分級的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T523",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主使女性勞工從事鉛作業時，第三級管理為血中鉛濃度在10μg/dl以上者。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 32,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "第三級管理為血中鉛濃度在15μg/dl以上者。",
+        "detail": "女性勞工母性健康保護實施辦法。"
+      },
+      "law": {
+        "pcode": "N0060065",
+        "name": "女性勞工母性健康保護實施辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鉛作業風險分級管理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 第三級≥15μg/dl"
+        ],
+        "mnemonic": "🧠 15μg/dl以上是第三級",
+        "commonMistake": [
+          "🚨 陷阱：是15μg/dl，不是10μg/dl！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對鉛作業風險分級的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T524",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：鉛作業之作業場所之監測結果應依勞工作業環境監測實施辦法記錄，並保存30年。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "鉛作業監測結果應保存30年。",
+        "detail": "作業環境監測實施辦法第12條規定。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": {
+          "full": "第 12 條",
+          "條": "第 12 條"
+        },
+        "summary": "監測結果保存規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 鉛監測→保存30年"
+        ],
+        "mnemonic": "🧠 鉛作業監測紀錄要保存30年",
+        "commonMistake": [
+          "🚨 陷阱：是30年，不是3年！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對監測結果保存規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T525",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主設置之局部排氣裝置，應於鉛作業時間內有效運轉，並降低空氣中鉛塵濃度至勞工作業場所容許暴露標準以下。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 6,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局部排氣裝置應於作業時間內有效運轉，並降低濃度至容許暴露標準以下。",
+        "detail": "鉛中毒預防規則規定。"
+      },
+      "law": {
+        "pcode": "N0060018",
+        "name": "鉛中毒預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "局部排氣裝置運轉規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 局部排氣→作業期間運轉"
+        ],
+        "mnemonic": "🧠 鉛作業期間局部排氣裝置要持續運轉",
+        "commonMistake": [
+          "🚨 陷阱：不是「作業前」才開！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對鉛作業局部排氣裝置規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T526",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主為防止鉛、鉛混存物等之鉛塵污染，應每週以水沖洗，或以真空除塵機、適當溶液清潔作業場所一次以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 6,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "應每日以水沖洗或真空除塵機清潔一次以上，非每週。",
+        "detail": "鉛中毒預防規則規定。"
+      },
+      "law": {
+        "pcode": "N0060018",
+        "name": "鉛中毒預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鉛作業場所清潔規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 鉛作業場所→每日清潔"
+        ],
+        "mnemonic": "🧠 鉛作業場所每天都要清潔一次以上",
+        "commonMistake": [
+          "🚨 陷阱：是每日，不是每週！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對鉛作業場所清潔規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T527",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生管理辦法規定，事業單位以其事業之全部或部分交付承攬或再承攬時，如該承攬人使用之機械、設備係由原事業單位提供者，該機械、設備應由承攬人實施自動檢查。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "由原事業單位提供之機械設備，應由承攬人實施自動檢查。",
+        "detail": "職業安全衛生管理辦法規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "承攬自動檢查規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 原事業提供→承攬人檢查"
+        ],
+        "mnemonic": "🧠 原事業單位提供的機械，由承攬人負責檢查",
+        "commonMistake": [
+          "🚨 陷阱：不是原事業單位檢查！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對承攬自動檢查規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T528",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生管理辦法規定，職業安全衛生委員會應每個月舉行會議1次。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職業安全衛生委員會應每3個月舉行會議1次，不是每月。",
+        "detail": "職業安全衛生管理辦法規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "職業安全衛生委員會開會頻率。"
+      },
+      "tips": {
+        "quick": [
+          "💡 職安衛委員會→每3個月"
+        ],
+        "mnemonic": "🧠 委員會每3個月開一次會",
+        "commonMistake": [
+          "🚨 陷阱：是每3個月，不是每月！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對職業安全衛生委員會開會頻率的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T529",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生管理辦法規定，事業單位勞工在50人以上時，雇主應訂定職業安全衛生管理規章。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "事業單位勞工在50人以上時，應訂定職業安全衛生管理規章。",
+        "detail": "職業安全衛生管理辦法規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "管理規章訂定規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 50人以上→管理規章"
+        ],
+        "mnemonic": "🧠 50人以上要訂定管理規章",
+        "commonMistake": [
+          "🚨 陷阱：是50人，不是100人！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對管理規章訂定規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T530",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生管理辦法規定，定期檢查、重點檢查之紀錄應保存5年以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 21,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "定期檢查、重點檢查之紀錄應保存3年以上。",
+        "detail": "職業安全衛生管理辦法規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "檢查紀錄保存規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 檢查紀錄→保存3年"
+        ],
+        "mnemonic": "🧠 定期檢查紀錄保存3年",
+        "commonMistake": [
+          "🚨 陷阱：是3年，不是5年！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對檢查紀錄保存規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T531",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依危害性化學品標示及通識規則規定，安全資料表應適時更新，並至少應每2年檢討1次。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "安全資料表應至少每3年檢討1次，非2年。",
+        "detail": "危害性化學品標示及通識規則規定。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "安全資料表更新規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 安全資料表→3年"
+        ],
+        "mnemonic": "🧠 安全資料表每3年檢討1次",
+        "commonMistake": [
+          "🚨 陷阱：是3年，不是2年！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對安全資料表更新規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T532",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依缺氧症預防規則規定，雇主使勞工從事缺氧危險作業時，應指派2人以上之監視人員。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "缺氧危險作業應指派1人以上之監視人員。",
+        "detail": "缺氧症預防規則規定。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "缺氧作業監視人員規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 缺氧作業→1人以上監視"
+        ],
+        "mnemonic": "🧠 缺氧作業至少1人監視",
+        "commonMistake": [
+          "🚨 陷阱：是1人以上，不是2人以上！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對缺氧作業監視人員規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T533",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生管理辦法規定，雇主對使用中之施工架應至少每月檢查1次。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "使用中之施工架應至少每週檢查1次，非每月。",
+        "detail": "職業安全衛生管理辦法規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "施工架檢查規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 施工架→每週檢查"
+        ],
+        "mnemonic": "🧠 施工架每週檢查一次",
+        "commonMistake": [
+          "🚨 陷阱：是每週，不是每月！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對施工架檢查規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T534",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生教育訓練規則規定，辦理新僱勞工一般安全衛生教育訓練時，其訓練時數不得少於3小時。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 22,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "新僱勞工一般安全衛生教育訓練時數不得少於3小時。",
+        "detail": "職業安全衛生教育訓練規則規定。"
+      },
+      "law": {
+        "pcode": "N0060010",
+        "name": "職業安全衛生教育訓練規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "新僱勞工教育訓練時數。"
+      },
+      "tips": {
+        "quick": [
+          "💡 新僱訓練→3小時"
+        ],
+        "mnemonic": "🧠 新進勞工至少3小時教育訓練",
+        "commonMistake": [
+          "🚨 陷阱：是3小時，不是6小時！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對教育訓練時數規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T535",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依危害性化學品標示及通識規則規定，裝有危害性化學品之容器，容器體積在100毫升以下者，得僅標示名稱、危害圖示及警示語。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 19,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "容器體積在100毫升以下者，得僅標示名稱、危害圖示及警示語。",
+        "detail": "危害性化學品標示及通識規則規定。"
+      },
+      "law": {
+        "pcode": "N0060054",
+        "name": "危害性化學品標示及通識規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "容器標示規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 100ml以下→簡易標示"
+        ],
+        "mnemonic": "🧠 小容器（100ml以下）可簡化標示",
+        "commonMistake": [
+          "🚨 陷阱：是100毫升以下，不是100毫升以上！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對容器標示規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T536",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生設施規則規定，對於製造、處置氧化性物質之工作場所，為防止爆炸、火災，不得使其接觸水。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 24,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "氧化性物質不得使其接觸水，防止爆炸火災。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "氧化性物質處理規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 氧化性物質→禁水"
+        ],
+        "mnemonic": "🧠 氧化性物質接觸水可能引起爆炸",
+        "commonMistake": [
+          "🚨 陷阱：氧化性物質不能接觸水！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對氧化性物質處理規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T537",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依勞工作業環境監測實施辦法規定，鉛作業場所應每半年實施作業環境監測1次以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "鉛作業場所應每年實施作業環境監測1次以上，非每半年。",
+        "detail": "作業環境監測實施辦法規定。"
+      },
+      "law": {
+        "pcode": "N0060033",
+        "name": "作業環境監測實施辦法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鉛作業監測頻率。"
+      },
+      "tips": {
+        "quick": [
+          "💡 鉛作業→每年1次"
+        ],
+        "mnemonic": "🧠 鉛作業每年監測一次",
+        "commonMistake": [
+          "🚨 陷阱：是每年，不是每半年！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對鉛作業監測頻率的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T538",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：嘉義縣政府應於勞動檢查方針公告後3個月內，擬定勞動監督檢查計畫，報請中央主管機關核備後實施。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "應於勞動檢查方針公告後2個月內擬定，非3個月。",
+        "detail": "勞動檢查法相關規定。"
+      },
+      "law": {
+        "pcode": "N0070005",
+        "name": "勞動檢查法",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "勞動監督檢查計畫擬定規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 勞動檢查計畫→2個月"
+        ],
+        "mnemonic": "🧠 2個月內擬定監督檢查計畫",
+        "commonMistake": [
+          "🚨 陷阱：是2個月，不是3個月！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對勞動監督檢查計畫擬定規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T539",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：使用中的雪山隧道內部屬於缺氧危險作業場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "使用中之雪山隧道內部不屬於缺氧危險作業場所。",
+        "detail": "缺氧症預防規則定義。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "缺氧危險場所定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 使用中隧道→非缺氧場所"
+        ],
+        "mnemonic": "🧠 使用中的隧道有通風，非缺氧場所",
+        "commonMistake": [
+          "🚨 陷阱：施工中隧道才是缺氧危險場所！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規理解",
+          "reason": "測驗考生對缺氧危險場所定義的理解。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T540",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：置放穀物之密閉倉庫屬於缺氧危險場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "置放穀物或飼料之儲存設備內部屬缺氧危險場所。",
+        "detail": "缺氧症預防規則定義。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "缺氧危險場所定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 穀物倉庫→缺氧場所"
+        ],
+        "mnemonic": "🧠 穀物儲存會消耗氧氣，屬缺氧場所",
+        "commonMistake": [
+          "🚨 陷阱：穀物倉庫是缺氧場所！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對缺氧危險場所定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T541",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：空氣中氧氣濃度為18.5%之水塔內部屬於缺氧危險場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "氧氣濃度未滿18%之場所為缺氧危險場所，18.5%≥18%，非缺氧危險場所。",
+        "detail": "缺氧症預防規則定義。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "缺氧危險場所定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 18%是缺氧臨界點"
+        ],
+        "mnemonic": "🧠 18%以下才是缺氧，18.5%不是",
+        "commonMistake": [
+          "🚨 陷阱：是未滿18%，不是18%以下！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對缺氧危險場所定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T542",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：置放醬油之地窖屬於缺氧危險場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "置放酒類、胚子、酵母等發酵物質之儲槽、地窖等為缺氧危險場所。醬油屬發酵物質。",
+        "detail": "缺氧症預防規則定義。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "缺氧危險場所定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 醬油地窖→缺氧場所"
+        ],
+        "mnemonic": "🧠 發酵物質會消耗氧氣，屬缺氧場所",
+        "commonMistake": [
+          "🚨 陷阱：醬油是發酵物質！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對缺氧危險場所定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T543",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：已密閉1年、內壁為不鏽鋼之塔槽屬於缺氧危險場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "密閉相當期間之鋼製設備，內壁為不銹鋼製品者，不在此限。故不屬缺氧危險場所。",
+        "detail": "缺氧症預防規則定義。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "缺氧危險場所定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 不鏽鋼內壁→非缺氧場所"
+        ],
+        "mnemonic": "🧠 不鏽鋼不會氧化，非缺氧場所",
+        "commonMistake": [
+          "🚨 陷阱：鋼製設備才屬缺氧場所，不鏽鋼除外！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對缺氧危險場所定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T544",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於室內工作場所之主要人行道，寬度不得小於0.8公尺。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "室內主要人行道寬度不得小於1公尺，非0.8公尺。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "人行道寬度規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 主要人行道→1公尺"
+        ],
+        "mnemonic": "🧠 主要人行道至少1公尺寬",
+        "commonMistake": [
+          "🚨 陷阱：是1公尺，不是0.8公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對人行道寬度規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T545",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於直徑不滿10公分之研磨輪得免予速率試驗。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 23,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "直徑不滿10公分之研磨輪得免予速率試驗。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "研磨輪速率試驗規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 <10公分→免速率試驗"
+        ],
+        "mnemonic": "🧠 10公分以下的研磨輪不用速率試驗",
+        "commonMistake": [
+          "🚨 陷阱：是10公分，不是15公分！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對研磨輪速率試驗規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T546",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於固定梯之頂端應突出板面60公分以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "固定梯頂端應突出板面60公分以上。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "固定梯設置規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 固定梯頂端→60公分"
+        ],
+        "mnemonic": "🧠 固定梯頂端要突出60公分",
+        "commonMistake": [
+          "🚨 陷阱：是60公分，不是50公分！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對固定梯設置規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T547",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於梯長連續超過6公尺之固定梯，應每隔9公尺以下設一平台。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "梯長連續超過6公尺之固定梯，應每隔9公尺以下設一平台。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "固定梯平台設置規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 >6公尺→設平台"
+        ],
+        "mnemonic": "🧠 超過6公尺的固定梯要設平台",
+        "commonMistake": [
+          "🚨 陷阱：是6公尺，不是8公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對固定梯平台設置規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T548",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於噪音超過90分貝之工作場所，應標示並公告噪音危害之預防事項，使勞工周知。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 15,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "噪音超過90分貝之工作場所，應標示並公告噪音危害之預防事項。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "噪音危害標示規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 噪音>90分貝→標示公告"
+        ],
+        "mnemonic": "🧠 超過90分貝要公告噪音危害",
+        "commonMistake": [
+          "🚨 陷阱：是90分貝，不是85分貝！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對噪音危害標示規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T549",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生設施規則規定，對於高度二公尺以上之工作場所邊緣及開口部分，勞工有遭受墜落危險之虞者，不得設有適當強度之護欄、護蓋等防護設備。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "應設置護欄、護蓋等防護設備，題幹說「不得設有」是錯誤的。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "墜落防止規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 2公尺以上→應設護欄"
+        ],
+        "mnemonic": "🧠 高度2公尺以上要設護欄護蓋",
+        "commonMistake": [
+          "🚨 陷阱：不得設有是錯的，應設有！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對墜落防止規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T550",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：公司對於乾燥設備之內部，不得置有隨時能測定溫度之裝置，及調整內部溫度於安全溫度之裝置或溫度自動調整裝置。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 23,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "應設置溫度測定及調整裝置，題幹說「不得置有」是錯誤的。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "乾燥設備安全規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 乾燥設備→應設溫控"
+        ],
+        "mnemonic": "🧠 乾燥設備要有溫度自動調整裝置",
+        "commonMistake": [
+          "🚨 陷阱：不得置有是錯的，應置有！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對乾燥設備安全規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T551",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：手推刨床不得設置距作業位置50公分即可操作之動力遮斷裝置。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 23,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "應設置距作業位置50公分即可操作之動力遮斷裝置，題幹說「不得設置」是錯誤的。",
+        "detail": "機械設備器具安全標準規定。"
+      },
+      "law": {
+        "pcode": "N0060034",
+        "name": "機械設備器具安全標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "手推刨床安全規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 手推刨床→應設遮斷裝置"
+        ],
+        "mnemonic": "🧠 手推刨床要設動力遮斷裝置",
+        "commonMistake": [
+          "🚨 陷阱：不得設置是錯的，應設置！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對手推刨床安全規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T552",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：事業單位對於使用之合梯，其材質不得有顯著之損傷、腐蝕等現象。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "合梯材質不得有顯著之損傷、腐蝕等現象。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "合梯使用規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 合梯→不得有損傷腐蝕"
+        ],
+        "mnemonic": "🧠 合梯有損傷腐蝕就不能用",
+        "commonMistake": [
+          "🚨 陷阱：不得有損傷腐蝕是正確的！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對合梯使用規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T553",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：公司對於高度二公尺以上之工作場所邊緣及開口部分，為防止勞工墜落，不得設置護欄、護蓋、安全帶等措施。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "應設置護欄、護蓋等防護措施，題幹說「不得設置」是錯誤的。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "墜落防止規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 應設護欄，非不得設"
+        ],
+        "mnemonic": "🧠 高度2公尺以上要設防護措施",
+        "commonMistake": [
+          "🚨 陷阱：不得設置是錯的！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對墜落防止規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T554",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "颱風過後，某工廠鐵皮屋頂（附有塑膠採光罩）受損需緊急修繕。雇主指派3名勞工至屋頂作業，並於屋頂邊緣設置高度75公分之護欄，且要求勞工佩戴腰掛式安全帶。\n（  ）雇主於屋頂設置高度75公分護欄已符合法規要求。\n（  ）於易踏穿材料屋頂作業，應於屋架上設置寬度30公分以上之踏板。\n（  ）腰掛式安全帶適用於屋頂作業之墜落防止。\n（  ）斜度大於34度之屋頂，應設置適當之護欄及工作臺。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": [
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "護欄高度應90公分以上，75公分不足；屋頂踏板寬度應30公分以上；腰掛式安全帶不適用於屋頂作業；斜度大於34度之屋頂應設護欄及工作臺。",
+        "detail": "營造安全衛生設施標準相關規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "屋頂作業安全規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 護欄90公分、踏板30公分、腰掛式不適用、34度要工作臺"
+        ],
+        "mnemonic": "🧠 屋頂作業安全規定",
+        "commonMistake": [
+          "🚨 陷阱：腰掛式安全帶不適用於屋頂作業！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對屋頂作業安全規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "各子題獨立計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "逐項判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T555",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生法規定，雇主對於未滿18歲之勞工，不得使其從事坑內工作。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "未滿18歲之勞工不得從事坑內工作。",
+        "detail": "職業安全衛生法第29條規定。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 29 條",
+          "條": "第 29 條"
+        },
+        "summary": "未成年勞工保護規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 未滿18→不得坑內工作"
+        ],
+        "mnemonic": "🧠 18歲以下不能做坑內工作",
+        "commonMistake": [
+          "🚨 陷阱：220伏特以下電力線銜接是例外！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對未成年勞工保護規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T556",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生法規定，雇主對於妊娠中之女性勞工，不得使其從事有害輻射散布場所之作業。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 25,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "妊娠中之女性勞工不得從事有害輻射散布場所之作業。",
+        "detail": "職業安全衛生法第30條規定。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 30 條",
+          "條": "第 30 條"
+        },
+        "summary": "女性勞工保護規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 懷孕→不得有害輻射"
+        ],
+        "mnemonic": "🧠 孕婦不能做有害輻射作業",
+        "commonMistake": [
+          "🚨 陷阱：除了輻射，還有其他禁止項目！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對女性勞工保護規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T557",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於勞工工作場所之採光照明，室外走道應達20米燭光以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "室外走道照明應達20米燭光以上。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "照明標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 室外走道→20 Lux"
+        ],
+        "mnemonic": "🧠 室外走道照明至少20 Lux",
+        "commonMistake": [
+          "🚨 陷阱：是20 Lux，不是50 Lux！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對照明標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T558",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於勞工工作場所之採光照明，升降機、更衣室應達100米燭光以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "升降機、更衣室照明應達100米燭光以上。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "照明標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 升降機/更衣室→100 Lux"
+        ],
+        "mnemonic": "🧠 升降機和更衣室照明至少100 Lux",
+        "commonMistake": [
+          "🚨 陷阱：是100 Lux，不是50 Lux！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對照明標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T559",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於起重機具所使用之鉤環，其安全係數應在4以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "起重機具鉤環之安全係數應在4以上。",
+        "detail": "起重升降機具安全規則規定。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鉤環安全係數規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 鉤環安全係數→4以上"
+        ],
+        "mnemonic": "🧠 鉤環安全係數至少4",
+        "commonMistake": [
+          "🚨 陷阱：是4，不是5！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對鉤環安全係數規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T560",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於固定式起重機應設置過捲預防裝置，使吊鉤與捲胴之間隔保持0.25公尺以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "吊鉤與捲胴之間隔應保持0.25公尺以上。",
+        "detail": "起重升降機具安全規則規定。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "過捲預防裝置規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 吊鉤間隔→0.25公尺"
+        ],
+        "mnemonic": "🧠 吊鉤和捲胴要間隔25公分以上",
+        "commonMistake": [
+          "🚨 陷阱：是0.25公尺，不是0.2公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對過捲預防裝置規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T561",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於可燃性氣體或毒性氣體之消費，應在通風良好之場所為之，且應保持其容器在攝氏40度以下。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 24,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "可燃性氣體或毒性氣體容器應保持在40°C以下。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "氣體容器溫度規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 氣體容器→40°C以下"
+        ],
+        "mnemonic": "🧠 氣體容器要保持在40°C以下",
+        "commonMistake": [
+          "🚨 陷阱：是40°C，不是35°C！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對氣體容器溫度規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T562",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於建築物工作室之樓地板至天花板淨高應在2公尺以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "工作室樓地板至天花板淨高應在2公尺以上。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "工作室淨高規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 工作室淨高→2公尺"
+        ],
+        "mnemonic": "🧠 工作室天花板至少2公尺高",
+        "commonMistake": [
+          "🚨 陷阱：是2公尺，不是1.8公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對工作室淨高規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T563",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於移動梯之使用，其寬度應在30公分以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "移動梯寬度應在30公分以上。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "移動梯設置規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 移動梯→30公分以上"
+        ],
+        "mnemonic": "🧠 移動梯寬度至少30公分",
+        "commonMistake": [
+          "🚨 陷阱：是30公分，不是40公分！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對移動梯設置規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T564",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於護欄之設置，護欄高度應在90公分以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "護欄高度應在90公分以上。",
+        "detail": "營造安全衛生設施標準規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "護欄高度規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 護欄高度→90公分"
+        ],
+        "mnemonic": "🧠 護欄至少要90公分高",
+        "commonMistake": [
+          "🚨 陷阱：是90公分，不是75公分！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對護欄高度規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T565",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於安全網之設置，工作面至安全網架設平面之攔截高度不得超過7公尺。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "安全網攔截高度不得超過7公尺。",
+        "detail": "營造安全衛生設施標準規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "安全網設置規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 安全網→7公尺"
+        ],
+        "mnemonic": "🧠 安全網攔截高度不超過7公尺",
+        "commonMistake": [
+          "🚨 陷阱：是7公尺，不是10公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對安全網設置規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T566",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於合梯之使用，梯腳與地面之角度應在75度以內。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 20,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "合梯梯腳與地面角度應在75度以內。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "合梯使用規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 合梯角度→75度"
+        ],
+        "mnemonic": "🧠 合梯角度不超過75度",
+        "commonMistake": [
+          "🚨 陷阱：是75度，不是60度！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對合梯使用規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T567",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於防止墜落之安全帶，其材質之最小斷裂強度應在2300公斤以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "安全帶最小斷裂強度應在2300公斤以上。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "安全帶強度規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 安全帶強度→2300公斤"
+        ],
+        "mnemonic": "🧠 安全帶至少要能承受2300公斤",
+        "commonMistake": [
+          "🚨 陷阱：是2300公斤，不是2000公斤！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對安全帶強度規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T568",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：雇主對於水平安全母索之設置高度應大於3.5公尺。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "水平安全母索之設置高度應大於3.5公尺。",
+        "detail": "職業安全衛生設施規則規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "水平安全母索設置規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 水平母索→>3.5公尺"
+        ],
+        "mnemonic": "🧠 水平安全母索要設在3.5公尺以上",
+        "commonMistake": [
+          "🚨 陷阱：是3.5公尺，不是3公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對水平安全母索設置規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T569",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生設施規則規定，雇主對於防爆電氣構造代號「n」代表本質安全防爆構造。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "n代表保護型式防護構造，非本質安全。本質安全為「i」。",
+        "detail": "職業安全衛生設施規則防爆電氣構造分類。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 177 條",
+          "條": "第 177 條"
+        },
+        "summary": "防爆電氣構造分類。"
+      },
+      "tips": {
+        "quick": [
+          "💡 n＝保護型式，i＝本質安全"
+        ],
+        "mnemonic": "🧠 n（保護型式）和 i（本質安全）不同！",
+        "commonMistake": [
+          "🚨 陷阱：很多人以為n是本質安全，其實不是！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對防爆電氣構造代號的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T570",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依消防法相關規定，C類火災可以使用水進行滅火。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 8,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "C類火災為電氣火災，使用水滅火有導電危險，應使用二氧化碳或乾粉滅火器。",
+        "detail": "各類火災適用滅火方法。"
+      },
+      "law": {
+        "pcode": "D0120036",
+        "name": "消防法",
+        "article": {
+          "full": "消防法施行細則",
+          "條": "消防法施行細則"
+        },
+        "summary": "火災分類與滅火方法。"
+      },
+      "tips": {
+        "quick": [
+          "💡 C類火災不能用水"
+        ],
+        "mnemonic": "🧠 電氣火災不能用水，會導電！",
+        "commonMistake": [
+          "🚨 陷阱：C類火災用水會觸電！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對火災分類與滅火方法的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T571",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生設施規則規定，N95口罩之「95」代表濾材捕集效率低於95%。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 10,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "N95口罩之「95」代表濾材捕集效率高於95%，不是低於95%。",
+        "detail": "N95口罩定義。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 277 條",
+          "條": "第 277 條"
+        },
+        "summary": "呼吸防護具分類。"
+      },
+      "tips": {
+        "quick": [
+          "💡 95＝捕集效率＞95%"
+        ],
+        "mnemonic": "🧠 95是過濾效率95%以上",
+        "commonMistake": [
+          "🚨 陷阱：95是捕集效率，不是洩漏率！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對N95口罩定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T572",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依缺氧症預防規則規定，空氣中氧氣濃度未滿20%之場所即屬缺氧危險場所。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 11,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "氧氣濃度未滿18%之場所為缺氧危險場所，不是20%。",
+        "detail": "缺氧症預防規則第2條規定。"
+      },
+      "law": {
+        "pcode": "N0060020",
+        "name": "缺氧症預防規則",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "缺氧危險場所定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 缺氧臨界點＝18%"
+        ],
+        "mnemonic": "🧠 18%以下才是缺氧，不是20%",
+        "commonMistake": [
+          "🚨 陷阱：很多人以為20%才是缺氧閾值！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對缺氧危險場所定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T573",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依高架作業勞工保護措施標準規定，已設置護欄之工作場所，高度在2公尺以上即屬高架作業。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "已設置護欄之工作場所，高度在5公尺以上才算高架作業；未設置護欄時才是2公尺。",
+        "detail": "高架作業勞工保護措施標準第3條規定。"
+      },
+      "law": {
+        "pcode": "N0060029",
+        "name": "高架作業勞工保護措施標準",
+        "article": {
+          "full": "第 3 條",
+          "條": "第 3 條"
+        },
+        "summary": "高架作業定義。"
+      },
+      "tips": {
+        "quick": [
+          "💡 有護欄→5公尺"
+        ],
+        "mnemonic": "🧠 有護欄要5公尺才算高架",
+        "commonMistake": [
+          "🚨 陷阱：有護欄時是5公尺，不是2公尺！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對高架作業定義的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T574",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依職業安全衛生設施規則規定，雇主對於高壓氣體設備應以常用壓力2倍以上實施耐壓試驗。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 13,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高壓氣體設備耐壓試驗為常用壓力1.5倍以上，不是2倍。",
+        "detail": "高壓氣體勞工安全規則第41條規定。"
+      },
+      "law": {
+        "pcode": "N0060030",
+        "name": "高壓氣體勞工安全規則",
+        "article": {
+          "full": "第 41 條",
+          "條": "第 41 條"
+        },
+        "summary": "高壓氣體設備耐壓試驗標準。"
+      },
+      "tips": {
+        "quick": [
+          "💡 耐壓試驗→1.5倍"
+        ],
+        "mnemonic": "🧠 耐壓1.5倍，不是2倍",
+        "commonMistake": [
+          "🚨 陷阱：很多人以為耐壓試驗是2倍！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對高壓氣體設備耐壓試驗標準的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T575",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依有機溶劑中毒預防規則規定，四氯化碳屬於第二種有機溶劑。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 5,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "四氯化碳為第一種有機溶劑，不是第二種。",
+        "detail": "有機溶劑中毒預防規則附表一。"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "附表一",
+          "條": "附表一"
+        },
+        "summary": "有機溶劑分類。"
+      },
+      "tips": {
+        "quick": [
+          "💡 四氯化碳＝第一種"
+        ],
+        "mnemonic": "🧠 四氯化碳毒性高，是第一種",
+        "commonMistake": [
+          "🚨 陷阱：四氯化碳是第一種，不是第二種！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對有機溶劑分類的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T576",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "是否正確：依營造安全衛生設施標準規定，雇主對於易踏穿材料構築之屋頂作業，應設置寬度40公分以上之踏板。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 14,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "易踏穿屋頂作業應設置寬度30公分以上之踏板，不是40公分。",
+        "detail": "營造安全衛生設施標準第18條規定。"
+      },
+      "law": {
+        "pcode": "N0060014",
+        "name": "營造安全衛生設施標準",
+        "article": {
+          "full": "第 18 條",
+          "條": "第 18 條"
+        },
+        "summary": "屋頂作業踏板寬度規定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 屋頂踏板→30公分"
+        ],
+        "mnemonic": "🧠 易踏穿屋頂要鋪30公分寬的踏板",
+        "commonMistake": [
+          "🚨 陷阱：是30公分，不是40公分！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對屋頂作業踏板規定的記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T577",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於使用之移動梯，其寬度應在30公分以上。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "移動梯寬度應在30公分以上以確保安全。",
+        "detail": "依據職業安全衛生設施規則第229條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 229 條",
+          "條": "第 229 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：移動梯寬度至少30公分"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：鋁梯或木梯的踏面寬度須達30公分。"
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對於移動梯規格之記憶。"
+        }
+      ]
+    },
+    {
+      "id": "T578",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主使勞工從事戶外作業，熱危害風險等級達第4級以上時，應設置遮陽設施及提供風扇或水霧。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "熱危害風險等級達第4級以上，雇主應採取遮陽、風扇或水霧等降溫措施。",
+        "detail": "依據職業安全衛生設施規則第303-1條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 303-1 條",
+          "條": "第 303-1 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：熱危害四級以上要遮陽、降溫"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：夏天戶外工作，若熱指數達危險等級(4級)，雇主須提供遮陽與風扇。"
+      },
+      "logic": [
+        {
+          "label": "法規理解",
+          "reason": "測驗考生對於熱危害預防措施之認知。"
+        }
+      ]
+    },
+    {
+      "id": "T579",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "依職業安全衛生法規定，工作者發現事業單位違反安全衛生規定時，得向主管機關申訴，雇主不得予以解僱。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "工作者申訴權受法律保障，雇主不得因申訴而解僱勞工。",
+        "detail": "依據職業安全衛生法第39條規定。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 39 條",
+          "條": "第 39 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：申訴受保障，雇主不得打壓"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：勞工檢舉公司不安全，雇主若因此開除員工，屬於違法行為。"
+      },
+      "logic": [
+        {
+          "label": "法規理解",
+          "reason": "測驗考生對勞工申訴保護規定之認知。"
+        }
+      ]
+    },
+    {
+      "id": "T580",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於噪音超過90分貝之工作場所，應標示並公告噪音危害之預防事項。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "噪音超過90分貝之作業場所須標示及公告預防事項。",
+        "detail": "依據職業安全衛生設施規則第300條第3款規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 300 條",
+          "條": "第 300 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：90分貝要標示"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：高噪音區域(超過90分貝)要貼警告標示，提醒勞工戴耳塞。"
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對噪音危害標示規定之記憶。"
+        }
+      ]
+    },
+    {
+      "id": "T581",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於鍋爐之操作管理，應僱用專任操作人員，於鍋爐運轉中不得使其從事與鍋爐操作無關之工作。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "鍋爐操作人員須專任，運轉中不得從事其他工作。",
+        "detail": "依據鍋爐及壓力容器安全規則第14條規定。"
+      },
+      "law": {
+        "pcode": "N0060011",
+        "name": "鍋爐及壓力容器安全規則",
+        "article": {
+          "full": "第 14 條",
+          "條": "第 14 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：鍋爐專人操作，不能兼職"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：鍋爐運轉中操作員要專心監控。"
+      },
+      "logic": [
+        {
+          "label": "法規理解",
+          "reason": "測驗考生對鍋爐操作管理規定之認知。"
+        }
+      ]
+    },
+    {
+      "id": "T582",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於移動式起重機之使用，可以乘載或吊升勞工從事作業。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "移動式起重機以吊物為限，原則不得乘載或吊升勞工。",
+        "detail": "依據起重升降機具安全規則第35條規定，原則禁止。"
+      },
+      "law": {
+        "pcode": "N0060013",
+        "name": "起重升降機具安全規則",
+        "article": {
+          "full": "第 35 條",
+          "條": "第 35 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：起重機原則不載人"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：吊車主要用來吊東西，原則上不能吊人。"
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對起重機載人規定之記憶。"
+        }
+      ]
+    },
+    {
+      "id": "T583",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "事業單位以其事業之全部或部分交付承攬時，如該承攬人使用之機械、設備係由原事業單位提供者，應由承攬人實施自動檢查。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "原事業單位提供之機械設備，仍應由原事業單位實施自動檢查。",
+        "detail": "依據職業安全衛生管理辦法第12-3條規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": {
+          "full": "第 12-3 條",
+          "條": "第 12-3 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：提供設備者，檢查責任在提供方"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：原事業單位提供的機械設備，安全檢查責任仍在原事業單位。"
+      },
+      "logic": [
+        {
+          "label": "法規理解",
+          "reason": "測驗考生對承攬管理檢查責任之認知。"
+        }
+      ]
+    },
+    {
+      "id": "T584",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於局限空間作業之進入許可，應保存3年。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "局限空間進入許可紀錄應保存3年。",
+        "detail": "依據職業安全衛生設施規則第29-6條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 29-6 條",
+          "條": "第 29-6 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：局限空間許可證，保存3年不能省"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：進入許可證要保存3年以備勞動檢查。"
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對局限空間許可紀錄保存年限之記憶。"
+        }
+      ]
+    },
+    {
+      "id": "T585",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "雇主對於高架作業，高度在2公尺以上未滿5公尺者，每連續作業2小時應給予至少25分鐘休息。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高度2公尺以上未滿5公尺者，休息時間為20分鐘，非25分鐘。",
+        "detail": "依據高架作業勞工保護措施標準第7條規定：2~5公尺為20分鐘。"
+      },
+      "law": {
+        "pcode": "N0060029",
+        "name": "高架作業勞工保護措施標準",
+        "article": {
+          "full": "第 7 條",
+          "條": "第 7 條"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：2~5米休20分，5~20米休25分"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：高架作業休息時間隨高度增加：2~5米休20分，5~20米休25分，20米以上休35分。"
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對高架作業休息時間之記憶。"
+        }
+      ]
+    },
+    {
+      "id": "T586",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "骨折時應先固定，再止血。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "骨折時應先處理出血、休克等狀況；先止血、包紮，再固定、搬運、送醫治療。",
+        "detail": "急救順序：止血→包紮→固定→搬運。"
+      },
+      "law": {
+        "pcode": "N0000006",
+        "name": "急救概論",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "骨折急救順序：先止血，再固定。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：先止血，再固定！"
+        ],
+        "mnemonic": "🧠 骨折急救＝止血→包紮→固定→搬運",
+        "commonMistake": [
+          "🚨 陷阱：很多人以為先固定再止血，順序錯了！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對骨折急救順序的掌握。"
+        }
+      ]
+    },
+    {
+      "id": "T587",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "鈉的密度比水小，會浮於水面和空氣中之氧氣起作用，所以一般會將鈉存在水中。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "鈉會與水發生劇烈反應，產生氫氣及氫氧化鈉，因此一般將鈉保存在石油中，而非水中。"
+      },
+      "law": {
+        "pcode": "N0000007",
+        "name": "化學品安全管理",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "鈉保存在石油中，非水中。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：鈉遇水會爆炸，石油才安全！"
+        ],
+        "mnemonic": "🧠 鈉＋水→劇烈反應＋氫氣；鈉保存在石油中。",
+        "commonMistake": [
+          "🚨 陷阱：鈉是保存在「石油」中，不是「水」中！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "危害辨識",
+          "reason": "測驗考生對鈉的性質與保存方式的記憶。"
+        }
+      ]
+    },
+    {
+      "id": "T588",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "一氧化碳屬於單純性之窒息性物質。",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "一氧化碳屬於化學性窒息物質，因與血紅素結合力為氧氣的200-250倍，形成一氧化碳血紅素（COHb）。",
+        "detail": "單純性窒息物質包括二氧化碳、氮氣、甲烷等。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "一氧化碳屬化學性窒息物質。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：CO是化學窒息，不是單純窒息！"
+        ],
+        "mnemonic": "🧠 單純性窒息＝CO₂、N₂、CH₄（排擠氧氣）；化學性窒息＝CO、H₂S（與血紅素結合）",
+        "commonMistake": [
+          "🚨 陷阱：一氧化碳「不是」單純性窒息物質！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "危害辨識",
+          "reason": "測驗考生對窒息性物質分類的辨識。"
+        }
+      ]
+    },
+    {
+      "id": "T589",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "text": "是否沒有脈搏心跳了，在CPR之前應先電擊？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "CPR前不應先電擊，應先確認患者無反應、無呼吸或無正常呼吸後，立即開始CPR。",
+        "detail": "AED會在分析心律後決定是否需要電擊，CPR應在AED分析前或分析後進行。"
+      },
+      "law": {
+        "pcode": "N0000001",
+        "name": "應置有自動體外心臟電擊去顫器之公共場所",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "CPR前不應先電擊，應先進行心肺復甦術。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：先CPR，再AED！"
+        ],
+        "mnemonic": "🧠 CPR優先→確認無反應→開始按壓→AED到達後分析心律→決定是否電擊",
+        "commonMistake": [
+          "🚨 陷阱：不要看到AED就以為要先電擊，要先做CPR！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對CPR與AED使用順序的掌握。"
+        }
+      ]
+    },
+    {
+      "id": "T590",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "依據衛生福利部公布「應置有自動體外心臟電擊去顫器之公共場所」，國民中學以上之學校屬於應設置AED之場所。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "國民中學以上之學校屬於AED應設置場所之一，敘述正確。",
+        "detail": "衛福部公告之AED設置場所包含：交通要衝、長距離交通工具、觀光旅遊地區、學校（國民中學以上）、大型集會場所等。"
+      },
+      "law": {
+        "pcode": "L0000001",
+        "name": "公共場所必要緊急救護設備管理辦法",
+        "article": {
+          "full": "第 4 條",
+          "條": "第 4 條"
+        },
+        "summary": "應置有自動體外心臟電擊去顫器之公共場所。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：AED設置：交通、學校、大賣場、旅館、運動中心都要有！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：AED設在人多的地方：機場、高鐵、學校（國中以上）、大賣場、旅館（100間以上）、運動中心。",
+        "commonMistake": [
+          "🚨 陷阱：國民中學是「應設置」場所，不要誤以為不是！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規記憶",
+          "reason": "測驗考生對AED應設置場所之記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T591",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "骨折急救時，應先固定骨折處，再進行止血。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 1,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "骨折急救應先處理出血、休克等狀況；先止血、包紮，再固定、搬運、送醫治療。",
+        "detail": "急救優先順序：先止血→包紮→固定→搬運。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 15 條",
+          "條": "第 15 條"
+        },
+        "summary": "雇主應依規定設置急救人員及急救設備。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：先止血，再固定！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：骨折急救順序：止血→包紮→固定→搬運。",
+        "commonMistake": [
+          "🚨 陷阱：很多人以為要先固定，其實是先止血！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "流程操作",
+          "reason": "測驗考生對骨折急救流程之正確順序。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T592",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "一氧化碳（CO）因其對血紅素產生毒害作用，屬於化學性窒息物質，故未被歸類為單純性之窒息性物質。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "一氧化碳與血紅素結合力為氧氣之200-250倍，形成一氧化碳血紅素（COHb），屬化學性窒息。",
+        "detail": "單純性窒息性物質如二氧化碳、甲烷等，本身無毒但因大量存在而降低氧氣濃度。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 292 條",
+          "條": "第 292 條"
+        },
+        "summary": "雇主應採取必要措施預防有害物中毒。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：CO不是單純窒息，是化學窒息！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：一氧化碳會搶走血紅素，結合力是氧氣的200倍，造成化學性窒息，不是單純缺氧。",
+        "commonMistake": [
+          "🚨 陷阱：CO不是單純窒息性物質，不要把它和CO₂搞混！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規理解",
+          "reason": "測驗考生對窒息性物質分類之理解。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    },
+    {
+      "id": "T593",
+      "type": "truefalse",
+      "typeLabel": "是非題",
+      "typePrefix": "T",
+      "text": "依職業安全衛生設施規則規定，合梯之梯腳與地面之角度應在75度以內。是否正確？",
+      "options": [
+        "是",
+        "否"
+      ],
+      "answer": 0,
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "合梯梯腳與地面之角度應在75度以內，敘述正確。",
+        "detail": "職業安全衛生設施規則第230條規定：合梯之梯腳與地面之角度應在75度以內，且兩梯腳間有繫材扣牢。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 230 條",
+          "條": "第 230 條"
+        },
+        "summary": "合梯之梯腳與地面之角度應在75度以內。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：合梯75度！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：合梯角度要75度以內，太陡會倒，太平會滑。",
+        "commonMistake": [
+          "🚨 陷阱：移動梯是30公分寬，不要搞混！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "法規數字",
+          "reason": "測驗考生對合梯使用角度之記憶。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 選項區",
+        "structure": [
+          "題幹區",
+          "選項區"
+        ],
+        "optionUI": "○ 是 ○ 否",
+        "action": "點選",
+        "draggable": false,
+        "scoring": "單題計分",
+        "steps": [
+          "閱讀題幹敘述",
+          "判斷是否正確",
+          "點選「是」或「否」"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2360 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 38,
+  "Type": "calc",
+  "TypeLabel": "計算題",
+  "TypePrefix": "C",
+  "source": {
+    "classified": true,
+    "breed": true,
+    "merged": true,
+    "merge_date": "2026-07-17 19:22:53",
+    "source_stats": {
+      "計算題A.json": 28,
+      "計算題B.json": 6,
+      "計算題D.json": 4
+    },
+    "source_files": [
+      "計算題A.json",
+      "計算題B.json",
+      "計算題D.json"
+    ]
+  },
+  "questions": [
+    {
+      "id": "C500",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某公司辦理勞工健康檢查，其中一位勞工身高165公分、體重57公斤。依勞工健康保護規則規定，請計算該勞工之身體質量指數(BMI)？（四捨五入至小數點第一位）",
+      "options": [],
+      "answer": "20.9",
+      "points": "10%",
+      "group": 3,
+      "stem": "試計算身體質量指數（BMI）：",
+      "imageUrl": null,
+      "formulaKey": "BMI",
+      "formulaParams": {
+        "體重": 57,
+        "身高": 1.65
+      },
+      "explanation": {
+        "summary": "BMI = 57 ÷ (1.65)² = 57 ÷ 2.7225 = 20.94 → 20.9",
+        "detail": "計算步驟：\n① 身高165cm → 1.65m\n② 1.65² = 2.7225\n③ 57 ÷ 2.7225 = 20.94 → 20.9"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "身體質量指數計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 BMI = 體重 ÷ 身高的平方"
+        ],
+        "mnemonic": "🧠 公分換公尺→平方→相除",
+        "commonMistake": [
+          "🚨 陷阱：身高要換成「公尺」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對BMI計算公式的掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C501",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某工廠儲存壓縮氫氣容器，在零下15°C時表壓力為每平方公分8.7公斤。若溫度升至35°C，依高壓氣體勞工安全規則規定，其表壓力變為每平方公分幾公斤？（絕對零度273.15，四捨五入取小數點第二位）",
+      "options": [],
+      "answer": "10.4",
+      "points": "10%",
+      "group": 13,
+      "stem": "試計算氣體壓力變化：",
+      "imageUrl": null,
+      "formulaKey": "GAS_LAW",
+      "formulaParams": {
+        "壓力P₁": 8.7,
+        "溫度T₁": 258.15,
+        "溫度T₂": 308.15
+      },
+      "explanation": {
+        "summary": "P₁/T₁ = P₂/T₂ → 8.7/258.15 = P₂/308.15 → P₂ = 8.7×308.15/258.15 = 10.38 → 10.4",
+        "detail": "計算步驟：\n① -15°C → 258.15K，35°C → 308.15K\n② 8.7/258.15 = P₂/308.15\n③ P₂ = 8.7×308.15/258.15 = 10.38 → 10.4"
+      },
+      "law": {
+        "pcode": "N0060030",
+        "name": "高壓氣體勞工安全規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "定容查理定律。"
+      },
+      "tips": {
+        "quick": [
+          "💡 P₁/T₁ = P₂/T₂"
+        ],
+        "mnemonic": "🧠 溫度升高，壓力也升高（定容下）",
+        "commonMistake": [
+          "🚨 陷阱：溫度要用絕對溫度(K)，不是°C！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對查理定律的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C502",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某勞工噪音暴露測定結果如下：08:00-12:00 為95 dBA（穩定性噪音）；13:00-15:00 噪音劑量為40%（變動性噪音）；15:00-17:00 為92 dBA（穩定性噪音）。計算該勞工之八小時日時量平均音壓級(TWA)。（計算至小數點以下第二位）",
+      "options": [],
+      "answer": "94.3",
+      "points": "10%",
+      "group": 15,
+      "stem": "試計算八小時日時量平均音壓級（TWA）：",
+      "imageUrl": null,
+      "formulaKey": "NOISE_TWA",
+      "formulaParams": {
+        "噪音劑量D": 200
+      },
+      "explanation": {
+        "summary": "TWA = 16.61 × log(100×D/8) + 90 = 16.61 × log(100×200/8) + 90 = 94.3",
+        "detail": "計算步驟：\n① 計算各時段噪音劑量\n② 總劑量 D = 200%\n③ TWA = 16.61 × log(100×200/8) + 90 = 94.3"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 300 條",
+          "條": "第 300 條"
+        },
+        "summary": "噪音劑量換算TWA。"
+      },
+      "tips": {
+        "quick": [
+          "💡 TWA = 16.61×log(100×D/8) + 90"
+        ],
+        "mnemonic": "🧠 噪音劑量換算TWA公式",
+        "commonMistake": [
+          "🚨 陷阱：公式中的8是工作8小時！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對噪音劑量換算TWA的能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C503",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某工廠研磨機使用直徑300公厘之研磨輪，最高使用速度為2800公尺/分鐘。若轉速為每分鐘3000轉，依職業安全衛生設施規則規定，該研磨輪之實際速度為何？（計算至小數點以下第二位）",
+      "options": [],
+      "answer": "2827.43",
+      "points": "10%",
+      "group": 23,
+      "stem": "試計算研磨輪周速度：",
+      "imageUrl": null,
+      "formulaKey": "GRINDING",
+      "formulaParams": {
+        "直徑D": 0.3,
+        "轉速N": 3000
+      },
+      "explanation": {
+        "summary": "V = π × D × N = 3.1416 × 0.3 × 3000 = 2827.43 m/min",
+        "detail": "計算步驟：\n① 直徑300mm → 0.3m\n② V = 3.1416 × 0.3 × 3000 = 2827.43 m/min"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 95 條",
+          "條": "第 95 條"
+        },
+        "summary": "研磨輪周速度計算。"
+      },
+      "tips": {
+        "quick": [
+          "💡 V = π × D × RPM"
+        ],
+        "mnemonic": "🧠 周速度＝圓周長 × 每分鐘轉數",
+        "commonMistake": [
+          "🚨 陷阱：直徑單位要換成「公尺」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對研磨輪周速度的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C504",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某化學工廠局部排氣裝置之排氣機前圓形導管管徑為50公分，經測定導管內動壓為9 mmH₂O。依特定化學物質危害預防標準規定，請計算該裝置之風速(m/s)與實際換氣量(m³/min)。（計算至小數點以下第二位）",
+      "options": [],
+      "answer": [
+        "12.12",
+        "142.80"
+      ],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 7,
+      "stem": "試計算風速與換氣量：",
+      "imageUrl": null,
+      "formulaKey": "DYNAMIC_PRESSURE",
+      "formulaParams": {
+        "動壓Pv": 9,
+        "管徑D": 0.5
+      },
+      "explanation": {
+        "summary": "V = 4.04√9 = 12.12 m/s；Q = V × A = 12.12 × π×(0.25)²×60 = 142.80 m³/min",
+        "detail": "計算步驟：\n① V = 4.04 × √9 = 12.12 m/s\n② A = π × (0.25)² = 0.1963 m²\n③ Q = 12.12 × 0.1963 × 60 = 142.80 m³/min"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "動壓轉風速與換氣量計算。"
+      },
+      "tips": {
+        "quick": [
+          "💡 V = 4.04√Pv，Q = V × A"
+        ],
+        "mnemonic": "🧠 動壓開根號乘4.04得風速",
+        "commonMistake": [
+          "🚨 陷阱：管徑單位要換成公尺，面積用πr²！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對局部排氣裝置風速與換氣量的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (5%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "各欄位獨立計分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C505",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某戶外燒燻作業，在有日曬工作環境中連續作業，測得乾球溫度 36°C、自然濕球溫度 28.2°C、黑球溫度為 40°C，請回答下列問題：該環境之綜合溫度熱指數為多少℃？依您計算結果，如勞工作業為中度工作，則該勞工每小時休息比例應為多少%？（計算至小數點以下第二位）",
+      "options": [],
+      "answer": [
+        "25",
+        "31.34"
+      ],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 3,
+      "stem": "試計算綜合溫度熱指數（WBGT）與休息比例：",
+      "imageUrl": null,
+      "formulaKey": "WBGT_OUT",
+      "formulaParams": {
+        "自然濕球溫度": 28.2,
+        "黑球溫度": 40,
+        "乾球溫度": 36
+      },
+      "explanation": {
+        "summary": "WBGT = 0.7×28.2 + 0.2×40 + 0.1×36 = 31.34°C；中度工作休息比例25%",
+        "detail": "計算步驟：\n① 0.7×28.2 = 19.74\n② 0.2×40 = 8.0\n③ 0.1×36 = 3.6\n④ 總和 = 31.34°C\n⑤ WBGT 31.34°C，中度工作休息比例25%"
+      },
+      "law": {
+        "pcode": "N0060007",
+        "name": "高溫作業勞工作息時間標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "WBGT計算與休息比例。"
+      },
+      "tips": {
+        "quick": [
+          "💡 WBGT = 0.7×濕球 + 0.2×黑球 + 0.1×乾球"
+        ],
+        "mnemonic": "🧠 戶外有日曬：濕球佔7成，黑球佔2成，乾球佔1成",
+        "commonMistake": [
+          "🚨 陷阱：戶外有日曬和室內的公式不一樣！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對WBGT計算與休息比例的掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (5%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "各欄位獨立計分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C506",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所每小時使用四氯化碳5公斤，依有機溶劑中毒預防規則規定，其所需之換氣能力應為每分鐘多少立方公尺？（計算至小數點以下第二位）",
+      "options": [],
+      "answer": "1500.00",
+      "points": "10%",
+      "group": 5,
+      "stem": "試計算有機溶劑換氣能力：",
+      "imageUrl": null,
+      "formulaKey": "VENT_1",
+      "formulaParams": {
+        "每小時消費量W": 5
+      },
+      "explanation": {
+        "summary": "四氯化碳為第一種有機溶劑，Q = W × 0.3 × 1000 = 5 × 0.3 × 1000 = 1500 m³/min",
+        "detail": "計算步驟：\n① 四氯化碳為第一種有機溶劑\n② Q = 5 × 0.3 × 1000 = 1500 m³/min"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "附表四",
+          "條": "附表四"
+        },
+        "summary": "有機溶劑換氣能力計算。"
+      },
+      "tips": {
+        "quick": [
+          "💡 第一種有機溶劑 Q = W × 0.3 × 1000"
+        ],
+        "mnemonic": "🧠 第一種有機溶劑換氣量最大",
+        "commonMistake": [
+          "🚨 陷阱：要記得乘以1000（公斤換公克）！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對有機溶劑換氣能力的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C507",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某機械廠6月份總經歷工時100,000小時，發生3件重大職業災害：(1)墜落事故：1人死亡、1人住院至6/24恢復工作；(2)6/26同一人再受傷，6/29恢復；(3)6/30氯氣洩漏，3人就醫，7/1回廠。請依職業安全衛生法第38條規定，計算該廠6月份之失能傷害頻率(FR)與職業災害嚴重率(SR)。（計算至小數點以下第二位）",
+      "options": [],
+      "answer": [
+        "60.00",
+        "60210.00"
+      ],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 1,
+      "stem": "試計算失能傷害頻率(FR)與嚴重率(SR)：",
+      "imageUrl": null,
+      "formulaKey": "FR",
+      "formulaParams": {
+        "失能傷害人次數": 6,
+        "總經歷工時": 100000
+      },
+      "explanation": {
+        "summary": "FR = 6×10⁶/100000 = 60.00；SR = 6021×10⁶/100000 = 60210.00",
+        "detail": "計算步驟：\n① 失能傷害次數：6人次\n② FR = 6×10⁶/100000 = 60.00\n③ 總損失日數：6000+0+21+0 = 6021\n④ SR = 6021×10⁶/100000 = 60210.00"
+      },
+      "law": {
+        "pcode": "N0060001",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 38 條",
+          "條": "第 38 條"
+        },
+        "summary": "失能傷害頻率與嚴重率計算。"
+      },
+      "tips": {
+        "quick": [
+          "💡 FR = 次數×10⁶÷工時，SR = 損失日數×10⁶÷工時"
+        ],
+        "mnemonic": "🧠 FR看次數，SR看日數",
+        "commonMistake": [
+          "🚨 陷阱：死亡損失日數算6000日！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對職災統計指標的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (5%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "各欄位獨立計分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C508",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某工廠員工300人，每日工作8小時，年工作300天，全年發生職業災害：2件輕傷害、1件死亡、1件雙腿截肢（損失日數依CNS計算）、1件2人暫時全失能（各休養100天、200天）。請依職業安全衛生法第38條規定，計算該廠年度失能傷害頻率(FR)、嚴重率(SR)、平均損失日數及總合傷害指數(FSI)。（計算至小數點以下第二位）",
+      "options": [],
+      "answer": [
+        "17083.33",
+        "3075.00",
+        "5.56",
+        "9.73"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 1,
+      "stem": "試計算FR、SR、平均損失日數及FSI：",
+      "imageUrl": null,
+      "formulaKey": "FSI",
+      "formulaParams": {
+        "FR": 5.56,
+        "SR": 17083.33
+      },
+      "explanation": {
+        "summary": "FR=5.56、SR=17083.33、平均損失日數=3075、FSI=9.73",
+        "detail": "計算步驟：\n① 總經歷工時=300×300×8=720,000\n② FR = (1+1+2)×10⁶/720,000 = 5.56\n③ SR = (6000+6000+100+200)×10⁶/720,000 = 17083.33\n④ 平均損失日數 = (6000+6000+100+200)/4 = 3075\n⑤ FSI = √(5.56×17083.33/1000) = 9.73"
+      },
+      "law": {
+        "pcode": "N0060001",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 38 條",
+          "條": "第 38 條"
+        },
+        "summary": "職災統計指標計算。"
+      },
+      "tips": {
+        "quick": [
+          "💡 FSI = √(FR×SR÷1000)"
+        ],
+        "mnemonic": "🧠 FSI是綜合指標，介於0~10之間",
+        "commonMistake": [
+          "🚨 陷阱：截肢損失日數算6000日！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對職災統計指標的完整計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (2.5%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "各欄位獨立計分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C509",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所長8公尺、寬6公尺、高3公尺，勞工人數50人。依職業安全衛生設施規則第312條規定，計算氣積、每一勞工所占立方公尺數、每分鐘每一勞工所需新鮮空氣量、每分鐘需提供多少換氣量。（計算至小數點以下第二位）",
+      "options": [],
+      "answer": [
+        "0.60",
+        "144.00",
+        "2.88",
+        "30.00"
+      ],
+      "points": "10%",
+      "pointsPerItem": "2.5%",
+      "group": 7,
+      "stem": "試計算氣積、每人所占空間與換氣量：",
+      "imageUrl": null,
+      "formulaKey": "CO2_VENT",
+      "formulaParams": {
+        "體積V": 144,
+        "人數": 50
+      },
+      "explanation": {
+        "summary": "氣積=8×6×3=144m³，每人=2.88m³，每人每分鐘需0.6m³，總換氣量=30m³/min",
+        "detail": "計算步驟：\n① V = 8×6×3 = 144m³\n② 每人 = 144/50 = 2.88m³\n③ 每人每分鐘需0.6m³\n④ 總換氣量 = 50×0.6 = 30m³/min"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 312 條",
+          "條": "第 312 條"
+        },
+        "summary": "作業場所換氣量計算。"
+      },
+      "tips": {
+        "quick": [
+          "💡 每人每分鐘需0.6m³新鮮空氣"
+        ],
+        "mnemonic": "🧠 每人每分鐘需要0.6立方公尺新鮮空氣",
+        "commonMistake": [
+          "🚨 陷阱：超過4公尺高度不計入氣積！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對作業場所換氣量計算的能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (2.5%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "各欄位獨立計分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C510",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某通風系統之圓形導管直徑為40公分，測得管內動壓為16 mmH₂O，請計算該導管內之風速為多少 m/s？（V = 4.04√Pv，計算至小數點以下第二位）",
+      "options": [],
+      "answer": "16.16",
+      "points": "10%",
+      "group": 7,
+      "stem": "試計算導管內風速：",
+      "imageUrl": null,
+      "formulaKey": "DYNAMIC_PRESSURE",
+      "formulaParams": {
+        "動壓Pv": 16
+      },
+      "explanation": {
+        "summary": "V = 4.04 × √16 = 4.04 × 4 = 16.16 m/s",
+        "detail": "計算步驟：\n① √16 = 4\n② 4.04 × 4 = 16.16 m/s"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "動壓轉風速公式 V = 4.04√Pv。"
+      },
+      "tips": {
+        "quick": [
+          "💡 V = 4.04 × √Pv"
+        ],
+        "mnemonic": "🧠 動壓開根號再乘4.04就是風速",
+        "commonMistake": [
+          "🚨 陷阱：Pv單位是mmH₂O，直接代入即可。"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對動壓轉風速公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C511",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某局部排氣裝置之氣罩為包圍式（崗亭式），氣罩開口面積為1.5 m²，控制點風速為0.8 m/s，請計算其排氣量為多少 m³/min？（Q = V × A）",
+      "options": [],
+      "answer": "72.00",
+      "points": "10%",
+      "group": 7,
+      "stem": "試計算包圍式氣罩排氣量：",
+      "imageUrl": null,
+      "formulaKey": "VENT_包圍式",
+      "formulaParams": {
+        "風速V": 0.8,
+        "面積A": 1.5
+      },
+      "explanation": {
+        "summary": "Q = 0.8 × 1.5 = 1.2 m³/s = 72 m³/min",
+        "detail": "計算步驟：\n① 0.8 × 1.5 = 1.2 m³/s\n② 1.2 × 60 = 72 m³/min"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "包圍式氣罩排氣量公式 Q = V × A。"
+      },
+      "tips": {
+        "quick": [
+          "💡 Q = V × A，再×60換算m³/min"
+        ],
+        "mnemonic": "🧠 包圍式最簡單，風速×面積就是排氣量",
+        "commonMistake": [
+          "🚨 陷阱：m³/s 要換算成 m³/min 要×60！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對包圍式氣罩排氣量公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C512",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某局部排氣裝置之氣罩為側方外裝式無凸緣，氣罩開口面積為0.3 m²，捕捉點距離為0.4 m，捕捉點風速為0.6 m/s，請計算其排氣量為多少 m³/min？（Q = V(10X² + A)）",
+      "options": [],
+      "answer": "68.40",
+      "points": "10%",
+      "group": 7,
+      "stem": "試計算側方外裝式無凸緣氣罩排氣量：",
+      "imageUrl": null,
+      "formulaKey": "VENT_側方外裝無凸緣",
+      "formulaParams": {
+        "風速V": 0.6,
+        "距離X": 0.4,
+        "面積A": 0.3
+      },
+      "explanation": {
+        "summary": "Q = 0.6 × (10×0.16 + 0.3) = 0.6 × 1.9 = 1.14 m³/s = 68.4 m³/min",
+        "detail": "計算步驟：\n① 10X² = 10 × 0.4² = 10 × 0.16 = 1.6\n② 1.6 + 0.3 = 1.9\n③ 0.6 × 1.9 = 1.14 m³/s\n④ 1.14 × 60 = 68.4 m³/min"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "側方外裝式無凸緣氣罩排氣量公式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 Q = V(10X² + A)"
+        ],
+        "mnemonic": "🧠 無凸緣用 10X² + A",
+        "commonMistake": [
+          "🚨 陷阱：注意單位，X 和 A 的單位要一致！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對局部排氣裝置排氣量公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C513",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某局部排氣裝置之氣罩為側方外裝式有凸緣，氣罩開口面積為0.25 m²，捕捉點距離為0.3 m，捕捉點風速為0.5 m/s，請計算其排氣量為多少 m³/min？（Q = 0.75V(10X² + A)）",
+      "options": [],
+      "answer": "25.88",
+      "points": "10%",
+      "group": 7,
+      "stem": "試計算側方外裝式有凸緣氣罩排氣量：",
+      "imageUrl": null,
+      "formulaKey": "VENT_側方外裝有凸緣",
+      "formulaParams": {
+        "風速V": 0.5,
+        "距離X": 0.3,
+        "面積A": 0.25
+      },
+      "explanation": {
+        "summary": "Q = 0.75 × 0.5 × (10×0.09 + 0.25) = 0.375 × 1.15 = 0.43125 m³/s = 25.88 m³/min",
+        "detail": "計算步驟：\n① 10X² = 10 × 0.3² = 10 × 0.09 = 0.9\n② 0.9 + 0.25 = 1.15\n③ 0.75 × 0.5 × 1.15 = 0.43125 m³/s\n④ 0.43125 × 60 = 25.88 m³/min"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "側方外裝式有凸緣氣罩排氣量公式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 Q = 0.75V(10X² + A)"
+        ],
+        "mnemonic": "🧠 有凸緣要乘 0.75",
+        "commonMistake": [
+          "🚨 陷阱：有凸緣要乘 0.75，無凸緣不用！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對局部排氣裝置排氣量公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C514",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某局部排氣裝置之氣罩為懸吊式，作業面周長為1.8 m，控制點距離為0.3 m，控制點風速為0.7 m/s，請計算其排氣量為多少 m³/min？（Q = 1.4 P V X）",
+      "options": [],
+      "answer": "31.75",
+      "points": "10%",
+      "group": 7,
+      "stem": "試計算懸吊式氣罩排氣量：",
+      "imageUrl": null,
+      "formulaKey": "VENT_懸吊式",
+      "formulaParams": {
+        "周長P": 1.8,
+        "風速V": 0.7,
+        "距離X": 0.3
+      },
+      "explanation": {
+        "summary": "Q = 1.4 × 1.8 × 0.7 × 0.3 = 0.5292 m³/s = 31.75 m³/min",
+        "detail": "計算步驟：\n① 1.4 × 1.8 = 2.52\n② 2.52 × 0.7 = 1.764\n③ 1.764 × 0.3 = 0.5292 m³/s\n④ 0.5292 × 60 = 31.75 m³/min"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "懸吊式氣罩排氣量公式 Q = 1.4 P V X。"
+      },
+      "tips": {
+        "quick": [
+          "💡 Q = 1.4 × P × V × X"
+        ],
+        "mnemonic": "🧠 懸吊式用周長 P",
+        "commonMistake": [
+          "🚨 陷阱：P 是周長，不是面積！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對懸吊式氣罩排氣量公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C515",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某局部排氣裝置之氣罩為單一狹縫式（無凸緣），氣罩開口長邊為0.6 m，控制點距離為0.25 m，控制點風速為0.9 m/s，請計算其排氣量為多少 m³/min？（Q = 3.7 L V X）",
+      "options": [],
+      "answer": "29.97",
+      "points": "10%",
+      "group": 7,
+      "stem": "試計算單一狹縫式無凸緣氣罩排氣量：",
+      "imageUrl": null,
+      "formulaKey": "VENT_狹縫無凸緣",
+      "formulaParams": {
+        "長邊L": 0.6,
+        "風速V": 0.9,
+        "距離X": 0.25
+      },
+      "explanation": {
+        "summary": "Q = 3.7 × 0.6 × 0.9 × 0.25 = 0.4995 m³/s = 29.97 m³/min",
+        "detail": "計算步驟：\n① 3.7 × 0.6 = 2.22\n② 2.22 × 0.9 = 1.998\n③ 1.998 × 0.25 = 0.4995 m³/s\n④ 0.4995 × 60 = 29.97 m³/min"
+      },
+      "law": {
+        "pcode": "N0060015",
+        "name": "特定化學物質危害預防標準",
+        "article": {
+          "full": "第 17 條",
+          "條": "第 17 條"
+        },
+        "summary": "單一狹縫式無凸緣氣罩排氣量公式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 Q = 3.7 × L × V × X"
+        ],
+        "mnemonic": "🧠 狹縫無凸緣用 3.7",
+        "commonMistake": [
+          "🚨 陷阱：有凸緣用 2.6，無凸緣用 3.7！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對狹縫式氣罩排氣量公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C516",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所測得某有害物濃度如下：08:00-10:00 為100 ppm（120分鐘），10:00-12:00 為150 ppm（120分鐘），13:00-15:00 為80 ppm（120分鐘），15:00-17:00 為120 ppm（120分鐘）。請計算該勞工8小時之時量平均濃度（TWA）為多少 ppm？",
+      "options": [],
+      "answer": "112.50",
+      "points": "10%",
+      "group": 4,
+      "stem": "試計算8小時時量平均濃度（TWA）：",
+      "imageUrl": null,
+      "formulaKey": "TWA_CALC",
+      "formulaParams": {
+        "濃度": [
+          100,
+          150,
+          80,
+          120
+        ],
+        "時間": [
+          120,
+          120,
+          120,
+          120
+        ]
+      },
+      "explanation": {
+        "summary": "TWA = Σ(Cᵢ × Tᵢ) / 480 = (100×120 + 150×120 + 80×120 + 120×120) / 480 = 112.5 ppm",
+        "detail": "計算步驟：\n① 100×120 = 12000\n② 150×120 = 18000\n③ 80×120 = 9600\n④ 120×120 = 14400\n⑤ 總和 = 54000\n⑥ 54000 / 480 = 112.5 ppm"
+      },
+      "law": {
+        "pcode": "N0060004",
+        "name": "勞工作業場所容許暴露標準",
+        "article": {
+          "full": "第 3 條",
+          "條": "第 3 條"
+        },
+        "summary": "8小時時量平均容許濃度計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 TWA = Σ(C×T) ÷ 總時間"
+        ],
+        "mnemonic": "🧠 各時段濃度×時間加總後除以總時間",
+        "commonMistake": [
+          "🚨 陷阱：時間單位要一致，全部換算成分鐘！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對時量平均濃度計算的能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C517",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所15分鐘內有害物濃度測定結果如下：0-5分鐘為200 ppm，5-10分鐘為180 ppm，10-15分鐘為220 ppm。請計算該時段之短時間時量平均濃度（STEL）為多少 ppm？",
+      "options": [],
+      "answer": "200.00",
+      "points": "10%",
+      "group": 4,
+      "stem": "試計算短時間時量平均濃度（STEL）：",
+      "imageUrl": null,
+      "formulaKey": "STEL_CALC",
+      "formulaParams": {
+        "濃度": [
+          200,
+          180,
+          220
+        ],
+        "時間": [
+          5,
+          5,
+          5
+        ]
+      },
+      "explanation": {
+        "summary": "STEL = (200×5 + 180×5 + 220×5) / 15 = (1000 + 900 + 1100) / 15 = 200 ppm",
+        "detail": "計算步驟：\n① 200×5 = 1000\n② 180×5 = 900\n③ 220×5 = 1100\n④ 總和 = 3000\n⑤ 3000 / 15 = 200 ppm"
+      },
+      "law": {
+        "pcode": "N0060004",
+        "name": "勞工作業場所容許暴露標準",
+        "article": {
+          "full": "第 3 條",
+          "條": "第 3 條"
+        },
+        "summary": "短時間時量平均容許濃度計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 STEL = Σ(C×T) ÷ 15"
+        ],
+        "mnemonic": "🧠 15分鐘內的加權平均濃度",
+        "commonMistake": [
+          "🚨 陷阱：STEL 是看15分鐘，不是8小時！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對短時間時量平均濃度計算的能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C518",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某物質之爆炸下限（LEL）為1.8%，爆炸上限（UEL）為8.4%，請計算其火災爆炸危險度指數。（危險度 = (UEL - LEL) / LEL，計算至小數點以下第二位）",
+      "options": [],
+      "answer": "3.67",
+      "points": "10%",
+      "group": 8,
+      "stem": "試計算火災爆炸危險度指數：",
+      "imageUrl": null,
+      "formulaKey": "HAZARD_INDEX",
+      "formulaParams": {
+        "UEL": 8.4,
+        "LEL": 1.8
+      },
+      "explanation": {
+        "summary": "危險度 = (8.4 - 1.8) / 1.8 = 6.6 / 1.8 = 3.67",
+        "detail": "計算步驟：\n① 8.4 - 1.8 = 6.6\n② 6.6 / 1.8 = 3.67"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": {
+          "full": "第 177 條",
+          "條": "第 177 條"
+        },
+        "summary": "火災爆炸危險度指數計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 危險度 = (UEL - LEL) ÷ LEL"
+        ],
+        "mnemonic": "🧠 危險度越大，爆炸風險越高",
+        "commonMistake": [
+          "🚨 陷阱：分子是(UEL - LEL)，不是(UEL + LEL)！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對火災爆炸危險度指數公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C519",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某工廠設置液化石油氣儲槽，內容積為8,000公升，液化石油氣比重為0.58，請計算其儲存能力為多少公噸？（儲存能力 = 0.9 × 比重 × 內容積 ÷ 1000，計算至小數點以下第二位）",
+      "options": [],
+      "answer": "4.18",
+      "points": "10%",
+      "group": 13,
+      "stem": "試計算液化石油氣儲存能力：",
+      "imageUrl": null,
+      "formulaKey": "STORAGE_CAPACITY",
+      "formulaParams": {
+        "比重ρ": 0.58,
+        "內容積V": 8000
+      },
+      "explanation": {
+        "summary": "儲存能力 = 0.9 × 0.58 × 8000 / 1000 = 4.176 公噸 → 4.18 公噸",
+        "detail": "計算步驟：\n① 0.9 × 0.58 = 0.522\n② 0.522 × 8000 = 4176\n③ 4176 / 1000 = 4.176 → 4.18 公噸"
+      },
+      "law": {
+        "pcode": "N0060039",
+        "name": "危險性工作場所審查及檢查辦法",
+        "article": {
+          "full": "第 2 條",
+          "條": "第 2 條"
+        },
+        "summary": "液化氣體儲存能力計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 儲存能力 = 0.9 × 比重 × 內容積 ÷ 1000"
+        ],
+        "mnemonic": "🧠 液化氣體儲存能力 = 0.9 × 比重 × 內容積(公升) ÷ 1000",
+        "commonMistake": [
+          "🚨 陷阱：內容積單位是公升，最後要除以1000換算成公噸！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對液化氣體儲存能力計算的能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "代入公式計算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C520",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位有勞工500人，每年工作300天，每天工作8小時，當年度共發生3件失能傷害，總損失日數為120日，請問該事業單位之失能傷害頻率（FR）為多少？（計算至小數點以下第二位）",
+      "options": [],
+      "answer": "2.50",
+      "points": "10%",
+      "group": 1,
+      "stem": "試計算失能傷害頻率（FR）：",
+      "imageUrl": null,
+      "formulaKey": "FR",
+      "formulaParams": {
+        "失能傷害人次數": 3,
+        "總經歷工時": 1200000
+      },
+      "explanation": {
+        "summary": "FR = (3 × 10⁶) / 1,200,000 = 2.50",
+        "detail": "計算步驟：\n① 總經歷工時 = 500人 × 300天 × 8小時 = 1,200,000 小時\n② FR = (3 × 1,000,000) / 1,200,000 = 2.50"
+      },
+      "law": {
+        "pcode": "N0060001",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 38 條",
+          "條": "第 38 條"
+        },
+        "summary": "失能傷害頻率（FR）計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 FR = 人次數×10⁶ ÷ 總工時"
+        ],
+        "mnemonic": "🧠 FR（Frequency Rate）＝頻率，每百萬工時發生幾次傷害",
+        "commonMistake": [
+          "🚨 陷阱：總經歷工時 = 人數 × 天數 × 時數，缺一不可！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對失能傷害頻率公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C521",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某工廠勞工600人，全年工作250天，每天工作8小時，當年度發生1人死亡（損失日數6000日）、2人重傷（各損失日數1000日），請問其失能傷害嚴重率（SR）為多少？（計算至小數點以下第二位）",
+      "options": [],
+      "answer": "6666.67",
+      "points": "10%",
+      "group": 1,
+      "stem": "試計算失能傷害嚴重率（SR）：",
+      "imageUrl": null,
+      "formulaKey": "SR",
+      "formulaParams": {
+        "總損失日數": 8000,
+        "總經歷工時": 1200000
+      },
+      "explanation": {
+        "summary": "SR = (8000 × 10⁶) / 1,200,000 = 6666.67",
+        "detail": "計算步驟：\n① 總損失日數 = 6000 + 1000 + 1000 = 8000 日\n② 總經歷工時 = 600人 × 250天 × 8小時 = 1,200,000 小時\n③ SR = (8000 × 1,000,000) / 1,200,000 = 6666.67"
+      },
+      "law": {
+        "pcode": "N0060001",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 38 條",
+          "條": "第 38 條"
+        },
+        "summary": "失能傷害嚴重率（SR）計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 SR = 損失日數×10⁶ ÷ 總工時"
+        ],
+        "mnemonic": "🧠 SR（Severity Rate）＝嚴重率，損失日數越長越嚴重",
+        "commonMistake": [
+          "🚨 陷阱：死亡、重傷的損失日數都要算進去！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對失能傷害嚴重率公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C522",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位之失能傷害頻率（FR）為4.5，失能傷害嚴重率（SR）為800，請問其總合傷害指數（FSI）為多少？（四捨五入至小數點以下第二位）",
+      "options": [],
+      "answer": "1.90",
+      "points": "10%",
+      "group": 1,
+      "stem": "試計算總合傷害指數（FSI）：",
+      "imageUrl": null,
+      "formulaKey": "FSI",
+      "formulaParams": {
+        "FR": 4.5,
+        "SR": 800
+      },
+      "explanation": {
+        "summary": "FSI = √(4.5 × 800 / 1000) = √3.6 = 1.90",
+        "detail": "計算步驟：\n① FR × SR = 4.5 × 800 = 3600\n② 3600 / 1000 = 3.6\n③ √3.6 = 1.90"
+      },
+      "law": {
+        "pcode": "N0060001",
+        "name": "職業安全衛生法",
+        "article": {
+          "full": "第 38 條",
+          "條": "第 38 條"
+        },
+        "summary": "總合傷害指數（FSI）計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 FSI = √(FR×SR÷1000)"
+        ],
+        "mnemonic": "🧠 FSI（Frequency Severity Index）＝頻率與嚴重率的綜合指標",
+        "commonMistake": [
+          "🚨 陷阱：先乘除後加減，不要忘記除以1000！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對總合傷害指數公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C523",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所長6公尺、寬5公尺、高3公尺，使用正己烷進行作業，請計算1小時之有機溶劑容許消費量為多少公克？",
+      "options": [],
+      "answer": "36.00",
+      "points": "10%",
+      "group": 5,
+      "stem": "試計算有機溶劑容許消費量：",
+      "imageUrl": null,
+      "formulaKey": "VENT_CONSUMPTION_2",
+      "formulaParams": {
+        "體積": 90
+      },
+      "explanation": {
+        "summary": "正己烷為第二種有機溶劑，容許消費量 = (2/5) × 作業場所氣積 = (2/5) × 90 = 36 公克",
+        "detail": "計算步驟：\n① 作業場所氣積 = 6×5×3 = 90 m³\n② 正己烷為第二種有機溶劑\n③ 容許消費量 = (2/5) × 90 = 36 公克"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "附表二",
+          "條": "附表二"
+        },
+        "summary": "第二種有機溶劑容許消費量 = (2/5) × 作業場所氣積。"
+      },
+      "tips": {
+        "quick": [
+          "💡 第二種有機溶劑 = 2/5 × 體積"
+        ],
+        "mnemonic": "🧠 正己烷是第二種有機溶劑，公式：容許消費量 = (2/5) × 體積",
+        "commonMistake": [
+          "🚨 陷阱：正己烷是第二種有機溶劑，不是第三種！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對有機溶劑容許消費量公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C524",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所長10公尺、寬8公尺、高4公尺，使用三氯乙烯進行作業，請計算1小時之有機溶劑容許消費量為多少公克？",
+      "options": [],
+      "answer": "21.33",
+      "points": "10%",
+      "group": 5,
+      "stem": "試計算有機溶劑容許消費量：",
+      "imageUrl": null,
+      "formulaKey": "VENT_CONSUMPTION_1",
+      "formulaParams": {
+        "體積": 320
+      },
+      "explanation": {
+        "summary": "三氯乙烯為第一種有機溶劑，容許消費量 = (1/15) × 作業場所氣積 = (1/15) × 320 = 21.33 公克",
+        "detail": "計算步驟：\n① 作業場所氣積 = 10×8×4 = 320 m³\n② 三氯乙烯為第一種有機溶劑\n③ 容許消費量 = (1/15) × 320 = 21.33 公克"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "附表二",
+          "條": "附表二"
+        },
+        "summary": "第一種有機溶劑容許消費量 = (1/15) × 作業場所氣積。"
+      },
+      "tips": {
+        "quick": [
+          "💡 第一種有機溶劑 = 1/15 × 體積"
+        ],
+        "mnemonic": "🧠 三氯乙烯是第一種有機溶劑，公式：容許消費量 = (1/15) × 體積",
+        "commonMistake": [
+          "🚨 陷阱：三氯乙烯是第一種有機溶劑，不是第二種！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對有機溶劑容許消費量公式的計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C525",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某勞工身高170公分，體重68公斤，請問其身體質量指數（BMI）為多少？（四捨五入至小數點後第一位）",
+      "options": [],
+      "answer": "23.5",
+      "points": "10%",
+      "group": 3,
+      "stem": "試計算身體質量指數（BMI）：",
+      "imageUrl": null,
+      "formulaKey": "BMI",
+      "formulaParams": {
+        "體重": 68,
+        "身高": 1.7
+      },
+      "explanation": {
+        "summary": "BMI = 68 / (1.70)² = 68 / 2.89 = 23.53 → 23.5",
+        "detail": "計算步驟：\n① 身高170cm → 1.70m\n② 1.70² = 2.89\n③ 68 ÷ 2.89 = 23.53 → 23.5"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "身體質量指數（BMI）計算方式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 BMI = 體重 ÷ 身高的平方"
+        ],
+        "mnemonic": "🧠 BMI（Body Mass Index）＝身體質量指數\n步驟：公分→公尺→平方→相除",
+        "commonMistake": [
+          "🚨 陷阱：身高要換成「公尺」！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對BMI計算公式的掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C526",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某勞工在戶外有日曬環境下工作，其自然濕球溫度為28°C，黑球溫度為42°C，乾球溫度為35°C，請問其綜合溫度熱指數（WBGT）為多少？（計算至小數點以下第一位）",
+      "options": [],
+      "answer": "33.8",
+      "points": "10%",
+      "group": 3,
+      "stem": "試計算綜合溫度熱指數（WBGT）：",
+      "imageUrl": null,
+      "formulaKey": "WBGT_OUT",
+      "formulaParams": {
+        "自然濕球溫度": 28,
+        "黑球溫度": 42,
+        "乾球溫度": 35
+      },
+      "explanation": {
+        "summary": "WBGT = 0.7×28 + 0.2×42 + 0.1×35 = 33.8°C",
+        "detail": "計算步驟：\n① 0.7 × 28 = 19.6\n② 0.2 × 42 = 8.4\n③ 0.1 × 35 = 3.5\n④ 19.6 + 8.4 + 3.5 = 33.8°C"
+      },
+      "law": {
+        "pcode": "N0060007",
+        "name": "高溫作業勞工作息時間標準",
+        "article": {
+          "full": "第 1 條",
+          "條": "第 1 條"
+        },
+        "summary": "戶外有日曬 WBGT 計算公式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 WBGT = 0.7×濕球 + 0.2×黑球 + 0.1×乾球"
+        ],
+        "mnemonic": "🧠 戶外有日曬：濕球佔7成，黑球佔2成，乾球佔1成",
+        "commonMistake": [
+          "🚨 陷阱：戶外有日曬和戶內無日曬的公式不一樣！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對WBGT計算公式的掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C527",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所測得8小時之噪音劑量（D）為200%，請問其8小時時量平均音壓級（TWA）為多少？（四捨五入至小數點後第一位）",
+      "options": [],
+      "answer": "95.0",
+      "points": "10%",
+      "group": 15,
+      "stem": "試計算噪音8小時時量平均音壓級（TWA）：",
+      "imageUrl": null,
+      "formulaKey": "NOISE_TWA",
+      "formulaParams": {
+        "噪音劑量D": 200
+      },
+      "explanation": {
+        "summary": "TWA = 16.61 × log(100×D/8) + 90 = 16.61 × log(100×200/8) + 90 = 16.61 × log(2500) + 90 = 16.61 × 3.398 + 90 = 95.0",
+        "detail": "計算步驟：\n① 100 × D / 8 = 100 × 200 / 8 = 2500\n② log(2500) = 3.398\n③ 16.61 × 3.398 = 56.46\n④ 56.46 + 90 = 146.46"
+      },
+      "law": {
+        "pcode": "N0060004",
+        "name": "勞工作業場所容許暴露標準",
+        "article": {
+          "full": "第 3 條",
+          "條": "第 3 條"
+        },
+        "summary": "噪音劑量換算TWA公式。"
+      },
+      "tips": {
+        "quick": [
+          "💡 TWA = 16.61×log(100×D/8) + 90"
+        ],
+        "mnemonic": "🧠 噪音劑量200% → TWA約95分貝",
+        "commonMistake": [
+          "🚨 陷阱：公式中的8是工作8小時，不要漏掉！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對噪音劑量換算TWA的能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C528",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位當年度失能傷害次數為5次，總經歷工時為1,000,000小時，試計算其失能傷害頻率(FR)為何？",
+      "options": [],
+      "answer": "5",
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "FR",
+      "formulaParams": {
+        "失能傷害人次數": 5,
+        "總經歷工時": 1000000
+      },
+      "explanation": {
+        "summary": "FR = 5 × 1,000,000 / 1,000,000 = 5",
+        "detail": "計算步驟：FR = 失能傷害次數 × 10^6 / 總經歷工時。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：FR = 傷害次數 × 百萬 / 總工時"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：FR代表每百萬工時發生幾次失能傷害。"
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對職災統計指標之計算能力。"
+        }
+      ]
+    },
+    {
+      "id": "C529",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某勞工體重為80公斤，身高為1.75公尺，試計算其身體質量指數(BMI)？(四捨五入至小數點第一位)",
+      "options": [],
+      "answer": "26.1",
+      "points": "10%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "BMI",
+      "formulaParams": {
+        "體重": 80,
+        "身高": 1.75
+      },
+      "explanation": {
+        "summary": "BMI = 80 / (1.75)^2 = 80 / 3.0625 = 26.12 → 26.1",
+        "detail": "BMI計算公式為體重(公斤)除以身高(公尺)的平方。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：體重除以身高的平方"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：BMI > 24 即為過重，> 27 為肥胖。"
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對BMI計算之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "C530",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某噪音作業場所勞工暴露劑量D=400%，試計算其8小時時量平均音壓級(LTWA)。(公式：LTWA = 16.61 × log10(D) + 90，log10(4)=0.602)",
+      "options": [],
+      "answer": "100.0",
+      "points": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "NOISE_TWA_SIMPLE",
+      "formulaParams": {
+        "D": 400
+      },
+      "explanation": {
+        "summary": "LTWA = 16.61 × log10(400) + 90 = 16.61 × 2.602 + 90 = 43.22 + 90 = 133.22",
+        "detail": "注意 D 值代入公式時須代入 400 (而非4)。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：劑量換算分貝，套公式"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：劑量400%表示暴露超過容許標準4倍。"
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對噪音劑量換算之計算能力。"
+        }
+      ]
+    },
+    {
+      "id": "C531",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位當年度失能傷害總損失日數為360日，總經歷工時為1,000,000小時，試計算其失能傷害嚴重率(SR)？",
+      "options": [],
+      "answer": "360",
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "SR",
+      "formulaParams": {
+        "總損失日數": 360,
+        "總經歷工時": 1000000
+      },
+      "explanation": {
+        "summary": "SR = 360 × 1,000,000 / 1,000,000 = 360",
+        "detail": "計算步驟：SR = 總損失日數 × 10^6 / 總經歷工時。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：SR = 損失日數 × 百萬 / 總工時"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：SR代表每百萬工時損失多少日。"
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對失能傷害嚴重率之計算能力。"
+        }
+      ]
+    },
+    {
+      "id": "C532",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某工作場所長8m、寬6m、高3m，勞工人數50人，依職業安全衛生設施規則第312條規定，計算氣積為多少立方公尺？",
+      "options": [],
+      "answer": "144",
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "ROOM_VOLUME",
+      "formulaParams": {
+        "長": 8,
+        "寬": 6,
+        "高": 3
+      },
+      "explanation": {
+        "summary": "氣積 = 8 × 6 × 3 = 144 m³",
+        "detail": "計算步驟：長 × 寬 × 高 = 工作場所氣積。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：長乘寬乘高等於氣積"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：工作場所氣積是計算換氣量的基礎。"
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對氣積計算之掌握。"
+        }
+      ]
+    },
+    {
+      "id": "C533",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某作業場所使用甲苯（第二種有機溶劑），每日8小時使用量16kg，氣積150m³，依有機溶劑中毒預防規則附表二規定，其容許消費量為每小時多少克？",
+      "options": [],
+      "answer": "60",
+      "points": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "VENT_CONSUMPTION_2",
+      "formulaParams": {
+        "氣積": 150
+      },
+      "explanation": {
+        "summary": "容許消費量 = (2/5) × 150 = 60 g/hr",
+        "detail": "第二種有機溶劑容許消費量 = 2/5 × 作業場所氣積。"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "附表二",
+          "條": "附表二"
+        }
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：第二種溶劑容許量 = 2/5 × 氣積"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：第二種有機溶劑（如甲苯）的容許消費量是氣積的五分之二。"
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對有機溶劑容許消費量之計算能力。"
+        }
+      ]
+    },
+    {
+      "id": "C534",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位進行職場健康促進活動，其中某勞工身高165公分，體重57公斤。此勞工之身體質量指數（BMI）為何？（請四捨五入至小數點第1位）",
+      "options": [],
+      "answer": "20.9",
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "BMI",
+      "formulaParams": {
+        "體重": 57,
+        "身高": 1.65
+      },
+      "explanation": {
+        "summary": "BMI = 體重(kg) ÷ 身高(m)² = 57 ÷ 1.65² = 20.94 → 20.9",
+        "detail": "計算步驟：\n① 身高165公分 = 1.65公尺\n② 1.65² = 2.7225\n③ 57 ÷ 2.7225 = 20.94\n④ 四捨五入至小數點第1位 = 20.9"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": {
+          "full": "第 12 條",
+          "條": "第 12 條"
+        },
+        "summary": "雇主應依規定辦理勞工健康檢查及健康管理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：體重(kg) ÷ 身高(m)的平方"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：BMI = 體重（公斤） ÷ 身高（公尺）²。身高要換成公尺！",
+        "commonMistake": [
+          "🚨 陷阱：身高要換成「公尺」！165公分 = 1.65公尺，不要直接代入165！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對BMI計算公式之掌握。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C535",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某有機溶劑作業場所每小時四氯化碳消費量為5公斤。依有機溶劑中毒預防規則規定，其需要之換氣能力應為每分鐘多少立方公尺換氣量？（請以四捨五入取至整數）",
+      "options": [],
+      "answer": "1500",
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "VENT_1",
+      "formulaParams": {
+        "W": 5000
+      },
+      "explanation": {
+        "summary": "Q = 0.3 × W = 0.3 × 5000 = 1500 m³/min",
+        "detail": "計算步驟：\n① 四氯化碳屬第一種有機溶劑\n② W = 5kg × 1000g/kg = 5000 g/hr\n③ Q = 0.3 × 5000 = 1500 m³/min"
+      },
+      "law": {
+        "pcode": "N0060017",
+        "name": "有機溶劑中毒預防規則",
+        "article": {
+          "full": "第 14 條",
+          "條": "第 14 條"
+        },
+        "summary": "第一種有機溶劑作業場所應設置整體換氣裝置。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：第一種有機溶劑換氣量 = 0.3 × 消費量(g/hr)"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：四氯化碳是第一種有機溶劑，換氣量公式：Q = 0.3 × W（每小時消費量）。",
+        "commonMistake": [
+          "🚨 陷阱：四氯化碳是「第一種」有機溶劑，不要搞錯種類！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對有機溶劑換氣量公式之計算。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C536",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某研磨機之研磨輪直徑為250公厘，每分鐘轉速為3600轉。計算該研磨輪之周速度（公尺/分）。（π = 3.14，請以四捨五入取至整數）",
+      "options": [],
+      "answer": "2827",
+      "points": "10%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": "GRINDING",
+      "formulaParams": {
+        "D": 0.25,
+        "N": 3600
+      },
+      "explanation": {
+        "summary": "V = π × D × N = 3.14 × 0.25 × 3600 = 2827 公尺/分",
+        "detail": "計算步驟：\n① 直徑250公厘 = 0.25公尺\n② V = 3.14 × 0.25 × 3600\n③ V = 2827 公尺/分"
+      },
+      "law": {
+        "pcode": "N0060034",
+        "name": "機械設備器具安全標準",
+        "article": {
+          "full": "第 86 條",
+          "條": "第 86 條"
+        },
+        "summary": "研磨輪應實施速率試驗，其試驗速度應為最高使用周速度之1.5倍。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：V = π × D × N，直徑要換成公尺！"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：研磨輪周速度 = 圓周率 × 直徑（公尺） × 轉速（rpm）。直徑單位要換成公尺！",
+        "commonMistake": [
+          "🚨 陷阱：直徑250公厘 = 0.25公尺，不要直接代入250！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對研磨輪周速度公式之計算。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (10%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "輸入正確答案即給分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入最終答案"
+        ]
+      }
+    },
+    {
+      "id": "C537",
+      "type": "calc",
+      "typeLabel": "計算題",
+      "typePrefix": "C",
+      "text": "某事業單位總經歷工時為280,000小時，共發生4件失能傷害事故，總損失日數為12,400日。計算失能傷害頻率(FR)及失能傷害嚴重率(SR)。（計算至小數點以下第二位）",
+      "options": [],
+      "answer": [
+        "14.29",
+        "44285.71"
+      ],
+      "points": "10%",
+      "pointsPerItem": "5%",
+      "group": 9,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "formulaKey": null,
+      "formulaParams": null,
+      "explanation": {
+        "summary": "FR = (4 × 10⁶) ÷ 280,000 = 14.29；SR = (12,400 × 10⁶) ÷ 280,000 = 44,285.71",
+        "detail": "計算步驟：\n① FR = (失能傷害人次數 × 10⁶) ÷ 總經歷工時\n② SR = (總損失日數 × 10⁶) ÷ 總經歷工時"
+      },
+      "law": {
+        "pcode": "N0060041",
+        "name": "職業災害勞工保護法",
+        "article": {
+          "full": "第 7 條",
+          "條": "第 7 條"
+        },
+        "summary": "職業災害統計應依規定辦理。"
+      },
+      "tips": {
+        "quick": [
+          "💡 核心口訣：FR = 人次×10⁶÷工時；SR = 損失日數×10⁶÷工時"
+        ],
+        "mnemonic": "🧠 完整記憶劇本：失能傷害頻率(FR)看「次數」，失能傷害嚴重率(SR)看「日數」，兩個公式都要×10⁶除以總工時。",
+        "commonMistake": [
+          "🚨 陷阱：死亡損失日數是6,000日，不要忘記列入計算！"
+        ]
+      },
+      "logic": [
+        {
+          "label": "計算應用",
+          "reason": "測驗考生對職業災害統計指標之計算能力。"
+        }
+      ],
+      "spec": {
+        "layout": "題幹區 → 計算機區 → 答案欄位",
+        "structure": [
+          "題幹區",
+          "計算機區",
+          "答案欄位"
+        ],
+        "optionUI": "______ (5%) ______ (5%) + 計算機按鈕",
+        "action": "計算 + 輸入",
+        "draggable": false,
+        "scoring": "各欄位獨立計分",
+        "hasNumberPad": true,
+        "hasCalculator": true,
+        "steps": [
+          "閱讀題幹",
+          "使用計算機運算",
+          "輸入各項答案"
+        ]
+      }
+    }
+  ]
+}

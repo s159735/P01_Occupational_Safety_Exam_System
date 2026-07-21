@@ -1,0 +1,240 @@
+{
+  "UpdateDate": "2026-07-17",
+  "Version": "10.1.0",
+  "TotalQuestions": 9,
+  "Type": "fill",
+  "TypeLabel": "填空題",
+  "TypePrefix": "F",
+  "source": {
+    "classified": true,
+    "breed": true,
+    "sourceNote": "v10.1.0 完整版（含 PDF 精選擴充）"
+  },
+  "questions": [
+    {
+      "id": "F101",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依職業安全衛生設施規則，雇主對於室內工作場所之主要人行道，其寬度不得小於【___】公尺。",
+      "options": [],
+      "answer": ["1"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "室內主要人行道寬度至少1公尺。",
+        "detail": "依據職業安全衛生設施規則第31條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 31 條", "條": "第 31 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：主要通道一公尺"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對通道寬度之記憶。" }]
+    },
+    {
+      "id": "F102",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依職業安全衛生管理辦法，職業安全衛生委員會之會議紀錄應保存【___】年。",
+      "options": [],
+      "answer": ["3"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 2,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "委員會會議紀錄應保存3年。",
+        "detail": "依據職業安全衛生管理辦法第10條規定。"
+      },
+      "law": {
+        "pcode": "N0060027",
+        "name": "職業安全衛生管理辦法",
+        "article": { "full": "第 10 條", "條": "第 10 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：安委會紀錄保存三年"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對管理紀錄保存年限之認知。" }]
+    },
+    {
+      "id": "F103",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依職業安全衛生設施規則，雇主對於高度在【___】公尺以上之工作場所邊緣及開口部分，應設置護欄或護蓋。",
+      "options": [],
+      "answer": ["2"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "高度2公尺以上之開口邊緣須設護欄。",
+        "detail": "依據職業安全衛生設施規則第224條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 224 條", "條": "第 224 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：兩公尺高要護欄"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對墜落防止高度門檻之記憶。" }]
+    },
+    {
+      "id": "F104",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依職業安全衛生法規定，事業單位發生職業災害時，雇主應於知悉後【___】小時內向勞動檢查機構通報。",
+      "options": [],
+      "answer": ["8"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "職災通報時限為知悉後8小時內。",
+        "detail": "依據職業安全衛生法第37條第2項規定。"
+      },
+      "law": {
+        "pcode": "N0010029",
+        "name": "職業安全衛生法",
+        "article": { "full": "第 37 條", "條": "第 37 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：職災8小時通報"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對職災通報時限之記憶。" }]
+    },
+    {
+      "id": "F105",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依勞工健康保護規則規定，一般體格檢查紀錄應保存【___】年。",
+      "options": [],
+      "answer": ["7"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 4,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "一般體格檢查紀錄應保存7年。",
+        "detail": "依據勞工健康保護規則第19條規定。"
+      },
+      "law": {
+        "pcode": "N0060022",
+        "name": "勞工健康保護規則",
+        "article": { "full": "第 19 條", "條": "第 19 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：一般健檢保存7年"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對一般健康檢查紀錄保存年限之記憶。" }]
+    },
+    {
+      "id": "F106",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依職業安全衛生設施規則，雇主對於堆高機操作人員，應使其接受特殊作業安全衛生教育訓練，其荷重應在【___】公噸以上。",
+      "options": [],
+      "answer": ["1"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 3,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "荷重在1公噸以上之堆高機操作人員須接受特殊作業訓練。",
+        "detail": "依據職業安全衛生設施規則第126條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 126 條", "條": "第 126 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：堆高機1噸以上要特殊訓練"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對堆高機訓練門檻之記憶。" }]
+    },
+    {
+      "id": "F107",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依職業安全衛生設施規則規定，雇主對於合梯之梯腳與地面角度應在【___】度以內。",
+      "options": [],
+      "answer": ["75"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "合梯梯腳與地面角度應在75度以內。",
+        "detail": "依據職業安全衛生設施規則第230條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 230 條", "條": "第 230 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：合梯75度最安全"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對合梯安全角度之記憶。" }]
+    },
+    {
+      "id": "F108",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依職業安全衛生設施規則規定，雇主對於移動梯之寬度應在【___】公分以上。",
+      "options": [],
+      "answer": ["30"],
+      "points": "10%",
+      "pointsPerItem": "10%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "移動梯寬度應在30公分以上。",
+        "detail": "依據職業安全衛生設施規則第229條規定。"
+      },
+      "law": {
+        "pcode": "N0060009",
+        "name": "職業安全衛生設施規則",
+        "article": { "full": "第 229 條", "條": "第 229 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：移動梯寬度30公分"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對移動梯規格之記憶。" }]
+    },
+    {
+      "id": "F109",
+      "type": "fill",
+      "typeLabel": "填空題",
+      "typePrefix": "F",
+      "text": "依勞動基準法規定，勞工每7日中應有【___】日之休息，其中【___】日為例假，【___】日為休息日。",
+      "options": [],
+      "answer": ["2", "1", "1"],
+      "points": "10%",
+      "pointsPerItem": "3.3%",
+      "group": 1,
+      "stem": "試回答下列問題：",
+      "imageUrl": null,
+      "explanation": {
+        "summary": "7日內應有2日休息，其中1日例假、1日休息日。",
+        "detail": "依據勞動基準法第36條規定。"
+      },
+      "law": {
+        "pcode": "N0030025",
+        "name": "勞動基準法",
+        "article": { "full": "第 36 條", "條": "第 36 條" }
+      },
+      "tips": { "quick": ["💡 核心口訣：7日2休，1例1休"] },
+      "logic": [{ "label": "法規數字", "reason": "測驗考生對勞動基準法第36條之記憶。" }]
+    }
+  ]
+}

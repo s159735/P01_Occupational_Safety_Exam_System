@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國家考試規格 - 模擬測驗系統</title>
+
+    <!-- CSS 樣式 -->
+    <link rel="stylesheet" href="../01_前端資源/02_樣式表/國家考試主樣式.css">
+    <link rel="stylesheet" href="../01_前端資源/02_樣式表/FontAwesome圖示庫.min.css">
+
+    <!-- ✅ 強制覆蓋樣式：確保模式選擇畫面可以被隱藏 -->
+    <style>
+        #modeSelectScreen.hidden {
+            display: none !important;
+        }
+        #id_middle.visible {
+            display: block !important;
+        }
+        #id_header.visible {
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    📌 模式選擇畫面（首頁）
+    ============================================================ -->
+    <div id="modeSelectScreen">
+        <div class="mode-card">
+            <div style="margin-bottom: 10px;"><span style="font-size: 30px;">🏆</span></div>
+            <h1 class="mode-title">職業安全衛生模擬測驗系統</h1>
+            <p style="font-size:14px;color:#4b4646;margin-top:8px;margin-bottom:6px;">因開發者也還沒上岸，於是獨立開發出此系統，供考生們適應電腦考試系統</p>
+            <p style="font-size:13px;color:#4b4646;margin-top:8px;margin-bottom:6px;">此系統已盡量還原正式模式，開發時間有限，請使用者見諒</p>
+            <p style="font-size:13px;color:#4b4646;margin-top:8px;margin-bottom:6px;">新增術科以及計算題練習模式，總題庫數量:1600+</p>
+            <p class="mode-subtitle" style="margin-top:2px;">請選擇練習模式開始測驗</p>
+
+            <div class="mode-btn-group">
+                <button class="mode-btn-item academic" onclick="handleModeSelect('academic')">
+                    <span class="mode-icon">📚</span>
+                    <div class="mode-info">
+                        <div class="mode-name">學科</div>
+                        <div class="mode-desc">單選題 · 複選題 · 是非題 (複選題強制20題，其它隨機)</div>
+                    </div>
+                    <div class="mode-stats">
+                        <div class="mode-count">80 題</div>
+                        <div class="mode-time">100 分鐘</div>
+                    </div>
+                </button>
+
+                <button class="mode-btn-item technical" onclick="handleModeSelect('technical')">
+                    <span class="mode-icon">🔧</span>
+                    <div class="mode-info">
+                        <div class="mode-name">術科</div>
+                        <div class="mode-desc">計算題 · 配合題 · 排序題 · 連連看 · 填空題 (計算題強制2題，其它隨機)</div>
+                    </div>
+                    <div class="mode-stats">
+                        <div class="mode-count">10 題</div>
+                        <div class="mode-time">120 分鐘</div>
+                    </div>
+                </button>
+
+                <button class="mode-btn-item calc" onclick="handleModeSelect('calc')">
+                    <span class="mode-icon">🧮</span>
+                    <div class="mode-info">
+                        <div class="mode-name">計算題練習</div>
+                        <div class="mode-desc">計算題專屬練習模式 (計算題庫共134題)</div>
+                    </div>
+                    <div class="mode-stats">
+                        <div class="mode-count">20 題</div>
+                        <div class="mode-time">60 分鐘</div>
+                    </div>
+                </button>
+            </div>
+
+            <!-- 考試日期設定（靠左對齊） -->
+            <div class="mode-footer" style="display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding-left:2px;">
+                <div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
+                    <span style="font-weight:500;">📅 考試日期：</span>
+                    <input type="datetime-local" id="examDatetimeInput" 
+                        style="padding:2px 2px;border:1px solid #000000;border-radius:6px;font-size:16px;font-family:inherit;background:#fff;color:#333;cursor:pointer;">
+                    <button onclick="setExamDatetime()" 
+                            style="padding:6px 6px;background:#1a237e;color:#fff;border:none;border-radius:6px;font-size:12px;cursor:pointer;font-family:inherit;transition:background 0.2s;"
+                            onmouseover="this.style.background='#0d47a1'" onmouseout="this.style.background='#1a237e'">
+                        ✅ 設定確認
+                    </button>
+                    <button onclick="resetExamDatetime()" 
+                            style="padding:6px 6px;background:#e05046;color:#fff;border:none;border-radius:6px;font-size:12px;cursor:pointer;font-family:inherit;transition:background 0.2s;"
+                            onmouseover="this.style.background='#c04036'" onmouseout="this.style.background='#e05046'">
+                        🕐 現在時間
+                    </button>
+                </div>
+                <div style="font-size:16px; display:flex; align-items:center; gap:8px;">
+                    <span>⏱️ 距離考試：</span>
+                    <span id="examCountdownMode" style="font-weight:700;color:#d32f2f;">計算中...</span>
+                </div>
+                <p style="font-size:8px;color:#b7b6b6;margin-top:12px;margin-bottom:1px;">僅供考生使用，禁止任何販售行為</p>
+                <p style="font-size:8px;color:#b7b6b6;margin-top:0px;margin-bottom:1px;">如有任何問題，請聯繫開發者 (開發者閉關修練中)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    📌 頁面頂部（固定）— ROW-1 ~ ROW-6
+    =========================================================== -->
+    <div id="id_header" style="display:none;">
+
+        <!-- ROW-1：標題列 -->
+        <div class="nav-top" id="topRow1">
+            <span class="title" id="examTitle">職業安全衛生模擬測驗</span>
+        </div>
+
+        <div id="toppanel">
+            <div class="toppanel-left"><span class="label">崗位號</span><span class="value">：海景第一排</span></div>
+            <div class="toppanel-center"><span class="label">職類級別</span><span class="value">：(乙級)職業安全衛生管理員</span></div>
+            <div class="toppanel-right"><span class="label">身分證統一編號</span><span class="value">：A123456789</span></div>
+        </div>
+
+        <div id="toppanel2">
+            <div class="toppanel-left"><span class="label">姓　名</span><span class="value">：一次就上岸</span></div>
+            <div class="toppanel-center"><span class="label">座 位 號</span><span class="value">：<span id="id_seat">拜託文昌帝君給我容易點的題幹</span></span></div>
+            <div class="toppanel-right"><span class="label">術科測試編號</span><span class="value">：<span id="examNumber">計算中...</span></span></div>
+        </div>
+
+        <div class="toolbar-row-1">
+            <div class="toolbar-left-group">
+                <button class="btn-official mode-btn active" onclick="handleModeSelect('academic')" id="btnAcademic">學 科</button>
+                <button class="btn-official mode-btn" onclick="handleModeSelect('technical')" id="btnTechnical">術 科</button>
+                <button class="btn-official mode-btn" onclick="handleModeSelect('calc')" id="btnCalcMode">計 算</button>
+                <span class="toolbar-divider"></span>
+            </div>
+            <button class="btn-official primary btn-align-right-1" onclick="confirmEndExam()">提前結束測試</button>
+        </div>
+
+        <div class="toolbar-row-2">
+            <div class="toolbar-left-group-2">
+                <button class="btn-official nav-btn" onclick="prevQuestion()">上一題</button>
+                <button class="btn-official nav-btn" onclick="nextQuestion()">下一題</button>
+                <button class="btn-official danger" onclick="clearAnswer()">清除本題作答</button>
+                <button class="btn-official btn-back" onclick="goBackToModeSelect()">🏠 返回</button>
+            </div>
+            <span style="font-size:14px;font-weight:600;margin-left:12px;">答題數：</span>
+            <span class="answered-display" id="answeredDisplay">0 / 0</span>
+            <span style="font-size:14px;font-weight:600;margin-left:6px;">⏱️</span>
+            <span class="timer" id="countdownDisplay">1:59:59</span>
+            <button class="btn-official primary btn-align-right-2" onclick="openOverview()" style="margin-left:20px;">作答總覽</button>
+            <span class="toolbar-divider"></span>
+            <span style="font-size:14px;font-weight:500;">到第</span>
+            <select class="jump-select" id="jumpSelect" onchange="jumpToQuestion(this.value)">
+                <option value="0" selected>1</option>
+            </select>
+            <span style="font-size:14px;font-weight:500;">題</span>
+        </div>
+
+        <div class="toolbar-row-3">
+            <button class="btn-official toggle-btn" onclick="toggleTopRows()">🔽 隱藏 / 展開</button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    📌 題目區
+    ============================================================ -->
+    <div id="id_middle" style="display:none;">
+        <div class="question-container">
+            <div id="loadingMessage" style="text-align:center;padding:60px 20px;font-size:24px;color:#666;display:none;">
+                ⏳ 正在載入題目...<br>
+                <span style="font-size:18px;color:#999;">請稍候</span>
+            </div>
+
+            <div class="question-card" id="questionCard">
+
+                <div class="row-1">
+                    <span class="group-badge" id="questionGroup">題組 1</span>
+                    <span class="question-text-label">試回答下列問題：</span>
+                </div>
+
+                <div class="row-2">
+                    <span class="question-type-badge single" id="questionTypeBadge">選擇題</span>
+                </div>
+
+                <div class="row-3">題幹</div>
+                <div class="row-4">試回答下列問題：</div>
+
+                <div class="row-5">
+                    <span class="points" id="questionPoints">(10%)</span>
+                    <button class="mark-btn" id="markButton" onclick="toggleMark()">標記☆</button>
+                </div>
+
+                <div class="row-6">
+                    <span class="number-badge" id="questionNumberBadge">1</span>
+                    <span class="question-content">
+                        <span class="q-text" id="questionText">載入中...</span>
+                    </span>
+                </div>
+
+                <div class="row-divider"><hr></div>
+                <div class="row-16" id="answerContainer1"></div>
+                <div class="row-divider"><hr></div>
+                <div class="row-17" id="answerContainer2"></div>
+
+                <div class="row-divider"><hr></div>
+                <div class="row-14" id="optionsCardArea"></div>
+
+                <div class="row-divider"><hr></div>
+
+                <div class="row-15" id="dropTargetArea"></div>
+                <div class="row-18" id="answerContainer3"></div>
+
+                <div class="row-divider"><hr></div>
+
+                <!-- 解析區 -->
+                <div class="row-21">
+                    <button class="btn-toggle-detail" onclick="toggleExplanation()">
+                        📖 查看所有解析內容
+                    </button>
+                    <div class="detail-content" id="explanationSection" style="display:none;margin-top:10px;">
+                        <div class="row-22" style="padding:4px 0;">
+                            <div class="section-label">📖 題幹解析</div>
+                            <div class="section-content" id="explanationText">載入中...</div>
+                        </div>
+                        <div class="row-23" style="padding:4px 0;">
+                            <div class="section-label">⚖️ 法源依據</div>
+                            <div class="section-content" id="lawContent">載入中...</div>
+                        </div>
+                        <div class="row-24" style="padding:4px 0;">
+                            <div class="section-label">💡 答題秘訣</div>
+                            <div class="section-content" id="tipContent">載入中...</div>
+                        </div>
+                        <div class="row-26" style="padding:4px 0;">
+                            <div class="section-label">🧠 邏輯概念</div>
+                            <div class="section-content" id="logicContent">載入中...</div>
+                        </div>
+                        <div class="row-27" style="padding:4px 0;">
+                            <div class="section-label">✅ 正確解答</div>
+                            <div class="section-content" id="answerContent">載入中...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-divider"><hr></div>
+
+                <div class="row-29" style="margin-top:16px;padding-top:12px;border-top:0px solid #FFEFA1;display:flex;justify-content:flex-start;gap:12px;">
+                    <button class="btn-official btn-next" onclick="nextQuestion()">下一題</button>
+                    <button class="btn-official success" onclick="submitExam()">送出</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    📌 螢幕小鍵盤
+    ============================================================ -->
+    <div class="virtual-keyboard" id="virtualKeyboard">
+        <div class="keyboard-header">
+            <span class="keyboard-title">⌨️ 螢幕小鍵盤</span>
+            <button class="keyboard-close" onclick="closeKeyboard()">✕</button>
+        </div>
+        <div class="keyboard-body">
+            <div class="keyboard-row">
+                <button class="key-btn num" onclick="keyboardInput('0')">0</button>
+                <button class="key-btn num" onclick="keyboardInput('1')">1</button>
+                <button class="key-btn num" onclick="keyboardInput('2')">2</button>
+                <button class="key-btn num" onclick="keyboardInput('3')">3</button>
+                <button class="key-btn num" onclick="keyboardInput('4')">4</button>
+                <button class="key-btn num" onclick="keyboardInput('5')">5</button>
+                <button class="key-btn num" onclick="keyboardInput('6')">6</button>
+                <button class="key-btn num" onclick="keyboardInput('7')">7</button>
+                <button class="key-btn num" onclick="keyboardInput('8')">8</button>
+                <button class="key-btn num" onclick="keyboardInput('9')">9</button>
+                <button class="key-btn num" onclick="keyboardInput('.')">.</button>
+                <button class="key-btn num" onclick="keyboardInput('-')">−</button>
+            </div>
+            <div class="keyboard-row" style="margin-top:3px;">
+                <button class="key-btn control" onclick="keyboardInput('backspace')">← 退格</button>
+                <button class="key-btn clear-key" onclick="keyboardInput('clear')">清除</button>
+                <button class="key-btn enter-key" onclick="keyboardInput('enter')">確定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         📌 浮動按鈕（計算機 + 白板）
+         ============================================================ -->
+    <div class="float-btn-group">
+        <button class="btn-calc-float" id="btnCalcFloat" onclick="toggleCalculator()">🧮 計算機</button>
+        <button class="btn-wb-float" id="btnWbFloat" onclick="toggleWhiteboard()">🎨 小畫家</button>
+    </div>
+
+    <!-- ============================================================
+         📌 計算機
+         ============================================================ -->
+    <div id="calculatorContainer">
+        <div class="calc-header" id="calcDragHandle">
+            <span class="drag-handle">⠿ 拖曳</span><span class="title">計算機</span>
+            <button class="close-btn" onclick="closeCalculator()">✕</button>
+        </div>
+        <div class="calc-display"><div class="result" id="calcResult">0</div></div>
+        <div class="calc-buttons">
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('√(')">√</button>
+                <button class="calc-btn func" onclick="calcInput('²')">x²</button>
+                <button class="calc-btn func" onclick="calcInput('^(')">x³</button>
+                <button class="calc-btn num" onclick="calcInput('7')">7</button>
+                <button class="calc-btn num" onclick="calcInput('8')">8</button>
+                <button class="calc-btn num" onclick="calcInput('9')">9</button>
+                <button class="calc-btn operator" onclick="calcInput('+')">+</button>
+                <button class="calc-btn backspace" onclick="calcBackspace()">⌫</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('exp(')">exp</button>
+                <button class="calc-btn func" onclick="calcInput('ln(')">ln</button>
+                <button class="calc-btn func" onclick="calcInput('log(')">log</button>
+                <button class="calc-btn num" onclick="calcInput('4')">4</button>
+                <button class="calc-btn num" onclick="calcInput('5')">5</button>
+                <button class="calc-btn num" onclick="calcInput('6')">6</button>
+                <button class="calc-btn operator" onclick="calcInput('-')">−</button>
+                <button class="calc-btn clear" onclick="calcClear()">C</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('e')">e</button>
+                <button class="calc-btn func" onclick="calcInput('π')">π</button>
+                <button class="calc-btn func" onclick="calcInput('!')">x!</button>
+                <button class="calc-btn num" onclick="calcInput('1')">1</button>
+                <button class="calc-btn num" onclick="calcInput('2')">2</button>
+                <button class="calc-btn num" onclick="calcInput('3')">3</button>
+                <button class="calc-btn operator" onclick="calcInput('*')">×</button>
+                <button class="calc-btn func" onclick="calcInput('(')">(</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-btn func" onclick="calcInput('ANS')">ANS</button>
+                <button class="calc-btn func" onclick="calcInput('%')">%</button>
+                <button class="calc-btn num" onclick="calcInput('.')">.</button>
+                <button class="calc-btn num" onclick="calcInput('0')">0</button>
+                <button class="calc-btn equals" onclick="calcCalculate()">=</button>
+                <button class="calc-btn operator" onclick="calcInput('/')">÷</button>
+                <button class="calc-btn func" onclick="calcInput(')')">)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         📌 白板
+         ============================================================ -->
+    <div id="whiteboardContainer">
+        <div class="wb-header" id="wbDragHandle">
+            <span class="drag-handle">⠿ 拖曳</span><span class="title">📝 白板</span>
+            <button class="close-btn" onclick="closeWhiteboard()">✕</button>
+        </div>
+        <div class="wb-toolbar">
+            <button id="wbPencil" class="active" onclick="setWbMode('pencil')">✏️ 鉛筆</button>
+            <button id="wbEraser" onclick="setWbMode('eraser')">🧹 橡皮擦</button>
+            <button onclick="clearWhiteboard()">🗑️ 清除</button>
+            <span style="font-size:11px;color:#666;">顏色：</span>
+            <input type="color" id="wbColor" value="#000000" class="color-picker" onchange="setWbColor(this.value)">
+            <span style="font-size:11px;color:#666;">粗細：</span>
+            <select id="wbSize" class="size-select" onchange="setWbSize(this.value)">
+                <option value="2">細</option><option value="4" selected>中</option>
+                <option value="8">粗</option><option value="12">特粗</option>
+            </select>
+            <span class="status" id="wbStatus">✏️ 鉛筆模式</span>
+        </div>
+        <div class="wb-canvas-wrapper"><canvas id="whiteboardCanvas"></canvas></div>
+    </div>
+
+    <!-- ============================================================
+         📌 作答總覽
+         ============================================================ -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <h2>作答總覽</h2>
+            <div class="grid" id="overviewGrid"></div>
+            <div style="display:flex;gap:12px;justify-content:flex-end;">
+                <button class="overlay-close-btn" onclick="closeOverview()">關閉</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         🚀 模組載入順序
+         ============================================================ -->
+    <script src="../02_前端服務/00_API統一設定.js"></script>
+    <script src="../02_前端服務/01_API通訊服務.js"></script>
+    <script src="../02_前端服務/02_職業安全公式引擎.js"></script>
+    <script src="../02_前端服務/03_浮動計算機.js"></script>
+    <script src="../02_前端服務/04_電子白板.js"></script>
+    <script src="../02_前端服務/05_螢幕小鍵盤.js"></script>
+
+    <script src="../03_核心邏輯/00_題型格式規範.js"></script>
+    <script src="../03_核心邏輯/01_題型對應表.js"></script>
+    <script src="../03_核心邏輯/03_答案正確性驗證器.js"></script>
+    <script src="../03_核心邏輯/04_作答記錄管理器.js"></script>
+    <script src="../03_核心邏輯/05_配分計算引擎.js"></script>
+    <script src="../03_核心邏輯/06_連連看互動模組.js"></script>
+    <script src="../03_核心邏輯/09_填充題輔助輸入.js"></script>
+
+    <script src="../03_核心邏輯/10_解析_法規查詢模組.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/11_解析_秘訣生成模組.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/12_解析_邏輯標籤模組.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/13_解析_答案格式化模組.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/14_解析_主引擎.js?v=10.2.0"></script>
+
+    <script src="../03_核心邏輯/20_系統_全域變數.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/21_系統_初始化.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/22_系統_題庫載入.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/23_系統_導航控制.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/24_系統_模式切換.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/25_系統_提交功能.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/26_系統_考試控制核心.js?v=10.2.0"></script>
+
+    <script src="../03_核心邏輯/30_渲染_單選複選.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/31_渲染_是非填空.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/32_渲染_計算題.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/33_渲染_配合題.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/34_渲染_排序題.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/35_渲染_連連看.js?v=10.2.0"></script>
+    <script src="../03_核心邏輯/36_渲染_主入口.js?v=10.2.0"></script>
+
+    <script src="../01_前端資源/03_環境設定/考試參數設定.js"></script>
+
+    <!-- ============================================================
+         📌 應用控制邏輯（完整修正版）
+         ============================================================ -->
+    <script>
+        // ============================================================
+        // 模式選擇控制（✅ 已修復：自動渲染題目）
+        // ============================================================
+        function handleModeSelect(mode) {
+            console.log('🚀 進入模式:', mode);
+
+            var modeScreen = document.getElementById('modeSelectScreen');
+            var middle = document.getElementById('id_middle');
+            var header = document.getElementById('id_header');
+
+            if (modeScreen) {
+                modeScreen.style.display = 'none';
+                modeScreen.classList.add('hidden');
+            }
+            if (middle) {
+                middle.style.display = 'block';
+                middle.classList.add('visible');
+            }
+            if (header) {
+                header.style.display = 'block';
+                header.classList.add('visible');
+            }
+
+            if (typeof G_currentMode !== 'undefined') {
+                G_currentMode = mode;
+            }
+            if (typeof window.G_currentMode !== 'undefined') {
+                window.G_currentMode = mode;
+            }
+
+            if (typeof window.loadQuestionsByMode === 'function') {
+                window.loadQuestionsByMode(mode);
+                setTimeout(function() {
+                    if (typeof G_questionData !== 'undefined' && G_questionData.length > 0) {
+                        if (typeof renderQuestion === 'function') {
+                            renderQuestion(0);
+                            console.log('✅ 自動渲染第 1 題');
+                        }
+                        if (typeof updateAnsweredCount === 'function') {
+                            updateAnsweredCount();
+                        }
+                    } else {
+                        console.warn('⚠️ G_questionData 仍為空，請檢查 API 是否正常');
+                    }
+                }, 500);
+            } else {
+                alert('系統載入中，請稍後再試');
+            }
+
+            var btns = document.querySelectorAll('.mode-btn');
+            btns.forEach(function(btn) { btn.classList.remove('active'); });
+            var map = { 'academic': 0, 'technical': 1, 'calc': 2 };
+            var idx = map[mode];
+            if (idx !== undefined && btns[idx]) btns[idx].classList.add('active');
+        }
+
+        // ============================================================
+        // 返回模式選擇畫面
+        // ============================================================
+        function goBackToModeSelect() {
+            if (typeof window.G_questionData !== 'undefined') window.G_questionData = [];
+            if (typeof window.G_totalQuestions !== 'undefined') window.G_totalQuestions = 0;
+            if (typeof window.G_currentQuestionIndex !== 'undefined') window.G_currentQuestionIndex = 0;
+            if (typeof window.G_userAnswers !== 'undefined') window.G_userAnswers = {};
+            if (typeof window.G_markedQuestions !== 'undefined') window.G_markedQuestions = {};
+
+            var modeScreen = document.getElementById('modeSelectScreen');
+            var middle = document.getElementById('id_middle');
+            var header = document.getElementById('id_header');
+
+            if (modeScreen) {
+                modeScreen.style.display = 'flex';
+                modeScreen.classList.remove('hidden');
+            }
+            if (middle) {
+                middle.style.display = 'none';
+                middle.classList.remove('visible');
+            }
+            if (header) {
+                header.style.display = 'none';
+                header.classList.remove('visible');
+            }
+
+            if (typeof updateAnsweredCount === 'function') updateAnsweredCount();
+            console.log('🏠 返回模式選擇畫面');
+        }
+
+        // ============================================================
+        // 隱藏/展開頂部工具列
+        // ============================================================
+        function toggleTopRows() {
+            var btn = document.querySelector('.toggle-btn');
+            var row1 = document.getElementById('topRow1');
+            var row2 = document.getElementById('toppanel');
+            var row3 = document.getElementById('toppanel2');
+            var middle = document.getElementById('id_middle');
+
+            if (typeof window.G_topRowsHidden === 'undefined') {
+                window.G_topRowsHidden = false;
+            }
+            window.G_topRowsHidden = !window.G_topRowsHidden;
+
+            if (window.G_topRowsHidden) {
+                if (row1) row1.style.display = 'none';
+                if (row2) row2.style.display = 'none';
+                if (row3) row3.style.display = 'none';
+                if (btn) btn.textContent = '🔼 展開';
+                if (middle) {
+                    middle.style.top = '80px';
+                    middle.style.paddingTop = '10px';
+                }
+            } else {
+                if (row1) row1.style.display = 'flex';
+                if (row2) row2.style.display = 'flex';
+                if (row3) row3.style.display = 'flex';
+                if (btn) btn.textContent = '🔽 隱藏 / 展開';
+                if (middle) {
+                    middle.style.top = '140px';
+                    middle.style.paddingTop = '20px';
+                }
+            }
+        }
+
+        // ============================================================
+        // 解析區展開/收合
+        // ============================================================
+        function toggleExplanation() {
+            var section = document.getElementById('explanationSection');
+            if (!section) return;
+            section.style.display = (section.style.display === 'none' || section.style.display === '') ? 'block' : 'none';
+        }
+
+        // ============================================================
+        // 計時器
+        // ============================================================
+        function updateCountdown() {
+            var el = document.getElementById('countdownDisplay');
+            if (!el) return;
+            if (typeof window.G_countdownSeconds === 'undefined') window.G_countdownSeconds = 7200;
+            if (window.G_countdownSeconds <= 0) { el.textContent = '⏰ 時間到！'; return; }
+            window.G_countdownSeconds--;
+            var h = Math.floor(window.G_countdownSeconds / 3600);
+            var m = Math.floor((window.G_countdownSeconds % 3600) / 60);
+            var s = window.G_countdownSeconds % 60;
+            el.textContent = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+        }
+
+        // ============================================================
+        // 術科測試編號
+        // ============================================================
+        function updateExamNumber() {
+            var el = document.getElementById('examNumber');
+            if (!el) return;
+            if (typeof window.G_examNumber !== 'undefined' && window.G_examNumber) {
+                el.textContent = window.G_examNumber;
+                return;
+            }
+            try {
+                var saved = localStorage.getItem('exam_number');
+                if (saved) { el.textContent = saved; return; }
+            } catch (e) {}
+            var now = new Date();
+            var examNumber = '115N' + now.getFullYear() + 
+                String(now.getMonth() + 1).padStart(2, '0') + 
+                String(now.getDate()).padStart(2, '0') +
+                String(now.getHours()).padStart(2, '0') +
+                String(now.getMinutes()).padStart(2, '0');
+            window.G_examNumber = examNumber;
+            try { localStorage.setItem('exam_number', examNumber); } catch (e) {}
+            el.textContent = examNumber;
+        }
+
+        // ============================================================
+        // ✅ 考試日期初始化（當前時間 + 自動記憶）
+        // ============================================================
+        function initExamDatetime() {
+            var input = document.getElementById('examDatetimeInput');
+            if (!input) return;
+
+            var saved = localStorage.getItem('exam_datetime');
+            var examDate = null;
+
+            if (saved) {
+                examDate = new Date(saved);
+                if (!isNaN(examDate.getTime())) {
+                    window.G_EXAM_DATE = examDate;
+                    input.value = saved;
+                    console.log('📅 載入已儲存的考試日期:', examDate.toLocaleString());
+                    updateModeCountdown();
+                    return;
+                }
+            }
+
+            var now = new Date();
+            now.setSeconds(0);
+            now.setMilliseconds(0);
+            
+            window.G_EXAM_DATE = now;
+            
+            var year = now.getFullYear();
+            var month = String(now.getMonth() + 1).padStart(2, '0');
+            var day = String(now.getDate()).padStart(2, '0');
+            var hours = String(now.getHours()).padStart(2, '0');
+            var minutes = String(now.getMinutes()).padStart(2, '0');
+            input.value = year + '-' + month + '-' + day + 'T' + hours + ':' + minutes;
+            
+            try {
+                localStorage.setItem('exam_datetime', input.value);
+            } catch (e) {}
+            
+            console.log('📅 考試日期已設為當前時間:', now.toLocaleString());
+            updateModeCountdown();
+        }
+
+        // ============================================================
+        // 考試日期設定
+        // ============================================================
+        function setExamDatetime() {
+            var input = document.getElementById('examDatetimeInput');
+            var value = input.value;
+            if (!value) { 
+                alert('請選擇日期和時間！'); 
+                return; 
+            }
+            var examDate = new Date(value);
+            if (isNaN(examDate.getTime())) { 
+                alert('請選擇有效的日期和時間！'); 
+                return; 
+            }
+            window.G_EXAM_DATE = examDate;
+            try { 
+                localStorage.setItem('exam_datetime', value); 
+            } catch (e) {}
+            updateModeCountdown();
+            console.log('📅 考試日期已設定:', examDate.toLocaleString());
+        }
+
+        function resetExamDatetime() {
+            if (!confirm('確定要重設為目前時間嗎？')) return;
+            var now = new Date();
+            now.setSeconds(0);
+            now.setMilliseconds(0);
+            window.G_EXAM_DATE = now;
+            try { localStorage.removeItem('exam_datetime'); } catch (e) {}
+            var input = document.getElementById('examDatetimeInput');
+            if (input) {
+                var year = now.getFullYear();
+                var month = String(now.getMonth() + 1).padStart(2, '0');
+                var day = String(now.getDate()).padStart(2, '0');
+                var hours = String(now.getHours()).padStart(2, '0');
+                var minutes = String(now.getMinutes()).padStart(2, '0');
+                input.value = year + '-' + month + '-' + day + 'T' + hours + ':' + minutes;
+            }
+            try {
+                localStorage.setItem('exam_datetime', input.value);
+            } catch (e) {}
+            updateModeCountdown();
+            console.log('📅 考試日期已重設為目前時間:', now.toLocaleString());
+        }
+
+        function updateModeCountdown() {
+            var el = document.getElementById('examCountdownMode');
+            if (!el) return;
+            var examDate = window.G_EXAM_DATE || null;
+            if (!examDate) { el.textContent = '計算中...'; return; }
+            var now = new Date();
+            var diff = examDate - now;
+            if (diff <= 0) { el.textContent = '⏰ 考試已開始！'; return; }
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            el.textContent = days + '天 ' + String(hours).padStart(2, '0') + '時 ' + 
+                String(minutes).padStart(2, '0') + '分 ' + String(seconds).padStart(2, '0') + '秒';
+        }
+
+        // ============================================================
+        // 頁面初始化
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', function() {
+            var modeScreen = document.getElementById('modeSelectScreen');
+            var middle = document.getElementById('id_middle');
+            var header = document.getElementById('id_header');
+
+            if (modeScreen) {
+                modeScreen.style.display = 'flex';
+                modeScreen.classList.remove('hidden');
+            }
+            if (middle) {
+                middle.style.display = 'none';
+                middle.classList.remove('visible');
+            }
+            if (header) {
+                header.style.display = 'none';
+                header.classList.remove('visible');
+            }
+
+            initExamDatetime();
+            updateExamNumber();
+            updateModeCountdown();
+            setInterval(updateModeCountdown, 1000);
+
+            if (typeof window.G_countdownSeconds === 'undefined') window.G_countdownSeconds = 7200;
+            setInterval(updateCountdown, 1000);
+
+            console.log('✅ 模式選擇畫面已準備完成 (v10.2.0)');
+        });
+    </script>
+
+</body>
+</html>
